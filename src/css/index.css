@@ -163,8 +163,8 @@
 .nth2 .steps li{
     position: relative;
     float: left;
-    width: 270px;
-    margin: 0 5px;
+    width: 24%;
+    margin: 0 .5%;
 }
 .nth2 .steps li i{
     display: block;
@@ -357,6 +357,21 @@
 .nth4 .con .footer{
     position: absolute;
     bottom: 0;
+}
+@media only screen and (max-height: 768px) and (min-height: 643px){
+    .nth4 .users_slide{
+        width: 664px;
+    }
+    .users_slide li{
+        width: 160px;
+        height: 160px;
+    }
+    .users_slide li .info p{
+        margin-top: 34px;
+    }
+    .nth4 .footer{
+        display: none;
+    }
 }
 @media only screen and (max-height: 643px) {
     .yc_cm_header .shortcut_container{
