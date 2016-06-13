@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.yc_cm_header.fixed{
+    position: fixed;
+    z-index: 1;
+}
+.yc_index_con{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out .5s;
+    -moz-transition: all .3s ease-in-out .5s;
+    -ms-transition: all .3s ease-in-out .5s;
+    -o-transition: all .3s ease-in-out .5s;
+    transition: all .3s ease-in-out .5s;
+    z-index: 0;
+    padding-top: 140px;
+    box-sizing: border-box;
+}
+.yc_index_con .swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.yc_index_con .swiper-container-vertical>.swiper-pagination .swiper-pagination-bullet {
+    margin: 15px 0;
+    display: block;
+}
+.yc_index_con .swiper-pagination-bullet{
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    box-shadow: 0 1px 5px #999;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+.swiper-pagination-bullet-active::before{
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #ccc;
+}
+.yc_index_con .swiper-container .nth1{
+    background: url("../img/index/section_bg_one.jpg") no-repeat;
+    background-size: cover;
+}
+.yc_index_con .swiper-container .nth2{
+    background: url("../img/index/section_bg_two.jpg") no-repeat;
+    background-size: cover;
+}
+.yc_index_con .swiper-container .nth3{
+    background: url("../img/index/section_bg_three.jpg") no-repeat;
+    background-size: cover;
+}
