@@ -26,6 +26,10 @@ textarea:focus {
     min-width: 1200px;
 }
 
+.cm_min_width{
+    min-width: 1200px;
+}
+
 .cm_fl {
     float: left;
 }
@@ -45,6 +49,17 @@ textarea:focus {
 
 .hidden{
     display: none;
+}
+
+.cm_header_shadow
+{
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: url('../img/header_shadow_bg.png') repeat-x;
 }
 
 /*common head*/
@@ -71,7 +86,8 @@ textarea:focus {
 .yc_cm_header .shortcut_container .shortcut {
     position: relative;
     box-sizing: border-box;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
