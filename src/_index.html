@@ -128,6 +128,112 @@
                     <div class="con">
                         <h1 class="caption">谁都选择了我们?</h1>
                         <p class="smaller"><span>WHO</span> CHOOSE US</p>
+                        <div class="users_slide">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_01.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_02.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_02.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_04.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_05.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_06.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_07.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_08.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_01.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_02.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_02.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_04.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_05.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/default/users_06.jpg">
+                                        <div class="info">
+                                            <p>北京喜洋洋餐饮</p>
+                                            <span>菜谱印刷</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
                         <a class="start_made" href="javascript:;">开始定制<i class="icon-caret-right"></i></a>
                     </div>
                     <div class="footer">
@@ -178,7 +284,7 @@
 <script type="text/javascript" src="assets/js/swiper/swiper.js"></script>
 <script>
 
-    var swiper = new Swiper('.swiper-container', {
+    var indexSwiper = new Swiper('.yc_index_con > .swiper-container', {
         pagination: '.swiper-pagination',
         direction: 'vertical',
         slidesPerView: 1,
@@ -186,6 +292,15 @@
         spaceBetween: 30,
         mousewheelControl: true
     });
+
+    var usersSiwper = new Swiper('.users_slide .swiper-container',{
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        paginationClickable: true,
+        spaceBetween: 8,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    })
 
 </script>
 </body>
