@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>填写订单信息</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/chosen.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+    <!-- build:css css/all.min.css -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/order.css" type="text/css" media="all">
+    <!-- endbuild -->
+</head>
+
+<body>
+<div class="yc_cm_header cm_min_width">
+    <div class="shortcut_container">
+        <div class="shortcut">
+            <p class="login_info">
+                <span class="welcome_info">
+                    <a target="_top" class="" href="javascript:;" title="">登录</a>
+                </span>
+                <span class="welcome_info">
+                    <a class="logout" target="_top" href="javascript:;">注册</a>
+                </span>
+            </p>
+            <ul class="quick_menu">
+                <li>
+                    <a href="javascript:;"><i class="ybiconfont ybicon-star"></i>收藏</a>
+                </li>
+                <li>
+                    <a href="javascript:;">问题反馈</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main_nav">
+        <div class="header_con">
+            <div class="logo">
+                <a href="_index.html"><img src="img/logo.png"></a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a class="active" href="_index.html">首页</a></li>
+                    <li><a href="javascript:;">菜谱模板</a></li>
+                    <li><a href="javascript:;">菜谱款式</a></li>
+                    <li><a href="javascript:;">定制流程</a></li>
+                    <li><a href="javascript:;">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="hot_line">
+                <a href="javascript:;"><img src="img/hot_line.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="cm_header_shadow"></div>
+</div>
+<div class="main_container">
+    <div class="create_order">
+        <div class='opd_wrapper'>
+            <div class="opd_title">
+                <h1><span></span>收货相关信息</h1>
+                <div class="progress_bar">
+                    <ul>
+                        <li class="finish">
+                            <div><span>1</span><i class="ybiconfont ybicon-ok"></i></div>
+                            <p>确认下单</p>
+                        </li>
+                        <li class="cur">
+                            <div><span>2</span><i class="ybiconfont ybicon-ok"></i></div>
+                            <p>填写收货地址并付款</p>
+                        </li>
+                        <li>
+                            <div><span>3</span><i class="ybiconfont ybicon-ok"></i></div>
+                            <p>支付完成</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='opd_receivingaddress_wrapper'>
+                <div class='opd_header_item'>
+                    <p>收货地址</p>
+                    <a class='opd_addnewaddress_item' href="javascript:;"><span class="ybiconfont ybicon-plus"></span>使用新的地址</a>
+                </div>
+                <div class='opd_addressandmode_wrapper'>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input id='opd_address_1' type='radio' name='address'>
+                                    <label for='opd_address_1'>莫斯科红场克里姆林宫</label>
+                                </div>
+                            </td>
+                            <td>
+                                <label>普京（收）</label>
+                            </td>
+                            <td>
+                                <label>联系电话：</label>
+                                <span>138888888888</span>
+                            </td>
+                            <td class='opd_editaddress_wrapper default'>
+                                <div>
+                                    <a class='modify' href="javascript:;">修改</a>
+                                    <a class='delete' href="javascript:;">删除</a>
+                                    <a class='default_btn' href="javascript:;">默认地址</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input id='opd_address_2' type='radio' name='address'>
+                                    <label for='opd_address_2'>莫斯科红场克里姆林宫</label>
+                                </div>
+                            </td>
+                            <td>
+                                <label>普京（收）</label>
+                            </td>
+                            <td>
+                                <label>联系电话：</label>
+                                <span>138888888888</span>
+                            </td>
+                            <td class='opd_editaddress_wrapper'>
+                                <div>
+                                    <a class='modify' href="javascript:;">修改</a>
+                                    <a class='delete' href="javascript:;">删除</a>
+                                    <a class='set_default' href="javascript:;">设为默认</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input id='opd_address_3' type='radio' name='address'>
+                                    <label for='opd_address_3'>莫斯科红场克里姆林宫</label>
+                                </div>
+                            </td>
+                            <td>
+                                <label>普京（收）</label>
+                            </td>
+                            <td>
+                                <label>联系电话：</label>
+                                <span>138888888888</span>
+                            </td>
+                            <td class='opd_editaddress_wrapper'>
+                                <div>
+                                    <a class='modify' href="javascript:;">修改</a>
+                                    <a class='delete' href="javascript:;">删除</a>
+                                    <a class='set_default' href="javascript:;">设为默认</a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class='opd_header_item'>
+                    <p>配送方式</p>
+                </div>
+                <div class='opd_addressandmode_wrapper'>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td>
+                                选择配送物流
+                            </td>
+                            <td>
+                                运费
+                            </td>
+                            <td>
+                                其他说明
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <input id='opd_modeofdistrit_item' type='radio' name='opd_modeofdistrit_item'>
+                                <label for='opd_modeofdistrit_item'>快递</label>
+                            </td>
+                            <td>
+                                ￥0
+                            </td>
+                            <td>
+                                无
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class='opd_header_item'>
+                    <p>选择支付方式</p>
+                </div>
+                <div class='opd_modeofpayment_wrapper'>
+                    <ul>
+                        <li>
+                            <label>您的账户余额：</label>
+                            <span>￥0.00</span>
+                        </li>
+                        <li>
+                            <label>其他付款方式：</label>
+                            <ul>
+                                <li>
+                                    <input id='alipay' type='radio' name='payment'>
+                                    <label for='alipay'><img src="img/order/alipay_img.png"></label>
+                                </li>
+                                <li>
+                                    <input id='unipay' type='radio' name='payment'>
+                                    <label for='unipay'><img src="img/order/Unionpay_img.png"></label>
+                                </li>
+                                <li>
+                                    <input id='wechatpay' type='radio' name='payment'>
+                                    <label for='wechatpay'><img src="img/order/wechatpay.png"></label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class='opd_header_item hidden'>
+                    <p>是否需要发票</p>
+                </div>
+                <div class='opd_ifneedinvoice_wrapper hidden'>
+                    <ul>
+                        <li>
+                            <input class='no' id='opd_invoice_1' type='radio' name='opd_invoice'>
+                            <label for='opd_invoice_1'>否</label>
+                        </li>
+                        <li>
+                            <input class='yes' id='opd_invoice_2' type='radio' name='opd_invoice'>
+                            <label for='opd_invoice_2'>是</label>
+                        </li>
+                    </ul>
+                    <div class="opd_invoicedetial_wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td style="width:8%;">发票类别</td>
+                                <td style="width:10%;">发票类型</td>
+                                <td style="width:12%;">发票抬头</td>
+                                <td style="width:10%;">发票内容</td>
+                                <td class='opd_tdn_item' style="width:10%;">纳税人识别号</td>
+                                <td class='opd_registeredaddress_item' style="width:15%;">注册地址</td>
+                                <td style="width:10%;">注册电话</td>
+                                <td style="width:10%;">开户银行</td>
+                                <td class='opd_bankaccount_item' style="width:10%;">银行账户</td>
+                                <td style="width:5%;">操作</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    公司
+                                </td>
+                                <td>
+                                    普通发票
+                                </td>
+                                <td>无锡众志和达数据计算股份有限公司</td>
+                                <td>纪念册</td>
+                                <td>626644440001211555</td>
+                                <td>无锡众志和达数据计算股份有限公司</td>
+                                <td>626644440001211555</td>
+                                <td>无锡众志和达数据计算股份有限公司</td>
+                                <td>626644440001211555</td>
+                                <td>
+                                    <a href='javascript:;'>修改</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- <div class='opd_header_item'>
+                     <p>商品清单</p>
+                 </div>
+                 <div class='opd_productlist_wrapper'>
+                     <table>
+                         <thead>
+                         <tr>
+                             <td>
+                             </td>
+                             <td>
+                                 书册名称
+                             </td>
+                             <td>
+                                 配件及尺寸
+                             </td>
+                             <td>
+                                 数量
+                             </td>
+                             <td>
+                                 下单时间
+                             </td>
+                             <td>
+                                 实际支付金额
+                             </td>
+                         </tr>
+                         </thead>
+                         <tbody>
+                         <tr>
+                             <td class='opd_productimg_item'>
+                                 <a href="javascript:;">
+                                     <img src="img/default/checklist_cover_00000.jpg">
+                                 </a>
+                             </td>
+                             <td>
+                                 <a href="javascript:;">《月圆家团圆》</a>
+                             </td>
+                             <td>
+                                 <p>精装硬壳</p>
+                                 <p>别致小装14.5cm*21cm</p>
+                             </td>
+                             <td>
+                                 <span>1</span>本
+                             </td>
+                             <td>
+                                 <span>2015.11.25</span>
+                                 <span>16:36</span>
+                             </td>
+                             <td class='opd_orderinfoprice_item'>
+                                 ￥36.00
+                             </td>
+                         </tr>
+                         </tbody>
+                     </table>
+                 </div>-->
+                <div class='opd_header_item'>
+                    <p>确认商品及金额</p>
+                </div>
+                <div class='opd_sumprice_wrapper'>
+                    <div class='opd_orderinfo_wrapper'>
+                        <ul>
+                            <li><label>订单号：</label><span>201605260081704</span></li>
+                            <li><label>商品信息：</label><span>外钉PVC油边</span><br><span>普通尺寸</span><br><span>50P*2</span></li>
+                        </ul>
+                    </div>
+                    <div class='opd_subtotal_wrapper'>
+                        <ul>
+                            <li class='opd_mercprice_item'>
+                                <label>商品金额：</label>
+                                <strong>
+                                    ￥<span>38.00</span>
+                                </strong>
+                            </li>
+                            <li class='opd_freight_item'>
+                                <label>所需运费：</label>
+                                <strong>
+                                    ￥<span>00.00</span>
+                                </strong>
+                            </li>
+                            <li class='opd_privprice_item'>
+                                <label>优惠金额：</label>
+                                <strong>
+                                    ￥<span>00.00</span>
+                                </strong>
+                            </li>
+                        </ul>
+                        <div class='opd_subtotalprice_item'>
+                            <label>实际需支付：</label>
+                            <strong>
+                                ￥<span>38.00</span>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class='opd_confirm_wrapper'>
+                    <p class="tips"><span class="ybiconfont ybicon-infosign"></span>如需发票，请联系在线客服。</p>
+                    <div class='opd_confirmbtn_wrapper'>
+                        <a class='opd_confirm_item' href="javascript:;">提交支付</a>
+                    </div>
+                    <div class="btn_group">
+                        <a class="btn" href="javascript:;">&lt;返回修改订单</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--底部-->
+<div class="footer cm_min_width">
+    <div class="ft_link">
+        <ul>
+            <li>友情链接：</li>
+            <li>
+                <a title="苏州广告公司" target="_blank" href="http://www.yangsign.com">苏州广告公司</a>
+            </li>
+            <li>
+                <a title="包装盒印刷" target="_blank" href="http://www.fungoprinting.cn/">包装盒印刷</a>
+            </li>
+            <li>
+                <a title="包装盒厂家" target="_blank" href="http://www.dghengzhi.com/">包装盒厂家</a>
+            </li>
+            <li>
+                <a title="成都印刷厂" target="_blank" href="http://www.cdssysc.com/">成都印刷厂</a>
+            </li>
+            <li>
+                <a title="新东方教师资格网" target="_blank" href="http://jiaoshi.koolearn.com/">新东方教师资格网</a>
+            </li>
+            <li>
+                <a title="广州名片印刷" target="_blank" href="http://www.020yin.com/">广州名片印刷</a>
+            </li>
+            <li>
+                <a title="生日礼物" target="_blank" href="http://www.shenriliwu.com">生日礼物</a>
+            </li>
+            <li>
+                <a title="儿童淘气堡" target="_blank" href="http://www.mtylwj.com/">儿童淘气堡</a>
+            </li>
+            <li>
+                <a title="郑州印刷厂" target="_blank" href="http://www.xinmeiyin.com">郑州印刷厂</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ft_copyright">
+        <div><a href="http://www.miitbeian.gov.cn" target="_blank">Copyright&nbsp;&nbsp;2015&nbsp;&nbsp;by&nbsp;&nbsp;无锡北方数据计算股份有限公司
+            &nbsp;&nbsp;&nbsp;&nbsp;苏ICP备11087253号-2</a></div>
+    </div>
+</div>
+<!--添加收货地址-->
+<div id="new_address" class="add_new_address hidden">
+    <form>
+        <div class="item">
+            <label for="recipients"><b>*</b>收货人：</label>
+            <input id="recipients" class="form-control" type="text" value="">
+        </div>
+        <div class="item">
+            <label for="place"><b>*</b>所在地区：</label>
+            <input id="place" class="form-control" type="text" name="place" />
+            <button type="button" id="input_city">选择</button>
+        </div>
+        <div class="item">
+            <label for="detail_place"><b>*</b>详细地址：</label>
+            <input id="detail_place" class="form-control" type="text" value="">
+        </div>
+        <div class="item">
+            <label for="mobile"><b>*</b>手机号：</label>
+            <input id="mobile" class="form-control" type="text" value="">
+        </div>
+        <div class="item">
+            <label for="email">邮箱：</label>
+            <input id="email" class="form-control" type="email" value="">
+        </div>
+        <div class="btn save">
+            <a href="javascript:;">保存收货地址</a>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src='assets/js/jquery.artDialog.js?skin=yb3'></script>
+<script type="text/javascript" src="assets/js/cityScript.js"></script>
+<script type="text/javascript" src="assets/js/cityselector.js"></script>
+<script>
+    $(document).ready(function(){
+        addNewAddress();
+        citySelector();
+    });
+    function citySelector() {
+        LazyLoad.css(["assets/css/cityStyle.css"], function() {
+            LazyLoad.js(["assets/js/cityScript.js"], function() {
+                var test = new citySelector.cityInit("input_city");
+            });
+        });
+    }
+    //添加新收货地址
+    function addNewAddress() {
+        $('.opd_addnewaddress_item').click(function() {
+            art.dialog({
+                id: 'new_address',
+                title: '添加收货地址',
+                lock: true,
+                content: document.getElementById('new_address')
+            });
+        });
+        $('.btn.save').click(function() {
+            art.dialog.list['new_address'].close();
+        });
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,819 @@
+@charset "UTF-8";
+.create_order {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    margin: 0;
+    padding: 25px 0;
+    background-color: #f5f5f5;
+}
+
+.opd_wrapper {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.opd_wrapper .opd_title {
+    line-height: 90px;
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+}
+
+.opd_wrapper .opd_title h1 {
+    font-size: 25px;
+    float: left;
+    color: #666;
+}
+
+.opd_wrapper .opd_title h1 span {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+    background: url('../img/icon/shopping_cart.png') no-repeat center;
+}
+
+.opd_title .progress_bar {
+    float: right;
+}
+
+.progress_bar ul li {
+    font-size: 14px;
+    line-height: 35px;
+    position: relative;
+    display: inline-block;
+    width: 128px;
+    text-align: center;
+    color: #ccc;
+}
+
+.progress_bar ul li::after {
+    position: absolute;
+    z-index: 0;
+    top: 27px;
+    left: 50%;
+    width: 128px;
+    height: 6px;
+    content: ' ';
+    background-color: #ccc;
+}
+
+.progress_bar ul li:last-child::after {
+    height: 0;
+}
+
+.progress_bar ul li.cur:after {
+    background-color: #999;
+}
+
+.progress_bar ul li.finish:after {
+    background-color: #00a388;
+}
+
+.progress_bar ul li div {
+    line-height: 26px;
+    position: relative;
+    z-index: 1;
+    width: 26px;
+    height: 26px;
+    margin: 16px auto 0;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #ccc;
+}
+
+.progress_bar ul li.cur div {
+    background-color: #999;
+}
+
+.progress_bar ul li.finish div {
+    background-color: #00a388;
+}
+
+.progress_bar ul li div span {
+    display: block;
+}
+
+.progress_bar ul li div i {
+    display: none;
+}
+
+.progress_bar ul li.cur p {
+    color: #999;
+}
+
+.progress_bar ul li.finish p {
+    color: #00a388;
+}
+
+.opd_checklist_wrapper,
+.opd_checklist_wrapper table {
+    width: 100%;
+    background-color: #fff;
+}
+
+.opd_checklist_wrapper {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.opd_checklist_wrapper thead tr {
+    height: 50px;
+    border-top: 3px solid #00a388;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.opd_checklist_wrapper thead tr th {
+    font-size: 14px;
+    color: #333;
+    border: 0;
+}
+
+.opd_checklist_wrapper thead tr th:nth-child(1),
+.opd_checklist_wrapper thead tr th:nth-child(2) {
+    width: 200px;
+}
+
+.opd_checklist_wrapper thead tr th:nth-child(3) {
+    width: 120px;
+}
+
+.opd_checklist_wrapper thead tr th:nth-child(4) {
+    width: 130px;
+}
+
+.opd_checklist_wrapper thead tr th:nth-child(5) {
+    width: 130px;
+}
+
+.opd_checklist_wrapper thead tr th:nth-child(6) {
+    width: 120px;
+}
+
+.opd_checklist_wrapper thead tr th:nth-child(7) {
+    width: 100px;
+}
+
+.opd_checklist_wrapper tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.opd_checklist_wrapper tbody td {
+    text-align: center;
+}
+
+.opd_product_info {
+    padding: 10px 0;
+}
+
+.opd_product_info h5 {
+    font-size: 12px;
+    margin: 10px auto;
+    color: #333;
+}
+
+.opd_product_info .cover {
+    line-height: 125px;
+    width: 100px;
+    height: 125px;
+    margin: 15px auto;
+    padding: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.opd_product_info .cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.opd_product_info a {
+    font-size: 12px;
+    line-height: 20px;
+    display: block;
+    width: 60px;
+    height: 22px;
+    margin: 10px auto;
+    text-align: center;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.opd_product_info a:hover {
+    color: #fff;
+    background-color: #00a388;
+}
+
+.opd_sketch_item {
+    padding: 10px 0;
+}
+
+.opd_sketch_item select {
+    display: block;
+    width: 160px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.opd_sketch_item img {
+    width: 106px;
+    height: 106px;
+    margin: 16px auto;
+    border: 2px solid #ccc;
+    border-radius: 100%;
+}
+
+.opd_sketch_item label {
+    font-size: 12px;
+    display: block;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #666;
+}
+
+.opd_checklist_wrapper .opd_actions a {
+    font-size: 14px;
+    line-height: 30px;
+    color: #999;
+}
+
+.opd_checklist_wrapper .opd_actions a i {
+    font-size: 14px;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.opd_checklist_wrapper .opd_actions div > a:hover {
+    color: #00a388;
+}
+
+.opd_checklist_wrapper .opd_actions .share {
+    position: relative;
+}
+
+.opd_actions .share:hover .common_sharelist_wrapper {
+    top: 30px;
+    left: -32px;
+    display: block;
+}
+
+.opd_actions .share .common_sharelist_wrapper ul li a {
+    font-size: 24px;
+}
+
+.opd_summarize_wrapper {
+    position: relative;
+    width: 100%;
+    border-right: 1px solid #ddd;
+    border-bottom: 6px solid #d9d9d9;
+    border-left: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.opd_preferential_wrapper {
+    font-size: 14px;
+    float: left;
+    padding: 20px 30px;
+    color: #777;
+}
+
+.opd_coupon_wrapper {
+    padding: 10px 0 0 25px;
+}
+
+.opd_coupon_wrapper > div {
+    position: relative;
+    margin: 0 0 10px;
+}
+
+.opd_coupon_wrapper label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.opd_coupon_wrapper select {
+    width: 225px;
+}
+
+.opd_coupon_wrapper .common_btn {
+    margin: 0 10px;
+}
+
+.opd_coupon_wrapper .ybcommon_queryicon_item {
+    position: absolute;
+    top: 3px;
+    left: -20px;
+}
+
+.opd_privilege_wrapper {
+    font-size: 14px;
+    float: left;
+}
+
+.opd_privilege_wrapper p {
+    margin: 10px 0 0;
+    padding-left: 25px;
+}
+
+.opd_privilege_wrapper p a {
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 0 0;
+    text-align: center;
+    color: #000;
+    border: 1px solid #999;
+}
+
+.opd_privilege_wrapper ul {
+    margin: 0 0 0 25px;
+}
+
+.opd_privilege_wrapper ul li {
+    margin: 10px 0 0;
+}
+
+.opd_privilege_wrapper ul li label {
+    color: #f40;
+}
+
+.opd_subtotal_wrapper {
+    float: right;
+    padding: 10px 15px;
+}
+
+.opd_subtotal_wrapper ul {
+    overflow: hidden;
+}
+
+.opd_subtotal_wrapper ul li {
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.opd_subtotal_wrapper ul li label {
+    font-size: 14px;
+    display: inline-block;
+    width: 6em;
+    text-align: right;
+    color: #666;
+}
+
+.opd_subtotalprice_item {
+    /* float: right; */
+    margin: 10px 0 15px;
+    text-align: right;
+}
+
+.opd_subtotalprice_item strong {
+    font-size: 30px;
+    display: inline-block;
+    color: #f40;
+}
+
+.opd_confirm_item {
+    font-size: 16px;
+    line-height: 40px;
+    float: right;
+    width: 145px;
+    height: 40px;
+    margin: 10px 0 15px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #f40;
+}
+
+.opd_confirm_item:hover {
+    background-color: #f60;
+}
+
+.opd_receivingaddress_wrapper {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.opd_header_item {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border-top: 3px solid #00a388;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.opd_header_item p {
+    font-size: 16px;
+    line-height: 50px;
+    margin: 0 20px;
+    color: #333;
+}
+
+.opd_addnewaddress_item {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #999;
+}
+
+.opd_addnewaddress_item span {
+    font-size: 14px;
+    padding: 0 3px;
+}
+
+.opd_addnewaddress_item:hover {
+    color: #111;
+}
+
+.opd_addressandmode_wrapper {
+    width: 100%;
+}
+
+.opd_addressandmode_wrapper table {
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+.opd_addressandmode_wrapper table tr {
+    box-sizing: border-box;
+    height: 45px;
+}
+
+.opd_addressandmode_wrapper tbody tr:hover {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8fdf5;
+}
+
+.opd_addressandmode_wrapper td {
+    padding: 10px 0;
+}
+
+.opd_addressandmode_wrapper td:first-child {
+    padding-left: 20px;
+}
+
+.opd_addressandmode_wrapper label,
+.opd_addressandmode_wrapper span {
+    font-size: 14px;
+}
+
+.opd_editaddress_wrapper a {
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 4px;
+    color: #666;
+}
+
+.opd_editaddress_wrapper div {
+    display: none;
+    float: right;
+    width: 210px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: right;
+}
+
+.opd_addressandmode_wrapper tbody tr:hover .opd_editaddress_wrapper div, .opd_editaddress_wrapper.default div {
+    display: block;
+}
+
+.opd_editaddress_wrapper.default div .modify,
+.opd_editaddress_wrapper.default div .delete {
+    display: none;
+}
+
+.opd_addressandmode_wrapper tbody tr:hover div .modify,
+.opd_addressandmode_wrapper tbody tr:hover div .delete {
+    display: inline-block;
+}
+
+.opd_editaddress_wrapper a.default_btn {
+    font-weight: bold;
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    width: 72px;
+    margin: 0 4px 0 10px;
+    cursor: default;
+    text-align: center;
+    color: #f5c8c8;
+    border: 2px solid #f5c8c8;
+    border-radius: 2px;
+}
+
+.opd_editaddress_wrapper a.set_default {
+    width: 72px;
+    text-align: center;
+    color: #f40;
+}
+
+.opd_editaddress_wrapper .set_default:hover {
+    color: #000;
+}
+
+.opd_sumprice_wrapper {
+    overflow: hidden;
+}
+
+.opd_sumprice_wrapper .opd_subtotal_wrapper {
+    padding: 0 50px 0 15px;
+}
+
+.opd_sumprice_wrapper .opd_subtotal_wrapper ul li {
+    float: none;
+    margin: 10px 0 0;
+    text-align: right;
+}
+
+.opd_confirm_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    padding: 0 50px 0 15px;
+    border-bottom: 6px solid #d9d9d9;
+    background-color: #f2f2f2;
+}
+
+.opd_confirm_wrapper .tips {
+    font-size: 14px;
+    line-height: 60px;
+    float: left;
+    color: #999;
+}
+
+.opd_confirm_wrapper .tips span {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.opd_confirm_wrapper .btn_group {
+    float: right;
+    margin: 15px 25px 0 0;
+}
+
+.opd_confirm_wrapper .btn_group .btn {
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #666;
+}
+
+.opd_confirm_wrapper .btn_group .btn:hover {
+    color: #f40;
+}
+
+.opd_modeofpayment_wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.opd_modeofpayment_wrapper > ul {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+.opd_modeofpayment_wrapper li:first-child {
+    margin: 0 0 10px 0;
+}
+
+.opd_modeofpayment_wrapper > ul > li {
+    overflow: hidden;
+}
+
+.opd_modeofpayment_wrapper > ul > li > label {
+    font-size: 13px;
+    float: left;
+    margin: 15px 0 0 0;
+}
+
+.opd_modeofpayment_wrapper li span {
+    line-height: 19px;
+    float: left;
+    margin: 15px 0 0 0;
+}
+
+.opd_modeofpayment_wrapper li ul {
+    float: left;
+    width: 200px;
+}
+
+.opd_modeofpayment_wrapper li ul li input {
+    float: left;
+    margin: 18px 10px 0 10px;
+}
+
+.opd_modeofpayment_wrapper li ul li label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.opd_modeofpayment_wrapper li:first-child span {
+    font-size: 18px;
+}
+
+.opd_orderinfo_wrapper {
+    font-size: 16px;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 0;
+    color: #333;
+}
+
+.opd_sumprice_wrapper .opd_orderinfo_wrapper {
+    float: left;
+    max-width: 600px;
+}
+
+.opd_orderinfo_wrapper ul li {
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.opd_orderinfo_wrapper ul li:last-child span {
+    display: inline-block;
+    text-indent: 80px;
+}
+
+.opd_orderinfo_wrapper ul li:last-child span:first-of-type {
+    display: inline;
+}
+
+.add_new_address {
+    font-size: 14px;
+    width: 600px;
+}
+
+.add_new_address .item {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+
+.add_new_address label {
+    line-height: 45px;
+    display: inline-block;
+    width: 85px;
+    height: 45px;
+    text-align: right;
+}
+
+.add_new_address label b {
+    color: #f00;
+}
+
+.form-control {
+    line-height: 1.42857143;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.add_new_address .form-control {
+    display: inline-block;
+    width: 230px;
+    height: 30px;
+}
+
+.add_new_address button {
+    line-height: 25px;
+    height: 25px;
+    margin-left: 10px;
+    padding: 0 12px;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background: #e2e2e2 linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 25px) repeat scroll 0 0;
+}
+
+.add_new_address button:hover,
+.recharge_con li a:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .125) inset;
+}
+
+.add_new_address .btn {
+    line-height: 30px;
+    width: 160px;
+    height: 30px;
+    margin: 20px 90px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #f40;
+}
+
+.add_new_address .btn a {
+    color: #fff;
+}
+
+.opd_paymentsuccess_wrapper, .opd_paymentfailed_wrapper {
+    overflow: hidden;
+    text-align: center;
+}
+.opd_paymentresult_wrapper {
+    display: inline-block;
+    width: 380px;
+    margin: 20px 0 20px 30px;
+    padding-right: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #ddd;
+}
+.opd_paymentresult_wrapper h2 {
+    font-size: 33px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #f40;
+}
+.opd_paymentresult_wrapper p {
+    font-size: 14px;
+    line-height: 56px;
+}
+.opd_paymentsuccess_wrapper .opd_paymentresult_wrapper span {
+    display: block;
+    width: 215px;
+    height: 100px;
+    margin: 20px 0 10px 60px;
+    background: url(../img/truck.png) 0 0 no-repeat;
+}
+.opd_successbind_wrapper {
+    display: inline-block;
+    width: 370px;
+    height: 200px;
+    margin: 60px 30px;
+    padding: 35px 35px;
+    vertical-align: middle;
+    border: 1px solid #e2e2e2;
+    background-color: #f8fdf5;
+}
+.opd_successbind_wrapper p {
+    font-size: 12px;
+    color: #999;
+}
+.opd_successbind_wrapper ul {
+    overflow: hidden;
+    width: 100%;
+    margin: 60px auto;
+}
+.opd_successbind_wrapper li {
+    display: inline-block;
+    width: 45%;
+}
+.opd_successbind_wrapper ul li a {
+    font-size: 18px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #00a388;
+}
+.opd_successbind_wrapper ul li span {
+    font-size: 21px;
+    width: 1em;
+    height: 30px;
+    vertical-align: middle;
+}
+.opd_successbind_wrapper ul li label {
+    line-height: 36px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.opd_successbind_wrapper ul li a:hover label {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.opd_revieworderlist_item {
+    font-size: 13px;
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    color: #aaa;
+}
+.opd_revieworderlist_item:hover label {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.opd_paymentfailed_wrapper .opd_revieworderlist_item {
+    width: 110px;
+    margin: 30px auto;
+    color: #00a388;
+}
