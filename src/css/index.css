@@ -86,29 +86,57 @@
 }
 
 .yc_index_con .nth1 .con h1 {
+    position: relative;
+    left: -316px;
     width: 516px;
     height: 60px;
     background-position: 0 0;
+    transition: all .6s ease-in-out;
+    opacity: 0;
+}
+
+.yc_index_con .swiper-slide-active .con h1 {
+    opacity: 1;
+    left: 0;
 }
 
 .yc_index_con .nth1 .con p {
+    position: relative;
+    right: -316px;
     margin: 25px 0;
     width: 516px;
     height: 48px;
     background-position: 0 -63px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    transition: all .6s ease-in-out;
+    opacity: 0;
+}
+
+.yc_index_con .swiper-slide-active .con p {
+    opacity: 1;
+    right: 0;
 }
 
 .yc_index_con .nth1 .con span {
+    position: relative;
+    bottom: -48px;
     display: block;
     margin: 64px 0;
     width: 516px;
     height: 48px;
     background-position: 0 -118px;
+    transition: all .6s ease-in-out .2s;
+    opacity: 0;
+}
+
+.yc_index_con .swiper-slide-active .con span {
+    opacity: 1;
+    bottom: 0;
 }
 
 .start_made {
+    position: relative;
     display: block;
     margin: 25px auto;
     width: 224px;
@@ -119,11 +147,22 @@
     color: #fff;
     background-color: #f40;
     border-radius: 24px;
-    transition: all .3s;
+}
+
+.yc_index_con .start_made{
+    opacity: 0;
+    bottom: -60px;
+    transition: all .6s ease-in-out .2s;
+}
+
+.yc_index_con .swiper-slide-active .start_made{
+    opacity: 1;
+    bottom: 0;
 }
 
 .start_made:hover {
-    background-color: #f30;
+    background-color: #e23e02;
+    box-shadow: inset 0 0 5px #000;
 }
 
 .start_made i {
@@ -144,19 +183,33 @@
 }
 
 .yc_index_con .con .caption {
+    position: relative;
     margin-top: 25px;
     text-align: center;
     font-size: 48px;
     color: #000;
+    top: -64px;
+    transition: all .6s ease-in-out;
+}
+
+.swiper-slide-active .con .caption{
+    top: 0;
 }
 
 .yc_index_con .con .smaller {
+    position: relative;
+    bottom: -64px;
     margin: 15px 0 55px;
     text-align: center;
     font-size: 28px;
     color: #ccc;
     word-spacing: 10px;
     text-transform: uppercase;
+    transition: all .6s ease-in-out;
+}
+
+.yc_index_con .swiper-slide-active .con .smaller{
+    bottom: 0;
 }
 
 .nth4 .con .smaller {
@@ -185,9 +238,16 @@
 
 .nth2 .steps li {
     position: relative;
+    left: -26%;
     float: left;
     width: 24%;
     margin: 0 .5%;
+    opacity: 0;
+}
+
+.swiper-slide-active .steps li {
+    left: 0;
+    opacity: 1;
 }
 
 .nth2 .steps li i {
@@ -200,18 +260,22 @@
 
 .nth2 .steps .step_one {
     border-top: 3px solid #ff9c79;
+    transition: all .6s ease-in-out 0s;
 }
 
 .nth2 .steps .step_two {
     border-top: 3px solid #79ff7f;
+    transition: all .6s ease-in-out .2s;
 }
 
 .nth2 .steps .step_three {
     border-top: 3px solid #79c4ff;
+    transition: all .6s ease-in-out .4s;
 }
 
 .nth2 .steps .step_four {
     border-top: 3px solid #f7a0ed;
+    transition: all .6s ease-in-out .6s;
 }
 
 .nth2 .steps .step_one i {
@@ -272,6 +336,7 @@
 }
 
 .nth3 .advantages {
+    position: relative;
     margin: 0 auto;
     width: 810px;
     clear: both;
@@ -283,6 +348,35 @@
     float: left;
     width: 240px;
     margin: 0 15px;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+
+.advantages .time{
+    left: -240px;
+}
+
+.swiper-slide-active .advantages .time{
+    opacity: 1;
+    left: 0;
+}
+
+.advantages .money{
+    bottom: -332px;
+}
+
+.swiper-slide-active .advantages .money{
+    opacity: 1;
+    bottom: 0;
+}
+
+.advantages .power{
+    right: -240px;
+}
+
+.swiper-slide-active .advantages .power{
+    opacity: 1;
+    right: 0;
 }
 
 .advantages li i {
@@ -380,6 +474,14 @@ li:hover span.cr {
     position: relative;
     width: 904px;
     margin: 45px auto 55px;
+    opacity: 0;
+    bottom: -328px;
+    transition: all .6s ease-in-out;
+}
+
+.swiper-slide-active .users_slide{
+    opacity: 1;
+    bottom: 0;
 }
 
 .users_slide li {
