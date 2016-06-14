@@ -62,7 +62,7 @@
 }
 
 .yc_index_con .nth3 {
-    background: #fff url("../img/index/section_bg_three.png") no-repeat;
+    background: #fff url("../img/index/section_bg_three.png") no-repeat right top;
     background-size: cover;
 }
 
@@ -75,7 +75,9 @@
     left: 50%;
     top: 50%;
     width: 976px;
-    margin: -123px 0 0 -488px;
+    margin-left: -488px;
+    padding-top: 73px;
+    box-sizing: border-box;
 }
 
 .yc_index_con .nth1 .con h1,
@@ -152,7 +154,7 @@
 .yc_index_con .start_made{
     opacity: 0;
     bottom: -60px;
-    transition: all .6s ease-in-out .2s;
+    transition: bottom .6s ease-in-out .2s;
 }
 
 .yc_index_con .swiper-slide-active .start_made{
@@ -161,6 +163,11 @@
 }
 
 .start_made:hover {
+    background-color: #f30;
+
+}
+
+.start_made:active{
     background-color: #e23e02;
     box-shadow: inset 0 0 5px #000;
 }
@@ -223,7 +230,6 @@
 .yc_index_con .nth2 .con {
     position: absolute;
     top: 50%;
-    margin-top: -314px;
     width: 100%;
 }
 
@@ -331,7 +337,6 @@
 .yc_index_con .nth3 .con {
     position: absolute;
     top: 50%;
-    margin-top: -313px;
     width: 100%;
 }
 
@@ -468,6 +473,15 @@ li:hover span.cr {
 .advantages .power b,
 .advantages .power:hover p {
     color: #72ada7;
+}
+
+.yc_index_con .nth4 .con{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    box-sizing: border-box;
 }
 
 .nth4 .users_slide {

@@ -62,6 +62,18 @@ textarea:focus {
     background: url('../img/header_shadow_bg.png') repeat-x;
 }
 
+.common_btn {
+    padding: 5px 10px;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: -ms-linear-gradient(top, #fff, #eee);
+}
+
+.common_btn:hover{
+    color: #00a388;
+}
+
 /*common head*/
 .yc_cm_header {
     position: relative;
@@ -236,4 +248,240 @@ textarea:focus {
         float: none;
         text-align: center;
     }
+}
+/*common ? tips*/
+.ybcommon_queryicon_item {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.ybcommon_queryicon_item span {
+    position: relative;
+    display: block;
+    margin: 0;
+    color: #666;
+}
+.ybcommon_queryicon_item div {
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    z-index: 3;
+    top: 22px;
+    left: -100px;
+    min-width: 190px;
+    max-width: 300px;
+    padding: 5px 10px;
+    text-align: left;
+    color: #000;
+    border: 1px solid #efefef;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #ccc;
+}
+.ybcommon_queryicon_item:hover div{
+    display: block;
+}
+.ybcommon_queryicon_item div:before,
+.ybcommon_queryicon_item div:after {
+    position: absolute;
+    top: -8px;
+    left: 101px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 0 6px 8px 6px;
+    border-style: solid;
+}
+.ybcommon_queryicon_item div:before {
+    border-color: transparent transparent #000 transparent;
+}
+.ybcommon_queryicon_item div:after {
+    border-color: transparent transparent #fff transparent;
+}
+.ybcommon_queryicon_item .ybcommon_qimoredetail_btn {
+    display: block;
+    width: 4em;
+    margin: 10px auto 0;
+    padding: 0 5px;
+    color: #000;
+    border: 1px solid #999;
+}
+/*common counter*/
+.ybcommon_counter_item {
+    width: 85px;
+    height: 25px;
+    border: 1px solid #e5e5e5;
+    background-color: #f0f0f0;
+}
+.ybcommon_counter_item a {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    float: left;
+    width: 25px;
+    height: 100%;
+    text-align: center;
+    color: #a9a9a9;
+}
+.ybcommon_counter_item a:hover {
+    color: #000;
+}
+.ybcommon_counter_item input[type=text] {
+    font-size: 15px;
+    float: left;
+    box-sizing: content-box;
+    width: 33px;
+    height: 100%;
+    margin-top: -1px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+/*common share*/
+.common_sharelist_wrapper
+{
+    font-size: 13px;
+
+    position: absolute;
+    z-index: 1;
+
+    display: none;
+
+    box-sizing: border-box;
+    width: 185px;
+    min-height: 50px;
+    padding: 10px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.common_sharelist_wrapper::before {
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -9px;
+    content: ' ';
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+    border-left: 9px solid transparent;
+}
+
+.common_sharelist_wrapper::after
+{
+    position: absolute;
+    z-index: 0;
+    top: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -9px;
+    content: ' ';
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #ddd;
+    border-left: 9px solid transparent;
+}
+
+.common_sharelist_wrapper ul
+{
+    overflow: hidden;
+}
+
+.common_sharelist_wrapper ul li
+{
+    float: left;
+    overflow: hidden;
+
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 10px;
+}
+
+.common_sharelist_wrapper ul li:first-child
+{
+    margin: 0;
+}
+
+.common_sharelist_wrapper ul li a
+{
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #abaebe;
+    background-color: transparent!important;
+}
+
+.common_sharelist_wrapper ul li a:hover
+{
+    box-shadow: none;
+}
+.common_sharelist_wrapper .weibo a:hover,
+.common_sharelist_wrapper .weibo.active a
+{
+    color: #d8282a;
+}
+
+.common_sharelist_wrapper .qzone a:hover,
+.common_sharelist_wrapper .qzone.active a
+{
+    color: #ffd074;
+}
+
+.common_sharelist_wrapper .wechat a:hover,
+.common_sharelist_wrapper .wechat.active a
+{
+    color: #97e23f;
+}
+
+.common_sharelist_wrapper .renren a:hover,
+.common_sharelist_wrapper .renren.active a
+{
+    color: #217dc6;
+}
+
+.common_sharelist_wrapper .QQ a:hover,
+.common_sharelist_wrapper .QQ.active a
+{
+    color: #217dc6;
+}
+
+.common_serialnumber_item {
+    display: inline-block;
+    vertical-align: middle;
+}
+.common_serialnumber_item li {
+    float: left;
+    width: 87px;
+}
+.common_serialnumber_item li:first-child {
+    width: 67px;
+}
+
+.common_serialnumber_item li span {
+    line-height: 30px;
+    display: inline-block;
+    width: 1em;
+    margin: 0 2px;
+    text-align: center;
+}
+
+.common_serialnumber_item input {
+    float: right;
+    box-sizing: border-box;
+    width: 5em;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ddd inset;
 }
