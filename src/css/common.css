@@ -189,6 +189,12 @@ input:focus, textarea:focus {
 	text-align: center;
 	color: #666;
 }
+.footer .ft_link{
+    float: left;
+}
+.footer .ft_copyright{
+    float: right;
+}
 .footer .ft_link ul li {
 	display: inline-block;
 	margin: 0 10px 0 0;
@@ -198,6 +204,17 @@ input:focus, textarea:focus {
 }
 .footer .ft_link ul li a:hover, .footer .ft_copyright a:hover {
 	color: #00a388;
+}
+.footer .ft_link ul li a:hover,
+.footer .ft_copyright a:hover{
+    color: #00a388;
+}
+@media only screen and (max-width: 1024px) {
+    .footer .ft_link,
+    .footer .ft_copyright{
+        float: none;
+        text-align: center;
+    }
 }
 
 /*~~~~~~~~~~commcon_crumb_wrapper~~~~~~~~~~*/
@@ -268,4 +285,3 @@ input:focus, textarea:focus {
 	text-align: center;
 	border-radius: 3px;
 	background-color: #cccccc;
-}
