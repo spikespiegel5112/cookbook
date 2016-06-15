@@ -67,6 +67,12 @@ input:focus, textarea:focus {
     color: #00a388;
 }
 
+label.error, div.error {
+    font-size: 12px !important;
+    margin-bottom: 9px;
+    color: red;
+}
+
 /*common head*/
 
 .yc_cm_header {
@@ -465,8 +471,90 @@ input:focus, textarea:focus {
     border-radius: 4px;
     box-shadow: 0 0 5px #ddd inset;
 }
+/*common pagination*/
+.pagination_wrap{
+    position: relative;
+    clear: both;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.turn_btn > a,
+.turn_btn > span
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
 
+    display: inline-block;
 
+    height: 30px;
+    margin: 0 3px;
+    padding: 0 10px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    background-color: #ccc;
+}
+.turn_btn > a
+{
+    border: 0;
+}
+
+.turn_btn > span
+{
+    cursor: default;
+}
+
+.turn_btn > span.current
+{
+    color: #fff;
+    border: 0;
+    background-color: #79bd8f;
+}
+
+.turn_btn > span.current.prev,
+.turn_btn > span.current.next
+{
+    display: none;
+}
+
+.turn_btn > span.prev,
+.turn_btn > span.next
+{
+    color: #fff;
+    background-color: #ccc;
+}
+
+.turn_btn > a:hover
+{
+    color: #fff;
+    background-color: #999;
+}
+/*common empty wrap*/
+.pc_empty_item {
+    overflow: hidden;
+    width: 220px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.pc_empty_item .avatar_1 {
+    width: 60px;
+    height: 110px;
+    background: url(../img/icon/empty_avatar_1_00000.png);
+    background-size: cover;
+}
+.pc_empty_item label {
+    font-size: 14px;
+    line-height: 2;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #a8a8a8;
+}
 /*~~~~~~~~~~commcon_crumb_wrapper~~~~~~~~~~*/
 
 .commcon_crumb_wrapper ul {
