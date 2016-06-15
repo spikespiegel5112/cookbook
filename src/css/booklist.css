@@ -2,7 +2,7 @@
 	margin: 0 0 30px 0;
 	width: 100%;
 	height: 450px;
-	background-image: url(../img/banner/booklist_banenr_bg_00000.jpg);
+	background-image: url(../img/banner/booklist_banner_bg_00000.jpg);
 }
 .booklist_bannercontent_wrapper{
 	margin: 0 auto;
@@ -107,14 +107,18 @@
 	width: 285px;
 }
 .booklist_cover_wrapper .cover{
-	display: block;
+	display: block!important;
+	padding: 0 15px;
+	width: 255px;
 	border: 1px solid #ccc;
 	background-color: #eeeeee;
+	font-size: 0;
+	text-align: center;
 }
 .booklist_cover_wrapper .cover img{
-	display: block;
+	display: inline-block;
 	margin: 10px auto;
-	width: 255px;
+	width: 50%;
 }
 .booklist_cover_wrapper .title{
 	margin: 10px 0;
@@ -171,7 +175,7 @@
 	color: #fff;
 	text-align: center;
 	font-size: 16px;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 .booklist_cover_wrapper .make_btn:hover{
 	background-color: #1B7D67;
