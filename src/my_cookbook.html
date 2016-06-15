@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>我的菜谱</title>
+    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+    <!-- build:css css/all.min.css -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/order.css" type="text/css" media="all">
+    <!-- endbuild -->
+</head>
+
+<body>
+<div class="yc_cm_header cm_min_width">
+    <div class="shortcut_container">
+        <div class="shortcut">
+            <p class="login_info">
+                <span class="welcome_info">
+                    <a target="_top" class="" href="javascript:;" title="">登录</a>
+                </span>
+                <span class="welcome_info">
+                    <a class="logout" target="_top" href="javascript:;">注册</a>
+                </span>
+            </p>
+            <ul class="quick_menu">
+                <li>
+                    <a href="javascript:;"><i class="ybiconfont ybicon-star"></i>收藏</a>
+                </li>
+                <li>
+                    <a href="javascript:;">问题反馈</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main_nav">
+        <div class="header_con">
+            <div class="logo">
+                <a href="_index.html"><img src="img/logo.png"></a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a class="active" href="_index.html">首页</a></li>
+                    <li><a href="javascript:;">菜谱模板</a></li>
+                    <li><a href="javascript:;">菜谱款式</a></li>
+                    <li><a href="javascript:;">定制流程</a></li>
+                    <li><a href="javascript:;">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="hot_line">
+                <a href="javascript:;"><img src="img/hot_line.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="cm_header_shadow"></div>
+</div>
+<div class="main_container">
+    <div class="order_manage">
+        <div class="personal_content_box">
+            <div class="commcon_crumb_wrapper">
+                <ul>
+                    <li>
+                        <a href="_index.html">首页</a>
+                    </li>
+                    <li>
+                        <label>&nbsp;&gt;&nbsp;</label>
+                        <a href="javascript:;">我的菜谱</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tool_wrap">
+                <div class="search_bar">
+                    <form name="" action="">
+                        <input class="input" placeholder="请输入您想要查找的内容" type="text" name="key" id="search">
+                        <input class="search_btn" type="submit" value="">
+                        <span class="ybiconfont ybicon-search search_ico"></span>
+                    </form>
+                </div>
+            </div>
+            <div class="hr">
+                <div class="green"></div>
+                <div class="gray"></div>
+            </div>
+            <div class="bookshelf_wrap">
+                <div class="filter_wrap">
+                    <label class="check_all"><input type="checkbox" name="checkBook" value="">全选</label>
+                    <div class="filter_group hd">
+                        <a class="on" href="javascript:;">最近编辑</a>
+                        <a href="javascript:;">全部菜谱</a>
+                        <a href="javascript:;">回收站</a>
+                    </div>
+                    <div class="btns">
+                        <a class="new_book" href="javascript:;">创建新书册</a>
+                        <a class="printings disabled" href="javascript:;">批量下单印刷</a>
+                    </div>
+                </div>
+                <div class="bd">
+                    <div class="bookshelf">
+                        <div class='pc_empty_item hidden'>
+                            <span class='avatar_1'></span>
+                            <label>您最近没有编辑的书册！</label>
+                        </div>
+                        <ul class="">
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <a href="javascript:;">入册<b>0</b>张/缺<b>46</b>张</a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <a href="javascript:;">入册<b>0</b>张/缺<b>46</b>张</a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_03.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <a href="javascript:;">入册<b>0</b>张/缺<b>46</b>张</a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_03.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <a href="javascript:;">入册<b>0</b>张/缺<b>46</b>张</a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagination_wrap">
+                            <div class="turn_btn hidden">
+                                <span class="prev"> < </span>
+                                <span class="current">1</span>
+                                <a>2</a>
+                                <a>3</a>
+                                <span class="">…</span>
+                                <a>12</a>
+                                <a>13</a>
+                                <a class="next"> > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookshelf">
+                        <div class='pc_empty_item hidden'>
+                            <span class='avatar_1'></span>
+                            <label>还没有书册，赶快去<a href="javascript:;">创建</a>吧！</label>
+                        </div>
+                        <ul class="">
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <input type="checkbox" name="checkBook" value="">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagination_wrap">
+                            <div class="turn_btn">
+                                <span class="prev"> < </span>
+                                <span class="current">1</span>
+                                <a>2</a>
+                                <a>3</a>
+                                <span class="">…</span>
+                                <a>12</a>
+                                <a>13</a>
+                                <a class="next"> > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--回收站class:recycle_bin-->
+                    <div class="bookshelf recycle_bin">
+                        <div class='pc_empty_item hidden'>
+                            <span class='avatar_1'></span>
+                            <label>回收站是空的！</label>
+                        </div>
+                        <ul>
+                            <li class="grid">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                    <a href="javascript:;">彻底删除</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                    <a href="javascript:;">彻底删除</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                    <a href="javascript:;">彻底删除</a>
+                                </div>
+                            </li>
+                            <li class="grid">
+                                <div class="display">
+                                    <a href="javascript:;">
+                                        <div class="cover">
+                                            <img src="img/sample/cookbook_02.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="describe">
+                                    <div class="info">
+                                        <a href="javascript:;"><h4 class="name">《菜谱模板名称XXX》</h4></a>
+                                        <p class="time">创建日期：<span>2016-03-21</span></p>
+                                        <div class="config">
+                                            <a href="javascript:;"><span>硬壳分体外铜钉</span></a>
+                                            <span>36P</span>
+                                            <a href="javascript:;"><span>可上传照片<b>40</b>张</span></a>
+                                        </div>
+                                        <div class="btn_group">
+                                            <div class="btn preview">
+                                                <a href="javascript:;">预览</a>
+                                            </div>
+                                            <div class="btn edit">
+                                                <a href="javascript:;">编辑</a>
+                                            </div>
+                                            <div class="btn share">
+                                                <a class="" href="javascript:;">分享</a>
+                                                <div class='common_sharelist_wrapper'>
+                                                    <ul>
+                                                        <li class='weibo'>
+                                                            <a class='ybiconfont ybicon-weibosina' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='qzone'>
+                                                            <a class='ybiconfont ybicon-qzone' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='wechat'>
+                                                            <a class='ybiconfont ybicon-wechatsolid' href="javascript:;"></a>
+                                                        </li>
+                                                        <li class='QQ'>
+                                                            <a class='ybiconfont ybicon-qqsolid' href="javascript:;"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="btn copy">
+                                                <a  href="javascript:;">复制</a>
+                                            </div>
+                                            <div class="btn delete">
+                                                <a href="javascript:;">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <a class="percent">
+                                            <div>完成率：</div>
+                                            <span>90%</span>
+                                            <div class="bar"><span></span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn" href="javascript:;">印刷</a>
+                                    <a href="javascript:;">彻底删除</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagination_wrap">
+                            <div class="turn_btn">
+                                <span class="prev"> < </span>
+                                <span class="current">1</span>
+                                <a>2</a>
+                                <a>3</a>
+                                <span class="">…</span>
+                                <a>12</a>
+                                <a>13</a>
+                                <a class="next"> > </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer cm_min_width">
+    <div class="ft_link">
+        <ul>
+            <li>友情链接：</li>
+            <li>
+                <a title="苏州广告公司" target="_blank" href="http://www.yangsign.com">苏州广告公司</a>
+            </li>
+            <li>
+                <a title="包装盒印刷" target="_blank" href="http://www.fungoprinting.cn/">包装盒印刷</a>
+            </li>
+            <li>
+                <a title="包装盒厂家" target="_blank" href="http://www.dghengzhi.com/">包装盒厂家</a>
+            </li>
+            <li>
+                <a title="成都印刷厂" target="_blank" href="http://www.cdssysc.com/">成都印刷厂</a>
+            </li>
+            <li>
+                <a title="新东方教师资格网" target="_blank" href="http://jiaoshi.koolearn.com/">新东方教师资格网</a>
+            </li>
+            <li>
+                <a title="广州名片印刷" target="_blank" href="http://www.020yin.com/">广州名片印刷</a>
+            </li>
+            <li>
+                <a title="生日礼物" target="_blank" href="http://www.shenriliwu.com">生日礼物</a>
+            </li>
+            <li>
+                <a title="儿童淘气堡" target="_blank" href="http://www.mtylwj.com/">儿童淘气堡</a>
+            </li>
+            <li>
+                <a title="郑州印刷厂" target="_blank" href="http://www.xinmeiyin.com">郑州印刷厂</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ft_copyright">
+        <div><a href="http://www.miitbeian.gov.cn" target="_blank">Copyright&nbsp;&nbsp;2015&nbsp;&nbsp;by&nbsp;&nbsp;无锡北方数据计算股份有限公司
+            &nbsp;&nbsp;&nbsp;&nbsp;苏ICP备11087253号-2</a></div>
+    </div>
+</div>
+<!--编辑书册名称-->
+<div class='bannertitleedit_wrapper hidden'>
+    <ul>
+        <li>
+            <label>书册名称：</label>
+            <input type='text'>
+            <label class="error">请输入书册名称。</label>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.js"></script>
+<script type="text/javascript" src='assets/js/jquery.SuperSlide.2.1.1.js'></script>
+<script type="text/javascript" src='assets/js/jquery.artDialog.js?skin=yb3'></script>
+<script>
+    $(document).ready(function() {
+        changeButtonCss();
+        extendedSearch();
+        bookCompletionRate();
+        bulkOrders();
+        del_book();
+        editBookName();
+    });
+
+    //渲染控件样式
+    function changeButtonCss() {
+        $("input[type=radio],input[type=checkbox]").iCheck({
+            checkboxClass: 'icheckbox_minimal-green',
+            radioClass: 'iradio_minimal-green',
+            increaseArea: '20%'
+        });
+    }
+
+    //搜索
+    function extendedSearch(){
+        $(".search_ico").click(function(){
+            $(".search_bar").toggleClass('search_open');
+            var keys = $("#search").val();
+            if(keys.length>2){
+                $("#search").val('');
+                $("#myform").submit();
+            }else{
+                return false;
+            }
+        });
+    }
+
+    function bookCompletionRate(){
+        jQuery(".bookshelf_wrap").slide({
+            titCell: ".hd a",
+            mainCell: ".bd",
+            trigger:"click",
+            pnLoop:false
+        });
+
+        //书册完成率
+        var orderNum = $('.bookshelf li').length;
+        for (var i =0 ;i < orderNum;i++){
+            var rate = $('.bookshelf li').eq(i).find('.percent > span').text();
+            $('.bookshelf li').eq(i).find('.percent .bar span').css('width',rate);
+        }
+
+        //IE10以下回收站书册添加遮罩
+        if(window.attachEvent){
+            var maskDiv = '<div class="mask"></div>';
+            $('.bookshelf.recycle_bin .grid').prepend(maskDiv);
+            $('.bookshelf.recycle_bin .grid').find('.actions').css('z-index','3');
+        }
+    }
+
+    /*
+     * 弹出删除确认层
+     */
+    function del_book() {
+        $('.btn_group .delete a').on('click', function() {
+            $('#modal_con_del_book').children().removeClass("hidden");
+            art.dialog({
+                title: '删除',
+                lock: true,
+                icon: 'warning',
+                content: '确认要删除此书册',
+                okValue: '确 定',
+                ok: function() {},
+                cancelValue: '取消',
+                cancel: function() {}
+            });
+        });
+    }
+
+    //编辑书册名称
+    function editBookName(){
+        $('.describe .name').click(function(){
+            art.dialog({
+                title: '编辑书册名称',
+                lock: true,
+                width: '460px',
+                height: '140px',
+                content: document.querySelector('.bannertitleedit_wrapper'),
+                okValue: '确 定',
+                ok: function() {},
+                cancelValue: '取消',
+                cancel: function() {}
+            });
+        })
+    }
+
+    //批量下单
+    function bulkOrders(){
+        //全选
+        $('.check_all input[type=checkbox]').on('ifChecked',function(){
+            $('.bookshelf:visible .grid input').iCheck('check');
+            $('.printings').removeClass('disabled');
+        });
+
+        $('.check_all input[type=checkbox]').on('ifUnchecked',function(){
+            $('.bookshelf:visible .grid input').iCheck('uncheck');
+            $('.printings').addClass('disabled');
+        });
+
+        //有选中书册 激活批量下单按钮
+        $('.bookshelf:visible .grid input').on('ifChecked',function(){
+            $('.printings').removeClass('disabled');
+        });
+    }
+</script>
+</body>
+
+</html>

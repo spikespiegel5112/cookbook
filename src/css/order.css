@@ -1,5 +1,6 @@
 @charset "UTF-8";
-.create_order {
+.create_order,
+.order_manage{
     position: relative;
     width: 100%;
     min-height: 650px;
@@ -816,4 +817,482 @@
     width: 110px;
     margin: 30px auto;
     color: #00a388;
+}
+/*my orders list*/
+.personal_content_box{
+    position: relative;
+    margin: 0 auto;
+    padding: 0 18px;
+    width: 1200px;
+    font-size: 14px;
+    box-sizing: border-box;
+    min-height: 800px;
+    color: #333;
+}
+.hr {
+    position: relative;
+    padding: 5px 0;
+    clear: both;
+}
+.hr .green {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    width: 13%;
+    border-top: 1px solid #00a388;
+}
+.hr .gray {
+    position: absolute;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #b4b4b4;
+}
+.personal_content_box .commcon_crumb_wrapper{
+    float: left;
+    width: 60%;
+    padding-left: 10px;
+}
+.personal_content_box .commcon_crumb_wrapper ul{
+    width: 100%;
+}
+.personal_content_box .query_group{
+    float: right;
+    width: 175px;
+}
+.query_group {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+.query_group .status_query {
+    display: inline-block;
+    margin: 10px;
+}
+.status_query .chosen-container {
+    text-align: center;
+}
+.order_list {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.order_list > ul > li {
+    margin: 0 15px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    overflow: hidden;
+}
+.order_list > ul > li:last-child{
+    border-bottom: 0;
+}
+.order_list > ul > li:hover {
+    background-color: #f8fdf5;
+}
+.order_list .caption {
+    width: 100%;
+    margin-left: -1px;
+    border: 1px solid #e5e5e5;
+    background-color: #f9fafb;
+    background-image: linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 30px);
+}
+.order_list .caption ul {
+    padding: 0 15px;
+}
+.order_list li li {
+    display: inline-block;
+    width: 11%;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+    word-break: break-all;
+}
+.order_list li .number{
+    width: 14%;
+}
+.order_list li .illustration{
+    width: 17%;
+}
+.order_list li .money span{
+    color: #f40;
+    font-size: 16px;
+}
+.order_list .action .common_btn{
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+    color: #00a388;
+    box-sizing: border-box;
+}
+.order_list .action .common_btn:hover{
+    color: #79bd8f;
+}
+.order_list .illustration a{
+    position: relative;
+    display: block;
+    margin: 5px auto;
+    padding: 3px 4px 1px 0;
+    width: 88px;
+    height: 122px;
+    background: url("../img/order/cookbook_bg.png") no-repeat 0 0;
+    box-sizing: border-box;
+}
+.illustration a img{
+    width: 100%;
+    height: 100%;
+}
+/*my cookbook*/
+.personal_content_box .tool_wrap {
+    float: right;
+    margin-right: 10px;
+    line-height: 42px;
+}
+.tool_wrap .search_bar {
+    line-height: 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    min-width: 30px;
+    height: 25px;
+    transition: width .3s;
+    vertical-align: middle;
+    -webkit-backface-visibility: hidden;
+}
+.tool_wrap .search_bar.search_open {
+    width: 200px;
+}
+.tool_wrap .search_bar .input {
+    font-size: 14px;
+    line-height: 25px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+    padding: 0 10px;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+}
+.tool_wrap .search_bar.search_open input {
+    display: block;
+}
+.tool_wrap .search_bar .search_ico,
+.tool_wrap .search_bar .search_btn {
+    line-height: 25px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+}
+.tool_wrap .search_bar .search_ico {
+    font-size: 20px;
+    z-index: 3;
+    color: #abaebd;
+}
+.search_bar .search_ico:hover{
+    color: #00a388;
+}
+.tool_wrap .search_bar.search_open .search_ico {
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    background-color: #00a388;
+}
+.personal_content_box .bookshelf_wrap {
+    position: relative;
+    width: 100%;
+    margin: -4px 0 0;
+    padding: 0;
+}
+.bookshelf_wrap .filter_wrap {
+    line-height: 60px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 0 0 12px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 3px #ddd;
+}
+.bookshelf_wrap .filter_wrap .check_all {
+    float: left;
+    margin-left: 10px;
+}
+.bookshelf_wrap .filter_group {
+    float: left;
+    margin-left: 15px;
+}
+.bookshelf_wrap .filter_group a {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px 5px 10px 0;
+    padding: 5px 10px;
+    color: #666;
+}
+.bookshelf_wrap .filter_group a:hover,
+.bookshelf_wrap .filter_group a.on {
+    color: #79bd8f;
+}
+.bookshelf_wrap .filter_wrap .btns {
+    font-size: 18px;
+    line-height: 36px;
+    float: right;
+}
+.bookshelf_wrap .filter_wrap .btns a {
+    display: inline-block;
+    width: 145px;
+    height: 36px;
+    margin: 12px 10px 12px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+}
+.filter_wrap .btns .new_book {
+    background-color: #ff696a;
+}
+.filter_wrap .new_book:hover {
+    background-color: #e96364;
+}
+.filter_wrap .btns .printings {
+    background-color: #79bd8f;
+}
+.filter_wrap .btns .printings:hover{
+    background-color: #00a388;
+}
+.bookshelf_wrap .filter_wrap .btns .printings.disabled {
+    cursor: default;
+    pointer-events: none;
+    background-color: #c9c9c9;
+}
+.bookshelf_wrap .bookshelf {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.bookshelf_wrap .bookshelf .grid {
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 0 #fff;
+}
+.bookshelf_wrap .bookshelf .grid .icheckbox_minimal-green {
+    position: absolute;
+    top: 71px;
+    left: 10px;
+    background-color: #fff;
+}
+.bookshelf .grid .display {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* float: left; */
+    margin: 0 10px 0 30px;
+}
+.bookshelf .grid .display a {
+    position: relative;
+    display: block;
+    width: 158px;
+    height: 160px;
+    background: url('../img/order/pc_bookshelf.png') no-repeat center bottom;
+}
+.bookshelf .grid .display .cover {
+    position: absolute;
+    left: 37px;
+    padding: 3px 4px 1px 0;
+    top: 18px;
+    width: 88px;
+    height: 122px;
+    background: url('../img/order/cookbook_bg.png') no-repeat 0 0;
+    box-sizing: border-box;
+}
+
+.bookshelf .grid .display .cover img {
+    width: 100%;
+    height: 100%;
+}
+.bookshelf .grid .describe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 160px;
+    padding: 22px 65px 0 193px;
+}
+.bookshelf .grid .describe .info {
+    line-height: 30px;
+    float: left;
+    width: 71%;
+}
+ .describe .info .name {
+    font-size: 16px;
+    display: inline-block;
+    color: #333;
+}
+.describe .info .time {
+    font-size: 12px;
+    color: #999;
+}
+.describe .info .config a {
+    font-size: 14px;
+    color: #666;
+}
+.describe .info .config a:hover {
+    color: #f40;
+}
+.describe .config span {
+    display: inline-block;
+    margin-right: 15px;
+}
+.describe .config b {
+    font-weight: normal;
+}
+.describe .info .btn_group {
+    display: block;
+    margin: 10px 0;
+}
+.describe .btn_group .btn {
+    position: relative;
+    display: inline-block;
+}
+.describe .btn_group .btn > a {
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    margin-right: 5px;
+    text-align: center;
+    color: #97c76c;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.describe .btn_group .btn > a:hover {
+    color: #00a388;
+    border: 1px solid #00a388;
+}
+.describe .btn_group .share:hover .common_sharelist_wrapper {
+    top: 36px;
+    left: -70px;
+    display: block;
+}
+.bookshelf .describe .progress {
+    font-size: 12px;
+    float: left;
+    width: 29%;
+    max-width: 163px;
+    margin: 20px 0;
+    color: #666;
+}
+.progress .percent {
+    overflow: hidden;
+    margin: 0 0 10px;
+}
+.describe .progress a {
+    display: block;
+    color: #666;
+}
+.progress .percent > div {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 14px 0 0 0;
+}
+.progress .percent span {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.progress .percent .bar {
+    display: inline-block;
+    float: none;
+    width: 60px;
+    height: 5px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.progress .percent .bar span {
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #90c132;
+}
+.bookshelf .grid .actions {
+    position: absolute;
+    top: 65px;
+    right: 5px;
+    width: 65px;
+}
+.grid .actions a {
+    line-height: 30px;
+    display: block;
+    width: 55px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.grid .actions a:hover {
+    color: #79bd8f;
+}
+.grid .actions .btn {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #90c132;
+}
+.grid .actions .btn:hover {
+    color: #fff;
+    background-color: #79bd8f;
+}
+.bookshelf.recycle_bin .grid .display, .bookshelf.recycle_bin .grid .describe {
+    pointer-events: none;
+    background-color: #ececec;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.bannertitleedit_wrapper li {
+    margin: .2em;
+}
+.bannertitleedit_wrapper label {
+    line-height: 2em;
+    float: left;
+    min-width: 5em;
+}
+.bannertitleedit_wrapper input {
+    font-size: 15px;
+    line-height: 30px;
+    width: 200px;
+    height: 30px;
+    padding: 0 6px;
+    color: #555;
+    border: 1px solid #ccc;
+}
+.bannertitleedit_wrapper label.error {
+    float: none;
 }
