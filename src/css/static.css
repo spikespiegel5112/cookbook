@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.static_stepblock_wrapper{
+	margin: 0 auto;
+	width: 1200px;
+}
+.static_stepblock_wrapper .content .motiongraph{
+
+	width: 1000px;
+	height: 580px;
+}
