@@ -364,19 +364,16 @@
 
 			$.collideLoading({
 				onScrollBottom: function() {
-					if (loadFlag) {
-						dataCount--
+					if (dataCount > 0 && loadFlag) {
 						loadFlag = false;
-					};
-
-					if (dataCount >= 0) {
+						dataCount--;
 						hintIcon.attr('src', 'img/icon/')
 						hintText.text('加载中');
 						setTimeout(function() {
 							hintIcon.attr('src', 'img/icon/')
 							hintText.text('加载更多');
 							listEl.append(data);
-							if (dataCount==0) {
+							if (dataCount == 0) {
 								hintIcon.attr('src', 'img/icon/')
 								hintText.text('没有更多信息了');
 							};
