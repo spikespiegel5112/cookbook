@@ -14,14 +14,17 @@
 	left: 47px;
 }
 .static_cpstep_wrapper {
+	
+	max-height: 100%;
 	height: auto;
-	overflow: auto;
+	overflow: hidden;
 }
 .static_stepblock_wrapper {
 	margin: 0 auto;
-	padding: 65px 0;
+	padding: 15px 0;
 	width: 1200px;
-	min-height: 110px;
+	min-height: 100px;
+	height: 100%;
 }
 .static_stepblock_wrapper .content .motiongraph {
 	width: 1000px;
@@ -61,10 +64,15 @@
 	display: block;
 	margin: 0 0 0 130px;
 	width: 1015px;
-	height: 500px;
-	min-height: 10px;
+	min-height: 100px;
+	height: 100%;
 	vertical-align: middle;
-	background-color: #fff;
+	/*background-color: #fff;*/
+	text-align: center;
+}
+.static_stepblock_wrapper .motiongraph img{
+	display: inline-block;
+	height: 100%;
 }
 .static_stepblock_wrapper .icon span {
 	background-image: url(../img/icon/sprite_customprocess_00000.png);
@@ -90,13 +98,13 @@
 }
 .static_cpstep_wrapper .begintocustomize {
 	float: right;
-	margin: 30px 0 0 0;
+	margin: 30px 40px 0 0;
 	width: 200px;
 	height: 55px;
 	background-color: #24a386;
 	color: #fff;
 	font-size: 18px;
-	border-radius: 4px;
+	border-radius: 8px;
 	text-align: center;
 	line-height: 55px;
 	transition: background-color 0.3s;
