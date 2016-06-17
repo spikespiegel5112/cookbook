@@ -49,9 +49,9 @@
 					<div class="navigation">
 						<ul>
 							<li><a href="_index.html">首页</a></li>
-							<li><a class="active" href="javascript:;">菜谱模板</a></li>
+							<li><a href="javascript:;">菜谱模板</a></li>
 							<li><a href="javascript:;">菜谱款式</a></li>
-							<li><a href="javascript:;">定制流程</a></li>
+							<li><a class="active" href="javascript:;">定制流程</a></li>
 							<li><a href="javascript:;">关于我们</a></li>
 						</ul>
 					</div>
@@ -88,6 +88,7 @@
 							</div>
 						</div>
 						<div class='motiongraph'>
+							<img src="img/sample/bg_1.jpg">
 						</div>
 					</div>
 				</div>
@@ -103,6 +104,7 @@
 							</div>
 						</div>
 						<div class='motiongraph'>
+							<img src="img/sample/bg_1.jpg">
 						</div>
 					</div>
 				</div>
@@ -118,6 +120,7 @@
 							</div>
 						</div>
 						<div class='motiongraph'>
+							<img src="img/sample/bg_1.jpg">
 						</div>
 					</div>
 				</div>
@@ -132,7 +135,9 @@
 								<p>确认菜谱信息、数量、价格等，填写收货地址，选择支付方式完成支付。</p>
 							</div>
 						</div>
-						<div class='motiongraph'></div>
+						<div class='motiongraph'>
+							<img src="img/sample/bg_1.jpg">
+						</div>
 					</div>
 				</div>
 				<div class='static_cpstep_wrapper swiper-slide'>
@@ -198,6 +203,23 @@
 		swiper();
 
 		function swiper() {
+
+		}
+
+		function customprocess() {
+			var windowHeight = $(window).height(),
+				footerHeight = $('.footer').height(),
+				customprocessWrapperEl = $('.static_customprocess_wrapper'),
+				stepblockWrapperEl = $('.static_stepblock_wrapper'),
+				offsetTop = customprocessWrapperEl.offset().top,
+				customprocessWrapperElHeight = windowHeight - footerHeight - offsetTop;
+			customprocessWrapperEl.css({
+				height: customprocessWrapperElHeight
+			});
+			stepblockWrapperEl.find('.motiongraph').css({
+				height: customprocessWrapperElHeight - 130
+			});
+
 			var swiper = new Swiper('.static_customprocess_wrapper', {
 				pagination: '.swiper-pagination',
 				direction: 'vertical',
@@ -207,15 +229,6 @@
 				mousewheelControl: true,
 				mousewheelSensitivity: 0
 			})
-		}
-
-		function customprocess() {
-			var windowHeight = $(window).height(),
-				footerHeight = $('.footer').height(),
-				customprocessEl = $('.static_customprocess_wrapper'),
-				offsetTop = customprocessEl.offset().top,
-				customprocessElHeight = windowHeight - footerHeight - offsetTop;
-			customprocessEl.css({height:customprocessElHeight});
 		}
 
 	})
