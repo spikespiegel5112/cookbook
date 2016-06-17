@@ -10,15 +10,16 @@
 	<meta name="keywords" content="">
 	<title>易彩-菜谱首页</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/swiper.min.css" type="text/css" media="all" />
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/booklist.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/static.css" type="text/css" media="all">
 	<!-- endbuild -->
 </head>
 
 <body>
-	<div class="main_container">
+	<div class="main_container bg_f5f5f5">
 		<div class="yc_cm_header">
 			<div class="shortcut_container">
 				<div class="shortcut">
@@ -60,32 +61,97 @@
 				</div>
 			</div>
 		</div>
-		<div class='booklist_banner_wrapper'>
-			<div class='booklist_bannercontent_wrapper'>
-				<div class='desc'>
-					<h6>百余种模板供选择</h6>
-					<p>本地加工、低成本、高效率、金品质</p>
-					<div class='price'>
-						<label>100元</label>
-						<span>起</span>
+		<div class='static_customprocess_wrapper'>
+			<div class='axis'></div>
+			<div class='swiper-wrapper'>
+				<div class='static_cpstep_wrapper swiper-slide'>
+					<div class='static_stepblock_wrapper'>
+						<div class='title'>
+							<div class='icon'>
+								<span class='step_1'></span>
+							</div>
+							<div class='centent'>
+								<h6>如何在XX上制作一本菜谱？</h6>
+							</div>
+						</div>
 					</div>
-					<a class='transition_btn' href="javascript:;"><span></span><label>开始定制</label></a>
 				</div>
-				<img class='illustration' src="img/booklist/booklist_menusample_00000.png">
+				<div class='static_cpstep_wrapper swiper-slide'>
+					<div class='static_stepblock_wrapper'>
+						<div class='title'>
+							<div class='icon'>
+								<span class='step_2'></span>
+							</div>
+							<div class='centent'>
+								<h6>No.1 选择菜谱规格</h6>
+								<p>选择菜谱的规格、材质以及装订方式</p>
+							</div>
+						</div>
+						<div class='motiongraph'>
+						</div>
+					</div>
+				</div>
+				<div class='static_cpstep_wrapper swiper-slide'>
+					<div class='static_stepblock_wrapper'>
+						<div class='title'>
+							<div class='icon'>
+								<span class='step_3'></span>
+							</div>
+							<div class='centent'>
+								<h6>No.2 选择菜品并配图</h6>
+								<p>从XX的菜品库中找到您需要的菜品配图并设置好价格，或者自定义菜名来添加菜品。</p>
+							</div>
+						</div>
+						<div class='motiongraph'>
+						</div>
+					</div>
+				</div>
+				<div class='static_cpstep_wrapper swiper-slide'>
+					<div class='static_stepblock_wrapper'>
+						<div class='title'>
+							<div class='icon'>
+								<span class='step_4'></span>
+							</div>
+							<div class='centent'>
+								<h6>No.3 编辑预览菜谱</h6>
+								<p>可以在预览菜谱的同时对照片、菜名、价格进行修改，同时还可以对整个模板进行更换</p>
+							</div>
+						</div>
+						<div class='motiongraph'>
+						</div>
+					</div>
+				</div>
+				<div class='static_cpstep_wrapper swiper-slide'>
+					<div class='static_stepblock_wrapper'>
+						<div class='title'>
+							<div class='icon'>
+								<span class='step_5'></span>
+							</div>
+							<div class='centent'>
+								<h6>No.4 在线下单并支付</h6>
+								<p>确认菜谱信息、数量、价格等，填写收货地址，选择支付方式完成支付。</p>
+							</div>
+						</div>
+						<div class='motiongraph'></div>
+					</div>
+				</div>
+				<div class='static_cpstep_wrapper swiper-slide'>
+					<div class='static_stepblock_wrapper'>
+						<div class='title'>
+							<div class='icon'>
+								<span class='step_6'></span>
+							</div>
+							<div class='centent'>
+								<h6>No.5 坐等收货</h6>
+								<p>菜谱需要X~X个工作日来进行制作，制作完成后会第一时间给您发货。</p>
+							</div>
+							<a class='begintocustomize' href="javascript:;">开始定制菜谱</a>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class='swiper-pagination'></div>
 		</div>
-		<div class='commcon_crumb_wrapper'>
-			<ul>
-				<li>
-					<a href="_index.html">首页</a>
-				</li>
-				<li>
-					<label>&nbsp&gt&nbsp</label>
-					<a href="javascript:;">菜谱模板</a>
-				</li>
-			</ul>
-		</div>
-		<div></div>
 		<div class="footer">
 			<div class="ft_link cm_fl">
 				<ul>
@@ -125,7 +191,34 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper/swiper.js"></script>
 	<script>
+	$(function() {
+		customprocess();
+		swiper();
+
+		function swiper() {
+			var swiper = new Swiper('.static_customprocess_wrapper', {
+				pagination: '.swiper-pagination',
+				direction: 'vertical',
+				slidesPerView: 'auto',
+				speed: 600,
+				paginationClickable: true,
+				mousewheelControl: true,
+				mousewheelSensitivity: 0
+			})
+		}
+
+		function customprocess() {
+			var windowHeight = $(window).height(),
+				footerHeight = $('.footer').height(),
+				customprocessEl = $('.static_customprocess_wrapper'),
+				offsetTop = customprocessEl.offset().top,
+				customprocessElHeight = windowHeight - footerHeight - offsetTop;
+			customprocessEl.css({height:customprocessElHeight});
+		}
+
+	})
 	</script>
 </body>
 
