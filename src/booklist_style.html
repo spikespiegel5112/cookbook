@@ -63,7 +63,7 @@
 		<div class='booklist_banner_wrapper'>
 			<div class='booklist_bannercontent_wrapper'>
 				<div class='desc'>
-					<h6>百余种模板供选择</h6>
+					<h6>多种款式个性定制</h6>
 					<p>本地加工、低成本、高效率、金品质</p>
 					<div class='price'>
 						<label>100元</label>
@@ -283,7 +283,7 @@
 			<div class='common_loadmore_item'>
 				<a href="javascript:;">
 					<span><img src="img/icon/cylinder_35_48_00000.png"></span>
-					<label>没有更多了</label>
+					<label>加载更多</label>
 				</a>
 			</div>
 		</div>
@@ -352,14 +352,39 @@
 	<!-- endbuild -->
 	<script>
 	$(function() {
-		$.collideLoading({
-			onScrollBottom: function() {
-				alert('aaa')
-			}
-		})
-		$('.booklist_filter_wrapper li a').click(function(){
-			var $this=$(this),
-				thisParent=$this.parent('li');
+		loadmore();
+		function loadmore() {
+			var dataCount = 2,
+				loadFlag=true,
+				hintText=$('.common_loadmore_item label'),
+				hintIcon=$('.common_loadmore_item span img');
+
+			$.collideLoading({
+				onScrollBottom: function() {
+					if (loadFlag) {
+						dataCount--
+						loadFlag=false;
+					};
+
+					if (dataCount >= 0) {
+						hintIcon.attr('src', 'img/icon/')
+						hintText.text('加载中');
+						setTimeout(function(){
+							hintIcon.attr('src', 'img/icon/')
+							hintText.text('加载更多');
+							loadFlag=true;
+						}, 1000)
+					}else{
+						hintIcon.attr('src', 'img/icon/')
+						hintText.text('没有更多信息了');
+					}
+				}
+			})
+		}
+
+		$('.booklist_filter_wrapper li a').click(function() {
+			var $this = $(this),
+				thisParent = $this.parent('li');
 			thisParent.siblings().removeClass('active').end().addClass('active');
 		})
 	})

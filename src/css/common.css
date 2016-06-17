@@ -648,18 +648,19 @@ label.error, div.error {
 .common_loadmore_item:hover{
     color: #000;
 }
-.common_loadmore_item:active{
+/*.common_loadmore_item:active{
     box-shadow: 2px 2px 5px #ccc inset;
     position: relative;
     left: 2px;
     top: 2px;
     border-radius: 5px;
     background-color: #f5f5f5;
-    
-}
+}*/
 .common_loadmore_item span{
     margin: 0 auto;
     display: block;
+    width: 60px;
+    height: 60px;
     text-align: center;
 }
 .common_loadmore_item span img{

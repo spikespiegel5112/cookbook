@@ -1097,24 +1097,31 @@
 				onScrollBottom: function() {
 					alert('已触发底部但没有任何操作');
 				}
-			}, options)
+			}, options);
+
 			var doc = document,
-				docEle = doc.documentElement ? doc.documentElement : doc.body;
+				docEle = doc.documentElement,
+				docBody = doc.body,
+				docHeightContext = doc.body ? doc.body : docEle,
+				
+				clientHeight = 0,
+				windowHeight = doc.all ? docEle.offsetHeight : window.innerHeight;
+
 			window.onscroll = function() {
+				var scrollTop = docEle.scrollTop || window.pageYOffset || docBody.scrollTop,
+					docHeight = docHeightContext.scrollHeight;
 
-				var clientHeight = 0,
-					scrollTop = docEle.scrollTop,
-					docHeight = docEle.scrollHeight ? docEle.scrollHeight : docEle.scrollHeight;
-
-				if (docEle.clientHeight) {
-					clientHeight = Math.min(docEle.clientHeight, docEle.clientHeight);
+				if (docBody.clientHeight && docEle.clientHeigh) {
+					clientHeight = Math.min(docBody.clientHeight, docEle.clientHeight);
 				} else {
-					clientHeight = Math.max(docEle.clientHeight, docEle.clientHeight);
+					clientHeight = Math.max(docBody.clientHeight, docEle.clientHeight);
 				}
-				console.log(scrollTop)
-				if (clientHeight + scrollTop >= docHeight) {
-					options.onScrollBottom();
 
+				clientHeight = window.innerHeight;
+
+				console.log(windowHeight + ' ' + scrollTop + ' ' + docHeight)
+				if (windowHeight + scrollTop >= docHeight) {
+					options.onScrollBottom();
 				}
 			}
 		},
