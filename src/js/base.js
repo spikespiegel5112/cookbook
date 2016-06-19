@@ -519,7 +519,87 @@
 			};
 		},
 		priceCalculator: function(options) {
-			var $this = $(this),
+			var that = $(this),
+				totalPriceArr = [],
+				config = {
+					onchange: function() {}
+				};
+			if (typeof options == 'Object') {
+				$.extend(config, options);
+			} else if (typeof options == 'String') {
+				switch (options) {
+					case 'destroy':
+						destroy();
+						break;
+				}
+			}
+			$.each(that, function(index) {
+				var $this = $(this),
+					modifyBtn = $this.find('a');
+				if ($this.is('input')) {
+					var counterEl = $this;
+				} else {
+					var counterEl = $this.find('input');
+				}
+				modifyBtn.off('click');
+				modifyBtn.on('click', function(e) {
+					var counter = counterEl.val();
+					switch ($(this).index()) {
+						case 0:
+							counter--;
+							if (counter < 0) {
+								counter = 0;
+							}
+							break;
+						case 2:
+							counter++;
+							break;
+					}
+					e.stopPropagation();
+					counterEl.val(counter);
+					config.onchange();
+					fireonchange(counterEl);
+				})
+				counterEl.on('keydown keyup', function(e) {
+					var $this = $(this),
+						counterVal='',
+						counter = 0,
+						keycode = e.charCode ? e.charCode : e.keyCode;
+					switch (e.type) {
+						case 'keydown':
+							if (keycode != 8 && keycode != 37 && keycode != 39 && keycode < 48 || keycode > 57 && keycode < 96 || keycode > 105) {
+								e.preventDefault();
+							} else if (keycode != 37 && keycode != 39) {
+								$this.val() != 0 ? $this.val() != 0 : $this.val('');
+							}
+							break;
+						case 'keyup':
+							counterEl.val(counterEl.val().replace(/\D/g,''))
+							config.onchange();
+							fireonchange(counterEl);
+							break;
+					}
+				});
+				counterEl.blur(function(){
+					var $this=$(this);
+					if ($this.val()=='') {
+						$this.val(0)
+					};
+				})
+			});
+
+			function destroy() {
+				$.each(that, function(index) {
+					$(this).find('a').unbind('click');
+				});
+			}
+
+			function fireonchange(_this) {
+				_this.trigger('onchange');
+			}
+		},
+		priceCalculator_full: function(options) {
+			var that = $(this),
 				totalPriceArr = [],
 				config = {
 					unitprice: '',
@@ -527,18 +607,26 @@
 					totalprice: '',
 					onchange: function() {}
 				};
-			if (options) {
+			if (typeof options == 'Object') {
 				$.extend(config, options);
-			};
-			init($this);
-			$.each($this, function(index) {
-				var $this = $(this);
+			} else if (typeof options == 'String') {
+				switch (options) {
+					case 'destroy':
+						destroy();
+						break;
+				}
+			}
+			init(that);
+			$.each(that, function(index) {
+				var $this = $(this),
+					modifyBtn = $this.find('a');
 				if ($this.is('input')) {
 					var counterEl = $this;
 				} else {
 					var counterEl = $this.find('input');
 				}
-				$this.find('a').on('click', function(e) {
+				modifyBtn.off('click');
+				modifyBtn.on('click', function(e) {
 					var counter = counterEl.val();
 					switch ($(this).index()) {
 						case 0:
@@ -555,7 +643,7 @@
 					counterEl.val(counter);
 					setter(index, counter);
 					config.onchange();
-					fireOnchange(counterEl);
+					fireonchange(counterEl);
 				})
 				counterEl.on('keydown keyup', function(e) {
 					var $this = $(this),
@@ -570,19 +658,25 @@
 							}
 							break;
 						case 'keyup':
+
 							counter = Number(counterEl.val());
 							setter(index, counter);
 							config.onchange();
-							fireOnchange(counterEl);
+							fireonchange(counterEl);
 							break;
 					}
 				})
 			});
 
+			function destroy() {
+				$.each(that, function(index) {
+					$(this).find('a').unbind('click');
+				});
+			}
+
 			function getUnitprice(index) {
 				if (typeof config.unitprice == 'number') {
 					var unitPrice = config.unitprice;
-
 				} else if (typeof config.unitprice == 'string') {
 					var unitPrice = $(config.unitprice).eq(index).text().replace("￥", '');
 				}
@@ -615,7 +709,7 @@
 				});
 			}
 
-			function fireOnchange(_this) {
+			function fireonchange(_this) {
 				_this.trigger('onchange');
 			}
 		},
@@ -1213,7 +1307,6 @@
 							factor = frontline / options.baseline;
 						}
 					}
-					console.log(frontline)
 				} else if (frontline > options.threshold) {
 					//alert('当屏幕宽度大于最大宽度时')
 					factor = frontline / options.threshold;
