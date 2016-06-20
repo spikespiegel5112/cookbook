@@ -676,3 +676,76 @@ label.error, div.error {
     text-align: center;
     color: #aaa;
 }
+
+/*~~~~~~~~~~common_shtagging_wrapper~~~~~~~~~~*/
+.common_shtagging_wrapper
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.common_shtagging_wrapper li
+{  
+    position: absolute;
+}
+.common_shtagging_wrapper li span
+{
+    display: block;
+
+    background-color: #bbb;
+}
+.common_shtagging_wrapper .vertical
+{
+    right: -15px;
+    bottom: 0;
+
+    width: 13px;
+    height: 98%;
+    text-align: right;
+
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+.common_shtagging_wrapper .vertical span
+{
+    line-height: 100%;
+
+    position: absolute;
+    left: 6px;
+
+    width: 1px;
+    height: 100%;
+    margin: 0 auto;
+}
+.common_shtagging_wrapper .horizonal
+{
+    line-height: 30px;
+
+    right: 0;
+    bottom: -15px;
+    width: 98%;
+    height: 15px;
+    text-align: center;
+
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+.common_shtagging_wrapper .horizonal span
+{
+    position: absolute;
+    bottom: 6px;
+
+    width: 100%;
+    height: 1px;
+}
+.common_shtagging_wrapper p
+{
+    font-size: 12px;
+
+    min-width: 35px;
+
+    text-align: center;
+}

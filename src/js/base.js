@@ -1196,7 +1196,7 @@
 			var doc = document,
 				docEle = doc.documentElement,
 				docBody = doc.body,
-				docHeightContext = doc.body ? doc.body : docEle,
+				docHeightContext = docBody ? docBody : docEle,
 				
 				clientHeight = 0,
 				windowHeight = doc.all ? docEle.offsetHeight : window.innerHeight;
