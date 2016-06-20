@@ -359,7 +359,7 @@
 				loadFlag = true,
 				hintText = $('.common_loadmore_item label'),
 				hintIcon = $('.common_loadmore_item span img'),
-				listEl = $('.booklist_list_wrapper ul'),
+				listEl = $('.booklist_list_wrapper>ul'),
 				data = '<li class="booklist_cover_wrapper"><div class="style"><a class="cover" href="javascript:;"><img src="img/booklist/style_thepapershellyoring_00000.jpg"></a><div class="title"><p>硬壳-连体外铜钉</p></div><div class="make"><div class="price"><label>参考价：</label><div><i>￥</i><p>277</p><span>起</span></div></div><a class="make_btn transition_btn" href="javascript:;">立即制作</a></div></div></li>'
 
 			$.collideLoading({
@@ -367,15 +367,15 @@
 					if (dataCount > 0 && loadFlag) {
 						loadFlag = false;
 						dataCount--;
-						hintIcon.attr('src', 'img/icon/')
-						hintText.text('加载中');
+						hintIcon.attr('src', 'img/icon/loading.gif')
+						hintText.text('正在加载');
 						setTimeout(function() {
-							hintIcon.attr('src', 'img/icon/')
+							hintIcon.attr('src', 'img/icon/cylinder_35_48_00000.png')
 							hintText.text('加载更多');
 							listEl.append(data);
 							if (dataCount == 0) {
-								hintIcon.attr('src', 'img/icon/')
-								hintText.text('没有更多信息了');
+								hintIcon.attr('src', 'img/icon/ok_1.png')
+								hintText.text('加载完成');
 							};
 							loadFlag = true;
 						}, 1000)
