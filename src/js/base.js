@@ -728,7 +728,7 @@
 			function realign() {
 				var availHeight = $(window).height();
 				var thisHeight = $this.height();
-				var loginMargin = availHeight - 210 - thisHeight;
+				var loginMargin = availHeight - 260 - thisHeight;
 				if (loginMargin > 0) {
 					$this.css({
 						'margin-top': loginMargin / 2 + options.marginOffset,
