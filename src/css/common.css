@@ -659,16 +659,20 @@ label.error, div.error {
 .common_loadmore_item span{
     margin: 0 auto;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: auto;
     text-align: center;
+    
 }
 .common_loadmore_item span img{
     display: inline-block;
+    width: 100%;
+    opacity: 0.5;
 }
 .common_loadmore_item label{
     margin: 0 auto;
     display: block;
     cursor: pointer;
     text-align: center;
+    color: #aaa;
 }
