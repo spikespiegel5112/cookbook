@@ -230,14 +230,15 @@
 }
 .booklist_cover_wrapper .style .cover {
 	display: block!important;
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 260px;
+	height: 170px;
 	font-size: 0;
 	text-align: center;
 }
 .booklist_cover_wrapper .style .cover img {
 	display: inline-block;
-	margin: 10px auto 0;
+	margin: 0 auto;
 	width: 100%;
 }
 .booklist_cover_wrapper .style .title p {

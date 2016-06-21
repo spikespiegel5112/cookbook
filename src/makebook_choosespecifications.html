@@ -9,12 +9,12 @@
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 	<title>易彩-选规格</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/font/font_1466401402_9187655.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/booklist.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/makebook.css" type="text/css" media="all">
 	<!-- endbuild -->
 </head>
 
@@ -61,40 +61,366 @@
 				</div>
 			</div>
 		</div>
-		<div class='choosesize_wrapper'>
-			<div class='choosesize_process_wrapper'>
+		<div class='makebook_choosespec_wrapper'>
+			<div class='makebook_process_wrapper'>
 				<ul>
-					<li>
-						<span class='icon'></span>
-						<div>
+					<li class='active'>
+						<span class='icon ybiconfont ybicon-ruler'></span>
+						<div class='title'>
 							<label>1.选规格</label>
-							<span></span>
+							<div><i></i><span></span></div>
 							<p>选择菜谱款式&规格</p>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-choice'></span>
+						<div class='title'>
+							<label>2.选菜品</label>
+							<div><span></span></div>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-template'></span>
+						<div class='title'>
+							<label>3.选模板</label>
+							<div><span></span></div>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-payfor'></span>
+						<div class='title'>
+							<label>4.支付制作</label>
+							<div><span></span><i></i></div>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class='common_paginator_wrapper'>
-			<a class='prev' href="javascript:;">&lt</a>
-			<ul>
-				<li class='active'>
-					<a href="javascript:;">1</a>
+		<div class='makebook_csblock_wrapper'>
+			<div class='line'>
+				<span></span>
+				<label></label>
+			</div>
+			<div class='makebook_cstitle_wrapper'>
+				<h6>选择尺寸：</h6>
+			</div>
+			<ul class='makebook_cschoosesize_wrapper'>
+				<li class='a4'>
+					<a href="javascript:;">
+						<div class='sample'>
+							<span class='ybiconfont icon-ok2'></span>
+							<ul class='common_shtagging_wrapper'>
+								<li class='vertical'>
+									<span></span>
+									<p>135</p>
+								</li>
+								<li class='horizonal'>
+									<span></span>
+									<p>108</p>
+								</li>
+							</ul>
+						</div>
+					</a>
+					<div class='desc'>
+						<h6>A4尺寸</h6>
+						<label>2Xcm*1Xcm</label>
+						<a class='ybiconfont ybicon-eyeopen' href="javascript:;"></a>
+					</div>
 				</li>
-				<li>
-					<a href="javascript:;">2</a>
+				<li class='b5'>
+					<a href="javascript:;">
+						<div class='sample'>
+							<span></span>
+							<ul class='common_shtagging_wrapper'>
+								<li class='vertical'>
+									<span></span>
+									<p>108</p>
+								</li>
+								<li class='horizonal'>
+									<span></span>
+									<p>108</p>
+								</li>
+							</ul>
+						</div>
+					</a>
+					<div class='desc'>
+						<h6>B5尺寸</h6>
+						<label>2Xcm*1Xcm</label>
+						<a class='ybiconfont ybicon-eyeopen' href="javascript:;"></a>
+					</div>
 				</li>
-				<li>
-					<a href="javascript:;">3</a>
-				</li>
-				<li>
-					<span class='ellipsis'>...</span>
-				</li>
-				<li>
-					<a href="javascript:;">8</a>
+				<li class='c3'>
+					<a href="javascript:;">
+						<div class='sample'>
+							<span></span>
+							<ul class='common_shtagging_wrapper'>
+								<li class='vertical'>
+									<span></span>
+									<p>135</p>
+								</li>
+								<li class='horizonal'>
+									<span></span>
+									<p>80</p>
+								</li>
+							</ul>
+						</div>
+					</a>
+					<div class='desc'>
+						<h6>C3尺寸</h6>
+						<label>2Xcm*1Xcm</label>
+						<a class='ybiconfont ybicon-eyeopen' href="javascript:;"></a>
+					</div>
 				</li>
 			</ul>
-			<a class='next' href="javascript:;">&gt</a>
+		</div>
+		<div class='makebook_csblock_wrapper'>
+			<div class='line'>
+				<span></span>
+				<label></label>
+			</div>
+			<div class='makebook_cstitle_wrapper'>
+				<h6>装订方式</h6>
+			</div>
+			<div class='makebook_cschoosebinding_wrapper'>
+				<div class="makebook_cstab_wrapper">
+					<ul>
+						<li class='active' data-type='softleather'><a href="javascript:;">软皮</a></li>
+						<li data-type='shell'><a href="javascript:;">硬壳</a></li>
+					</ul>
+				</div>
+				<div class='makebook_cssamplelist_wrapper'>
+					<ul class='active' data-type='softleather'>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体仿古线</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>分体外铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>分体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体外铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+					</ul>
+					<ul data-type='shell'>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体仿古线</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>分体外铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>分体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体外铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='makebook_csblock_wrapper'>
+			<div class='line'>
+				<span></span>
+			</div>
+			<div class='makebook_cstitle_wrapper'>
+				<h6>皮样&颜色</h6>
+			</div>
+			<div class='makebook_cschoosetexture_wrapper'>
+				<div class="makebook_cstab_wrapper">
+					<ul>
+						<li class='active'><a href="javascript:;">葵花</a></li>
+						<li><a href="javascript:;">篮球纹</a></li>
+						<li><a href="javascript:;">石子纹</a></li>
+						<li><a href="javascript:;">水牛纹</a></li>
+						<li><a href="javascript:;">绒面</a></li>
+						<li><a href="javascript:;">毛皮纹</a></li>
+						<li><a href="javascript:;">闪电纹</a></li>
+						<li><a href="javascript:;">真皮</a></li>
+					</ul>
+				</div>
+				<div class='makebook_cssamplelist_wrapper'>
+					<ul class='active'>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体仿古线</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>分体外铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体仿古线</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>连体内铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="">
+							</a>
+							<div class='title'>
+								<label>分体外铜钉</label>
+								<span class='ybiconfont icon-eyeopen'></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='makebook_cssummary_container'>
+			<div class='makebook_cssummary_wrapper'>
+				<div class='summary'>
+					<p>您已选择：</p>
+					<ul>
+						<li>
+							<label>尺寸：</label>
+							<label>A4</label>
+						</li>
+						<li>
+							<label>规格：</label>
+							<label>+软皮分体外铜钉</label>
+						</li>
+					</ul>
+				</div>
+				<a class='step_btn disabled' href="javascript:;">下一步</a>
+			</div>
 		</div>
 		<div class="footer">
 			<div class="ft_link cm_fl">
@@ -142,6 +468,7 @@
 	<script>
 	$(function() {
 		fancybox();
+		tab();
 	})
 
 	function fancybox() {
@@ -165,6 +492,18 @@
 				});
 			}
 		})
+	}
+
+	function tab(){
+		var bindingLi=$('.makebook_cschoosebinding_wrapper .makebook_cstab_wrapper li'),
+			bindingUl=$('.makebook_cssamplelist_wrapper ul');
+		bindingLi.click(function(){
+			var $this=$(this),
+				thisdata=$this.attr('data-type');
+			alert(thisdata)
+			$this.addClass('active').siblings().removeClass('active');
+			bindingUl.find('[data-type='+thisdata+']').addClass('active');
+		});
 	}
 	</script>
 </body>
