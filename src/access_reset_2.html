@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>忆尔3.0-登录页</title>
+	<link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/access.css">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<!--登录表单-->
+	<div class="access_login_container" style='background-image:url(img/access/login_bg.jpg)'>
+		<div class='access_reset_wrapper'>
+			<div class='common_loginheader_wrapper'>
+				<div>
+					<span></span>
+					<label>找回密码</label>
+				</div>
+				<a class='icon-remove' href="javascript:;"></a>
+			</div>
+			<div class='common_logindividline_wrapper'>
+				<span></span>
+				<!-- <label></label> -->
+			</div>
+			<div class='access_resetstep_wrapper'>
+				<ul>
+					<li>
+						<span>1</span>
+						<label>确认账号</label>
+						<div>
+							<i></i>
+						</div>
+					</li>
+					<li class='active'>
+						<span>2</span>
+						<label>安全验证</label>
+						<div>
+							<i></i>
+						</div>
+					</li>
+					<li>
+						<span>3</span>
+						<label>重置密码</label>
+					</li>
+				</ul>
+			</div>
+			<div class='access_resetpwhint_wrapper'>
+				<p>为了您的账号安全请完成身份验证</p>
+				<p>
+					<strong>手机验证：13888888888</strong>
+				</p>
+			</div>
+			<form class='access_resetform_wrapper' method="post">
+				<ul class='common_logininput_wrapper'>
+					<li>
+						<input class='halfwidth' id='loginName' name='loginName' type='text' placeholder='输入用户名/邮箱/手机号' required>
+						<a class='getcode_btn' href="javascript:;">获取验证码</a>
+					</li>
+				</ul>
+				<a class='common_loginbtn_item transition_btn' href="javascript:;">下一步</a>
+			</form>
+			<p class='common_loginproviso_item'>没有账号?<a href="access_register3.11.html">马上注册</a></p>
+			<div class='common_triplelap_container'>
+				<div class='common_triplelap_wrapper'>
+					<span class='first'></span>
+					<span class='second'></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="assets/js/icheck.js"></script>
+	<!-- build:js js/all.js -->
+	<script type="text/javascript" src="js/base.js"></script>
+	<!-- endbuild -->
+	<script>
+	function validateForm() {
+		//validate方法参数可选  
+		return $('.access_resetform_wrapper').validate({
+			messages: {
+				loginName: {
+					required: "未输入"
+				},
+				password: {
+					required: '密码未填写',
+				}
+			}
+		}).form();
+	}
+
+	function doSubmit() { //点击登录触发验证
+		$('.common_loginbtn_item').click(function() {
+			if (validateForm()) {
+				document.form1.submit();
+			}
+		});
+	}
+
+	function icheck(argument) {
+		$("input[type=radio],input[type=checkbox]").iCheck({
+			checkboxClass: 'icheckbox_minimal-green',
+			radioClass: 'iradio_minimal-green',
+			increaseArea: '20%'
+		});
+	}
+
+	function backgroundTransition() {
+		$.imageTransition({
+			mintime: 5,
+			maxtime: 15,
+			transittime: 5,
+			container: '.access_login_container',
+			imagesrc: [
+				'http://antisony.org/src/img/login/1.jpg',
+				'http://antisony.org/src/img/login/2.jpg',
+				'http://antisony.org/src/img/login/3.jpg',
+				'http://antisony.org/src/img/login/4.jpg',
+				'http://antisony.org/src/img/login/5.jpg',
+				'http://antisony.org/src/img/login/6.jpg',
+				'img/access/login_bg.jpg'
+			]
+		});
+	}
+
+	$(function() {
+		doSubmit();
+		icheck();
+
+		$('.access_reset_wrapper').align();
+		backgroundTransition();
+	});
+	</script>
+</body>
+
+</html>
