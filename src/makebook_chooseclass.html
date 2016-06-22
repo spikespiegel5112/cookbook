@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>易彩-选菜品</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1466498323_753726.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/makebook.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/makebook_chooseclass.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class="main_container">
+		<div class="yc_cm_header">
+			<div class="shortcut_container">
+				<div class="shortcut">
+					<p class="login_info">
+						<span class="welcome_info">
+						<a target="_top" class="" href="javascript:;" title="">登录</a>
+					</span>
+						<span class="welcome_info">
+						<a class="logout" target="_top" href="javascript:;">注册</a>
+					</span>
+					</p>
+					<ul class="quick_menu">
+						<li>
+							<a href="javascript:;"><i class="ybiconfont ybicon-star"></i>收藏</a>
+						</li>
+						<li>
+							<a href="javascript:;">问题反馈</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_nav">
+				<div class="header_con">
+					<div class="logo">
+						<a href="_index.html"><img src="img/logo.png"></a>
+					</div>
+					<div class="navigation">
+						<ul>
+							<li><a href="_index.html">首页</a></li>
+							<li><a class="active" href="javascript:;">菜谱模板</a></li>
+							<li><a href="javascript:;">菜谱款式</a></li>
+							<li><a href="javascript:;">定制流程</a></li>
+							<li><a href="javascript:;">关于我们</a></li>
+						</ul>
+					</div>
+					<div class="hot_line">
+						<a href="javascript:;"><img src="img/hot_line.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='makebook_choosespec_wrapper'>
+			<div class='makebook_process_wrapper'>
+				<ul>
+					<li class="finish">
+						<span class='icon ybiconfont ybicon-ruler'></span>
+						<div class='title'>
+							<label>1.选规格</label>
+							<div><i></i><span></span></div>
+							<p>选择菜谱款式&规格</p>
+						</div>
+					</li>
+					<li class='active'>
+						<span class='icon ybiconfont ybicon-choice'></span>
+						<div class='title'>
+							<label>2.选菜品</label>
+							<div><span></span></div>
+							<p>选择菜品并配图</p>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-template'></span>
+						<div class='title'>
+							<label>3.选模板</label>
+							<div><span></span></div>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-payfor'></span>
+						<div class='title'>
+							<label>4.支付制作</label>
+							<div><span></span><i></i></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="choose_menu_wrap">
+			<div class="menu_class_con">
+				<div class="class_filter">
+					<div class="class_tab">
+						<ul>
+							<li class="active" data-type="chinese"><a href="javascript:;">中华菜系</a></li>
+							<li data-type="home"><a href="javascript:;">家常菜</a></li>
+							<li data-type="foreign"><a href="javascript:;">国外菜谱</a></li>
+							<li data-type="hotpot"><a href="javascript:;">火锅类</a></li>
+							<li data-type="wheaten"><a href="javascript:;">面食类</a></li>
+							<li data-type="barbecue"><a href="javascript:;">烧烤类</a></li>
+							<li data-type="western-style"><a href="javascript:;">西餐厅类</a></li>
+						</ul>
+					</div>
+					<div class="class_tab_con">
+						<div class="item active" data-type="chineseFood">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+							</div>
+							<div class="tags_wrap">
+								<ul>
+									<li>川菜</li>
+									<li>湘菜</li>
+									<li>粤菜</li>
+									<li>东北菜</li>
+									<li>鲁菜</li>
+									<li>浙菜</li>
+									<li>清真菜</li>
+									<li>闽菜</li>
+									<li>沪菜</li>
+									<li>京菜</li>
+									<li>湖北菜</li>
+									<li>徽菜</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div class="thumbnail_list">
+								<ul>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+								</ul>
+								<p class="search_result">共<span>46</span>条</p>
+								<div class="pagination_wrap small"><!--小分页class:small-->
+									<div class="turn_btn">
+										<span class="prev sPrev"> < </span>
+										<span class="current">1</span>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a class="next sNext"> > </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" data-type="home">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+							</div>
+							<div class="tags_wrap">
+								<ul>
+									<li>川菜</li>
+									<li>湘菜</li>
+									<li>粤菜</li>
+									<li>东北菜</li>
+									<li>鲁菜</li>
+									<li>浙菜</li>
+									<li>清真菜</li>
+									<li>闽菜</li>
+									<li>沪菜</li>
+									<li>京菜</li>
+									<li>湖北菜</li>
+									<li>徽菜</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div class="thumbnail_list">
+								<ul>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+								</ul>
+								<p class="search_result">共<span>46</span>条</p>
+								<div class="pagination_wrap small"><!--小分页class:small-->
+									<div class="turn_btn">
+										<span class="prev sPrev"> < </span>
+										<span class="current">1</span>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a class="next sNext"> > </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" data-type="foreign">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+							</div>
+							<div class="tags_wrap">
+								<ul>
+									<li>川菜</li>
+									<li>湘菜</li>
+									<li>粤菜</li>
+									<li>东北菜</li>
+									<li>鲁菜</li>
+									<li>浙菜</li>
+									<li>清真菜</li>
+									<li>闽菜</li>
+									<li>沪菜</li>
+									<li>京菜</li>
+									<li>湖北菜</li>
+									<li>徽菜</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div class="thumbnail_list">
+								<ul>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+								</ul>
+								<p class="search_result">共<span>46</span>条</p>
+								<div class="pagination_wrap small"><!--小分页class:small-->
+									<div class="turn_btn">
+										<span class="prev sPrev"> < </span>
+										<span class="current">1</span>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a class="next sNext"> > </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" data-type="hotpot">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+							</div>
+							<div class="tags_wrap">
+								<ul>
+									<li>川菜</li>
+									<li>湘菜</li>
+									<li>粤菜</li>
+									<li>东北菜</li>
+									<li>鲁菜</li>
+									<li>浙菜</li>
+									<li>清真菜</li>
+									<li>闽菜</li>
+									<li>沪菜</li>
+									<li>京菜</li>
+									<li>湖北菜</li>
+									<li>徽菜</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div class="thumbnail_list">
+								<ul>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+								</ul>
+								<p class="search_result">共<span>46</span>条</p>
+								<div class="pagination_wrap small"><!--小分页class:small-->
+									<div class="turn_btn">
+										<span class="prev sPrev"> < </span>
+										<span class="current">1</span>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a class="next sNext"> > </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" data-type="wheaten">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+							</div>
+							<div class="tags_wrap">
+								<ul>
+									<li>川菜</li>
+									<li>湘菜</li>
+									<li>粤菜</li>
+									<li>东北菜</li>
+									<li>鲁菜</li>
+									<li>浙菜</li>
+									<li>清真菜</li>
+									<li>闽菜</li>
+									<li>沪菜</li>
+									<li>京菜</li>
+									<li>湖北菜</li>
+									<li>徽菜</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div class="thumbnail_list">
+								<ul>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+								</ul>
+								<p class="search_result">共<span>46</span>条</p>
+								<div class="pagination_wrap small"><!--小分页class:small-->
+									<div class="turn_btn">
+										<span class="prev sPrev"> < </span>
+										<span class="current">1</span>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a class="next sNext"> > </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" data-type="barbecue">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+							</div>
+							<div class="tags_wrap">
+								<ul>
+									<li>川菜</li>
+									<li>湘菜</li>
+									<li>粤菜</li>
+									<li>东北菜</li>
+									<li>鲁菜</li>
+									<li>浙菜</li>
+									<li>清真菜</li>
+									<li>闽菜</li>
+									<li>沪菜</li>
+									<li>京菜</li>
+									<li>湖北菜</li>
+									<li>徽菜</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div class="thumbnail_list">
+								<ul>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+								</ul>
+								<p class="search_result">共<span>46</span>条</p>
+								<div class="pagination_wrap small"><!--小分页class:small-->
+									<div class="turn_btn">
+										<span class="prev sPrev"> < </span>
+										<span class="current">1</span>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a class="next sNext"> > </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" data-type="western-style">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+							</div>
+							<div class="tags_wrap">
+								<ul>
+									<li>川菜</li>
+									<li>湘菜</li>
+									<li>粤菜</li>
+									<li>东北菜</li>
+									<li>鲁菜</li>
+									<li>浙菜</li>
+									<li>清真菜</li>
+									<li>闽菜</li>
+									<li>沪菜</li>
+									<li>京菜</li>
+									<li>湖北菜</li>
+									<li>徽菜</li>
+									<li>...</li>
+								</ul>
+							</div>
+							<div class="thumbnail_list">
+								<ul>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbsyy.jpg">
+										<h5 class="name">石板三样鱼</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sbhyzs.jpg">
+										<h5 class="name">石板荷叶猪手</h5>
+									</li>
+									<li>
+										<img class="figure" src="img/sample/sjccx.jpg">
+										<h5 class="name">什锦串串香</h5>
+									</li>
+								</ul>
+								<p class="search_result">共<span>46</span>条</p>
+								<div class="pagination_wrap small"><!--小分页class:small-->
+									<div class="turn_btn">
+										<span class="prev sPrev"> < </span>
+										<span class="current">1</span>
+										<a>2</a>
+										<a>3</a>
+										<a>4</a>
+										<a class="next sNext"> > </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu_list_wrap">
+					<div class="caption_wrap">
+						<h3 class="caption">菜品列表: </h3>
+						<a class="new_class" href="javascript:;"><i class="ybiconfont ybicon-add2"></i>新增分类</a>
+					</div>
+					<div class="header">
+						<ul>
+							<li>配图</li>
+							<li>菜名</li>
+							<li>价格</li>
+							<li>操作</li>
+						</ul>
+					</div>
+					<div class="menu_list">
+						<section>
+							<div class="sign"></div>
+							<h3 class="caption">招牌菜</h3>
+							<a class="new_food" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增分类</a>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section>
+							<h3 class="caption">无分类</h3>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="choose_action_bar">
+				<div class="action">
+					<p class="tips">您已选择： <span>33个菜品</span></p>
+					<a class="act_btn disable" href="javascript:;">下一步</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="ft_link cm_fl">
+				<ul>
+					<li>友情链接：</li>
+					<li>
+						<a title="苏州广告公司" target="_blank" href="http://www.yangsign.com">苏州广告公司</a>
+					</li>
+					<li>
+						<a title="包装盒印刷" target="_blank" href="http://www.fungoprinting.cn/">包装盒印刷</a>
+					</li>
+					<li>
+						<a title="包装盒厂家" target="_blank" href="http://www.dghengzhi.com/">包装盒厂家</a>
+					</li>
+					<li>
+						<a title="成都印刷厂" target="_blank" href="http://www.cdssysc.com/">成都印刷厂</a>
+					</li>
+					<li>
+						<a title="新东方教师资格网" target="_blank" href="http://jiaoshi.koolearn.com/">新东方教师资格网</a>
+					</li>
+					<li>
+						<a title="广州名片印刷" target="_blank" href="http://www.020yin.com/">广州名片印刷</a>
+					</li>
+					<li>
+						<a title="生日礼物" target="_blank" href="http://www.shenriliwu.com">生日礼物</a>
+					</li>
+					<li>
+						<a title="儿童淘气堡" target="_blank" href="http://www.mtylwj.com/">儿童淘气堡</a>
+					</li>
+					<li>
+						<a title="郑州印刷厂" target="_blank" href="http://www.xinmeiyin.com">郑州印刷厂</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ft_copyright cm_fr">
+				<div><a href="http://www.miitbeian.gov.cn" target="_blank">Copyright&nbsp;&nbsp;2015&nbsp;&nbsp;by&nbsp;&nbsp;无锡北方数据计算股份有限公司 &nbsp;&nbsp;&nbsp;&nbsp;苏ICP备11087253号-2</a></div>
+			</div>
+		</div>
+	</div>
+	<!--弹出部分-->
+	<!--快速分类-->
+	<div class="quick_sort_con">
+		<h5>常见菜品分类 :</h5>
+		<div class="pagination_wrap small">
+			<div class="turn_btn">
+				<span class="prev sPrev"> < </span>
+				<span class="current">1</span>
+				<a>2</a>
+				<a>3</a>
+				<a>4</a>
+				<a class="next sNext"> > </a>
+			</div>
+		</div>
+		<div class="sort_list">
+			<div class="item">
+				<label>酒店菜谱分类：</label>
+				<p>冷菜+热门菜+招牌菜+热菜+蒸菜+汤类+主食+酒水+小吃+甜品</p>
+				<div class="actions">
+					<a class="edit" href="javascript:;">编辑</a>
+					<a class="use" href="javascript:;">使用</a>
+				</div>
+			</div>
+			<div class="item">
+				<label>酒店菜谱分类：</label>
+				<p>冷菜+热门菜+招牌菜+热菜+蒸菜+汤类+主食+酒水+小吃+甜品</p>
+				<div class="actions">
+					<a class="edit" href="javascript:;">编辑</a>
+					<a class="use" href="javascript:;">使用</a>
+				</div>
+			</div>
+			<div class="item">
+				<label>酒店菜谱分类：</label>
+				<p>冷菜+热门菜+招牌菜+热菜+蒸菜+汤类+主食+酒水+小吃+甜品</p>
+				<div class="actions">
+					<a class="edit" href="javascript:;">编辑</a>
+					<a class="use" href="javascript:;">使用</a>
+				</div>
+			</div>
+		</div>
+		<div class="custom_wrap">
+			<a class="custom" href="javascript:;"><h5>自定义菜品分类<i class="ybiconfont ybicon-down1"></i></h5></a>
+			<textarea>每一行为一个分类，举例：冷菜 招牌菜 热门菜</textarea>
+			<a class="cm_btn cm_fr ok" href="javascript:;">确定</a>
+			<a class="cm_btn cm_fr cancel" href="javascript:;">取消</a>
+		</div>
+	</div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		chooseMenuClass();
+		quickSort();
+	});
+
+	//选择菜品
+	function chooseMenuClass(){
+		//菜品种类tab
+		$('.class_tab li').click(function(){
+			var type = $(this).attr('data-type');
+			$('.class_tab li').removeClass('active');
+			$(this).addClass('active');
+			$('.class_tab_con .item[data-type='+type+']').addClass('active').show().siblings().hide().removeClass('active');
+		});
+
+		//选择菜系标签
+		$('.tags_wrap li').click(function(){
+			$(this).addClass('select').siblings().removeClass('select');
+		});
+
+		//编辑菜品-单价
+		$('.food_list .price').on('focus',function(){
+			var input = $(this);
+			var oldVal = input.val();
+			input.attr('placeholder','请输入价格').val('').closest('tr').addClass('active').siblings().removeClass('active');
+
+			$('.food_list .actions .cancel').click(function(){
+				input.val(oldVal).attr('placeholder','').closest('tr').removeClass('active');
+			});
+
+			$('.food_list .actions .ok').click(function(){
+				var newVal = '￥'+input.val()+'/份';
+				input.val(newVal).attr('placeholder','').closest('tr').removeClass('active');
+			});
+		});
+	}
+
+	function quickSort(){
+		art.dialog({
+			title: '快速分类',
+			lock: true,
+			padding: 0,
+			content: document.querySelector('.quick_sort_con'),
+			init:function(){
+				//自定义分类
+				$('.custom_wrap .custom').click(function(){
+					if($(this).parent().hasClass('open')){
+						$(this).parent().removeClass('open');
+					}else{
+						$(this).parent().addClass('open');
+					}
+
+					$('.custom_wrap .cancel').click(function(){
+						$(this).parent().removeClass('open');
+					});
+				});
+			}
+		});
+	}
+</script>
+</body>
+
+</html>

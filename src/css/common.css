@@ -49,6 +49,19 @@ input:focus, textarea:focus {
     background-color: #f5f5f5;
 }
 
+.disable
+{
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+
+    opacity: .65;
+    color: #999;
+    border-color: #adadad;
+    background-color: #e6e6e6;
+    box-shadow: none;
+
+    filter: alpha(opacity=65) !important;
+}
 
 
 .cm_header_shadow {
@@ -504,6 +517,13 @@ label.error, div.error {
     border: 0;
     border-radius: 2px;
     background-color: #ccc;
+}
+.pagination_wrap.small .turn_btn > a,
+.pagination_wrap.small .turn_btn > span{
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 }
 .turn_btn > a
 {
