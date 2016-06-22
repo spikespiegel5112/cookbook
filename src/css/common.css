@@ -566,8 +566,10 @@ label.error, div.error {
 .commcon_crumb_wrapper ul {
 	padding: 10px 0;
 	margin: 0 auto;
-	width: 1200px;
+	width: 100%;
+    max-width: 1200px;
 	font-family: 'microsoft yahei';
+    border-bottom: 4px solid #7ebd8a;
 }
 .commcon_crumb_wrapper li {
 	display: inline-block;
@@ -708,6 +710,7 @@ label.error, div.error {
 
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
+    position: relative;
 }
 .common_shtagging_wrapper .vertical span
 {
@@ -782,4 +785,44 @@ label.error, div.error {
 }
 .common_eye_item:hover{
     color: #ff4204;
+}
+
+/*~~~~~~~~~~common_slider_wrapper~~~~~~~~~~*/
+.common_slider_wrapper
+{
+    height: 20px;
+}
+.common_slider_wrapper .axis
+{
+    display: inline-block;
+
+    width: 100%;
+    height: 80%;
+    margin: 3px 0;
+
+    border: 1px solid #dbdad9;
+    background-color: #fff;
+}
+.common_slider_wrapper .slider
+{
+    position: absolute;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+.common_slider_wrapper .slider:hover
+{
+    background-color: #eee;
+}
+.common_slider_wrapper .slider:active
+{
+    background-color: #bbb;
 }
