@@ -133,6 +133,11 @@
 	font-size: 20px;
 	color: #999;
 }
+.makebook_steptitle_wrapper p{
+	font-size: 13px;
+	color: #999;
+	padding: 10px 0 0 15px;
+}
 .makebook_stepblock_wrapper {
 	margin: 0 auto;
 	padding: 50px 0 30px 0;
@@ -389,7 +394,7 @@
 	border-bottom: 1px solid #dbdad9;
 }
 
-.pricecalculator_resultindicator_wrapper li
+.makebook_pcresultindicator_wrapper li
 {
 	display: block;
 
@@ -398,7 +403,7 @@
 
 	text-align: right;
 }
-.pricecalculator_resultindicator_wrapper label
+.makebook_pcresultindicator_wrapper label
 {
 	font-size: 14px;
 
@@ -408,7 +413,7 @@
 
 	color: #666;
 }
-.pricecalculator_resultindicator_wrapper span
+.makebook_pcresultindicator_wrapper span
 {
 	font-size: 24px;
 
@@ -419,7 +424,7 @@
 	color: #e89a3c;
 }
 
-.pricecalculator_countor_wrapper
+.makebook_slidecountor_wrapper
 {
     width: 495px;
     margin: 0 0 20px 0;
@@ -428,7 +433,7 @@
     border: 1px solid #dcdbda;
     background-color: #f7f7f7;
 }
-.pricecalculator_countor_wrapper label, .pricecalculator_countor_wrapper input
+.makebook_slidecountor_wrapper label, .makebook_slidecountor_wrapper input
 {
     font-size: 13px;
 
@@ -440,17 +445,17 @@
 
     color: #333;
 }
-.pricecalculator_countor_wrapper label
+.makebook_slidecountor_wrapper label
 {
     width: 50px;
 }
-.pricecalculator_countor_wrapper input
+.makebook_slidecountor_wrapper input
 {
     width: 100px;
 
     border: 1px solid #dbdad9;
 }
-.pricecalculator_countor_wrapper .common_slider_wrapper
+.makebook_slidecountor_wrapper .common_slider_wrapper
 {
     float: right;
 
