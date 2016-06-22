@@ -775,26 +775,36 @@
 				containerWidth = 0,
 				containerHeight = 0,
 				timer,
+				offsetX=Number(options.offsetx),
+				offsetY=Number(options.offsety),
 				ignoreX = 0,
 				ignoreY = 0,
 				ignoreArr = [],
+				ignoredEl=$(ignoreArr.join(',')),
 				windowWidth = $(window).width(),
 				windowHeight = $(window).height();
 			//_this.attr('src', imgSrc + '?' + Date.parse(new Date()))
-
+			var tools={
+				calculateIgnore:function(){
+					if (typeof options.ignore === 'string') {
+						ignoreArr = options.ignore.split(',');
+						for (var i = 0; i < ignoreArr.length; i++) {
+							ignoreX += $(ignoreArr[i]).width();
+							ignoreY += $(ignoreArr[i]).height();
+						}
+						// (ignoreX>windowWidth)?ignoreX=0:ignoreX;
+						// (ignoreY>windowHeight)?ignoreY=0:ignoreY;
+						console.log(ignoreY)
+					}
+				}
+			}
 			initAligning();
 			$(window).resize(function() {
 				initAligning();
 			});
 
 			function initAligning() {
-				if (typeof options.ignore === 'string') {
-					ignoreArr = options.ignore.split(',');
-					for (var i = 0; i < ignoreArr.length; i++) {
-						ignoreX += $(ignoreArr[i]).width();
-						ignoreY += $(ignoreArr[i]).height();
-					}
-				}
+				
 				//当居中元素是img标签时，特殊处理！
 				if (that.is('img')) {
 					//递归判断需要居中的图片是否加载完成，如果没有就重载
@@ -838,7 +848,7 @@
 							var $this = $(this);
 							containerHeight = container.eq(index).height();
 							containerWidth = container.eq(index).width();
-							console.log(containerHeight)
+							//console.log(containerHeight)
 							if ($this.is(':hidden')) {
 								return true
 							} else {
@@ -880,17 +890,17 @@
 						if (thisWidth <= $(window).width()) {
 							if (options.offsetx != 0) {
 								_this.css({
-									'margin': marginY + options.offsety - ignoreY + 'px ' + (containerWidth - thisWidth) / 2 + offsetX - ignoreX + 'px'
+									'margin': marginY + offsetY - ignoreY + 'px ' + (containerWidth - thisWidth) / 2 + offsetX - ignoreX + 'px'
 								});
 							} else {
 								_this.css({
-									'margin': marginY + options.offsety - ignoreY + 'px auto'
+									'margin': marginY + offsetY - ignoreY + 'px auto'
 								});
 							}
 						} else {
 							var marginX = (containerWidth - thisWidth) / 2;
 							_this.css({
-								'margin': marginY + options.offsety - ignoreY + 'px ' + (marginX + options.offsetx) + 'px'
+								'margin': marginY + offsetY - ignoreY + 'px ' + (marginX + options.offsetx) + 'px'
 							});
 						}
 						break;
@@ -914,9 +924,19 @@
 						break;
 					case 'bottom':
 						aligning(function(thisWidth, thisHeight) {
-							_this.css({
-								'margin': (windowHeight - thisHeight + options.offsety - ignoreY) + 'px auto 0'
-							});
+							var alignbottom=function(){
+								tools.calculateIgnore();
+								if (ignoreY<=windowHeight) {
+									_this.css({
+										'margin': (windowHeight - thisHeight + offsetY - ignoreY) + 'px auto 0'
+									});
+									console.log(ignoreY)
+									console.log(windowHeight)
+								};
+							}();
+							ignoredEl.resize(function(){
+								alignbottom();
+							})
 						});
 						break;
 					case 'left':

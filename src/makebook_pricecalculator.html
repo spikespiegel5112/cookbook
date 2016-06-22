@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>易彩-价格计算器</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1466498323_753726.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/makebook.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class="main_container">
+		<div class="yc_cm_header">
+			<div class="shortcut_container">
+				<div class="shortcut">
+					<p class="login_info">
+						<span class="welcome_info">
+						<a target="_top" class="" href="javascript:;" title="">登录</a>
+					</span>
+						<span class="welcome_info">
+						<a class="logout" target="_top" href="javascript:;">注册</a>
+					</span>
+					</p>
+					<ul class="quick_menu">
+						<li>
+							<a href="javascript:;"><i class="ybiconfont ybicon-star"></i>收藏</a>
+						</li>
+						<li>
+							<a href="javascript:;">问题反馈</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_nav">
+				<div class="header_con">
+					<div class="logo">
+						<a href="_index.html"><img src="img/logo.png"></a>
+					</div>
+					<div class="navigation">
+						<ul>
+							<li><a href="_index.html">首页</a></li>
+							<li><a class="active" href="javascript:;">菜谱模板</a></li>
+							<li><a href="javascript:;">菜谱款式</a></li>
+							<li><a href="javascript:;">定制流程</a></li>
+							<li><a href="javascript:;">关于我们</a></li>
+						</ul>
+					</div>
+					<div class="hot_line">
+						<a href="javascript:;"><img src="img/hot_line.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='makebook_choosespec_wrapper'>
+			<div class='makebook_process_wrapper'>
+				<ul>
+					<li class='active'>
+						<span class='icon ybiconfont ybicon-ruler'></span>
+						<div class='title'>
+							<label>1.选规格</label>
+							<div><i></i><span></span></div>
+							<p>选择菜谱款式&规格</p>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-choice'></span>
+						<div class='title'>
+							<label>2.选菜品</label>
+							<div><span></span></div>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-template'></span>
+						<div class='title'>
+							<label>3.选模板</label>
+							<div><span></span></div>
+						</div>
+					</li>
+					<li>
+						<span class='icon ybiconfont ybicon-payfor'></span>
+						<div class='title'>
+							<label>4.支付制作</label>
+							<div><span></span><i></i></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class='makebook_pricecalculator_container'>
+			<div class='makebook_pricecalculator_wrapper'>
+				<div class='commcon_crumb_wrapper'>
+					<ul>
+						<li>
+							<a href="_index.html">首页</a>
+						</li>
+						<li>
+							<label>&nbsp&gt&nbsp</label>
+							<a href="javascript:;">菜谱模板</a>
+						</li>
+					</ul>
+				</div>
+				<div class='makebook_stepblock_wrapper'>
+					<div class='line'>
+						<span></span>
+						<label></label>
+					</div>
+					<div class='makebook_steptitle_wrapper'>
+						<h6>选择尺寸：</h6>
+					</div>
+					<ul class='makebook_stepchoosesize_wrapper'>
+						<li class='a4' sizeinfo='A4'>
+							<a href="javascript:;">
+								<div class='sample'>
+									<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+									<ul class='common_shtagging_wrapper'>
+										<li class='vertical'>
+											<span></span>
+											<p>135</p>
+										</li>
+										<li class='horizonal'>
+											<span></span>
+											<p>108</p>
+										</li>
+									</ul>
+								</div>
+							</a>
+							<div class='desc'>
+								<h6>A4尺寸</h6>
+								<label>2Xcm*1Xcm</label>
+								<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+							</div>
+						</li>
+						<li class='b5' sizeinfo='B5'>
+							<a href="javascript:;">
+								<div class='sample'>
+									<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+									<ul class='common_shtagging_wrapper'>
+										<li class='vertical'>
+											<span></span>
+											<p>108</p>
+										</li>
+										<li class='horizonal'>
+											<span></span>
+											<p>108</p>
+										</li>
+									</ul>
+								</div>
+							</a>
+							<div class='desc'>
+								<h6>B5尺寸</h6>
+								<label>2Xcm*1Xcm</label>
+								<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+							</div>
+						</li>
+						<li class='c3' sizeinfo='C3'>
+							<a href="javascript:;">
+								<div class='sample'>
+									<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+									<ul class='common_shtagging_wrapper'>
+										<li class='vertical'>
+											<span></span>
+											<p>135</p>
+										</li>
+										<li class='horizonal'>
+											<span></span>
+											<p>80</p>
+										</li>
+									</ul>
+								</div>
+							</a>
+							<div class='desc'>
+								<h6>C3尺寸</h6>
+								<label>2Xcm*1Xcm</label>
+								<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class='makebook_stepblock_wrapper'>
+					<div class='line'>
+						<span></span>
+						<label></label>
+					</div>
+					<div class='makebook_steptitle_wrapper'>
+						<h6>装订方式</h6>
+					</div>
+					<div class='makebook_stepchoosebinding_wrapper'>
+						<div class="makebook_steptab_wrapper">
+							<ul>
+								<li class='active' data-type='softleather'><a href="javascript:;">软皮</a></li>
+								<li data-type='shell'><a href="javascript:;">硬壳</a></li>
+							</ul>
+						</div>
+						<div class='makebook_stepsamplelist_wrapper'>
+							<ul class='active' data-type='softleather'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B003/0.jpg">
+									</a>
+									<div class='title'>
+										<label>连体外铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B004/0.jpg">
+									</a>
+									<div class='title'>
+										<label>连体内铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B001/0.jpg">
+									</a>
+									<div class='title'>
+										<label>分体外铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B002/0.jpg">
+									</a>
+									<div class='title'>
+										<label>分体内铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B005/0.jpg">
+									</a>
+									<div class='title'>
+										<label>连体仿古线</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B006/0.jpg">
+									</a>
+									<div class='title'>
+										<label>分体仿古线</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='shell'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B003/0.jpg">
+									</a>
+									<div class='title'>
+										<label>连体外铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B004/0.jpg">
+									</a>
+									<div class='title'>
+										<label>连体内铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B001/0.jpg">
+									</a>
+									<div class='title'>
+										<label>分体外铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B002/0.jpg">
+									</a>
+									<div class='title'>
+										<label>分体内铜钉</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B005/0.jpg">
+									</a>
+									<div class='title'>
+										<label>连体仿古线</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/T002/B006/0.jpg">
+									</a>
+									<div class='title'>
+										<label>分体仿古线</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class='makebook_stepblock_wrapper'>
+					<div class='line'>
+						<span></span>
+						<label></label>
+					</div>
+					<div class='makebook_steptitle_wrapper'>
+						<h6>皮样&颜色</h6>
+					</div>
+					<div class='makebook_stepchoosetexture_wrapper'>
+						<div class="makebook_steptab_wrapper">
+							<ul>
+								<li class='active' data-type='sunflower'><a href="javascript:;">葵花</a></li>
+								<li data-type='basketball'><a href="javascript:;">篮球纹</a></li>
+								<li data-type='cobblestone'><a href="javascript:;">石子纹</a></li>
+								<li data-type='buffalo'><a href="javascript:;">水牛纹</a></li>
+								<li data-type='suede'><a href="javascript:;">绒面</a></li>
+								<li data-type='pelt'><a href="javascript:;">毛皮纹</a></li>
+								<li data-type='lightning'><a href="javascript:;">闪电纹</a></li>
+								<li data-type='fur'><a href="javascript:;">真皮</a></li>
+							</ul>
+						</div>
+						<div class='makebook_stepsamplelist_wrapper'>
+							<ul class='active' data-type='sunflower'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L01/L01001/0.jpg">
+									</a>
+									<div class='title'>
+										<label>红</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L01/L01002/0.jpg">
+									</a>
+									<div class='title'>
+										<label>蓝</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L01/L01003/0.jpg">
+									</a>
+									<div class='title'>
+										<label>土黄</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='basketball'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L02/L02004/0.jpg">
+									</a>
+									<div class='title'>
+										<label>酒红</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L02/L02005/0.jpg">
+									</a>
+									<div class='title'>
+										<label>灰</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='cobblestone'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L03/L03006/0.jpg">
+									</a>
+									<div class='title'>
+										<label>咖啡</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L03/L03007/0.jpg">
+									</a>
+									<div class='title'>
+										<label>蓝</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L03/L03008/0.jpg">
+									</a>
+									<div class='title'>
+										<label>灰</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L03/L03009/0.jpg">
+									</a>
+									<div class='title'>
+										<label>黄</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='buffalo'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L04/L04010/0.jpg">
+									</a>
+									<div class='title'>
+										<label>黑</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L04/L04011/0.jpg">
+									</a>
+									<div class='title'>
+										<label>深绿</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L04/L04012/0.jpg">
+									</a>
+									<div class='title'>
+										<label>棕红</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L04/L04013/0.jpg">
+									</a>
+									<div class='title'>
+										<label>土黄</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L04/L04014/0.jpg">
+									</a>
+									<div class='title'>
+										<label>棕黄</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L04/L04015/0.jpg">
+									</a>
+									<div class='title'>
+										<label>蓝</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L04/L04016/0.jpg">
+									</a>
+									<div class='title'>
+										<label>深红</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='suede'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L05/l05017/0.jpg">
+									</a>
+									<div class='title'>
+										<label>深绿</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L05/l05018/0.jpg">
+									</a>
+									<div class='title'>
+										<label>深红</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L05/l05019/0.jpg">
+									</a>
+									<div class='title'>
+										<label>棕红</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L05/l05020/0.jpg">
+									</a>
+									<div class='title'>
+										<label>浅绿</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L05/l05021/0.jpg">
+									</a>
+									<div class='title'>
+										<label>棕黄</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='pelt'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L06/l06022/0.jpg">
+									</a>
+									<div class='title'>
+										<label>酒红</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L06/l06023/0.jpg">
+									</a>
+									<div class='title'>
+										<label>棕</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L06/l06024/0.jpg">
+									</a>
+									<div class='title'>
+										<label>咖啡</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='lightning'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L07/l07025/0.jpg">
+									</a>
+									<div class='title'>
+										<label>咖啡</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L07/l07026/0.jpg">
+									</a>
+									<div class='title'>
+										<label>黑</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+							<ul data-type='fur'>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L08/l08027/0.jpg">
+									</a>
+									<div class='title'>
+										<label>黑</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L08/l08028/0.jpg">
+									</a>
+									<div class='title'>
+										<label>棕</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<span class='common_check1_item'><strong class='ybiconfont ybicon-ok3hollow'></strong><i></i></span>
+										<img src="img/makebook/dictionary/L08/l08029/0.jpg">
+									</a>
+									<div class='title'>
+										<label>绿</label>
+										<a class='common_eye_item ybiconfont ybicon-eyeopen' href="img/sample/bg_1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class='makebook_stepblock_wrapper'>
+					<div class='line'>
+						<span></span>
+						<label></label>
+					</div>
+					<div class='makebook_steptitle_wrapper'>
+						<h6>菜谱页数</h6>
+						<p>菜谱的页面数量，最少为20页，每加一页价格会有所增加。</p>
+					</div>
+					<div class='makebook_slidecountor_wrapper'>
+						<label>页数</label>
+						<input type='number' autocomplete="off" value='20'>
+						<div class='common_slider_wrapper'>
+							<span class='slider'></span>
+							<label class='axis'></label>
+						</div>
+					</div>
+				</div>
+				<div class='makebook_stepblock_wrapper'>
+					<div class='line'>
+						<span></span>
+					</div>
+					<div class='makebook_steptitle_wrapper'>
+						<h6>菜谱数量</h6>
+						<p>需要下单的菜谱数量，数量 > 20本联系客服询问优惠折扣。</p>
+					</div>
+					<div class='makebook_slidecountor_wrapper'>
+						<label>页数</label>
+						<input type='number' autocomplete="off" value='1'>
+						<div class='common_slider_wrapper'>
+							<span class='slider'></span>
+							<label class='axis'></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='pricecalculator_result_wrapper'>
+				<h5>书价计算器</h5>
+				<h6>页面/配件（数量）</h6>
+				<ul class='makebook_pcresultindicator_wrapper'>
+					<li>
+						<label>每本书单价</label>
+						<span>￥101.1</span>
+					</li>
+					<li>
+						<label>纪念册本数</label>
+						<span>x1</span>
+					</li>
+					<li>
+						<label>总价</label>
+						<span class='totalpeice'>￥101.1</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="ft_link cm_fl">
+				<ul>
+					<li>友情链接：</li>
+					<li>
+						<a title="苏州广告公司" target="_blank" href="http://www.yangsign.com">苏州广告公司</a>
+					</li>
+					<li>
+						<a title="包装盒印刷" target="_blank" href="http://www.fungoprinting.cn/">包装盒印刷</a>
+					</li>
+					<li>
+						<a title="包装盒厂家" target="_blank" href="http://www.dghengzhi.com/">包装盒厂家</a>
+					</li>
+					<li>
+						<a title="成都印刷厂" target="_blank" href="http://www.cdssysc.com/">成都印刷厂</a>
+					</li>
+					<li>
+						<a title="新东方教师资格网" target="_blank" href="http://jiaoshi.koolearn.com/">新东方教师资格网</a>
+					</li>
+					<li>
+						<a title="广州名片印刷" target="_blank" href="http://www.020yin.com/">广州名片印刷</a>
+					</li>
+					<li>
+						<a title="生日礼物" target="_blank" href="http://www.shenriliwu.com">生日礼物</a>
+					</li>
+					<li>
+						<a title="儿童淘气堡" target="_blank" href="http://www.mtylwj.com/">儿童淘气堡</a>
+					</li>
+					<li>
+						<a title="郑州印刷厂" target="_blank" href="http://www.xinmeiyin.com">郑州印刷厂</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ft_copyright cm_fr">
+				<div><a href="http://www.miitbeian.gov.cn" target="_blank">Copyright&nbsp;&nbsp;2015&nbsp;&nbsp;by&nbsp;&nbsp;无锡北方数据计算股份有限公司 &nbsp;&nbsp;&nbsp;&nbsp;苏ICP备11087253号-2</a></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src='assets/js/jquery.fancybox.pack.js'></script>
+	<!-- build:js js/all.js -->
+	<script type="text/javascript" src="js/base.js"></script>
+	<!-- endbuild -->
+	<script>
+	$(function() {
+		fancybox();
+		tab();
+		choose();
+		calculator();
+		$('.common_slider_wrapper .slider').sliderControl({
+			density: 100,
+			offset: '.makebook_slidecountor_wrapper input',
+			axisx: '.common_slider_wrapper',
+			returnto: '.makebook_slidecountor_wrapper input'
+		});
+		$('.common_shtagging_wrapper .vertical p').align({
+			container: '.common_shtagging_wrapper .vertical'
+		});
+	})
+
+	function fancybox() {
+		$('.common_eye_item').fancybox();
+	}
+
+	function tab() {
+		var bindingWrapperEl = $('.makebook_stepsamplelist_wrapper'),
+			bindingTabLi = $('.makebook_stepchoosebinding_wrapper .makebook_steptab_wrapper li');
+		var textureWrapperEl = $('.makebook_stepchoosetexture_wrapper'),
+			textureTabLi = $('.makebook_stepchoosetexture_wrapper .makebook_steptab_wrapper li');
+		bindingTabLi.click(function() {
+			var $this = $(this),
+				thisdata = $this.attr('data-type');
+			$this.addClass('active').siblings().removeClass('active');
+			bindingWrapperEl.find('[data-type=' + thisdata + ']').addClass('active').siblings().removeClass('active');
+		});
+		textureTabLi.click(function() {
+			var $this = $(this),
+				thisdata = $this.attr('data-type');
+			$this.addClass('active').siblings().removeClass('active');
+			textureWrapperEl.find('[data-type=' + thisdata + ']').addClass('active').siblings().removeClass('active');
+		});
+	}
+
+	function choose() {
+		var choosesizeWrapperEl = $('.makebook_stepchoosesize_wrapper'),
+			choosebindingWrapperEl = $('.makebook_stepchoosebinding_wrapper'),
+			choosetextureWrapperEl = $('.makebook_stepchoosetexture_wrapper'),
+			sizeLi = $('.makebook_stepchoosesize_wrapper li'),
+			bindingLi = $('.makebook_stepchoosebinding_wrapper .makebook_stepsamplelist_wrapper li'),
+			textureLi = $('.makebook_stepchoosetexture_wrapper .makebook_stepsamplelist_wrapper li'),
+			summaryLiEl = $('.makebook_stepsummary_wrapper .summary li');
+
+		sizeLi.children('a').click(function() {
+			var $this = $(this),
+				thisLi = $this.parent(),
+				sizeData = thisLi.attr('sizeinfo');
+			summaryLiEl.eq(0).text('尺寸：' + sizeData);
+			thisLi.addClass('active').siblings().removeClass('active');
+			if (choosebindingWrapperEl.is(':visible')) {
+				return;
+			} else {
+				choosebindingWrapperEl.slideDown();
+			}
+		});
+		bindingLi.find('a').click(function() {
+			var $this = $(this),
+				thisLi = $this.parent(),
+				skin, binding;
+
+			thisLi.addClass('active').siblings().removeClass('active');
+			thisLi.closest('ul').siblings().find('li').removeClass('active');
+
+			skin = choosebindingWrapperEl.find('.makebook_steptab_wrapper .active a').text();
+			binding = thisLi.find('.title label').text();
+			summaryLiEl.eq(1).text('规格：' + skin + ' + ' + binding);
+			if (choosetextureWrapperEl.is(':visible')) {
+				return;
+			} else {
+				choosetextureWrapperEl.slideDown();
+			}
+		});
+		textureLi.find('a').click(function() {
+			var $this = $(this),
+				thisLi = $this.parent(),
+				texture, color;
+
+			thisLi.addClass('active').siblings().removeClass('active');
+			thisLi.closest('ul').siblings().find('li').removeClass('active');
+
+			texture = choosetextureWrapperEl.find('.makebook_steptab_wrapper .active a').text();
+			color = thisLi.find('.title label').text();
+			summaryLiEl.eq(2).text('皮样/颜色：' + texture + ' / ' + color);
+			$('.makebook_stepsummary_wrapper .summary ul li').each(function() {
+				if ($(this).text != '') {
+					$('.makebook_stepsummary_wrapper .step_btn').removeClass('disabled');
+				};
+			})
+		});
+	}
+
+	function calculator(){
+		var resultEl=$('.pricecalculator_result_wrapper');
+		$(window).scroll(function(){
+			var offsetTop=$('body').scrollTop();
+			console.log(offsetTop)
+			if (offsetTop>=320) {
+				resultEl.css({
+					position: 'fixed',
+					top: 0,
+					margin: '0 10px'
+				})
+			}else{
+				resultEl.css({
+					position: 'relative',
+					margin: '40px 5px 0'
+				})
+			}
+		})
+	}
+	</script>
+</body>
+
+</html>

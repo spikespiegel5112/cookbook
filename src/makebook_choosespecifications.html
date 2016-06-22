@@ -708,7 +708,12 @@
 		tab();
 		choose();
 		$('.common_shtagging_wrapper .vertical p').align({
-			container: '.common_shtagging_wrapper li'
+			container: '.common_shtagging_wrapper .vertical'
+		});
+		$('.footer').align({
+			position: 'bottom',
+			// offsety: '-750'
+			ignore: '.yc_cm_header, .makebook_choosespec_wrapper, .makebook_stepblock_wrapper, .makebook_stepblock_wrapper, .makebook_stepsummary_container'
 		})
 	})
 
