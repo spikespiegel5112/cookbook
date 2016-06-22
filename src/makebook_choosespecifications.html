@@ -96,15 +96,15 @@
 				</ul>
 			</div>
 		</div>
-		<div class='makebook_csblock_wrapper'>
+		<div class='makebook_stepblock_wrapper'>
 			<div class='line'>
 				<span></span>
 				<label></label>
 			</div>
-			<div class='makebook_cstitle_wrapper'>
+			<div class='makebook_steptitle_wrapper'>
 				<h6>选择尺寸：</h6>
 			</div>
-			<ul class='makebook_cschoosesize_wrapper'>
+			<ul class='makebook_stepchoosesize_wrapper'>
 				<li class='a4' sizeinfo='A4'>
 					<a href="javascript:;">
 						<div class='sample'>
@@ -173,22 +173,22 @@
 				</li>
 			</ul>
 		</div>
-		<div class='makebook_csblock_wrapper'>
+		<div class='makebook_stepblock_wrapper'>
 			<div class='line'>
 				<span></span>
 				<label></label>
 			</div>
-			<div class='makebook_cstitle_wrapper'>
+			<div class='makebook_steptitle_wrapper'>
 				<h6>装订方式</h6>
 			</div>
-			<div class='makebook_cschoosebinding_wrapper'>
-				<div class="makebook_cstab_wrapper">
+			<div class='makebook_stepchoosebinding_wrapper'>
+				<div class="makebook_steptab_wrapper">
 					<ul>
 						<li class='active' data-type='softleather'><a href="javascript:;">软皮</a></li>
 						<li data-type='shell'><a href="javascript:;">硬壳</a></li>
 					</ul>
 				</div>
-				<div class='makebook_cssamplelist_wrapper'>
+				<div class='makebook_stepsamplelist_wrapper'>
 					<ul class='active' data-type='softleather'>
 						<li>
 							<a href="javascript:;">
@@ -316,15 +316,15 @@
 				</div>
 			</div>
 		</div>
-		<div class='makebook_csblock_wrapper'>
+		<div class='makebook_stepblock_wrapper'>
 			<div class='line'>
 				<span></span>
 			</div>
-			<div class='makebook_cstitle_wrapper'>
+			<div class='makebook_steptitle_wrapper'>
 				<h6>皮样&颜色</h6>
 			</div>
-			<div class='makebook_cschoosetexture_wrapper'>
-				<div class="makebook_cstab_wrapper">
+			<div class='makebook_stepchoosetexture_wrapper'>
+				<div class="makebook_steptab_wrapper">
 					<ul>
 						<li class='active' data-type='sunflower'><a href="javascript:;">葵花</a></li>
 						<li data-type='basketball'><a href="javascript:;">篮球纹</a></li>
@@ -336,7 +336,7 @@
 						<li data-type='fur'><a href="javascript:;">真皮</a></li>
 					</ul>
 				</div>
-				<div class='makebook_cssamplelist_wrapper'>
+				<div class='makebook_stepsamplelist_wrapper'>
 					<ul class='active' data-type='sunflower'>
 						<li>
 							<a href="javascript:;">
@@ -646,8 +646,8 @@
 				</div>
 			</div>
 		</div>
-		<div class='makebook_cssummary_container'>
-			<div class='makebook_cssummary_wrapper'>
+		<div class='makebook_stepsummary_container'>
+			<div class='makebook_stepsummary_wrapper'>
 				<div class='summary'>
 					<p>您已选择：</p>
 					<ul>
@@ -707,6 +707,9 @@
 		fancybox();
 		tab();
 		choose();
+		$('.common_shtagging_wrapper .vertical p').align({
+			container: '.common_shtagging_wrapper li'
+		})
 	})
 
 	function fancybox() {
@@ -714,10 +717,10 @@
 	}
 
 	function tab() {
-		var bindingWrapperEl = $('.makebook_cssamplelist_wrapper'),
-			bindingTabLi = $('.makebook_cschoosebinding_wrapper .makebook_cstab_wrapper li');
-		var textureWrapperEl = $('.makebook_cschoosetexture_wrapper'),
-			textureTabLi = $('.makebook_cschoosetexture_wrapper .makebook_cstab_wrapper li');
+		var bindingWrapperEl = $('.makebook_stepsamplelist_wrapper'),
+			bindingTabLi = $('.makebook_stepchoosebinding_wrapper .makebook_steptab_wrapper li');
+		var textureWrapperEl = $('.makebook_stepchoosetexture_wrapper'),
+			textureTabLi = $('.makebook_stepchoosetexture_wrapper .makebook_steptab_wrapper li');
 		bindingTabLi.click(function() {
 			var $this = $(this),
 				thisdata = $this.attr('data-type');
@@ -733,13 +736,13 @@
 	}
 
 	function choose() {
-		var choosesizeWrapperEl = $('.makebook_cschoosesize_wrapper'),
-			choosebindingWrapperEl = $('.makebook_cschoosebinding_wrapper'),
-			choosetextureWrapperEl = $('.makebook_cschoosetexture_wrapper'),
-			sizeLi = $('.makebook_cschoosesize_wrapper li'),
-			bindingLi = $('.makebook_cschoosebinding_wrapper .makebook_cssamplelist_wrapper li'),
-			textureLi = $('.makebook_cschoosetexture_wrapper .makebook_cssamplelist_wrapper li'),
-			summaryLiEl = $('.makebook_cssummary_wrapper .summary li');
+		var choosesizeWrapperEl = $('.makebook_stepchoosesize_wrapper'),
+			choosebindingWrapperEl = $('.makebook_stepchoosebinding_wrapper'),
+			choosetextureWrapperEl = $('.makebook_stepchoosetexture_wrapper'),
+			sizeLi = $('.makebook_stepchoosesize_wrapper li'),
+			bindingLi = $('.makebook_stepchoosebinding_wrapper .makebook_stepsamplelist_wrapper li'),
+			textureLi = $('.makebook_stepchoosetexture_wrapper .makebook_stepsamplelist_wrapper li'),
+			summaryLiEl = $('.makebook_stepsummary_wrapper .summary li');
 
 		sizeLi.children('a').click(function() {
 			var $this = $(this),
@@ -761,7 +764,7 @@
 			thisLi.addClass('active').siblings().removeClass('active');
 			thisLi.closest('ul').siblings().find('li').removeClass('active');
 
-			skin = choosebindingWrapperEl.find('.makebook_cstab_wrapper .active a').text();
+			skin = choosebindingWrapperEl.find('.makebook_steptab_wrapper .active a').text();
 			binding = thisLi.find('.title label').text();
 			summaryLiEl.eq(1).text('规格：' + skin + ' + ' + binding);
 			if (choosetextureWrapperEl.is(':visible')) {
@@ -778,12 +781,12 @@
 			thisLi.addClass('active').siblings().removeClass('active');
 			thisLi.closest('ul').siblings().find('li').removeClass('active');
 
-			texture = choosetextureWrapperEl.find('.makebook_cstab_wrapper .active a').text();
+			texture = choosetextureWrapperEl.find('.makebook_steptab_wrapper .active a').text();
 			color = thisLi.find('.title label').text();
 			summaryLiEl.eq(2).text('皮样/颜色：' + texture + ' / ' + color);
-			$('.makebook_cssummary_wrapper .summary ul li').each(function() {
+			$('.makebook_stepsummary_wrapper .summary ul li').each(function() {
 				if ($(this).text != '') {
-					$('.makebook_cssummary_wrapper .step_btn').removeClass('disabled');
+					$('.makebook_stepsummary_wrapper .step_btn').removeClass('disabled');
 				};
 			})
 		});
