@@ -562,7 +562,7 @@
 				})
 				counterEl.on('keydown keyup', function(e) {
 					var $this = $(this),
-						counterVal='',
+						counterVal = '',
 						counter = 0,
 						keycode = e.charCode ? e.charCode : e.keyCode;
 					switch (e.type) {
@@ -574,15 +574,15 @@
 							}
 							break;
 						case 'keyup':
-							counterEl.val(counterEl.val().replace(/\D/g,''))
+							counterEl.val(counterEl.val().replace(/\D/g, ''))
 							config.onchange();
 							fireonchange(counterEl);
 							break;
 					}
 				});
-				counterEl.blur(function(){
-					var $this=$(this);
-					if ($this.val()=='') {
+				counterEl.blur(function() {
+					var $this = $(this);
+					if ($this.val() == '') {
 						$this.val(0)
 					};
 				})
@@ -763,7 +763,8 @@
 				isimage: false,
 				offsetx: 0,
 				offsety: 0,
-				ignore: ''
+				ignorey: 0,
+				ignorex: 0
 			}, options);
 
 			var that = this,
@@ -775,26 +776,43 @@
 				containerWidth = 0,
 				containerHeight = 0,
 				timer,
+				offsetX = Number(options.offsetx),
+				offsetY = Number(options.offsety),
 				ignoreX = 0,
 				ignoreY = 0,
-				ignoreArr = [],
+				ignoredElX = '',
+				ignoredElY = '',
 				windowWidth = $(window).width(),
 				windowHeight = $(window).height();
 			//_this.attr('src', imgSrc + '?' + Date.parse(new Date()))
-
+			var tools = {
+				calculateIgnore: function() {
+					if (typeof options.ignorey === 'string' || typeof options.ignorex === 'string') {
+						alert('aaqa')
+						var ignoreArrX = options.ignorex.split(','),
+							ignoreArrY = options.ignorey.split(',');
+						for (var i = 0; i < ignoreArrX.length; i++) {
+							ignoreX += $(ignoreArrX[i]).width();
+						}
+						for (var i = 0; i < ignoreArrY.length; i++) {
+							ignoreY += $(ignoreArrY[i]).height();
+						}
+						ignoredElX = $(ignoreArrX.join(','));
+						ignoredElY = $(ignoreArrY.join(','));
+						console.log(ignoreY)
+					} else {
+						ignoreX = options.ignorex;
+						ignoreY = options.ignorey;
+					}
+				}
+			}
 			initAligning();
 			$(window).resize(function() {
 				initAligning();
 			});
 
 			function initAligning() {
-				if (typeof options.ignore === 'string') {
-					ignoreArr = options.ignore.split(',');
-					for (var i = 0; i < ignoreArr.length; i++) {
-						ignoreX += $(ignoreArr[i]).width();
-						ignoreY += $(ignoreArr[i]).height();
-					}
-				}
+
 				//当居中元素是img标签时，特殊处理！
 				if (that.is('img')) {
 					//递归判断需要居中的图片是否加载完成，如果没有就重载
@@ -838,7 +856,7 @@
 							var $this = $(this);
 							containerHeight = container.eq(index).height();
 							containerWidth = container.eq(index).width();
-							console.log(containerHeight)
+							//console.log(containerHeight)
 							if ($this.is(':hidden')) {
 								return true
 							} else {
@@ -880,17 +898,17 @@
 						if (thisWidth <= $(window).width()) {
 							if (options.offsetx != 0) {
 								_this.css({
-									'margin': marginY + options.offsety - ignoreY + 'px ' + (containerWidth - thisWidth) / 2 + offsetX - ignoreX + 'px'
+									'margin': marginY + offsetY - ignoreY + 'px ' + (containerWidth - thisWidth) / 2 + offsetX - ignoreX + 'px'
 								});
 							} else {
 								_this.css({
-									'margin': marginY + options.offsety - ignoreY + 'px auto'
+									'margin': marginY + offsetY - ignoreY + 'px auto'
 								});
 							}
 						} else {
 							var marginX = (containerWidth - thisWidth) / 2;
 							_this.css({
-								'margin': marginY + options.offsety - ignoreY + 'px ' + (marginX + options.offsetx) + 'px'
+								'margin': marginY + offsetY - ignoreY + 'px ' + (marginX + options.offsetx) + 'px'
 							});
 						}
 						break;
@@ -914,9 +932,14 @@
 						break;
 					case 'bottom':
 						aligning(function(thisWidth, thisHeight) {
-							_this.css({
-								'margin': (windowHeight - thisHeight + options.offsety - ignoreY) + 'px auto 0'
-							});
+							tools.calculateIgnore();
+							if (ignoreY <= windowHeight) {
+								_this.css({
+									'margin': (windowHeight - thisHeight + offsetY - ignoreY) + 'px auto 0'
+								});
+								console.log(ignoreY)
+								console.log(windowHeight)
+							};
 						});
 						break;
 					case 'left':
@@ -1197,7 +1220,7 @@
 				docEle = doc.documentElement,
 				docBody = doc.body,
 				docHeightContext = docBody ? docBody : docEle,
-				
+
 				clientHeight = 0,
 				windowHeight = doc.all ? docEle.offsetHeight : window.innerHeight;
 
