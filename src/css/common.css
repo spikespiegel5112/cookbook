@@ -107,6 +107,7 @@ label.error, div.error {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #fff;
+	box-shadow: 0 2px 3px #ccc;
 }
 .yc_cm_header .shortcut_container {
 	font-size: 12px;
