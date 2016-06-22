@@ -103,6 +103,7 @@
 }
 .makebook_cssummary_wrapper .summary li {
 	display: inline-block;
+	margin: 0 15px 0 0;
 	color: #ff4404;
 }
 .makebook_cssummary_wrapper .step_btn {
@@ -189,6 +190,7 @@
 .makebook_cschoosesize_wrapper li .desc a {
 	display: block;
 	margin: 10px 0 0 0;
+	width: 25px;
 	color: #aaa;
 	font-size: 20px;
 }
@@ -201,12 +203,23 @@
 	position: relative;
 	text-align: center;
 }
-.makebook_cschoosesize_wrapper li .sample>span{
+
+
+
+.makebook_cschoosesize_wrapper .active .common_check1_item, .makebook_cssamplelist_wrapper ul .active .common_check1_item{
 	display: inline-block;
-	width: 50px;
-	height: 50px;
-	font-size: 20px;
-	vertical-align: middle;
+}
+.makebook_cschoosesize_wrapper li a:hover .common_check1_item, .makebook_cssamplelist_wrapper ul li a:hover .common_check1_item{
+	display: inline-block;
+}
+.makebook_cschoosesize_wrapper li a:hover .common_check1_item strong, .makebook_cssamplelist_wrapper ul li a:hover .common_check1_item strong{
+	color: #fff;
+}
+.makebook_cschoosesize_wrapper li a:hover .common_check1_item i, .makebook_cssamplelist_wrapper ul li a:hover .common_check1_item i{
+	background-color: #999;
+}
+.makebook_cschoosesize_wrapper .active a:hover .common_check1_item i, .makebook_cssamplelist_wrapper ul .active a:hover .common_check1_item i{
+	background-color: #ff4500;
 }
 .makebook_cschoosesize_wrapper .a4 .sample {
 	width: 108px;
@@ -239,6 +252,15 @@
 .makebook_cstab_wrapper li {
 	display: inline-block;
 	border-top: 1px solid #ddd;
+}
+.makebook_cstab_wrapper li.active{
+	border-top: none;
+}
+.makebook_cschoosebinding_wrapper{
+	display: none;
+}
+.makebook_cschoosetexture_wrapper{
+	display: none;
 }
 .makebook_cschoosebinding_wrapper .makebook_cstab_wrapper li a{
 	width: 155px;
@@ -293,13 +315,18 @@
 	border: 1px solid #ccc;
 	box-shadow: 5px 5px 0 #e6e6e6;
 }
-.makebook_cssamplelist_wrapper a{
+.makebook_cssamplelist_wrapper li>a{
 	display: block;
 	width: 150px;
 	height: 150px;
 	margin: 10px auto;
-	
 	border: 0;
+	position: relative;
+}
+.makebook_cssamplelist_wrapper li>a span{
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 .makebook_cssamplelist_wrapper li img{
 	display: block;
@@ -316,7 +343,7 @@
 	padding: 0 0 0 10px;
 	text-align: left;
 }
-.makebook_cssamplelist_wrapper li .title span{
+.makebook_cssamplelist_wrapper li .title a{
 	float: right;
-
+	margin: 0 10px 0 0;
 }
