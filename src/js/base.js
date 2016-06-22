@@ -562,7 +562,7 @@
 				})
 				counterEl.on('keydown keyup', function(e) {
 					var $this = $(this),
-						counterVal='',
+						counterVal = '',
 						counter = 0,
 						keycode = e.charCode ? e.charCode : e.keyCode;
 					switch (e.type) {
@@ -574,15 +574,15 @@
 							}
 							break;
 						case 'keyup':
-							counterEl.val(counterEl.val().replace(/\D/g,''))
+							counterEl.val(counterEl.val().replace(/\D/g, ''))
 							config.onchange();
 							fireonchange(counterEl);
 							break;
 					}
 				});
-				counterEl.blur(function(){
-					var $this=$(this);
-					if ($this.val()=='') {
+				counterEl.blur(function() {
+					var $this = $(this);
+					if ($this.val() == '') {
 						$this.val(0)
 					};
 				})
@@ -763,7 +763,8 @@
 				isimage: false,
 				offsetx: 0,
 				offsety: 0,
-				ignore: ''
+				ignorey: 0,
+				ignorex: 0
 			}, options);
 
 			var that = this,
@@ -775,26 +776,33 @@
 				containerWidth = 0,
 				containerHeight = 0,
 				timer,
-				offsetX=Number(options.offsetx),
-				offsetY=Number(options.offsety),
+				offsetX = Number(options.offsetx),
+				offsetY = Number(options.offsety),
 				ignoreX = 0,
 				ignoreY = 0,
-				ignoreArr = [],
-				ignoredEl=$(ignoreArr.join(',')),
+				ignoredElX = '',
+				ignoredElY = '',
 				windowWidth = $(window).width(),
 				windowHeight = $(window).height();
 			//_this.attr('src', imgSrc + '?' + Date.parse(new Date()))
-			var tools={
-				calculateIgnore:function(){
-					if (typeof options.ignore === 'string') {
-						ignoreArr = options.ignore.split(',');
-						for (var i = 0; i < ignoreArr.length; i++) {
-							ignoreX += $(ignoreArr[i]).width();
-							ignoreY += $(ignoreArr[i]).height();
+			var tools = {
+				calculateIgnore: function() {
+					if (typeof options.ignorey === 'string' || typeof options.ignorex === 'string') {
+						alert('aaqa')
+						var ignoreArrX = options.ignorex.split(','),
+							ignoreArrY = options.ignorey.split(',');
+						for (var i = 0; i < ignoreArrX.length; i++) {
+							ignoreX += $(ignoreArrX[i]).width();
 						}
-						// (ignoreX>windowWidth)?ignoreX=0:ignoreX;
-						// (ignoreY>windowHeight)?ignoreY=0:ignoreY;
+						for (var i = 0; i < ignoreArrY.length; i++) {
+							ignoreY += $(ignoreArrY[i]).height();
+						}
+						ignoredElX = $(ignoreArrX.join(','));
+						ignoredElY = $(ignoreArrY.join(','));
 						console.log(ignoreY)
+					} else {
+						ignoreX = options.ignorex;
+						ignoreY = options.ignorey;
 					}
 				}
 			}
@@ -804,7 +812,7 @@
 			});
 
 			function initAligning() {
-				
+
 				//当居中元素是img标签时，特殊处理！
 				if (that.is('img')) {
 					//递归判断需要居中的图片是否加载完成，如果没有就重载
@@ -924,19 +932,14 @@
 						break;
 					case 'bottom':
 						aligning(function(thisWidth, thisHeight) {
-							var alignbottom=function(){
-								tools.calculateIgnore();
-								if (ignoreY<=windowHeight) {
-									_this.css({
-										'margin': (windowHeight - thisHeight + offsetY - ignoreY) + 'px auto 0'
-									});
-									console.log(ignoreY)
-									console.log(windowHeight)
-								};
-							}();
-							ignoredEl.resize(function(){
-								alignbottom();
-							})
+							tools.calculateIgnore();
+							if (ignoreY <= windowHeight) {
+								_this.css({
+									'margin': (windowHeight - thisHeight + offsetY - ignoreY) + 'px auto 0'
+								});
+								console.log(ignoreY)
+								console.log(windowHeight)
+							};
 						});
 						break;
 					case 'left':
@@ -1217,7 +1220,7 @@
 				docEle = doc.documentElement,
 				docBody = doc.body,
 				docHeightContext = docBody ? docBody : docEle,
-				
+
 				clientHeight = 0,
 				windowHeight = doc.all ? docEle.offsetHeight : window.innerHeight;
 
