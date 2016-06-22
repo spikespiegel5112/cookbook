@@ -1,0 +1,370 @@
+.pc_personalcenter_container{
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.pc_personalcenter_wrapper{
+	margin: 0 auto;
+	width: 1200px;
+	background-color: #fff;
+}
+.pc_title_wrapper{
+	height: 40px;
+	background: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
+}
+.pc_title_wrapper h6{
+	padding: 0 0 0 20px;
+	font-size: 17px;
+	line-height: 40px;
+}
+.personal_content_box {
+	margin: 0 auto;
+	font-size: 14px;
+	box-sizing: border-box;
+	width: 90%;
+	min-height: 800px;
+	padding: 25px;
+	color: #333;
+	/*border-left: 1px solid #d9d9d9;*/
+}
+.personal_content_box > a, .right_content_container > a {
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 20px;
+}
+.personal_content_box > a {
+	cursor: default;
+}
+.personal_content_box .edit_icon_group {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	display: inline-block;
+}
+.personal_content_box .query_date {
+	display: block;
+}
+.personal_content_box .tool_wrap {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	display: inline-block;
+}
+.personal_content_box .tool_wrap .yb_menu {
+	position: relative;
+	z-index: 9;
+	display: inline-block;
+	width: 95px;
+	text-align: center;
+	vertical-align: top;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	background-color: #fff;
+}
+.personal_content_box .tool_wrap .yb_menu .menu_hd {
+	font-size: 12px;
+	line-height: 25px;
+	position: relative;
+	display: block;
+	color: #666;
+}
+.personal_content_box .tool_wrap .yb_menu .menu_hd b {
+	font-size: 12px;
+	padding-left: 5px;
+}
+.personal_content_box .tool_wrap .ybicon-addfriend {
+	font-size: 35px;
+	line-height: 25px;
+	display: inline-block;
+	width: 34px;
+	height: 25px;
+	margin: 0 15px 0 10px;
+	vertical-align: middle;
+	color: #abaebd;
+}
+.personal_content_box .tool_wrap .search_bar {
+	line-height: 25px;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 0;
+	min-width: 30px;
+	height: 25px;
+	transition: width .3s;
+	vertical-align: middle;
+	-webkit-backface-visibility: hidden;
+}
+.personal_content_box .bookshelf_wrap {
+	position: relative;
+	width: 100%;
+	margin: -8px 0 0;
+	padding: 0;
+}
+.opd_wrapper .opd_payoff_wrapper, .personal_content_box .opd_payoff_wrapper {
+	position: relative;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+.personal_content_box .opd_successbind_wrapper ul {
+	margin: 40px auto;
+}
+.personal_content_box .opd_paymentresult_wrapper, .personal_content_box .opd_successbind_wrapper {
+	display: block;
+	margin: 0 auto 30px;
+}
+.personal_content_box .opd_successbind_wrapper {
+	width: 360px;
+	height: 160px;
+	padding: 25px 20px;
+}
+.security_container {
+	padding: 15px;
+}
+.binding_mode > li {
+	line-height: 50px;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 48%;
+	margin: 0 10px 20px 0;
+	padding: 5px 15px;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 1px 0 5px #ccc;
+}
+.binding_mode > li a div {
+	display: inline-block;
+	width: 45px;
+	height: 40px;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+.binding_mode > li a > span:last-child {
+	float: right;
+	color: #6ea11f;
+}
+.hr {
+	position: relative;
+	padding: 10px 0;
+}
+.hr div.green {
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	width: 13%;
+	border-top: 1px solid #91c31e;
+}
+.hr div.gray {
+	position: absolute;
+	display: block;
+	width: 100%;
+	border-top: 1px solid #b4b4b4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info_details
+{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.info_details .form-group label
+{
+    font-size: 16px;
+    font-weight: normal;
+
+    text-align: left;
+}
+
+.info_details .form-group .title
+{
+    line-height: 35px;
+
+    display: inline-block;
+
+    width: 90px;
+    margin-right: 5px;
+
+    text-align: right;
+}
+
+.info_details .form-group input
+{
+    font-size: 16px;
+
+    display: inline-block;
+
+    width: 200px;
+    height: 40px;
+}
+
+.info_details .form-group input[readonly]
+{
+    background-color: #fff;
+}
+
+.info_details .form-group select
+{
+    font-size: 16px;
+
+    display: inline-block;
+
+    width: 75px;
+    height: 30px;
+    padding: 0 0 0 6px;
+}
+
+.info_details .form-group select option
+{
+    padding: 0 12px;
+}
+
+.info_details .form-group textarea
+{
+    display: inline-block;
+
+    width: 425px;
+    height: 105px;
+
+    resize: none;
+    vertical-align: middle;
+}
+
+.info_details .form-group .btn
+{
+    line-height: 25px;
+
+    display: inline-block;
+
+    width: 50px;
+    height: 25px;
+    margin-left: 5px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff 0px, #e0e0e0 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .15) inset, 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.info_details .form-group .btn:hover
+{
+    color: #89c539;
+}
+
+.info_details .btn_group
+{
+    margin-top: 25px;
+    margin-left: 180px;
+}
+.info_details .infolist .form-group{
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+
+.form-control
+{
+    line-height: 1.42857143;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.form-control:focus
+{
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.info_details .btn_group
+{
+    margin-top: 25px;
+    margin-left: 180px;
+}
+
+.btn_group > button.selected
+{
+    margin-right: 15px;
+
+    color: #fff;
+    border: 1px solid #50a000;
+    background-color: #a0d350;
+}
+
+.btn_group > button.selected:hover
+{
+    border: 1px solid #dcbb37;
+    background: #e7b54b;
+}
+
+.btn_group > button.selected:active
+{
+    color: #a97913;
+}
+
+.change_password_container .btn_group > button,
+.feedback_container .btn_group > button,
+.info_details .btn_group > button
+{
+    font-size: 16px;
+    font-weight: bold;
+
+    width: 110px;
+    height: 40px;
+
+    cursor: pointer;
+
+    color: #666;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    background-color: #f5f6f7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
