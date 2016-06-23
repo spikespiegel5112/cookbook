@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
     };
 
-    var YBConfig = {
+    var YCConfig = {
         staticPort : 9000, //静态资源查看地址
 
         //移动端的压缩css文件
@@ -18,27 +18,12 @@ module.exports = function(grunt) {
                 '<%= meta.srcPath %>css/common.css',
                 '<%= meta.srcPath %>css/index.css',
                 '<%= meta.srcPath %>css/access.css',
-                '<%= meta.srcPath %>css/booklist.css',
-                '<%= meta.srcPath %>css/bookpreview.css',
-                '<%= meta.srcPath %>css/ia.css',
                 '<%= meta.srcPath %>css/makebook.css',
-                '<%= meta.srcPath %>css/staticize.css',
-                '<%= meta.srcPath %>css/tplshowcase.css',
+                '<%= meta.srcPath %>css/makebook_chooseclass.css',
+                '<%= meta.srcPath %>css/static.css',
                 '<%= meta.srcPath %>css/pc.css',
-                '<%= meta.srcPath %>css/sem.css'
-            ],
-            wap : [
-                '<%= meta.srcPath %>css/m_reset.css',
-                '<%= meta.srcPath %>css/m_common.css',
-                '<%= meta.srcPath %>css/m_index.css',
-                '<%= meta.srcPath %>css/m_access.css',
-                '<%= meta.srcPath %>css/m_booklist.css',
-                '<%= meta.srcPath %>css/m_bookpreview.css',
-                '<%= meta.srcPath %>css/m_ia.css',
-                '<%= meta.srcPath %>css/m_makebook.css',
-                '<%= meta.srcPath %>css/m_staticize.css',
-                '<%= meta.srcPath %>css/m_pc.css',
-                '<%= meta.srcPath %>css/m_shop.css'
+                '<%= meta.srcPath %>css/order.css',
+                '<%= meta.srcPath %>css/booklist.css'
             ]
         },
         js : {
@@ -77,7 +62,7 @@ module.exports = function(grunt) {
                 options: {
                     open: true,
                     protocol : "http",
-                    port: YBConfig.staticPort + 1,
+                    port: YCConfig.staticPort + 1,
                     hostname: '127.0.0.1',
                     livereload: 35730,
                     base: ['dist']
@@ -87,7 +72,7 @@ module.exports = function(grunt) {
                 options: {
                     open: true,
                     protocol : "http",
-                    port: YBConfig.staticPort,
+                    port: YCConfig.staticPort,
                     hostname: '127.0.0.1',
                     livereload: 35729,
                     base: ['src']
@@ -96,7 +81,7 @@ module.exports = function(grunt) {
         },
 
         useminPrepare: {
-            html: ['src/**/*.html','src/m/*.html'],
+            html: ['src/**/*.html'],
             options: {
                 dest: '<%= meta.distPath %>',
                 flow : {
@@ -130,15 +115,8 @@ module.exports = function(grunt) {
                 options: {
                     banner: '<%= banner %>'
                 },
-                src: YBConfig.css.pc,
+                src: YCConfig.css.pc,
                 dest: '<%= meta.distPath %>css/all.css'
-            },
-            mcss: {
-                options: {
-                    banner: '<%= banner %>'
-                },
-                src: YBConfig.css.wap,
-                dest: '<%= meta.distPath %>css/m.all.css'
             }
         },
 
@@ -167,12 +145,6 @@ module.exports = function(grunt) {
                     dest: '<%= meta.distPath %>/'
                 },
                     {
-                        //复制WAPhtml文件
-                        expand: true,
-                        cwd: '<%= meta.srcPath %>',
-                        src: 'm/*.html',
-                        dest: '<%= meta.distPath %>/'
-                    },{
                         //复制图像文件
                         expand: true,
                         cwd: '<%= meta.srcPath %>',
@@ -208,9 +180,6 @@ module.exports = function(grunt) {
                     {
                         src: '<%= meta.distPath %>css/all.css',
                         dest: '<%= meta.distPath %>css/all.min.css'
-                    },{
-                        src: '<%= meta.distPath %>css/m.all.css',
-                        dest: '<%= meta.distPath %>css/m.all.min.css'
                     }
                 ]
             }
@@ -313,7 +282,7 @@ module.exports = function(grunt) {
          * 替换压缩之后的文件
          */
         usemin: {
-            html: ['<%= meta.distPath %>/*.html','<%= meta.distPath %>/m/*.html'],
+            html: ['<%= meta.distPath %>/*.html'],
             options: {
                 assetsDirs: ['<%= meta.distPath %>/css']
             }
@@ -353,7 +322,7 @@ module.exports = function(grunt) {
                     authKey: 'test184'
                 },
                 src: './',
-                dest: '/home/static/FE/yearbook3-static-page',
+                dest: '/home/static/FE/cookbook-static-page',
                 exclusions: ['./**/.DS_Store', './**/Thumbs.db', './node_modules/**']
             }
         },
@@ -367,7 +336,7 @@ module.exports = function(grunt) {
                 },
                 cache: 'sftpCache.json',
                 src: './',
-                dest: '/home/static/FE/yearbook3-static-page',
+                dest: '/home/static/FE/cookbook-static-page',
                 exclusions: ['./**/.DS_Store', './**/Thumbs.db', './node_modules/**'],
                 serverSep: '/',
                 concurrency: 4,
