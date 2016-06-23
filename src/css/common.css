@@ -144,6 +144,10 @@ label.error, div.error {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+/*yc edit space*/
+.yc_cm_header.edit_space .shortcut_container .shortcut{
+	max-width: none;
+}
 .yc_cm_header .shortcut a {
 	font-size: 12px;
 	position: relative;
@@ -154,33 +158,36 @@ label.error, div.error {
 	color: #f40;
 }
 .yc_cm_header .shortcut .quick_menu {
-	position: absolute;
-	top: 0;
-	left: 15px;
-	height: 40px;
+	float: left;
+}
+.yc_cm_header.edit_space .shortcut .quick_menu{
+	float: right;
 }
 .yc_cm_header .shortcut .quick_menu li {
 	position: relative;
 	float: left;
 }
-.yc_cm_header .shortcut .quick_menu li a i {
+.yc_cm_header .shortcut .quick_menu li a > i {
 	font-size: 16px;
 	font-style: normal;
 	margin-right: -4px;
 	color: #999;
 	float: left;
 }
-.yc_cm_header .shortcut .quick_menu li a:hover i {
+.yc_cm_header .shortcut .quick_menu li a:hover > i {
 	color: #f40;
 }
 .yc_cm_header .shortcut .login_info {
-	position: absolute;
-	right: 32px;
+	float: right;
+	margin-right: 17px;
 }
 .yc_cm_header .shortcut .login_info .welcome_info {
 	position: relative;
 }
-.yc_cm_header .shortcut .login_info .welcome_info:first-child::after, .yc_cm_header .shortcut .quick_menu li:first-child a:before {
+.yc_cm_header .shortcut .login_info .welcome_info:first-child::after,
+.yc_cm_header .shortcut .quick_menu li:first-child a:before,
+.edit_space .shortcut .quick_menu li:nth-child(2) a:before,
+.edit_space .shortcut .nav_bar li a::after{
 	position: absolute;
 	top: 3px;
 	right: 0;
@@ -188,6 +195,90 @@ label.error, div.error {
 	height: 12px;
 	content: ' ';
 	background-color: #666;
+}
+.edit_space .shortcut .quick_menu li:nth-child(1) a:before{
+	display: none;
+}
+.yc_cm_header .shortcut .yc_logo{
+	position: relative;
+	float: left;
+	width: 58px;
+	height: 38px;
+	margin: 1px 10px 1px 0;
+}
+.yc_cm_header .shortcut .nav_bar li {
+	float: left;
+}
+.quick_menu li .phone{
+	position: relative;
+	margin-left: 25px;
+}
+.quick_menu .yc_menu{
+	position: relative;
+	margin: 0 25px;
+}
+.quick_menu .yc_menu .menu_hd b {
+	padding-left: 5px;
+}
+.quick_menu .yc_menu .menu_bd {
+	position: absolute;
+	z-index: 99;
+	top: 32px;
+	display: none;
+	border: 1px solid #dedddd;
+	border-radius: 2px;
+	background-color: #fff;
+	box-shadow: 1px 1px 3px #c6c6c8;
+}
+.quick_menu .yc_menu:hover .menu_bd {
+	display: block;
+	animation: transTop .3s ease-in-out;
+}
+.quick_menu .yc_menu .menu_bd::before {
+	position: absolute;
+	top: -8px;
+	right: 11px;
+	width: 0;
+	height: 0;
+	content: ' ';
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #dedddd;
+	border-left: 8px solid transparent;
+}
+.quick_menu .yc_menu .menu_bd .menu_bd_panel::before {
+	position: absolute;
+	top: -7px;
+	right: 11px;
+	width: 0;
+	height: 0;
+	content: ' ';
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+	border-left: 8px solid transparent;
+}
+.quick_menu .yc_menu .menu_bd .menu_bd_panel {
+	width: 85px;
+	padding: 6px 0;
+	text-align: center;
+}
+.quick_menu .yc_menu .menu_bd .menu_bd_panel a {
+	display: block;
+	color: #333;
+	height: 32px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+.quick_menu .yc_menu .menu_bd_panel a .ybicon-turnoff {
+	float: none;
+	font-size: 12px;
+	font-style: normal;
+	margin-right: 3px;
+}
+.quick_menu .yc_menu .menu_bd .menu_bd_panel a:hover {
+	color: #00a388;
+	border-top: 1px solid #dedddd;
+	border-bottom: 1px solid #dedddd;
+	background-color: #f2f2f2;
 }
 .yc_cm_header .main_nav {
 	position: relative;
