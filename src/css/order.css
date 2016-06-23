@@ -847,12 +847,12 @@
     width: 100%;
     border-top: 1px solid #b4b4b4;
 }
-.personal_content_box .commcon_crumb_wrapper{
+.personal_content_box .common_crumb_wrapper{
     float: left;
     width: 60%;
     padding-left: 10px;
 }
-.personal_content_box .commcon_crumb_wrapper ul{
+.personal_content_box .common_crumb_wrapper ul{
     width: 100%;
 }
 .personal_content_box .query_group{

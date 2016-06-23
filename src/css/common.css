@@ -277,11 +277,20 @@ label.error, div.error {
 }
 /*~~~~~~~~~~common_block_wrapper~~~~~~~~~~*/
 .common_block_wrapper{
-	margin: 0 auto;
+	margin: 0 auto 30px;
 	width: 1200px;
 	background-color: #fff;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+}
+.common_ilustri_item{
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 100%;
+	text-align: center;
+}
+.common_ilustri_item img{
+	display: inline-block;
 }
 /*common ? tips*/
 
@@ -564,9 +573,11 @@ label.error, div.error {
 	color: #a8a8a8;
 }
 
-/*~~~~~~~~~~commcon_crumb_wrapper~~~~~~~~~~*/
-
-.commcon_crumb_wrapper ul {
+/*~~~~~~~~~~common_crumb_wrapper~~~~~~~~~~*/
+.common_crumb_wrapper{
+	margin: 15px 0;
+}
+.common_crumb_wrapper ul {
 	padding: 15px 0;
 	margin: 0 auto;
 	width: 100%;
@@ -574,14 +585,14 @@ label.error, div.error {
 	font-family: 'microsoft yahei';
 	border-bottom: 4px solid #7ebd8a;
 }
-.commcon_crumb_wrapper li {
+.common_crumb_wrapper li {
 	display: inline-block;
 	font-size: 0;
 }
-.commcon_crumb_wrapper li a, .commcon_crumb_wrapper li label {
+.common_crumb_wrapper li a, .common_crumb_wrapper li label {
 	font-size: 17px;
 }
-.commcon_crumb_wrapper li a:hover {
+.common_crumb_wrapper li a:hover {
 	color: #f40;
 }
 
@@ -1090,9 +1101,9 @@ label.error, div.error {
 .common_gradienttitle_wrapper {
 	height: 40px;
 	background: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
-	border-top: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+/*	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;*/
 }
 .common_gradienttitle_wrapper h6 {
 	padding: 0 0 0 20px;

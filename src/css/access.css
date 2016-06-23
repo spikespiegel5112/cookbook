@@ -1090,3 +1090,15 @@ li.method
 {
     color: #a0d350;
 }
+
+/*~~~~~~~~~~access_404_container~~~~~~~~~~*/
+.access_404_container{
+    padding: 30px 0 0 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.access_404_wrapper{
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 1200px;
+}

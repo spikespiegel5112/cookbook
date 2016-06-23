@@ -1,17 +1,11 @@
 @charset "UTF-8";
 /*~~~~~~~~~~static_aboutus.html~~~~~~~~~~*/
-.static_block_wrapper{
-	margin: 15px auto;
+.static_main_wrapper{
+	margin: 0 auto;
+	padding: 15px 0;
 	width: 1200px;
 }
-.static_ilustri_item{
-	padding: 40px 0;
-	width: 100%;
-	text-align: center;
-}
-.static_ilustri_item img{
-	display: inline-block;
-}
+
 .static_paragraph_item{
 	margin: 0 auto;
 	width: 1000px;
