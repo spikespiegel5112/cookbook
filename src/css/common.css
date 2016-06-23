@@ -1077,3 +1077,17 @@ label.error, div.error {
 	bottom: 23px;
 	width: 94%;
 }
+
+
+
+.common_gradienttitle_wrapper {
+	height: 40px;
+	background: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
+	border: 1px solid #ccc;
+}
+.common_gradienttitle_wrapper h6 {
+	padding: 0 0 0 20px;
+	font-size: 17px;
+	line-height: 40px;
+	color: #666;
+}
