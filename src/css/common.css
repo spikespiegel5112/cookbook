@@ -16,6 +16,9 @@ input:focus, textarea:focus {
 	border-color: #00a388 !important;
 	box-shadow: 0 0 5px #00a388 !important;
 }
+button{
+	outline: none;
+}
 
 /*~~~~~~~~~~线性过渡色按钮~~~~~~~~~~*/
 
@@ -557,7 +560,7 @@ label.error, div.error {
 /*~~~~~~~~~~commcon_crumb_wrapper~~~~~~~~~~*/
 
 .commcon_crumb_wrapper ul {
-	padding: 10px 0;
+	padding: 15px 0;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
