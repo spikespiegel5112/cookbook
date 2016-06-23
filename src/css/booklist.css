@@ -9,22 +9,23 @@
 	margin: 0 auto;
 	width: 1200px;
 }
-.booklist_bannercontent_wrapper .desc, .booklist_bannercontent_wrapper .illustration {
+.booklist_banner_wrapper .desc, .booklist_banner_wrapper .illustration {
 	display: inline-block;
 	vertical-align: top;
 }
-.booklist_bannercontent_wrapper .desc {
+.booklist_banner_wrapper .desc {
+	padding: 55px 0 0 0;
 	width: 470px;
 	color: #fff;
 	font-family: 'simhei';
 }
-.booklist_bannercontent_wrapper .desc h6 {
-	padding: 75px 0 0 0;
+.booklist_banner_wrapper .desc h6 {
+	padding: 30px 0 0 0;
 	font-size: 51.7px;
 	font-weight: lighter;
 	letter-spacing: 4px;
 }
-.booklist_bannercontent_wrapper .desc p {
+.booklist_banner_wrapper .desc p {
 	margin: 10px 0;
 	padding: 10px 0;
 	width: 440px;
@@ -34,22 +35,22 @@
 	border-top: 1px solid rgba(255, 255, 255, 0.6);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
-.booklist_bannercontent_wrapper .price {
+.booklist_banner_wrapper .price {
 	margin: 50px 0;
 	color: #fa4800;
 	font-size: 0;
 }
-.booklist_bannercontent_wrapper .price label {
+.booklist_banner_wrapper .price label {
 	display: inline-block;
 	font-size: 42px;
 	vertical-align: top;
 }
-.booklist_bannercontent_wrapper .price span {
+.booklist_banner_wrapper .price span {
 	display: inline-block;
 	font-size: 20px;
 	line-height: 30px;
 }
-.booklist_bannercontent_wrapper a {
+.booklist_banner_wrapper a {
 	display: block;
 	width: 180px;
 	height: 50px;
@@ -61,19 +62,19 @@
 	border-radius: 12px;
 	position: relative;
 }
-.booklist_bannercontent_wrapper a:hover {
+.booklist_banner_wrapper a:hover {
 	background-color: #C73900;
 }
-.booklist_bannercontent_wrapper a:active {
+.booklist_banner_wrapper a:active {
 	background-color: #A63000;
 }
-.booklist_bannercontent_wrapper a label {
+.booklist_banner_wrapper a label {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 26px;
 	cursor: pointer;
 }
-.booklist_bannercontent_wrapper a span {
+.booklist_banner_wrapper a span {
 	display: inline-block;
 	width: 0;
 	height: 0;

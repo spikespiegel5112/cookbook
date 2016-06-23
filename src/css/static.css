@@ -1,4 +1,28 @@
 @charset "UTF-8";
+/*~~~~~~~~~~static_aboutus.html~~~~~~~~~~*/
+.static_block_wrapper{
+	margin: 15px auto;
+	width: 1200px;
+}
+.static_article_wrapper .ilustri{
+	margin: 40px 0;
+	width: 100%;
+	text-align: center;
+}
+.static_article_wrapper .ilustri img{
+	display: inline-block;
+}
+.static_paragraph_item{
+	margin: 0 auto;
+	width: 1000px;
+
+}
+.static_paragraph_item p{
+	margin: 15px 0;
+	font-size: 14px;
+	text-indent: 28px;
+}
+/*~~~~~~~~~~static_customprocess.html~~~~~~~~~~*/
 .static_customprocess_wrapper {
 	margin: 0 auto;
 	width: 1200px;
