@@ -1102,3 +1102,47 @@ li.method
     padding: 30px 0;
     width: 1200px;
 }
+.access_404content_wrapper{
+    margin: 0 0 150px 0;
+    text-align: center;
+}
+.access_404content_wrapper h6{
+    margin: 0 0 20px 0;
+    font-size: 85px;
+    color: #475059;
+    font-weight: bold;
+    font-family: 'simhei';
+    letter-spacing: 5px;
+}
+.access_404content_wrapper ul li{
+    display: inline-block;
+    margin: 0 30px;
+    color: #475059;
+}
+.access_404content_wrapper p{
+    color: #475059;
+}
+.access_404content_wrapper .main{
+    font-size: 18px;
+}
+.access_404content_wrapper .hint{
+    margin: 30px 0;
+    font-size: 14px;
+}
+.access_404content_wrapper ul li a{
+    color: #3caae2;
+    font-size: 14px;
+}
+.access_404content_wrapper ul li a:hover{
+    text-decoration: underline;
+}
+.access_404_wrapper .common_ilustri_item{
+    padding: 40px 0 0 0;
+}
+
+
+
+
+
+
+
