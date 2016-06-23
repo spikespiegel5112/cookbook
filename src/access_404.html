@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>易彩-模板列表</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/access.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class="main_container">
+		<div class="yc_cm_header">
+			<div class="shortcut_container">
+				<div class="shortcut">
+					<p class="login_info">
+						<span class="welcome_info">
+						<a target="_top" class="" href="javascript:;" title="">登录</a>
+					</span>
+						<span class="welcome_info">
+						<a class="logout" target="_top" href="javascript:;">注册</a>
+					</span>
+					</p>
+					<ul class="quick_menu">
+						<li>
+							<a href="javascript:;"><i class="ybiconfont ybicon-star"></i>收藏</a>
+						</li>
+						<li>
+							<a href="javascript:;">问题反馈</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_nav">
+				<div class="header_con">
+					<div class="logo">
+						<a href="_index.html"><img src="img/logo.png"></a>
+					</div>
+					<div class="navigation">
+						<ul>
+							<li><a href="_index.html">首页</a></li>
+							<li><a class="active" href="javascript:;">菜谱模板</a></li>
+							<li><a href="javascript:;">菜谱款式</a></li>
+							<li><a href="javascript:;">定制流程</a></li>
+							<li><a href="javascript:;">关于我们</a></li>
+						</ul>
+					</div>
+					<div class="hot_line">
+						<a href="javascript:;"><img src="img/hot_line.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='access_404_container'>
+			<div class='access_404_wrapper'>
+				<div class='common_block_wrapper'>
+					<div class="common_gradienttitle_wrapper">
+						<h6>ERROR</h6>
+					</div>
+					<div class='common_ilustri_item'>
+						<img src="img/access/ufo.jpg">
+					</div>
+					<div class='access_404content_wrapper'>
+						<h6>404</h6>
+						<p class='main'>对不起！您要访问的页面不存在！</p>
+						<p class='hint'>您要查看的网址可能已经被删除或暂时不可用，点击一下链接继续访问网站：</p>
+						<ul>
+							<li>
+								<a href="javascript:;">&gt&gt返回上一页面</a>
+							</li>
+							<li>
+								<a href="javascript:;">&gt&gt返回首页</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="ft_link cm_fl">
+				<ul>
+					<li>友情链接：</li>
+					<li>
+						<a title="苏州广告公司" target="_blank" href="http://www.yangsign.com">苏州广告公司</a>
+					</li>
+					<li>
+						<a title="包装盒印刷" target="_blank" href="http://www.fungoprinting.cn/">包装盒印刷</a>
+					</li>
+					<li>
+						<a title="包装盒厂家" target="_blank" href="http://www.dghengzhi.com/">包装盒厂家</a>
+					</li>
+					<li>
+						<a title="成都印刷厂" target="_blank" href="http://www.cdssysc.com/">成都印刷厂</a>
+					</li>
+					<li>
+						<a title="新东方教师资格网" target="_blank" href="http://jiaoshi.koolearn.com/">新东方教师资格网</a>
+					</li>
+					<li>
+						<a title="广州名片印刷" target="_blank" href="http://www.020yin.com/">广州名片印刷</a>
+					</li>
+					<li>
+						<a title="生日礼物" target="_blank" href="http://www.shenriliwu.com">生日礼物</a>
+					</li>
+					<li>
+						<a title="儿童淘气堡" target="_blank" href="http://www.mtylwj.com/">儿童淘气堡</a>
+					</li>
+					<li>
+						<a title="郑州印刷厂" target="_blank" href="http://www.xinmeiyin.com">郑州印刷厂</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ft_copyright cm_fr">
+				<div><a href="http://www.miitbeian.gov.cn" target="_blank">Copyright&nbsp;&nbsp;2015&nbsp;&nbsp;by&nbsp;&nbsp;无锡北方数据计算股份有限公司
+				&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备11087253号-2</a></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src='assets/js/jquery.fancybox.pack.js'></script>
+	<!-- build:js js/all.js -->
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/scrollPagination.js"></script>
+	<!-- endbuild -->
+	<script>
+	$(function() {
+		fancybox();
+		var testNum = 5;
+
+		function getTestHtml() {
+			var html = "";
+			html += '<li class="booklist_cover_wrapper">';
+			html += '<div class="template">';
+			html += '<a class="cover" href="javascript:;">';
+			html += '<img src="img/sample/inner_pages01.jpg">';
+			html += '<img src="img/sample/inner_pages02.jpg">';
+			html += '</a>';
+			html += '<div class="title">';
+			html += '<p>《荷香时节》</p>';
+			html += '<a class="ybiconfont ybicon-eyeopen" href="javascript:;"></a>';
+			html += '</div>';
+			html += '<div class="make">';
+			html += '<ul class="tags">';
+			html += '<li>火锅店</li>';
+			html += '<li>私房菜</li>';
+			html += '<li>淮扬菜</li>';
+			html += '<li>粤菜</li>';
+			html += '<li>火锅店</li>';
+			html += '</ul>';
+			html += '<a class="make_btn transition_btn" href="javascript:;">立即制作</a>';
+			html += '</div>';
+			html += '</div>';
+			html += '</li>';
+
+			return html;
+		}
+
+		function loadData(num, cb) {
+			testNum--;
+
+			var html = "";
+			for (var i = 0; i < num; i++) {
+				html += getTestHtml();
+			}!!cb && cb(testNum, html);
+		}
+
+		$('.common_loadmore_wrapper').scrollPagination({
+			initEl: ".common_loadmore_wrapper",
+			loadEl: ".booklist_list_wrapper > ul",
+			num: 4,
+			debug: true,
+			load: loadData
+		});
+
+	});
+
+	function fancybox() {
+		$('.booklist_cover_wrapper .title a').click(function() {
+			var $this = $(this),
+				thisParent = $this.closest('li'),
+				thisCover = thisParent.find('.cover'),
+				thisImageSrc = [],
+				thisImage = thisCover.find('img');
+			thisImage.each(function(index) {
+				thisImageSrc[index] = $(this).attr('src')
+			})
+			if (thisImage.length == 1) {
+				$.fancybox.open('<img width="409" height="580" src="' + thisImageSrc[0] + '"/>', {
+					openSpeed: 500
+				});
+				console.log(thisImageSrc[0])
+			} else if (thisImage.length == 2) {
+				$.fancybox.open('<img width="409" height="580" src="' + thisImageSrc[0] + '"/>' + '<img width="409" height="580" src="' + thisImageSrc[1] + '"/>', {
+					openSpeed: 500
+				});
+			}
+		})
+	}
+	</script>
+</body>
+
+</html>
