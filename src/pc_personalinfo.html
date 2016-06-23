@@ -8,9 +8,11 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
-	<title>易彩-模板列表</title>
+	<title>易彩-个人中心-修改个人信息</title>
+	
+	<link rel="stylesheet" href="assets/css/jquery-ui-datepicker.min.css">
+	<link rel="stylesheet" href="assets/css/cangas.datepicker.css">
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
-	<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -70,17 +72,21 @@
 					<label>&nbsp&gt&nbsp</label>
 					<a href="javascript:;">个人中心</a>
 				</li>
+				<li>
+					<label>&nbsp&gt&nbsp</label>
+					<a href="javascript:;">修改个人信息</a>
+				</li>
 			</ul>
 		</div>
 		<div class='pc_personalcenter_container'>
 			<div class='pc_personalcenter_wrapper'>
 				<div class='pc_title_wrapper'>
-					<h6>个人中心</h6>
+					<h6>修改个人信息</h6>
 				</div>
 				<div class="info_details">
 					<div class="change_head">
 						<div class="personal_head">
-							<img src="img/default/personal_head.png" alt="头像">
+							<img src="img/default/useravatar_140_140.jpg" alt="头像">
 						</div>
 						<button type="button">更改头像</button>
 					</div>
@@ -109,7 +115,7 @@
 								<label class="title">生日：</label>
 							</div>
 							<div class="cm_fl chooseBirthday">
-								<input class="form-control required hasDatepicker" id="input_birthday" name="birthday">
+								<input class="form-control required" id="input_birthday" name="birthday">
 							</div>
 						</div>
 						<div class="form-group cm_h_40">
@@ -145,7 +151,6 @@
 					</form>
 					<div class="btn_group">
 						<button type="button" class="save selected">保存</button>
-						<button type="button" class="cancel">取消</button>
 					</div>
 				</div>
 			</div>
@@ -190,13 +195,102 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src='assets/js/jquery.fancybox.pack.js'></script>
+	<script type="text/javascript" src="assets/js/cityselector.js"></script>
+	<script type="text/javascript" src="assets/js/cityScript.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui-datepicker.min.js"></script>
 	<!-- build:js js/all.js -->
-	<script type="text/javascript" src="js/base.js"></script>
-	<script type="text/javascript" src="js/scrollPagination.js"></script>
 	<!-- endbuild -->
 	<script>
+	$(document).ready(function() {
+		doSubmit();
+		citySelector();
+		chooseBirthday();
+	});
 
+	function validateForm() {
+		//validate方法参数可选  
+		return $('#commentForm').validate({
+			messages: {
+				name: {
+					required: "用户名未填写"
+				},
+				birthday: {
+					required: '生日未填写',
+				},
+				birthplace: {
+					required: '籍贯未填写',
+				},
+				cellphone: {
+					required: '手机未填写',
+				},
+				cellphone: {
+					required: '手机未填写',
+				}
+			}
+		}).form();
+	}
+
+	function doSubmit() { //点击登录触发验证
+		$('.save').click(function() {
+			if (validateForm()) {
+				document.form1.submit()
+			}
+		});
+	}
+
+	function chooseBirthday(){
+		/*生日选择*/
+		var today = new Date(),
+			maxBirthday = today.getFullYear() + "-" + (parseInt(today.getMonth()) + 1) + "-" + today.getDate();
+		$('#input_birthday').datepicker({
+			showOtherMonths: true,
+			dateFormat: 'yy-mm-dd',
+			showOn: "focus",
+			buttonImage: "img/calendar-img.jpg",
+			buttonImageOnly: true,
+			changeYear: true,
+			changeMonth: true,
+			yearRange: "1979:2025",
+			maxDate: maxBirthday,
+			minDate: null,
+			selectOtherMonths: true,
+			showButtonPanel: false
+		}).datepicker('widget').wrap('<div class="ll-skin-cangas"/>');
+
+		$.datepicker.regional['zh-CN'] = {
+			closeText: '关闭',
+			prevText: '&#x3c;上月',
+			nextText: '下月&#x3e;',
+			currentText: '今天',
+			monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+				'七月', '八月', '九月', '十月', '十一月', '十二月'
+			],
+			monthNamesShort: ['一', '二', '三', '四', '五', '六',
+				'七', '八', '九', '十', '十一', '十二'
+			],
+			dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+			dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+			dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+			weekHeader: '周',
+			dateFormat: 'yy-mm-dd',
+			firstDay: 1,
+			isRTL: false,
+			showMonthAfterYear: true,
+			yearSuffix: '年'
+		};
+		$.datepicker.setDefaults($.datepicker.regional['zh-CN']);
+	}
+
+	function citySelector() {
+		/*籍贯选择*/
+		LazyLoad.css(["assets/css/cityStyle.css"], function() {
+			LazyLoad.js(["assets/js/cityScript.js"], function() {
+				var test = new citySelector.cityInit("input_test");
+			});
+		});
+
+	}
 	</script>
 </body>
 
