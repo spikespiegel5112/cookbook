@@ -4,12 +4,12 @@
 	margin: 15px auto;
 	width: 1200px;
 }
-.static_article_wrapper .ilustri{
-	margin: 40px 0;
+.static_ilustri_item{
+	padding: 40px 0;
 	width: 100%;
 	text-align: center;
 }
-.static_article_wrapper .ilustri img{
+.static_ilustri_item img{
 	display: inline-block;
 }
 .static_paragraph_item{

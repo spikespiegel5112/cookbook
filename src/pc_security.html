@@ -77,84 +77,86 @@
 				<div class='common_gradienttitle_wrapper'>
 					<h6>个人中心</h6>
 				</div>
-				<div class="personal_content_box">
-					<a href="pc_security.html">账户设置</a>
-					<div class="hr">
-						<div class="green"></div>
-						<div class="gray"></div>
-					</div>
-					<div class="security_container">
-						<ul class="binding_mode">
-							<li>
-								<a href="javascript:;">
-									<div><img src="img/pc/user_head.png"></div>
-									<span class="user_name">用户名<input class="form-control" type="text" value="xxxxxx" readonly="readonly" disabled="disabled"></span>
-									<span id="modify_user_name">修改</span>
-								</a>
-							</li>
-							<li>
-								<a href="access_resetpassword_1.html">
-									<div><img src="img/pc/password_lock.png"></div>
-									<span>修改密码</span>
-									<span>修改</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<a href="pc_security.html">账户安全</a>
-					<div class="hr">
-						<div class="green"></div>
-						<div class="gray"></div>
-					</div>
-					<div class="security_container">
-						<ul class="binding_mode">
-							<li>
-								<a href="pc_security_mobile_step1.html">
-									<div><img src="img/pc/iphone_icon.png"></div>
-									<span>手机绑定</span>
-									<span>绑定</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<div><img src="img/pc/email_icon.png"></div>
-									<span>邮箱验证</span>
-									<span>绑定</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<a href="javascript:;">第三方绑定</a>
-					<div class="hr">
-						<div class="green"></div>
-						<div class="gray"></div>
-					</div>
-					<div class="security_container">
-						<ul class="binding_mode">
-							<li>
-								<a href="access_loginandbind.html">
-									<div><img src="img/pc/QQ_icon.png"></div>
-									<span>QQ绑定</span>
-									<span>绑定</span>
-								</a>
-							</li>
-							<li>
-								<a href="access_loginandbind.html">
-									<div><img src="img/pc/sina_icon.png"></div>
-									<span>新浪微博绑定</span>
-									<span>绑定</span>
-								</a>
-							</li>
-							<li>
-								<a class="wechat_bind" href="javascript:;">
-									<div>
-										<img src="img/pc/wechat_icon.png"></div>
-									</span>
-									<span>微信绑定</span>
-									<span>绑定</span>
-								</a>
-							</li>
-						</ul>
+				<div class='common_block_wrapper'>
+					<div class="personal_content_box">
+						<a href="pc_security.html">账户设置</a>
+						<div class="hr">
+							<div class="green"></div>
+							<div class="gray"></div>
+						</div>
+						<div class="security_container">
+							<ul class="binding_mode">
+								<li>
+									<a href="javascript:;">
+										<div><img src="img/pc/user_head.png"></div>
+										<span class="user_name">用户名<input class="form-control" type="text" value="xxxxxx" readonly="readonly" disabled="disabled"></span>
+										<span id="modify_user_name">修改</span>
+									</a>
+								</li>
+								<li>
+									<a href="access_resetpassword_1.html">
+										<div><img src="img/pc/password_lock.png"></div>
+										<span>修改密码</span>
+										<span>修改</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="pc_security.html">账户安全</a>
+						<div class="hr">
+							<div class="green"></div>
+							<div class="gray"></div>
+						</div>
+						<div class="security_container">
+							<ul class="binding_mode">
+								<li>
+									<a href="pc_security_mobile_step1.html">
+										<div><img src="img/pc/iphone_icon.png"></div>
+										<span>手机绑定</span>
+										<span>绑定</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<div><img src="img/pc/email_icon.png"></div>
+										<span>邮箱验证</span>
+										<span>绑定</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;">第三方绑定</a>
+						<div class="hr">
+							<div class="green"></div>
+							<div class="gray"></div>
+						</div>
+						<div class="security_container">
+							<ul class="binding_mode">
+								<li>
+									<a href="access_loginandbind.html">
+										<div><img src="img/pc/QQ_icon.png"></div>
+										<span>QQ绑定</span>
+										<span>绑定</span>
+									</a>
+								</li>
+								<li>
+									<a href="access_loginandbind.html">
+										<div><img src="img/pc/sina_icon.png"></div>
+										<span>新浪微博绑定</span>
+										<span>绑定</span>
+									</a>
+								</li>
+								<li>
+									<a class="wechat_bind" href="javascript:;">
+										<div>
+											<img src="img/pc/wechat_icon.png"></div>
+										</span>
+										<span>微信绑定</span>
+										<span>绑定</span>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -205,25 +207,25 @@
 	<script type="text/javascript" src="js/scrollPagination.js"></script>
 	<!-- endbuild -->
 	<script>
-	$(function(){
-		modifyUserName();
-	})
+	$(function() {
+			modifyUserName();
+		})
 		//修改用户名
-		function modifyUserName() {
-			$('#modify_user_name').click(function(e) {
-				if ($(this).text() == '修改') {
-					$(this).text('确定');
-					$(this).prev('span').find('input').removeAttr('readonly').removeAttr('disabled').addClass('active').select();
-				} else if ($(this).text() == '确定') {
-					$(this).text('修改');
-					$(this).prev('span').find('input').attr({
-						readonly: 'readonly',
-						disabled: 'disabled'
-					}).removeClass('active');
-				}
-			});
+	function modifyUserName() {
+		$('#modify_user_name').click(function(e) {
+			if ($(this).text() == '修改') {
+				$(this).text('确定');
+				$(this).prev('span').find('input').removeAttr('readonly').removeAttr('disabled').addClass('active').select();
+			} else if ($(this).text() == '确定') {
+				$(this).text('修改');
+				$(this).prev('span').find('input').attr({
+					readonly: 'readonly',
+					disabled: 'disabled'
+				}).removeClass('active');
+			}
+		});
 
-		}
+	}
 	</script>
 </body>
 
