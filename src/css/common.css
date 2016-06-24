@@ -357,20 +357,21 @@ label.error, div.error {
 /*common counter*/
 
 .ybcommon_counter_item {
-	width: 85px;
+	width: 87px;
 	height: 25px;
-	border: 1px solid #e5e5e5;
 	background-color: #f0f0f0;
 }
 .ybcommon_counter_item a {
+	margin: 0;
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 20px;
+	line-height: 23px;
 	float: left;
 	width: 25px;
 	height: 100%;
 	text-align: center;
 	color: #a9a9a9;
+	border: 1px solid #aaa;
 }
 .ybcommon_counter_item a:hover {
 	color: #000;
@@ -381,9 +382,11 @@ label.error, div.error {
 	box-sizing: content-box;
 	width: 33px;
 	height: 100%;
-	margin-top: -1px;
 	text-align: center;
-	border: 1px solid #aaa;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
 }
 
 /*common share*/
@@ -575,7 +578,7 @@ label.error, div.error {
 
 /*~~~~~~~~~~common_crumb_wrapper~~~~~~~~~~*/
 .common_crumb_wrapper{
-	margin: 15px 0;
+	padding: 15px 0;
 }
 .common_crumb_wrapper ul {
 	padding: 15px 0;
