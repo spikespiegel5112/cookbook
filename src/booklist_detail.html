@@ -97,27 +97,27 @@
 									<li>
 										<!--封面 class:cover-->
 										<a class="cover" href="javascript:;">
-											<img src="img/sample/booklist_detail_cover_1.jpg">
+											<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg">
 										</a>
 									</li>
 									<li>
 										<a href="javascript:;">
-											<img src="img/sample/booklist_detail_cover_1.jpg">
+											<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg">
 										</a>
 									</li>
 									<li>
 										<a href="javascript:;">
-											<img src="img/sample/booklist_detail_cover_1.jpg">
+											<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg">
 										</a>
 									</li>
 									<li>
 										<a href="javascript:;">
-											<img src="img/sample/booklist_detail_cover_1.jpg">
+											<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg">
 										</a>
 									</li>
 									<li>
 										<a href="javascript:;">
-											<img src="img/sample/booklist_detail_cover_1.jpg">
+											<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg">
 										</a>
 									</li>
 								</ul>
@@ -157,7 +157,7 @@
 							<div class="item">
 								<div class="price">
 									<dl>
-										<dt>销售价：</dt>
+										<dt>销&nbsp;&nbsp;售&nbsp;&nbsp;价：</dt>
 										<dd>￥240元/本（5本以内）</dd>
 									</dl>
 								</div>
@@ -169,7 +169,7 @@
 								</div>
 								<div class="sold">
 									<dl>
-										<dt>已售出：</dt>
+										<dt>已&nbsp;&nbsp;售&nbsp;&nbsp;出：</dt>
 										<dd><span>1000</span>件</dd>
 									</dl>
 								</div>
@@ -178,7 +178,7 @@
 							<div class="item">
 								<div class="page_num">
 									<dl>
-										<dt>页&nbsp;&nbsp;&nbsp;数：</dt>
+										<dt>页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数：</dt>
 										<dd>
 											20张纸，40个页面
 											<div>制作时可自由添加页数，每页价格为<span>¥0.9</span></div>
@@ -187,7 +187,7 @@
 								</div>
 								<div class="num">
 									<dl>
-										<dt>数&nbsp;&nbsp;&nbsp;量：</dt>
+										<dt>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</dt>
 										<dd>
 											<ul class='ybcommon_counter_item'>
 												<a href="javascript:;">-</a>
@@ -219,7 +219,7 @@
 									<div class="arrow_down_line"></div>
 									<div class="pages">
 										<div class="cover">
-											<img src="img/sample/bookdetail/inner_page_cover.jpg" alt="封面展示">
+											<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg" alt="封面展示">
 										</div>
 										<div class="inner_page">
 											<div class="left"><img src="img/sample/bookdetail/inner_page_01.jpg" alt="内页展示"></div>
@@ -254,7 +254,7 @@
 											<div class="right"><img src="img/sample/bookdetail/inner_page_16.jpg" alt="内页展示"></div>
 										</div>
 										<div class="backcover">
-											<img src="img/sample/bookdetail/inner_page_cover.jpg" alt="封底展示">
+											<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg" alt="封底展示">
 										</div>
 									</div>
 								</div>
@@ -262,7 +262,7 @@
 							<div class="page_detail">
 								<ul class="page_list">
 									<li>
-										<img src="img/sample/bookdetail/inner_page_cover.jpg">
+										<img src="img/sample/bookdetail/booklist_detail_cover_1_00000.jpg">
 										<h5>封面</h5>
 									</li>
 									<li>
@@ -560,29 +560,13 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
-	<script type="text/javascript" src="assets/js/icheck.js"></script>
 	<!-- build:js js/all.js -->
 	<script type="text/javascript" src="js/base.js"></script>
 	<!-- endbuild -->
 	<script>
 	$(document).ready(function() {
-		doSubmit();
-		checkBingAndSize();
-		showBaskImg();
 		slideslideslide();
-		icheck();
-		ybcommonqueryicon();
-		// $('.auto_edit').loginPopupDialog();
-		$('.auto_edit').click(function() {
-			$('.common_login_wrapper').popup({
-				closebtn: '.common_loginheader_wrapper>a',
-				maskopacity: 0.1
-			});
-		})
-
-		$('.book_details_box .booklist_bookinfo_wrapper .book_img .bd li').showLoadingImg();
 		$('.ybcommon_counter_item').priceCalculator();
 	});
 
@@ -627,99 +611,6 @@
 		});
 	}
 
-	function validateForm() {
-		//validate方法参数可选
-		return $('#commentForm').validate({
-			messages: {
-				bookName: {
-					required: '书册名未填写',
-				},
-				schoolName: {
-					required: "学校名未填写"
-				},
-				className: {
-					required: '班级名未填写',
-				}
-			}
-		}).form();
-	}
-
-	function doSubmit() { //点击登录触发验证
-		$('.production_btn').click(function() {
-			if (validateForm()) {
-				document.form1.submit()
-			}
-		});
-	}
-	/*选择书册装订方式及尺寸*/
-	function checkBingAndSize() {
-		$('.ybcommon_queryicon_item p').eq(0).text($('.book_text .cover dd').eq(0).attr('data'));
-		$('.ybcommon_queryicon_item p').eq(1).text($('.book_text .size dd').eq(0).attr('data'));
-		$('.book_text .cover dd').click(function() {
-			var $this = $(this),
-				thisEl = $('.book_text .cover dd'),
-				thisData = $this.attr('data'),
-				hintEl = $(this).closest('div').find('.ybcommon_queryicon_item p');
-			thisEl.removeClass('selected');
-			$this.addClass('selected');
-			hintEl.text(thisData);
-		});
-		$('.book_text .size dd').click(function() {
-			var $this = $(this),
-				thisEl = $('.book_text .size dd'),
-				thisData = $this.attr('data'),
-				hintEl = $(this).closest('div').find('.ybcommon_queryicon_item p');
-			thisEl.removeClass('selected');
-			$this.addClass('selected');
-			hintEl.text(thisData);
-		})
-	}
-	/*查看晒图*/
-	function showBaskImg() {
-		$('.bask_img .item').click(function() {
-			$(this).addClass('cur').css('opacity', '1');
-			$(this).siblings().removeClass('cur').css('opacity', '.5');
-			var curImg = $(this).find('img').attr('src');
-			$('.bask_show').fadeIn().find('.img_show img').attr('src', curImg);
-		});
-		/*上一张*/
-		$('.img_show .left').click(function() {
-			if ($('.bask_img .cur').prev().length != 0) {
-				var curImg = $('.bask_img .cur').prev().find('img').attr('src');
-				$('.bask_img .cur').removeClass('cur').css('opacity', '.5').prev().addClass('cur').css('opacity', '1');
-				$('.img_show img').attr('src', curImg);
-			}
-		});
-		/*下一张*/
-		$('.img_show .right').click(function() {
-			if ($('.bask_img .cur').next().length != 0) {
-				var curImg = $('.bask_img .cur').next().find('img').attr('src');
-				$('.bask_img .cur').removeClass('cur').css('opacity', '.5').next().addClass('cur').css('opacity', '1');
-				$('.img_show img').attr('src', curImg);
-			}
-		});
-		/*关闭*/
-		$('.img_show .center').click(function() {
-			$('.bask_img .item').removeClass('cur').css('opacity', '1');
-			$('.bask_show').fadeOut();
-		});
-	}
-
-	function icheck() {
-		$('input').iCheck({
-			checkboxClass: 'icheckbox_minimal-green',
-			radioClass: 'iradio_minimal-green',
-			increaseArea: '20%'
-		})
-	}
-	//hover问号显示信息提示
-	function ybcommonqueryicon() {
-		$('.ybcommon_queryicon_item').hover(function() {
-			$(this).find('div').show();
-		}, function() {
-			$(this).find('div').hide();
-		});
-	}
 	</script>
 </body>
 
