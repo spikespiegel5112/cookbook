@@ -145,6 +145,9 @@ label.error, div.error {
 	padding: 0 15px;
 }
 /*yc edit space*/
+.yc_cm_header.edit_space{
+	z-index: 1;
+}
 .yc_cm_header.edit_space .shortcut_container .shortcut{
 	max-width: none;
 }

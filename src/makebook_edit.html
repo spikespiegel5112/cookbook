@@ -2,125 +2,1464 @@
 <html>
 
 <head lang="en">
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="keywords" content="">
-	<title>易彩-编辑制作</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
-	<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
-	<!-- build:css css/all.min.css -->
-	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/makebook_chooseclass.css" type="text/css" media="all">
-	<!-- endbuild -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>易彩-编辑制作</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/swiper.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css" media="all">
+    <!-- build:css css/all.min.css -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/makebook_chooseclass.css" type="text/css" media="all">
+    <!-- endbuild -->
 </head>
 
 <body>
-	<div class="main_container" style="min-height: 320px">
-		<div class="yc_cm_header edit_space">
-			<div class="shortcut_container">
-				<div class="shortcut">
-					<div class="yc_logo">
-						<img src="img/yc_logo.png">
-					</div>
-					<div class="nav_bar">
-						<ul>
-							<li><a href="_index.html">首页</a></li>
-							<li><a class="active" href="javascript:;">开始制作</a></li>
-							<li><a href="javascript:;">菜谱款式</a></li>
-							<li><a href="javascript:;">定制流程</a></li>
-							<li><a href="javascript:;">关于我们</a></li>
-						</ul>
-					</div>
-					<ul class="quick_menu">
-						<li>
-							<div class="yc_menu">
-								<a class="menu_hd" href="javascript:;">我的菜谱<b class="icon-caret-down"></b></a>
-								<div class="menu_bd">
-									<div class="menu_bd_panel">
-										<a href="javascript:;">我的菜谱</a>
-										<a href="javascript:;">我的订单</a>
-										<a href="javascript:;">个人中心</a>
-										<a href="_index.html"><i class="ybiconfont ybicon-turnoff"></i>退出</a>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="javascript:;">收藏</a>
-						</li>
-						<li>
-							<a href="javascript:;">问题反馈</a>
-						</li>
-						<li><p class="phone">400-0610-127</p></li>
-					</ul>
-				</div>
-			</div>
-		</div><!--编辑制作页header class:edit_space-->
-		<div class="edit_space_con">
-			<div class="edit_tool_bar">
-				<div class="left">
-					<p class="book_info">当前模板：<span>姹紫嫣红</span></p>
-					<div class="actions">
-						<ul>
-							<li>
-								<a class="refresh ybiconfont ybicon-undo" href="javascript:;"></a>
-								<div class="ybcommon_queryicon_item">
-									<div>
-										<p>刷新查看效果</p>
-									</div>
-								</div>
-							</li>
-							<li><a class="add_page ybiconfont ybicon-addpage" href="javascript:;"></a></li>
-							<li><a class="add_food ybiconfont ybicon-addfood" href="javascript:;"></a></li>
-							<li><a class="ip_pic ybiconfont ybicon-photo disable" href="javascript:;"></a></li>
-							<li>
-								<a class="ip_txt ybiconfont ybicon-txt" href="javascript:;"></a>
-								<span class="page_num">3</span>
-								<div class="page_list hidden">
-									<ul>
-										<li>
-											<a href="javascript:;">
-												<span>第1页</span>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:;">
-												<span>第3页</span>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:;">
-												<span>第6页</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="view_mode">
-					<label>视图：</label>
-					<a class="btn to_list active" href="javascript:;">列表</a>
-					<a class="btn to_single" href="javascript:;">详情</a>
-				</div>
-				<div class="right">
-					<div class="progress">
-						<div class="percent">
-							<label>完成率：<span>90%</span></label>
-							<div class="bar"><span style="width: 90%;"></span></div>
-						</div>
-					</div>
-					<a class="save btn" href="javascript:;">保存</a>
-					<a class="make_order btn" href="javascript:;">下单打印</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="main_container">
+    <div class="yc_cm_header edit_space">
+        <div class="shortcut_container">
+            <div class="shortcut">
+                <div class="yc_logo">
+                    <img src="img/yc_logo.png">
+                </div>
+                <div class="nav_bar">
+                    <ul>
+                        <li><a href="_index.html">首页</a></li>
+                        <li><a class="active" href="javascript:;">开始制作</a></li>
+                        <li><a href="javascript:;">菜谱款式</a></li>
+                        <li><a href="javascript:;">定制流程</a></li>
+                        <li><a href="javascript:;">关于我们</a></li>
+                    </ul>
+                </div>
+                <ul class="quick_menu">
+                    <li>
+                        <div class="yc_menu">
+                            <a class="menu_hd" href="javascript:;">我的菜谱<b class="icon-caret-down"></b></a>
+
+                            <div class="menu_bd">
+                                <div class="menu_bd_panel">
+                                    <a href="javascript:;">我的菜谱</a>
+                                    <a href="javascript:;">我的订单</a>
+                                    <a href="javascript:;">个人中心</a>
+                                    <a href="_index.html"><i class="ybiconfont ybicon-turnoff"></i>退出</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">收藏</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">问题反馈</a>
+                    </li>
+                    <li><p class="phone">400-0610-127</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--编辑制作页header class:edit_space-->
+    <div class="edit_space_con">
+        <div class="edit_tool_bar">
+            <div class="left">
+                <p class="book_info">当前模板：<span>姹紫嫣红</span></p>
+
+                <div class="actions">
+                    <ul>
+                        <li>
+                            <a class="refresh ybiconfont ybicon-undo" href="javascript:;"></a>
+
+                            <div class="ybcommon_queryicon_item">
+                                <div>
+                                    <p>刷新查看效果</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="add_page ybiconfont ybicon-addpage" href="javascript:;"></a></li>
+                        <li><a class="add_food ybiconfont ybicon-addfood" href="javascript:;"></a></li>
+                        <li><a class="ip_pic ybiconfont ybicon-photo disable" href="javascript:;"></a></li>
+                        <li>
+                            <a class="ip_txt ybiconfont ybicon-txt" href="javascript:;"></a>
+                            <span class="page_num">3</span>
+
+                            <div class="page_list hidden">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span>第1页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span>第3页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span>第6页</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="view_mode">
+                <label>视图：</label>
+                <a class="btn to_list active" href="javascript:;">列表</a>
+                <a class="btn to_single" href="javascript:;">详情</a>
+            </div>
+            <div class="right">
+                <div class="progress">
+                    <div class="percent">
+                        <label>完成率：<span>90%</span></label>
+
+                        <div class="bar"><span style="width: 90%;"></span></div>
+                    </div>
+                </div>
+                <a class="save btn" href="javascript:;">保存</a>
+                <a class="make_order btn" href="javascript:;">下单打印</a>
+            </div>
+        </div>
+        <div class="list_mode active">
+            <div class="item">
+                <p class="tips"><i class="ybiconfont ybicon-alert1"></i>提示：章节内拖动书页位置即可调整页码顺序</p>
+
+                <div class="name"><span>扉页</span>
+                    <a class="ybiconfont ybicon-feedback edit" href="javascript:;"></a>
+                </div>
+                <ul class="page_list">
+                    <li class="single">
+                        <div class="figure" title="拖动排序，双击可编辑">
+                            <img src="img/sample/inner_pages01.jpg">
+                            <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                        </div>
+                        <h4>P1</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="sort_chapter">
+                    <a href="javascript:;"><i class="icon-arrow-up"></i>章节上移</a>
+                    <a href="javascript:;"><i class="icon-arrow-down"></i>章节下移</a>
+                    <a href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除章节</a>
+                </div>
+                <div class="name"><span>卤肉凉菜篇</span>
+                    <a class="ybiconfont ybicon-feedback edit" href="javascript:;"></a>
+                </div>
+                <ul class="page_list" id="sortable">
+                    <li class="double page-sortable">
+                        <div class="figure" title="拖动排序，双击可编辑">
+                            <div class="left">
+                                <img src="img/sample/inner_pages01.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+
+                                <div class="loadThumb">
+                                    生成缩略图
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/inner_pages02.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+
+                                <div class="loadThumb">
+                                    生成缩略图
+                                </div>
+                            </div>
+                        </div>
+                        <h4>P2</h4>
+                        <h4>P3</h4>
+                    </li>
+                    <li class="double page-sortable">
+                        <div class="figure" title="拖动排序，双击可编辑">
+                            <div class="left">
+                                <img src="img/sample/inner_pages01.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/inner_pages02.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                        </div>
+                        <h4>P4</h4>
+                        <h4>P5</h4>
+                    </li>
+                    <li class="double page-sortable">
+                        <div class="figure" title="拖动排序，双击可编辑">
+                            <div class="left">
+                                <img src="img/sample/inner_pages01.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/inner_pages02.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                        </div>
+                        <h4>P6</h4>
+                        <h4>P7</h4>
+                    </li>
+                    <li class="double page-sortable">
+                        <div class="figure" title="拖动排序，双击可编辑">
+                            <div class="left">
+                                <img src="img/sample/inner_pages01.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/inner_pages02.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                        </div>
+                        <h4>P8</h4>
+                        <h4>P9</h4>
+                    </li>
+                    <li class="double page-sortable">
+                        <div class="figure" title="拖动排序，双击可编辑">
+                            <div class="left">
+                                <img src="img/sample/inner_pages01.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/inner_pages02.jpg">
+                                <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                            </div>
+                        </div>
+                        <h4>P10</h4>
+                        <h4>P11</h4>
+                    </li>
+                    <li class="add_page">
+                        <a href="javascript:;"><i class="ybiconfont ybicon-plus"></i>
+
+                            <p>添加页面</p></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="name"><span>游水活鱼篇</span>
+                    <a class="ybiconfont ybicon-feedback edit" href="javascript:;"></a>
+                </div>
+                <ul class="page_list">
+                    <li class="single">
+                        <div class="figure" title="拖动排序，双击可编辑">
+                            <img src="img/sample/inner_pages01.jpg">
+                            <a href="javascript:;" class="ybiconfont ybicon-trash delete"></a>
+                        </div>
+                        <h4>P12</h4>
+                    </li>
+                    <li class="add_page">
+                        <a href="javascript:;"><i class="ybiconfont ybicon-plus"></i>
+
+                            <p>添加页面</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="single_mode">
+            <a class="resource_shrink" href="javascript:;"><i class="ybiconfont ybicon-tableft"></i></a>
+
+            <div class="resource_wrap">
+                <div class="aside_tab">
+                    <ul>
+                        <li class="active" data-type="tpl">模板</li>
+                        <li class="" data-type="foodClass">菜品分类</li>
+                    </ul>
+
+                </div>
+                <div class="aside_tab_con">
+                    <div class="item active" data-type="tpl">
+                        <h4 class="caption">选择菜谱模板</h4>
+
+                        <div class="tpl_list">
+                            <ul>
+                                <li>
+                                    <div class="tpl double">
+                                        <div class="left">
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="right">
+                                            <img src="img/sample/inner_pages02.jpg">
+                                        </div>
+                                        <div class="bg">
+                                            <a class="change" href="javascript:;">更换</a>
+                                            <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <p class="tpl_num">模板03：国色天香</p>
+
+                                </li>
+                                <li>
+                                    <div class="tpl single">
+                                        <div class="left">
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="right"><!--单页隐藏-->
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="bg">
+                                            <a class="change" href="javascript:;">更换</a>
+                                            <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <p class="tpl_num">模板03：国色天香</p>
+                                </li>
+                                <li>
+                                    <div class="tpl double">
+                                        <div class="left">
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="right">
+                                            <img src="img/sample/inner_pages02.jpg">
+                                        </div>
+                                        <div class="bg">
+                                            <a class="change" href="javascript:;">更换</a>
+                                            <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <p class="tpl_num">模板03：国色天香</p>
+
+                                </li>
+                                <li>
+                                    <div class="tpl single">
+                                        <div class="left">
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="right"><!--单页隐藏-->
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="bg">
+                                            <a class="change" href="javascript:;">更换</a>
+                                            <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <p class="tpl_num">模板03：国色天香</p>
+                                </li>
+                                <li>
+                                    <div class="tpl double">
+                                        <div class="left">
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="right">
+                                            <img src="img/sample/inner_pages02.jpg">
+                                        </div>
+                                        <div class="bg">
+                                            <a class="change" href="javascript:;">更换</a>
+                                            <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <p class="tpl_num">模板03：国色天香</p>
+
+                                </li>
+                                <li>
+                                    <div class="tpl double">
+                                        <div class="left">
+                                            <img src="img/sample/inner_pages01.jpg">
+                                        </div>
+                                        <div class="right">
+                                            <img src="img/sample/inner_pages02.jpg">
+                                        </div>
+                                        <div class="bg">
+                                            <a class="change" href="javascript:;">更换</a>
+                                            <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                                        </div>
+                                    </div>
+                                    <p class="tpl_num">模板03：国色天香</p>
+
+                                </li>
+                            </ul>
+                            <div class="pagination_wrap small">
+                                <div class="turn_btn">
+                                    <span class="prev sPrev"> < </span>
+                                    <span class="current">1</span>
+                                    <a>2</a>
+                                    <a>3</a>
+                                    <a>4</a>
+                                    <a class="next sNext"> > </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item " data-type="foodClass">
+                        <h4 class="caption">已选分类菜品</h4>
+
+                        <div class="food_list_wrap">
+                            <ul>
+                                <li class="category open"><!--展开class:open-->
+                                    <a class="title" href="javascript:;">凉菜类<i class="ybiconfont ybicon-down1"></i></a>
+
+                                    <div class="food_list">
+                                        <ul>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                        </ul>
+                                        <div class="pagination_wrap small">
+                                            <div class="turn_btn">
+                                                <span class="prev sPrev"> < </span>
+                                                <span class="current">1</span>
+                                                <a>2</a>
+                                                <a>3</a>
+                                                <a>4</a>
+                                                <a class="next sNext"> > </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="category">
+                                    <a class="title" href="javascript:;">厨师推荐<i class="ybiconfont ybicon-down1"></i></a>
+
+                                    <div class="food_list">
+                                        <ul>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                        </ul>
+                                        <div class="pagination_wrap small">
+                                            <div class="turn_btn">
+                                                <span class="prev sPrev"> < </span>
+                                                <span class="current">1</span>
+                                                <a>2</a>
+                                                <a>3</a>
+                                                <a>4</a>
+                                                <a class="next sNext"> > </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="category">
+                                    <a class="title" href="javascript:;">家乡风味<i class="ybiconfont ybicon-down1"></i></a>
+
+                                    <div class="food_list">
+                                        <ul>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                        </ul>
+                                        <div class="pagination_wrap small">
+                                            <div class="turn_btn">
+                                                <span class="prev sPrev"> < </span>
+                                                <span class="current">1</span>
+                                                <a>2</a>
+                                                <a>3</a>
+                                                <a>4</a>
+                                                <a class="next sNext"> > </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="category">
+                                    <a class="title" href="javascript:;">风味小炒<i class="ybiconfont ybicon-down1"></i></a>
+
+                                    <div class="food_list">
+                                        <ul>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                        </ul>
+                                        <div class="pagination_wrap small">
+                                            <div class="turn_btn">
+                                                <span class="prev sPrev"> < </span>
+                                                <span class="current">1</span>
+                                                <a>2</a>
+                                                <a>3</a>
+                                                <a>4</a>
+                                                <a class="next sNext"> > </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="category">
+                                    <a class="title" href="javascript:;">家常美食<i class="ybiconfont ybicon-down1"></i></a>
+
+                                    <div class="food_list">
+                                        <ul>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                        </ul>
+                                        <div class="pagination_wrap small">
+                                            <div class="turn_btn">
+                                                <span class="prev sPrev"> < </span>
+                                                <span class="current">1</span>
+                                                <a>2</a>
+                                                <a>3</a>
+                                                <a>4</a>
+                                                <a class="next sNext"> > </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="category">
+                                    <a class="title" href="javascript:;">主食、面食类<i
+                                            class="ybiconfont ybicon-down1"></i></a>
+
+                                    <div class="food_list">
+                                        <ul>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                            <li>
+                                                <span class="ybiconfont ybicon-alert1 warn"></span>
+
+                                                <div class="con">
+                                                    <p class="name">微波花生米</p>
+
+                                                    <p class="price">20元/例</p>
+                                                </div>
+                                                <a href="javascript:;" class="icon-move move"></a>
+                                            </li>
+                                        </ul>
+                                        <div class="pagination_wrap small">
+                                            <div class="turn_btn">
+                                                <span class="prev sPrev"> < </span>
+                                                <span class="current">1</span>
+                                                <a>2</a>
+                                                <a>3</a>
+                                                <a>4</a>
+                                                <a class="next sNext"> > </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="new_food" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+                    </div>
+                </div>
+            </div>
+            <div class="edit_area min">
+                <div class="page_display">
+                    <!--单页 封面-->
+                    <div class="tpl cover hidden">
+                        <div class="inner_page">
+                            <img src="img/sample/inner_page_cover.jpg" width="680" height="1006">
+                        </div>
+                    </div>
+                    <!--单页 封底-->
+                    <div class="tpl back_cover hidden">
+                        <div class="inner_page">
+                            <img src="img/sample/inner_page_backcover.jpg" width="680" height="1006">
+                        </div>
+                    </div>
+                    <!--内页 双页-->
+                    <div class="tpldouble double ">
+                        <div class="double_con">
+                            <div class="tplleft"><img src="img/sample/inner_pages01.jpg" width="680" height="1006">
+                            </div>
+                            <div class="tplright"><img src="img/sample/inner_pages02.jpg" width="680" height="1006">
+                            </div>
+                        </div>
+                    </div>
+                    <!--内页 单页-->
+                    <div class="tpl single hidden">
+                        <div class="inner_page">
+                            <img src="img/sample/inner_pages01.jpg" width="680" height="1006">
+                        </div>
+                    </div>
+                </div>
+                <a class="prev" href="javascript:;">
+                    <i class="icon-angle-left icon-4x"></i>
+                </a>
+                <a class="next" href="javascript:;">
+                    <i class="icon-angle-right icon-4x"></i>
+                </a>
+                <div class="zoombar_wrap">
+                    <div class="zoombar">
+                        <span class="zoombtn ybiconfont ybicon-search"></span>
+
+                        <div id="zoomSlide"></div>
+                        <span class="zoom_percent">0%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chapter_list min">
+                <div class="list_con">
+                    <a class="chapter_shrink" href="javascript:;"><i
+                            class="ybiconfont ybicon-down1"></i><span>P1~P2</span></a>
+
+                    <p>共<span>32</span>页 ,当前：<span>P15-16</span></p>
+
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide single">
+                                <a class="thumb" href="javascript:;">
+                                    <img src="img/sample/inner_page_cover.jpg">
+                                    <span class="page_num">封面</span>
+
+                                    <div class="loadThumb">
+                                        生成缩略图
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P1</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P2</span>
+                                    </div>
+                                    <div class="loadThumb">
+                                        生成缩略图
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide single">
+                                <a class="thumb " href="javascript:;">
+                                    <img src="img/sample/inner_pages01.jpg">
+                                    <span class="page_num">P3</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double select">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P4</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P4</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P5</span>
+                                    </div>
+                                    <div class="loadThumb">
+                                        内容不完整
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P4</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P4</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P4</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P4</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P5</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P6</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P7</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide double">
+                                <a class="thumb " href="javascript:;">
+                                    <div class="left">
+                                        <img src="img/sample/inner_pages01.jpg">
+                                        <span class="page_num">P8</span>
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/sample/inner_pages02.jpg">
+                                        <span class="page_num">P9</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide single">
+                                <a class="thumb " href="javascript:;">
+                                    <img src="img/sample/inner_page_backcover.jpg">
+                                    <span class="page_num">封底</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="nav_btn prev" href="javascript:;"><i class="ybiconfont ybicon-circlearrowup"></i></a>
+                        <a class="nav_btn next" href="javascript:;"><i class="ybiconfont ybicon-circlearrowup"></i></a>
+
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹出部分-->
+<!--配图-->
+<div class="chose_figure_con">
+    <div class="search_wrap">
+        <input type="text" placeholder="输入您想要找的菜名" value="">
+        <button class="search_btn" type="button">搜索</button>
+        <div class="search_result">
+            <label>您可能想找：</label>
+            <div class="sr_list">
+                <ul>
+                    <li>
+                        <img class="figure" src="img/sample/sbhyzs.jpg">
+                        <p><b>烤</b>鱼</p>
+                    </li>
+                    <li>
+                        <img class="figure" src="img/sample/sbhyzs.jpg">
+                        <p><b>烤</b>鱼</p>
+                    </li>
+                    <li>
+                        <img class="figure" src="img/sample/sbhyzs.jpg">
+                        <p><b>烤</b>鱼</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="figure_list">
+        <ul>
+            <li>
+                <a class="upload" href="javascript:;"><i class="ybiconfont ybicon-add"></i>本地上传</a>
+                <p class="figure_num">&nbsp;</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="use" href="javascript:;">使用</a>
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="use" href="javascript:;">使用</a>
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="use" href="javascript:;">使用</a>
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="use" href="javascript:;">使用</a>
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="use" href="javascript:;">使用</a>
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="use" href="javascript:;">使用</a>
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="use" href="javascript:;">使用</a>
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+        </ul>
+        <div class="pagination_wrap small">
+            <div class="turn_btn">
+                <span class="prev sPrev"> < </span>
+                <span class="current">1</span>
+                <a>2</a>
+                <a>3</a>
+                <a>4</a>
+                <a class="next sNext"> > </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
+<script>
+    $(document).ready(function () {
+        asideConShrink('chapter_shrink', 'chapter_list');
+        asideConShrink('resource_shrink', 'resource_wrap', resetBookScaleAndPosition);
+        zoomBoomInit();
+        menuEditEvents();
+    });
+
+    function menuEditEvents() {
+        determineWindowSize();
+        //列表详情切换
+        $('.view_mode .btn').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            if($(this).hasClass('to_list')){
+                $('.list_mode').addClass('active');
+                $('.single_mode').removeClass('active');
+            }else{
+                $('.list_mode').removeClass('active');
+                $('.single_mode').addClass('active');
+            }
+        });
+        //左侧tab切换
+        $('.aside_tab li').click(function () {
+            var type = $(this).attr('data-type');
+            $('.aside_tab li').removeClass('active');
+            $(this).addClass('active');
+            $('.aside_tab_con .item[data-type=' + type + ']').addClass('active').show().siblings().hide().removeClass('active');
+        });
+
+        //选择菜品list
+        $('.food_list_wrap .category').click(function () {
+            $(this).addClass('open').siblings().removeClass('open');
+        });
+
+        //进入页面3s后收缩章节列表
+        setTimeout(function () {
+            $('.chapter_shrink').addClass('active');
+            $('.chapter_list').addClass('shrink');
+        }, 3000);
+        //章节列表swiper
+        var chaperSwiper = new Swiper('.chapter_list .swiper-container', {
+            slidesPerView: 'auto',
+            nextButton: '.chapter_list .next',
+            prevButton: '.chapter_list .prev',
+            scrollbar: '.swiper-scrollbar',
+            scrollbarDraggable: true,
+            scrollbarSnapOnRelease: true
+        });
+
+        //弹出配图
+        art.dialog({
+            title:"配图",
+            lock: true,
+            content: document.querySelector('.chose_figure_con'),
+            init: function(){
+                //搜索
+                $('.search_wrap > input').focusin(function(){
+                    $(this).closest('.search_wrap').addClass('active');
+                });
+                $('.search_wrap > input').focusout(function(){
+                    $(this).closest('.search_wrap').removeClass('active');
+                });
+            }
+        });
+    }
+
+    function determineWindowSize() {
+        var winWidth = $(window).width();
+        if (winWidth <= 1280) {
+            winWidth = 1280;
+            //1280下缩收缩侧栏
+            setTimeout(function () {
+                $('.chapter_shrink').addClass('active');
+                $('.resource_shrink').addClass('active');
+                $('.chapter_list').addClass('shrink').removeClass('min');
+                $('.resource_wrap').addClass('shrink');
+                $('.edit_area').removeClass('min');
+                resetBookScaleAndPosition();
+            }, 3000)
+        }
+    }
+
+    //章节、资源列表伸缩
+    function asideConShrink(btn, shrinkBox, fun) {
+        var winWidth = $(window).width();
+        $('.' + btn).click(function () {
+            if ($(this).hasClass('active')) {
+                $('.' + shrinkBox).removeClass('shrink');
+                $('.' + btn).removeClass('active');
+                if (btn == 'chapter_shrink') {
+                    if ($('.resource_shrink').hasClass('active')) {
+                        $('.edit_area').removeClass('min');
+                        $('.chapter_list').removeClass('min');
+                    } else {
+                        $('.edit_area').addClass('min');
+                        $('.chapter_list').addClass('min');
+                    }
+                } else {
+                    $('.edit_area').addClass('min');
+                    $('.chapter_list').addClass('min');
+                }
+            } else {
+                $('.' + shrinkBox).addClass('shrink');
+                $('.' + btn).addClass('active');
+                if (btn == 'chapter_shrink') {
+                    if ($('.resource_shrink').hasClass('active')) {
+                        $('.edit_area').removeClass('min');
+                        $('.chapter_list').removeClass('min');
+                    } else {
+                        $('.edit_area').addClass('min');
+                        $('.chapter_list').addClass('min');
+                    }
+                } else {
+                    $('.edit_area').removeClass('min');
+                    $('.chapter_list').removeClass('min');
+                }
+            }
+
+            if (fun && (typeof fun == "function")) {
+                fun();
+            }
+        });
+    }
+
+    var editArea = $('.edit_area'),
+            bookEdit = $('.page_display'),
+            zoomBar = $('#zoomSlide'),
+            zoomPercent = $('.zoom_percent');
+
+    function zoomBoomInit() {
+        bookEdit.draggable();
+        zoomBar.slider({
+            max: 200,
+            min: 20,
+            create: function () {
+                resetBookScaleAndPosition();
+            },
+            change: function (event, ui) {
+                var scale = zoomBar.slider("value") / 100;
+                zoomBookTo(scale);
+            }
+        });
+    }
+
+
+    $(window).on('resize', function (e) {
+        resetBookScaleAndPosition();
+    });
+
+    function resetBookScaleAndPosition(render) {
+        clear(bookEdit);
+        var bookWidth = parseFloat(bookEdit.css('width')),
+                bookHeight = parseFloat(bookEdit.css('height')),
+                editWidth = editArea.width(),
+                editHeight = editArea.height(),
+                windowWidth = $(window).width(),
+                windowHeight = $(window).height();
+
+        //修正editHeight 直接取到的不正确
+        editHeight = windowHeight - 90;
+
+        if (editArea.hasClass('min')) {
+            editWidth = windowWidth - 308;
+        } else {
+            editWidth = windowWidth - 5;
+        }
+        console.log(editWidth, editHeight);
+        var scale = Math.min((editWidth) / bookWidth, (editHeight - 92) / bookHeight);
+        scaleBook(bookEdit, scale);
+
+        zoomBar.slider("value", parseInt(scale * 100));
+        zoomPercent.text(parseInt(scale * 100) + '%');
+
+        translate(bookEdit, (editWidth - bookWidth * scale) / 2, (editHeight - 46 - bookHeight * scale) / 2);
+
+        bookEdit.attr('data-locked', true);
+    }
+
+    function getBookCurrentScale() {
+        return parseFloat(bookEdit.attr('data-scale'));
+    }
+
+    function scaleBook(htmlElement, scaleValue) {
+        htmlElement = $(htmlElement);
+
+        var current = getCurrent(htmlElement);
+
+        set(htmlElement, {
+            scale: scaleValue,
+            rotation: current.rotation,
+            translationX: current.translationX,
+            translationY: current.translationY
+        });
+    }
+    function getCurrent(htmlElement) {
+        htmlElement = $(htmlElement);
+        return {
+            scale: (parseFloat(htmlElement.attr('data-scale')) || 1),
+            rotation: (parseInt(htmlElement.attr('data-rotation')) || 0),
+            translationX: (parseFloat(htmlElement.attr('data-translation-x')) || 0),
+            translationY: (parseFloat(htmlElement.attr('data-translation-y')) || 0)
+        };
+    }
+
+    function clear(htmlElement) {
+        htmlElement = $(htmlElement);
+        htmlElement.css({
+            transform: ''
+        }).removeAttr('data-scale,data-rotation,data-translation-x,data-translation-y');
+    }
+    function translate(htmlElement, x, y) {
+        htmlElement = $(htmlElement);
+        var current = getCurrent(htmlElement);
+        set(htmlElement, {
+            scale: current.scale,
+            rotation: current.rotation,
+            translationX: x,
+            translationY: y
+        });
+    }
+    function set(htmlElement, settings) {
+        htmlElement = $(htmlElement);
+        var scale = parseFloat(settings.scale).toFixed(6),
+                rotation = parseFloat(settings.rotation).toFixed(6),
+                translationX = parseFloat(settings.translationX).toFixed(6),
+                translationY = parseFloat(settings.translationY).toFixed(6);
+        htmlElement.css({
+            transform: ('translate(' + translationX + 'px,' + translationY + 'px) rotate(' + rotation + 'deg) scale(' + scale + ')'),
+            left: '0',
+            top: '0'
+        });
+
+        htmlElement.attr({
+            'data-scale': scale,
+            'data-rotation': rotation,
+            'data-translation-x': translationX,
+            'data-translation-y': translationY
+        });
+    }
+    function zoomBookTo(scale) {
+        var currentTransform = getCurrent(bookEdit);
+
+        scaleBook(bookEdit, scale);
+        zoomPercent.text(parseInt(scale * 100) + '%');
+
+        var deltaWidth = bookEdit.width() * (scale - currentTransform.scale),
+                deltaHeight = bookEdit.height() * (scale - currentTransform.scale);
+
+        var x = currentTransform.translationX - deltaWidth / 2,
+                y = currentTransform.translationY - deltaHeight / 2;
+
+
+        translate(bookEdit, x, y);
+
+        bookEdit.attr('data-locked', false);
+    }
+</script>
 </body>
 
 </html>
