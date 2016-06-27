@@ -939,12 +939,10 @@ label.error, div.error {
 	position: relative;
 	z-index: 1;
 	margin: 0 auto;
+	width: 550px;
 	border: 1px solid #ccc;
 	border-radius: 6px;
 	background: rgba(255, 255, 255, .9);
-}
-.common_login_wrapper{
-	width: 550px;
 }
 .common_loginheader_wrapper {
 	width: 100%;
@@ -968,7 +966,7 @@ label.error, div.error {
 	display: inline-block;
 	vertical-align: middle;
 	color: #aab93e;
-	background-image: url(../img/logo.png);
+	background-image: url(../img/logo_100_55_00000.png);
 	background-size: 85%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1024,33 +1022,43 @@ label.error, div.error {
 .common_logininput_wrapper li {
 	position: relative;
 	width: 100%;
-	height: 70px;
-	margin: 30px 0 10px 0;
+	height: 50px;
+	margin: 30px 0 40px 0;
 	text-align: center;
+}
+.access_reset_wrapper .common_logininput_wrapper li{
+	height: 40px;
 }
 .common_logininput_wrapper p{
 	display: inline-block;
 	color: #333;
 }
 .common_logininput_wrapper .input_item{
-	display: inline-block;
-	width: 60%;
+	height: 100%;
+	font-size: 0;
 }
 .common_logininput_wrapper .input_item input {
 	display: inline-block;
 	font-family: 'microsoft yahei';
 	font-size: 15px;
 	width: 100%;
-	height: 40px;
+	height: 100%;
 	padding: 0 0 0 5%;
 	border: 1px solid #999;
-	border-radius: 2px;
+	border-radius: 5px;
 	background-color: rgba(0, 0, 0, 0);
 	box-sizing: border-box;
 	vertical-align: middle;
 }
-.common_logininput_wrapper .input_item input:focus {
-	border: 1px solid #82c43b;
+.common_login_wrapper .common_logininput_wrapper .input_item input{
+	padding: 0 0 0 50px;
+	height: 50px;
+}
+/*.access_resetform_wrapper .common_logininput_wrapper .input_item input {
+	width: 100%;
+}*/
+.common_logininput_wrapper .input_item:focus {
+	
 }
 .common_logininput_wrapper li input::-webkit-input-placeholder {
 	color: #bbb;
@@ -1114,7 +1122,7 @@ label.error, div.error {
 	position: relative;
 	z-index: 1;
 	width: 90%;
-	padding: 15px 5%;
+	padding: 5px 5%;
 	text-align: right;
 	border-radius: 6px;
 }
@@ -1136,6 +1144,55 @@ label.error, div.error {
 	height: 100%;
 	background-color: rgba(0, 0, 0, .5);
 }
+
+
+.common_logincheckbox_wrapper
+{
+    overflow: hidden;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.common_logincheckbox_wrapper ul
+{
+    float: left;
+}
+
+.common_logincheckbox_wrapper li
+{
+    font-size: 13px;
+
+    float: left;
+
+    margin: 0 15px 0 0;
+
+    color: #777;
+}
+
+.common_logincheckbox_wrapper a
+{
+    font-size: 13px;
+
+    float: right;
+
+    color: #7bba38;
+}
+
+.common_logincheckbox_wrapper a:hover
+{
+    text-decoration: underline;
+}
+
+.common_logincheckbox_wrapper label
+{
+    display: inline-block;
+
+    margin: 0 5px;
+
+    vertical-align: middle;
+}
+
 .common_triplelap_container {
 	position: absolute;
 	bottom: -11px;

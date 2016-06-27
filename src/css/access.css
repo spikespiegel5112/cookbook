@@ -59,6 +59,119 @@
         /*background: red;*/
     text-align: center;
 }
+
+.access_ssologin_wrapper
+{
+    position: relative;
+    z-index: 2;
+
+/*    padding: 0 0 10px 0;*/
+    width: 100%;
+    min-height: 20px;
+
+/*    border-bottom: 1px solid #ccc;*/
+    border-radius: 6px;
+}
+
+.access_ssologin_wrapper p
+{
+    font-size: 12px;
+
+    width: 100%;
+    margin: 15px 0;
+
+    text-align: center;
+
+    color: #666;
+}
+
+.access_ssologin_wrapper div
+{
+    overflow: hidden;
+
+    width: 100%;
+    padding: 10px 0;
+
+    border-radius: 6px;
+    background-color: #e7e7e6;
+}
+.access_ssologin_wrapper ul
+{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.access_ssologin_wrapper ul li
+{
+    float: left;
+
+    width: 33%;
+
+    text-align: center;
+}
+.access_ssologin_wrapper ul li a
+{
+    display: inline-block;
+
+    margin: 0 auto;
+    padding: 0;
+
+    border-radius: 50%;
+}
+.access_ssologin_wrapper ul li a
+{
+    text-align: center;
+}
+
+
+.access_ssologin_wrapper ul .qq
+{
+    background-color: #00adef;
+}
+.access_ssologin_wrapper ul .wechat
+{
+    background-color: #009834;
+}
+.access_ssologin_wrapper ul .weibo
+{
+    background-color: #db3a37;
+}
+
+/*.access_ssologin_wrapper ul li:first-child {
+    margin: 0;
+}*/
+
+
+.access_ssologin_wrapper ul li a  span
+{
+    font-size: 30px;
+    line-height: 45px;
+
+    display: block;
+
+    width: 45px;
+    height: 45px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.access_ssologin_wrapper ul .qq a
+{
+    background-position: -255px -345px;
+}
+
+.access_ssologin_wrapper ul .weibo a
+{
+    background-position: -298px -345px;
+}
+
+.access_ssologin_wrapper ul .wechat a
+{
+    background-position: -208px -345px;
+}
+
 .verticalalgin_container .verticalalgin
 {
     display: inline-block;
