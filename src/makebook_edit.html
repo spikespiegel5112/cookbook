@@ -1216,7 +1216,7 @@
                 </ul>
             </div>
             <div class="class_tab_con">
-                <div class="item active" data-type="chineseFood">
+                <div class="item active" data-type="chinese">
                     <div class="search_wrap">
                         <input type="text" placeholder="输入您想要找的菜名" value="">
                         <button class="search_btn" type="button">搜索</button>
@@ -2436,6 +2436,8 @@
         asideConShrink('resource_shrink', 'resource_wrap', resetBookScaleAndPosition);
         zoomBoomInit();
         menuEditEvents();
+        chooseMenuClass();
+        chooseMenuClassPops();
     });
 
     function menuEditEvents() {
@@ -2495,70 +2497,7 @@
 
 
 
-        //点击模板图片，弹出编辑配图
-        /*art.dialog({
-            title:"配图",
-            lock: true,
-            content: document.querySelector('.chose_figure_con'),
-            init: function(){
-                //搜索
-                $('.search_wrap > input').focusin(function(){
-                    $(this).closest('.search_wrap').addClass('active');
-                });
-                $('.search_wrap > input').focusout(function(){
-                    $(this).closest('.search_wrap').removeClass('active');
-                });
-            }
-        });*/
 
-        //新增菜品
-        $('.add_food').click(function(){
-            art.dialog({
-                title:"新增菜品",
-                lock: true,
-                padding: 0,
-                content: document.querySelector('.edit_space_pop'),
-                init: function(){
-                    chooseMenuClass();
-                    chooseMenuClassPops();
-                }
-            });
-        });
-
-
-        //新增页面 待添加内容
-        $('.add_page').click(function(){
-            art.dialog({
-                title:"新增分类",
-                lock: true,
-                padding: 0,
-                content: document.querySelector(''),
-                init: function(){
-
-                }
-            });
-        });
-
-        //预览模板
-        $('.tpl_list li .preview').click(function(){
-            art.dialog({
-                title:"预览模板",
-                lock: true,
-                content: document.querySelector('.preview_tpl_con'),
-                init: function(){}
-            });
-        });
-
-        //修改分类名称
-        $('.list_mode .name .edit').click(function(){
-            art.dialog({
-                title:"修改分类名称",
-                lock: true,
-                padding: 0,
-                content: document.querySelector('.chapter_config_con'),
-                init: function(){}
-            });
-        });
     }
     //选择菜品
     function chooseMenuClass(){
@@ -2608,7 +2547,7 @@
         });
 
         //新增菜品
-        $('.menu_list .new_food').click(function(){
+        $('.new_food').click(function(){
             art.dialog({
                 title: '新增菜品',
                 lock: true,
@@ -2674,6 +2613,68 @@
                         }
                     });
                 }
+            });
+        });
+
+        //点击模板图片，弹出编辑配图
+        /*art.dialog({
+         title:"配图",
+         lock: true,
+         content: document.querySelector('.chose_figure_con'),
+         init: function(){
+         //搜索
+         $('.search_wrap > input').focusin(function(){
+         $(this).closest('.search_wrap').addClass('active');
+         });
+         $('.search_wrap > input').focusout(function(){
+         $(this).closest('.search_wrap').removeClass('active');
+         });
+         }
+         });*/
+
+        //新增菜品
+        $('.add_food').click(function(){
+            art.dialog({
+                title:"新增菜品",
+                lock: true,
+                padding: 0,
+                content: document.querySelector('.edit_space_pop'),
+                init: function(){}
+            });
+        });
+
+
+        //新增页面 待添加内容
+        $('.add_page').click(function(){
+            art.dialog({
+                title:"新增分类",
+                lock: true,
+                padding: 0,
+                content: document.querySelector(''),
+                init: function(){
+
+                }
+            });
+        });
+
+        //预览模板
+        $('.tpl_list li .preview').click(function(){
+            art.dialog({
+                title:"预览模板",
+                lock: true,
+                content: document.querySelector('.preview_tpl_con'),
+                init: function(){}
+            });
+        });
+
+        //修改分类名称
+        $('.list_mode .name .edit').click(function(){
+            art.dialog({
+                title:"修改分类名称",
+                lock: true,
+                padding: 0,
+                content: document.querySelector('.chapter_config_con'),
+                init: function(){}
             });
         });
     }
