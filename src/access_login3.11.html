@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>易彩-登录页</title>
+	<link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/access.css">
+	<link rel="stylesheet" href="css/mediaquery.css">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<!--登录表单-->
+	<div class="access_login_container" style='background-image:url(img/access/login_bg.jpg)'>
+		<div class='common_login_wrapper'>
+			<div class='common_loginheader_wrapper'>
+				<div>
+					<span></span>
+					<label>登录易菜谱</label>
+				</div>
+				<a class='icon-remove' href="javascript:;"></a>
+			</div>
+			<div class='common_logindividline_wrapper'>
+				<span></span>
+				<!-- <label></label> -->
+			</div>
+			<form method="post" action="/login;jsessionid=DC917C6992A727988D39AF0C65D402DA?service=http%3A%2F%2Fwww.yearbook.com.cn%2Fcallback%3Fclient_name%3DCasClient" id="fm1">
+				<ul class='common_logininput_wrapper'>
+					<li>
+						<div class='input_item'>
+							<span class='ybiconfont ybicon-user'></span>
+							<input id='loginName' name='loginName' type='text' placeholder='输入用户名' required>
+						</div>
+					</li>
+					<li>
+						<div class='input_item'>
+							<span class='ybiconfont ybicon-lock'></span>
+							<input id='password' name='password' type='password' placeholder='输入密码' required>
+						</div>
+					</li>
+				</ul>
+			</form>
+			<div class='common_logincheckbox_wrapper'>
+				<ul>
+					<li>
+						<input id='rememberme' type='checkbox'>
+						<label for='rememberme'>记住我</label>
+					</li>
+					<li>
+						<input id='savepw' type='checkbox'>
+						<label for='savepw'>一周内免登录</label>
+					</li>
+				</ul>
+				<a href="javascript:;">忘记密码？</a>
+			</div>
+			<a class='common_loginbtn_item transition_btn' href="javascript:;">登录</a>
+			<p class='common_loginproviso_item'>没有账号?<a href="access_register3.11.html">马上注册</a></p>
+			<div class='access_ssologin_wrapper'>
+				<p>还可以使用以下方式登录</p>
+				<div>
+					<ul>
+						<li>
+							<a class='qq' href="access_loginandbind.html">
+								<span class='ybiconfont ybicon-qqsolid'></span>
+							</a>
+						</li>
+						<li>
+							<a class='weibo' href="access_loginandbind.html">
+								<span class='ybiconfont ybicon-weibosina'></span>
+							</a>
+						</li>
+						<li>
+							<a class='wechat' href="javascript:;">
+								<span class='ybiconfont ybicon-wechatsolid'></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class='common_triplelap_container'>
+				<div class='common_triplelap_wrapper'>
+					<span class='first'></span>
+					<span class='second'></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="assets/js/icheck.js"></script>
+	<!-- build:js js/all.js -->
+	<script type="text/javascript" src="js/base.js"></script>
+	<!-- endbuild -->
+	<script>
+	function validateForm() {
+		//validate方法参数可选  
+		return $('#fm1').validate({
+			messages: {
+				loginName: {
+					required: "用户名未填写"
+				},
+				password: {
+					required: '密码未填写',
+				}
+			}
+		}).form();
+	}
+
+	function doSubmit() { //点击登录触发验证
+		$('.common_loginbtn_item').click(function() {
+			if (validateForm()) {
+				document.form1.submit();
+			}
+		});
+	}
+
+	function icheck(argument) {
+		$("input[type=radio],input[type=checkbox]").iCheck({
+			checkboxClass: 'icheckbox_minimal-green',
+			radioClass: 'iradio_minimal-green',
+			increaseArea: '20%'
+		});
+	}
+
+	function backgroundTransition() {
+		$.imageTransition({
+			mintime: 5,
+			maxtime: 15,
+			transittime: 5,
+			container: '.access_login_container',
+			imagesrc: [
+				'http://antisony.org/src/img/login/1.jpg',
+				'http://antisony.org/src/img/login/2.jpg',
+				'http://antisony.org/src/img/login/3.jpg',
+				'http://antisony.org/src/img/login/4.jpg',
+				'http://antisony.org/src/img/login/5.jpg',
+				'http://antisony.org/src/img/login/6.jpg',
+				'img/access/login_bg.jpg'
+			]
+		});
+	}
+
+	$(function() {
+		doSubmit();
+		icheck();
+		$.remResizing({
+			fontsize: 20,
+			baseline: 320,
+			threshold: 1024,
+			basedonnarrow: true,
+			dropoff: true
+		});
+
+		// $.remResizing({
+		// 	fontsize: 20,
+		// 	maxwidth:1024,
+		// 	aligncenter: false
+		// });
+
+		$('.common_login_wrapper').align();
+		backgroundTransition();
+	});
+	</script>
+</body>
+
+</html>

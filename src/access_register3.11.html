@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>易彩-注册页</title>
+	<link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464916563_8422954.css" type="text/css" media="all">
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/access.css">
+	<link rel="stylesheet" href="css/mediaquery.css">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<!--登录表单-->
+	<div class="access_login_container">
+		<div class='common_login_wrapper'>
+			<div class='common_loginheader_wrapper'>
+				<div>
+					<span></span>
+					<label>注册易菜谱</label>
+				</div>
+				<a class='icon-remove' href="javascript:;"></a>
+			</div>
+			<div class='common_logindividline_wrapper'>
+				<span></span>
+				<!-- <label></label> -->
+			</div>
+			<form method="post" action="" id="fm1">
+				<ul class='common_logininput_wrapper'>
+					<li>
+						<div class='input_item'>
+							<span class='ybiconfont ybicon-user'></span>
+							<input id='loginName' name='loginName' type='text' placeholder='输入用户名' required>
+						</div>
+					</li>
+					<li>
+						<div class='input_item'>
+							<span class='ybiconfont ybicon-lock'></span>
+							<input id='password' name='password' type='password' placeholder='输入密码' required>
+						</div>
+					</li>
+				</ul>
+			</form>
+			<a class='common_loginbtn_item transition_btn' href="javascript:;">注册</a>
+			<p class='common_loginproviso_item'>已有账号?<a href="access_login3.11.html">点击登录</a></p>
+			<p class='common_loginproviso_item'>完成此注册，即表明您同意了我们的
+				<br><a href="javascript:;">使用条款和隐私策略</a>
+			</p>
+			<div class='common_triplelap_container'>
+				<div class='common_triplelap_wrapper'>
+					<span class='first'></span>
+					<span class='second'></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="assets/js/icheck.js"></script>
+	<!-- build:js js/all.js -->
+	<script type="text/javascript" src="js/base.js"></script>
+	<!-- endbuild -->
+	<script>
+	function validateForm() {
+		//validate方法参数可选  
+		$('#fm1').validate({
+			messages: {
+				loginName: {
+					required: "用户名未填写"
+				},
+				password: {
+					required: '密码未填写'
+				}
+			}
+		}).form();
+	}
+
+	function doSubmit() { //点击登录触发验证
+		$('.common_loginbtn_item').click(function() {
+			if (validateForm()) {
+				document.form1.submit();
+			}
+		});
+	}
+
+	function icheck(argument) {
+		$("input[type=radio],input[type=checkbox]").iCheck({
+			checkboxClass: 'icheckbox_minimal-green',
+			radioClass: 'iradio_minimal-green',
+			increaseArea: '20%'
+		});
+	}
+
+	function backgroundTransition() {
+		$.imageTransition({
+			mintime: 5,
+			maxtime: 15,
+			transittime: 5,
+			container: '.access_login_container',
+			imagesrc: [
+				'http://antisony.org/src/img/login/1.jpg',
+				'http://antisony.org/src/img/login/2.jpg',
+				'http://antisony.org/src/img/login/3.jpg',
+				'http://antisony.org/src/img/login/4.jpg',
+				'http://antisony.org/src/img/login/5.jpg',
+				'http://antisony.org/src/img/login/6.jpg',
+				'img/access/login_bg.jpg'
+			]
+		});
+	}
+
+	$(function() {
+		doSubmit();
+		icheck();
+		$.remResizing({
+			fontsize: 20,
+			baseline: 320,
+			threshold: 1024,
+			basedonnarrow: true,
+			dropoff: true
+		});
+		
+		$('.common_login_wrapper').align();
+		backgroundTransition();
+	});
+	</script>
+</body>
+
+</html>
