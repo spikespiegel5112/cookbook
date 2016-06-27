@@ -9,10 +9,11 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
     <title>易彩-编辑制作</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1467015866_72714.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/swiper.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/chosen.css" type="text/css" media="all">
     <!-- build:css css/all.min.css -->
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -82,6 +83,7 @@
                         </li>
                         <li><a class="add_page ybiconfont ybicon-addpage" href="javascript:;"></a></li>
                         <li><a class="add_food ybiconfont ybicon-addfood" href="javascript:;"></a></li>
+                        <li><a class="change_tpl ybiconfont ybicon-changetemplate" href="javascript:;"></a></li>
                         <li><a class="ip_pic ybiconfont ybicon-photo disable" href="javascript:;"></a></li>
                         <li>
                             <a class="ip_txt ybiconfont ybicon-txt" href="javascript:;"></a>
@@ -2426,10 +2428,306 @@
         </div>
     </div>
 </div>
+<!--添加页面-->
+<div class="add_page_con">
+    <div class="target_chapter">
+        <label>1-选择分类：</label>
+        <select class="choose_chapter">
+            <option>招牌菜</option>
+            <option>凉菜</option>
+            <option>特色主食</option>
+            <option>酒水饮料</option>
+        </select>
+    </div>
+    <div class="tpl_slide_wrap">
+        <label>2-选择使用的模板</label>
+        <div class="tpl_list ">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="select swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_07.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_08.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_11.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_12.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_15.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_16.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_13.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_14.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_03.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_04.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                </ul>
+            </div>
+            <a class="prev ybiconfont ybicon-backward2" href="javascript:;"></a>
+            <a class="next ybiconfont ybicon-forward2" href="javascript:;"></a>
+        </div>
+    </div>
+    <div class="action_bar">
+        <label>添加数量：</label>
+        <ul class='ybcommon_counter_item'>
+            <a href="javascript:;">-</a>
+            <input type='text' value='0'>
+            <a href="javascript:;">+</a>
+        </ul>
+        <a href="javascript:;" class="cm_btn cm_fr ok">确认添加</a>
+    </div>
+</div>
+<!--更换模板-->
+<div class="change_tpl_con">
+    <div class="tpl_slide_wrap">
+        <label>选择使用的模板</label>
+        <div class="tpl_list ">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="select swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_07.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_08.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_11.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_12.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_15.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_16.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_13.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_14.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_03.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_04.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="tpl double">
+                            <div class="left">
+                                <img src="img/sample/bookdetail/inner_page_05.jpg">
+                            </div>
+                            <div class="right">
+                                <img src="img/sample/bookdetail/inner_page_06.jpg">
+                            </div>
+                            <span class="ybiconfont ybicon-ok"></span>
+                        </div>
+                        <p class="tpl_num">模板03：国色天香</p>
+                    </li>
+                </ul>
+            </div>
+            <a class="prev ybiconfont ybicon-backward2" href="javascript:;"></a>
+            <a class="next ybiconfont ybicon-forward2" href="javascript:;"></a>
+        </div>
+    </div>
+    <div class="action_bar">
+        <a href="javascript:;" class="cm_btn cm_fr ok">确定</a>
+    </div>
+</div>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/swiper.jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
+<script type="text/javascript" src="assets/js/chosen.jquery.min.js"></script>
 <script>
     $(document).ready(function () {
         asideConShrink('chapter_shrink', 'chapter_list');
@@ -2644,15 +2942,52 @@
         });
 
 
-        //新增页面 待添加内容
+        //新增页面
         $('.add_page').click(function(){
             art.dialog({
-                title:"新增分类",
+                title:"添加页面",
                 lock: true,
                 padding: 0,
-                content: document.querySelector(''),
+                content: document.querySelector('.add_page_con'),
                 init: function(){
+                    var addPageSwiper = new Swiper('.tpl_list .swiper-container', {
+                        nextButton: '.next',
+                        prevButton: '.prev',
+                        slidesPerView: 4,
+                        slidesPerColumn: 2,
+                        spaceBetween : 10
+                    });
 
+                    $('.choose_chapter').chosen({
+                        width: "200px"
+                    });
+
+                    $('.tpl_list li').click(function(){
+                        $(this).addClass('select').siblings().removeClass('select');
+                    })
+                }
+            });
+        });
+
+        //更换模板
+        $('.change_tpl').click(function(){
+            art.dialog({
+                title:"更换模板",
+                lock: true,
+                padding: 0,
+                content: document.querySelector('.change_tpl_con'),
+                init: function(){
+                    var addPageSwiper = new Swiper('.tpl_list .swiper-container', {
+                        nextButton: '.next',
+                        prevButton: '.prev',
+                        slidesPerView: 4,
+                        slidesPerColumn: 2,
+                        spaceBetween : 10
+                    });
+
+                    $('.tpl_list li').click(function(){
+                        $(this).addClass('select').siblings().removeClass('select');
+                    })
                 }
             });
         });
