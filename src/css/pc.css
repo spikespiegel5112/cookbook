@@ -167,6 +167,9 @@
 	font-weight: normal;
 	text-align: left;
 }
+.info_details .form-group label.error{
+	display: block;
+}
 .info_details .form-group .title {
 	line-height: 35px;
 	display: inline-block;
