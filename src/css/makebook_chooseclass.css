@@ -89,18 +89,10 @@
     float: left;
     padding: 14px 12px 6px;
     width: 400px;
+    height: 100%;
     background-color: #eee;
     border: 1px solid #ddd;
     box-sizing: border-box;
-}
-
-.class_tab_con .item {
-    position: relative;
-    display: none;
-}
-
-.class_tab_con .item.active {
-    display: block;
 }
 
 .class_tab_con .search_wrap {

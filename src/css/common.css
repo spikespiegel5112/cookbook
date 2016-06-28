@@ -656,10 +656,20 @@ label.error, div.error {
 	padding: 20px 0;
 }
 .pc_empty_item .avatar_1 {
+	display: block;
+	margin: 0 auto;
 	width: 60px;
 	height: 110px;
 	background: url(../img/icon/empty_avatar_1_00000.png);
 	background-size: cover;
+}
+.pc_empty_item .resource {
+	display: block;
+	margin: 0 auto;
+	width: 235px;
+	height: 169px;
+
+	background: url('../img/icon/empty_resource.png');
 }
 .pc_empty_item label {
 	font-size: 14px;
