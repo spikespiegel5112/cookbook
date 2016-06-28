@@ -1114,9 +1114,9 @@ label.error, div.error {
 }
 .common_logininput_wrapper .getcode_btn{
 	display: inline-block;
-	width: 140px;
+	width: 100px;
 	height: 36px;
-	line-height: 40px;
+	line-height: 38px;
 	background-color: #eeeeee;
 	border: 1px solid #ececec;
 	border-top-right-radius: 5px;
