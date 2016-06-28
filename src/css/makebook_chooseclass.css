@@ -1217,14 +1217,21 @@
     display: block;
     height: 32px;
     font-size: 28px;
-    color: #999;
     text-align: center;
-    background: transparent;
+}
+
+.edit_tool_bar .actions li a.disable i{
+    opacity: 0.65;
 }
 
 .edit_tool_bar .actions li a:hover,
 .edit_tool_bar .actions li a:active {
     color: #79bd8f;
+}
+
+.edit_tool_bar .actions li a.disable:hover,
+.edit_tool_bar .actions li a.disable:active{
+    color: #999!important;
 }
 
 .edit_tool_bar .actions li .refresh i{
