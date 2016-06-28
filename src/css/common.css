@@ -146,7 +146,7 @@ label.error, div.error {
 }
 /*yc edit space*/
 .yc_cm_header.edit_space{
-	z-index: 1;
+	z-index: 2;
 }
 .yc_cm_header.edit_space .shortcut_container .shortcut{
 	max-width: none;

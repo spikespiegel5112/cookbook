@@ -23,49 +23,49 @@
 
 <body>
 <div class="main_container">
-    <div class="yc_cm_header edit_space">
-        <div class="shortcut_container">
-            <div class="shortcut">
-                <div class="yc_logo">
-                    <img src="img/yc_logo_100_55_00000.png">
-                </div>
-                <div class="nav_bar">
-                    <ul>
-                        <li><a href="_index.html">首页</a></li>
-                        <li><a class="active" href="javascript:;">开始制作</a></li>
-                        <li><a href="javascript:;">菜谱款式</a></li>
-                        <li><a href="javascript:;">定制流程</a></li>
-                        <li><a href="javascript:;">关于我们</a></li>
-                    </ul>
-                </div>
-                <ul class="quick_menu">
-                    <li>
-                        <div class="yc_menu">
-                            <a class="menu_hd" href="javascript:;">我的菜谱<b class="icon-caret-down"></b></a>
+    <!--编辑制作页header class:edit_space-->
+    <div class="edit_space_con"><!--小屏幕下class:min_screen-->
+        <div class="yc_cm_header edit_space">
+            <div class="shortcut_container">
+                <div class="shortcut">
+                    <div class="yc_logo">
+                        <img src="img/yc_logo.png">
+                    </div>
+                    <div class="nav_bar">
+                        <ul>
+                            <li><a href="_index.html">首页</a></li>
+                            <li><a class="active" href="javascript:;">开始制作</a></li>
+                            <li><a href="javascript:;">菜谱款式</a></li>
+                            <li><a href="javascript:;">定制流程</a></li>
+                            <li><a href="javascript:;">关于我们</a></li>
+                        </ul>
+                    </div>
+                    <ul class="quick_menu">
+                        <li>
+                            <div class="yc_menu">
+                                <a class="menu_hd" href="javascript:;">我的菜谱<b class="icon-caret-down"></b></a>
 
-                            <div class="menu_bd">
-                                <div class="menu_bd_panel">
-                                    <a href="javascript:;">我的菜谱</a>
-                                    <a href="javascript:;">我的订单</a>
-                                    <a href="javascript:;">个人中心</a>
-                                    <a href="_index.html"><i class="ybiconfont ybicon-turnoff"></i>退出</a>
+                                <div class="menu_bd">
+                                    <div class="menu_bd_panel">
+                                        <a href="javascript:;">我的菜谱</a>
+                                        <a href="javascript:;">我的订单</a>
+                                        <a href="javascript:;">个人中心</a>
+                                        <a href="_index.html"><i class="ybiconfont ybicon-turnoff"></i>退出</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="javascript:;">收藏</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">问题反馈</a>
-                    </li>
-                    <li><p class="phone">400-0610-127</p></li>
-                </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">收藏</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">问题反馈</a>
+                        </li>
+                        <li><p class="phone">400-0610-127</p></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!--编辑制作页header class:edit_space-->
-    <div class="edit_space_con">
         <div class="edit_tool_bar">
             <div class="left">
                 <p class="book_info">当前模板：<span>姹紫嫣红</span></p>
@@ -73,7 +73,10 @@
                 <div class="actions">
                     <ul>
                         <li>
-                            <a class="refresh ybiconfont ybicon-undo" href="javascript:;"></a>
+                            <a class="refresh" href="javascript:;">
+                                <i class="ybiconfont ybicon-undo"></i>
+                                <span class="txt">刷新菜谱</span>
+                            </a>
 
                             <div class="ybcommon_queryicon_item">
                                 <div>
@@ -81,12 +84,35 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a class="add_page ybiconfont ybicon-addpage" href="javascript:;"></a></li>
-                        <li><a class="add_food ybiconfont ybicon-addfood" href="javascript:;"></a></li>
-                        <li><a class="change_tpl ybiconfont ybicon-changetemplate" href="javascript:;"></a></li>
-                        <li><a class="ip_pic ybiconfont ybicon-photo disable" href="javascript:;"></a></li>
                         <li>
-                            <a class="ip_txt ybiconfont ybicon-txt" href="javascript:;"></a>
+                            <a class="add_page" href="javascript:;">
+                                <i class="ybiconfont ybicon-addpage"></i>
+                                <span class="txt">添加页面</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="add_food" href="javascript:;">
+                                <i class="ybiconfont ybicon-addfood"></i>
+                                <span class="txt">添加菜品</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="change_tpl" href="javascript:;">
+                                <i class="ybiconfont ybicon-changetemplate"></i>
+                                <span class="txt">更换模板</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="ip_pic disable" href="javascript:;">
+                                <i class="ybiconfont ybicon-photo"></i>
+                                <span class="txt">图片缺失页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="ip_txt" href="javascript:;">
+                                <i class="ybiconfont ybicon-txt"></i>
+                                <span class="txt">文字缺失页</span>
+                            </a>
                             <span class="page_num">3</span>
 
                             <div class="page_list">
@@ -3041,6 +3067,7 @@
         var winWidth = $(window).width();
         if (winWidth <= 1280) {
             winWidth = 1280;
+            $('.edit_space_con').addClass('min_screen');
             //1280下缩收缩侧栏
             setTimeout(function () {
                 $('.chapter_shrink').addClass('active');
@@ -3050,6 +3077,8 @@
                 $('.edit_area').removeClass('min');
                 resetBookScaleAndPosition();
             }, 3000)
+        }else{
+            $('.edit_space_con').removeClass('min_screen');
         }
     }
 
@@ -3118,6 +3147,7 @@
 
     $(window).on('resize', function (e) {
         resetBookScaleAndPosition();
+        determineWindowSize();
     });
 
     function resetBookScaleAndPosition(render) {
