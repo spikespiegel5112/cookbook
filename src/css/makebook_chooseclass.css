@@ -1438,16 +1438,21 @@
     display: block;
     margin: 0 0 10px;
     color: #666;
+    overflow: visible;
 }
 
-.progress .percent label {
+.edit_tool_bar .right .progress .percent label {
     display: block;
     box-sizing: border-box;
     padding: 10px 0 6px;
     text-align: center;
 }
 
-.progress .percent .bar {
+.edit_tool_bar .right .progress .percent label span{
+    display: inline;
+}
+
+.edit_tool_bar .right .progress .percent .bar {
     display: block;
     margin: 0 auto;
     width: 100px;
@@ -1457,7 +1462,7 @@
     background-color: #a5a09d;
 }
 
-.progress .percent .bar span {
+.edit_tool_bar .right .progress .percent .bar span {
     position: relative;
     display: block;
     width: 0;
@@ -1467,7 +1472,7 @@
     background-color: #79bd8f;
 }
 
-.progress .percent .bar span::after {
+.edit_tool_bar .right .progress .percent .bar span::after {
     content: " ";
     position: absolute;
     top: -3px;
