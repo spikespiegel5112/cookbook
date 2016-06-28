@@ -147,7 +147,7 @@
 	z-index: 1;
 	display: inline-block;
 	width: 13%;
-	border-top: 1px solid #91c31e;
+	border-top: 1px solid #00a388;
 }
 .hr div.gray {
 	position: absolute;
@@ -166,6 +166,9 @@
 	font-size: 16px;
 	font-weight: normal;
 	text-align: left;
+}
+.info_details .form-group label.error{
+	display: block;
 }
 .info_details .form-group .title {
 	line-height: 35px;

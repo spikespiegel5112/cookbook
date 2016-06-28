@@ -89,18 +89,10 @@
     float: left;
     padding: 14px 12px 6px;
     width: 400px;
+    height: 100%;
     background-color: #eee;
     border: 1px solid #ddd;
     box-sizing: border-box;
-}
-
-.class_tab_con .item {
-    position: relative;
-    display: none;
-}
-
-.class_tab_con .item.active {
-    display: block;
 }
 
 .class_tab_con .search_wrap {
@@ -1153,7 +1145,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 40px;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -1163,15 +1154,17 @@
 .edit_space_con .edit_tool_bar {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 65px;
     background-color: #f2f2f2;
     box-shadow: 0 3px 6px -3px rgba(90, 90, 90, .6);
     z-index: 1;
+    padding: 7px 0;
+    box-sizing: border-box;
 }
 
-.edit_tool_bar .view_mode {
-    position: relative;
-    width: 100%;
+.edit_space_con.min_screen .edit_tool_bar{
+    height: 50px;
+    padding: 0;
 }
 
 .edit_tool_bar .left {
@@ -1196,15 +1189,31 @@
 .edit_tool_bar .actions li {
     position: relative;
     float: left;
+    margin: 0 5px;
+}
+
+.min_screen .edit_tool_bar .actions li{
     line-height: 47px;
     margin: 0 10px;
 }
 
 .edit_tool_bar .actions li a {
     position: relative;
-    font-size: 28px;
+    font-size: 12px;
     color: #999;
     background: transparent;
+}
+
+.edit_tool_bar .actions li a i {
+    position: relative;
+    display: block;
+    height: 32px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.edit_tool_bar .actions li a.disable i{
+    opacity: 0.65;
 }
 
 .edit_tool_bar .actions li a:hover,
@@ -1212,26 +1221,34 @@
     color: #79bd8f;
 }
 
-.edit_tool_bar .actions li .refresh{
-    display: inline-block;
+.edit_tool_bar .actions li a.disable:hover,
+.edit_tool_bar .actions li a.disable:active{
+    color: #999!important;
+}
+
+.edit_tool_bar .actions li .refresh i{
     transform: rotateY(180deg);
 }
-.edit_tool_bar .actions li .add_page {
+.edit_tool_bar .actions li .add_page i {
     font-size: 31px;
     vertical-align: middle;
 }
 
-.edit_tool_bar .actions li .add_food {
+.edit_tool_bar .actions li .add_food i {
     font-size: 33px;
     vertical-align: middle;
+}
+
+.min_screen .edit_tool_bar .actions .txt{
+    display: none;
 }
 
 .edit_tool_bar .actions li .page_num {
     font-size: 12px;
     line-height: 16px;
     position: absolute;
-    top: 2px;
-    right: -5px;
+    top: -3px;
+    right: 8px;
     width: auto;
     min-width: 16px;
     height: 16px;
@@ -1242,13 +1259,23 @@
     background-color: #f80;
 }
 
+.min_screen .actions li .page_num{
+    top: 2px;
+    right: -5px;
+}
+
 .edit_tool_bar .actions li .page_list{
     font-size: 12px;
     position: absolute;
-    top: 50px;
-    left: -52px;
+    top: 58px;
+    left: -36px;
     display: none;
     width: 130px;
+}
+
+.min_screen .edit_tool_bar .actions li .page_list{
+    top: 50px;
+    left: -52px;
 }
 
 .edit_tool_bar .actions li:hover .page_list{
@@ -1306,14 +1333,19 @@
     border-bottom: 8px solid #fff;
     border-left: 8px solid transparent;
 }
-.edit_tool_bar .actions li .ybcommon_queryicon_item {
+.actions li .ybcommon_queryicon_item {
     position: absolute;
-    top: 11px;
-    left: 1px;
+    top: 26px;
+    left: 10px;
     display: none;
     width: 28px;
     height: 0;
     cursor: default;
+}
+
+.min_screen .actions li .ybcommon_queryicon_item{
+    top: 11px;
+    left: 1px;
 }
 
 .edit_tool_bar .actions li .ybcommon_queryicon_item div {
@@ -1329,12 +1361,16 @@
 
 .edit_tool_bar .view_mode {
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     width: 100%;
-    line-height: 50px;
     text-align: center;
     z-index: 0;
+    line-height: 47px;
+}
+
+.min_screen .edit_tool_bar .view_mode{
+    top: 0;
 }
 
 .edit_tool_bar .view_mode label {
@@ -1394,16 +1430,21 @@
     display: block;
     margin: 0 0 10px;
     color: #666;
+    overflow: visible;
 }
 
-.progress .percent label {
+.edit_tool_bar .right .progress .percent label {
     display: block;
     box-sizing: border-box;
     padding: 10px 0 6px;
     text-align: center;
 }
 
-.progress .percent .bar {
+.edit_tool_bar .right .progress .percent label span{
+    display: inline;
+}
+
+.edit_tool_bar .right .progress .percent .bar {
     display: block;
     margin: 0 auto;
     width: 100px;
@@ -1413,7 +1454,7 @@
     background-color: #a5a09d;
 }
 
-.progress .percent .bar span {
+.edit_tool_bar .right .progress .percent .bar span {
     position: relative;
     display: block;
     width: 0;
@@ -1423,7 +1464,7 @@
     background-color: #79bd8f;
 }
 
-.progress .percent .bar span::after {
+.edit_tool_bar .right .progress .percent .bar span::after {
     content: " ";
     position: absolute;
     top: -3px;
@@ -1471,8 +1512,12 @@
     height: inherit;
     top: 0;
     z-index: 0;
-    padding-top: 90px;
+    padding-top: 105px;
     box-sizing: border-box;
+}
+.edit_space_con.min_screen .single_mode,
+.edit_space_con.min_screen .list_mode{
+    padding-top: 90px;
 }
 .edit_space_con .single_mode.active,
 .edit_space_con .list_mode.active{
@@ -1481,7 +1526,7 @@
 .single_mode .resource_shrink {
     display: block;
     position: absolute;
-    top: 232px;
+    top: 247px;
     left: 6px;
     width: 28px;
     text-align: center;
@@ -1490,6 +1535,10 @@
     z-index: 3;
     transform: rotate(0deg);
     transition: all .35s ease-in-out;
+}
+
+.min_screen .single_mode .resource_shrink{
+    top: 232px;
 }
 
 .single_mode .resource_shrink.active {
@@ -1510,12 +1559,15 @@
     position: absolute;
     left: 6px;
     top: 0;
-    padding-top: 90px;
+    padding-top: 105px;
     box-sizing: border-box;
     width: 308px;
     height: inherit;
     z-index: 2;
     transition: all .35s ease-in-out;
+}
+.min_screen .single_mode .resource_wrap{
+    padding-top: 90px;
 }
 
 .single_mode .resource_wrap.shrink {

@@ -850,14 +850,16 @@
 .personal_content_box .common_crumb_wrapper{
     float: left;
     width: 60%;
-    padding-left: 10px;
+    padding: 0 0 0 10px;
 }
 .personal_content_box .common_crumb_wrapper ul{
     width: 100%;
+    border: 0;
 }
 .personal_content_box .query_group{
     float: right;
     width: 175px;
+    margin-top: 4px;
 }
 .query_group {
     position: relative;
@@ -946,8 +948,9 @@
 /*my cookbook*/
 .personal_content_box .tool_wrap {
     float: right;
-    margin-right: 10px;
+    margin: 5px 10px 0 0;
     line-height: 42px;
+    top: 0;
 }
 .tool_wrap .search_bar {
     line-height: 25px;

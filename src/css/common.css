@@ -146,7 +146,7 @@ label.error, div.error {
 }
 /*yc edit space*/
 .yc_cm_header.edit_space{
-	z-index: 1;
+	z-index: 2;
 }
 .yc_cm_header.edit_space .shortcut_container .shortcut{
 	max-width: none;
@@ -654,12 +654,26 @@ label.error, div.error {
 	width: 220px;
 	margin: 0 auto;
 	padding: 20px 0;
+	text-align: center;
 }
 .pc_empty_item .avatar_1 {
+	display: block;
+	margin: 0 auto;
 	width: 60px;
 	height: 110px;
 	background: url(../img/icon/empty_avatar_1_00000.png);
 	background-size: cover;
+}
+.pc_empty_item .resource {
+	display: block;
+	margin: 0 auto;
+	width: 235px;
+	height: 169px;
+	background: url('../img/icon/empty_resource.png');
+}
+.pc_empty_item .ybicon-box{
+	font-size: 85px;
+	color: #a8a8a8;
 }
 .pc_empty_item label {
 	font-size: 14px;
