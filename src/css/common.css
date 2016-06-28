@@ -654,6 +654,7 @@ label.error, div.error {
 	width: 220px;
 	margin: 0 auto;
 	padding: 20px 0;
+	text-align: center;
 }
 .pc_empty_item .avatar_1 {
 	display: block;
@@ -668,8 +669,11 @@ label.error, div.error {
 	margin: 0 auto;
 	width: 235px;
 	height: 169px;
-
 	background: url('../img/icon/empty_resource.png');
+}
+.pc_empty_item .ybicon-box{
+	font-size: 85px;
+	color: #a8a8a8;
 }
 .pc_empty_item label {
 	font-size: 14px;
