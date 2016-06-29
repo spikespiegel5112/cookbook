@@ -150,6 +150,26 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        pcSecurityMainConHeight();
+    });
+
+    function pcSecurityMainConHeight(){
+        var windowHeight = $(window).height();
+        $('.main_container').css({'min-height':windowHeight});
+        if(windowHeight > 744){
+            $('.footer').css({'position':'absolute','bottom':0});
+        }else{
+            $('.footer').css({'position':'relative','bottom':0});
+        }
+
+        $(window).resize(function(){
+            pcSecurityMainConHeight();
+        });
+    }
+</script>
 </body>
 
 </html>
