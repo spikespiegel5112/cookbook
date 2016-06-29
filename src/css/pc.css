@@ -138,9 +138,13 @@
 	float: right;
 	color: #6ea11f;
 }
+.binding_mode > li .sum{
+	font-size: 18px;
+	color: #e73939;
+}
 .hr {
 	position: relative;
-	padding: 10px 0;
+	padding: 5px 0;
 }
 .hr div.green {
 	position: absolute;
@@ -558,4 +562,240 @@
 .input_mobile .form-group
 {
 	width: 340px;
+}
+/*wallet*/
+.personal_content_box .common_crumb_wrapper{
+	width: 100%;
+	padding: 0 0 0 10px;
+}
+.personal_content_box .common_crumb_wrapper ul{
+	width: 100%;
+	border: 0;
+}
+.balance {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	/*background-color: #f7f8fa;*/
+	box-shadow: 0 0 1px #e0e0e0;
+}
+.available_balance {
+	font-size: 16px;
+	line-height: 1.8em;
+	position: relative;
+	display: inline-block;
+	width: 48%;
+	margin: 5px 0 0 10px;
+}
+
+.available_balance span {
+	font-size: 24px;
+	color: #444;
+}
+
+.vertical_line {
+	position: relative;
+	z-index: 1;
+	left: 53px;
+	display: inline-block;
+	height: 135px;
+	margin-top: 5px;
+	vertical-align: top;
+	border-left: 1px solid #b4b4b4;
+}
+
+.balance .vertical_line {
+	position: absolute;
+	left: 50%;
+	height: 70px;
+	border-left: 1px dashed #ddd;
+}
+.conversion {
+	float: right;
+	box-sizing: border-box;
+	width: 48%;
+	padding: 15px 0 0 15px;
+	vertical-align: middle;
+}
+
+.conversion input {
+	display: inline-block;
+	width: 61%;
+	min-width: 180px;
+	height: 45px;
+}
+.balance .btn,
+.query_date .btn {
+	font-size: 14px;
+	font-weight: bold;
+	height: 25px;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 6px;
+	outline: 0 none;
+}
+.balance .btn:hover,
+.query_date .query:hover {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .125) inset;
+}
+.available_balance .recharge {
+	line-height: 30px;
+	position: absolute;
+	top: 16px;
+	right: 25px;
+	width: 65px;
+	height: 30px;
+	padding: 0;
+	background-color: #6ac96d;
+	border: 1px solid #ccc;
+}
+.conversion .exchange {
+	font-size: 14px;
+	line-height: 30px;
+	min-width: 85px;
+	height: 30px;
+	margin-left: 15px;
+	padding: 0;
+	border: 1px solid #eaa14b;
+	background-color: #f88f1f;
+}
+
+.coin_certificate {
+	padding: 10px 0 0 0;
+	background: #fff;
+}
+.coin_certificate .coupon_slidebox .hd ul > li {
+	line-height: 30px;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100px;
+	height: 30px;
+	margin: 10px 0 10px 20px;
+	cursor: pointer;
+	text-align: center;
+	color: #999;
+	border-bottom: none;
+}
+.coin_certificate .coupon_slidebox .hd ul > li.on {
+	color: #6cb767;
+	border: 1px solid #6cb767;
+	border-radius: 20px;
+}
+.coin_certificate .coupon_slidebox .bd {
+	padding-bottom: 10px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+.coupon_list {
+	min-height: 200px;
+}
+.coupon_list li.caption {
+	line-height: 40px;
+	/* padding: 8px 0 4px; */
+	height: 40px;
+	border-bottom: none;
+}
+.coupon_list > li {
+	line-height: 40px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.coupon_list .list {
+	border-bottom: 1px dashed #ddd;
+}
+.coupon_list li li {
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+	overflow: hidden;
+	width: 22%;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #444;
+}
+.coupon_list li li:last-child {
+	width: 8%;
+}
+.coupon_list li.caption li {
+	overflow: visible;
+}
+.coupon_list .pc_empty_item {
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 30% !important;
+}
+
+.account_recharge{
+	display: none;
+	position: relative;
+	width: 420px;
+}
+
+.account_recharge .recharge_con {
+	position: relative;
+	font-size: 14px;
+	padding: 0;
+	background-color: #fff;
+}
+.recharge_con .account_balance {
+	font-size: 20px;
+}
+.account_recharge .recharge_con li {
+	line-height: 50px;
+}
+.recharge_con .input_money {
+	font-size: 14px;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 160px;
+	height: 35px;
+	padding: 5px 12px;
+}
+.recharge_con .payment {
+	display: inline-block;
+	padding-left: 10px;
+	vertical-align: top;
+}
+.recharge_con .payment label {
+	display: block;
+}
+.recharge_con .payment label img {
+	padding-left: 10px;
+	vertical-align: middle;
+}
+.recharge_con .go_recharge {
+	margin-top: 25px;
+	padding-right: 10px;
+	text-align: right;
+	border-top: 1px dashed #ddd;
+}
+.recharge_con .go_recharge div {
+	font-size: 16px;
+	line-height: 30px;
+	display: inline-block;
+	width: 160px;
+	height: 30px;
+	margin-top: 25px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #ecac3c;
+}
+.recharge_con .go_recharge div a {
+	display: block;
+	color: #fff;
+}
+.recharge_con .go_recharge div a:hover {
+	color: #aa7d2d;
+	box-shadow: none;
 }
