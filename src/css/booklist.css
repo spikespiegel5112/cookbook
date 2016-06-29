@@ -309,12 +309,13 @@
 .book_details_box .bread_nav li a:hover {
     color: #a0d350;
 }
-.book_details_box .main_detail {
+/*.book_details_box .main_detail {
     background-color: #fff;
-}
+}*/
 .booklist_bookinfo_wrapper {
     margin: 10px 0 0;
     padding: 15px;
+    background-color: #fff;
 }
 .booklist_bookinfo_wrapper .book_img {
     display: inline-block;
@@ -606,17 +607,13 @@
     line-height: 35px;
     position: relative;
     float: left;
-    min-width: 120px;
+    min-width: 90px;
     height: 35px;
-    padding: 0 10px;
     border-right: 1px solid #e7e7e7;
 }
 .book_details_box .detail_more .hd ul li a, .book_details_box .more_tpl .parhd ul li a {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
-    width: 100%;
+    padding: 0 10px;
     text-align: center;
     color: #333;
 }
@@ -625,28 +622,32 @@
     color: #81d42f;
     border-bottom: 2px solid #81d42f;
 }
-.booklist_detailcontent_wrapper, .book_details_box .more_tpl .parbd {
-    border-top: 2px solid #e7e7e7;
-}
 .book_details_box .detail_more {
     width: 100%;
     margin: 0 auto;
     padding: 0;
     text-align: center;
 }
+.booklist_detailcontent_wrapper{
+    background-color: #fff;
+}
+.booklist_detailcontent_wrapper, .book_details_box .more_tpl .parbd {
+    border-top: 2px solid #e7e7e7;
+}
+
 .booklist_detailcontent_wrapper >div {
     margin: 20px 0 40px;
 }
 .book_details_box .detail_more div h2 {
     font-size: 24px;
-    color: #777;
+    color: #999;
 }
 .book_details_box .detail_more div small {
     color: #a6a6a6;
 }
 .book_details_box .arrow_down_line {
     position: relative;
-    width: 90%;
+    width: 95%;
     margin: 10px auto 25px;
     border-top: 1px solid #d1d1d1;
 }
@@ -679,15 +680,16 @@
     margin: 25px auto 0;
 }
 .standard .standard_info ul li {
-    line-height: 35px;
+    padding: 0 0 0 30px;
+    line-height: 45px;
     display: inline-block;
     box-sizing: border-box;
-    /*padding-left: 4%;*/
-    width: 44%;
-    height: 35px;
-    margin: 0 2%;
+    width: 41%;
+    height: 45px;
+    margin: 0 3%;
     text-align: left;
     border-bottom: 1px dotted #c9c9c9;
+    font-size: 18px;
 }
 .standard .standard_info ul li label {
     color: #8f8f8f;
@@ -711,6 +713,7 @@
 }
 .pages_display .pages, .using_scene .scene_dis {
     margin: 40px auto 0;
+    overflow: hidden;
 }
 .pages_display .pages .cover, .pages_display .pages .backcover {
     position: relative;
@@ -817,23 +820,59 @@
     text-align: center;
 }
 .book_details_box .page_detail .page_list {
-    padding: 0 75px 0 77px;
+    padding: 50px 0 0 0;
 }
-.book_details_box .page_detail .page_list li {
+.book_details_box .page_detail .page_list .desc>ul>li {
     display: inline-block;
-    width: 410px;
-    margin: 0 35px 15px;
+    /*width: 410px;*/
+    margin: 15px 55px;
     text-align: center;
+    /*vertical-align: top;*/
+    position: relative;
 }
-.book_details_box .page_detail .page_list li img {
-    width: 408px;
-    height: 578px;
-    margin: 15px auto 8px;
-    border: 1px solid #ddd;
+.book_details_box .page_detail .page_list .desc>ul>li label{
+    display: block;
+    margin: 0 0 30px 0;
+    font-size: 18px;
 }
-.book_details_box .page_detail .page_list li h5 {
-    font-size: 16px;
-    text-align: center;
+.book_details_box .page_detail .page_list .desc>ul>li img {
+/*    width: 408px;
+    height: 578px;*/
+    margin: 0 auto;
+    /*border: 1px solid #ddd;*/
+}
+.book_details_box .page_detail .page_list .desc{
+    margin: 0 auto;
+    width: 95%;
+}
+.book_details_box .page_detail .page_list .desc .line{
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+.book_details_box .page_detail .page_list .desc p{
+    padding: 15px 0;
+}
+.book_details_box .page_detail .page_list .desc a{
+    color: #094cc2;
+}
+.book_details_box .page_detail .page_list .desc a:hover{
+    text-decoration: underline;
+}
+.booklist_detailbiding_wrapper p{
+    line-height: 35px;
+    font-size: 13px;
+}
+.booklist_detailcoverdetails_wrapper .sizetag{
+    position: relative;
+}
+.booklist_detailcoverdetails_wrapper li{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.booklist_detailbiding_wrapper .title{
+    margin: 15px 0 0 0;
+    font-size: 18px;
 }
 .book_details_box .page_detail .more_pages {
     margin: 15px 0 35px;
@@ -1059,4 +1098,56 @@
 .agbcover_price span {
     margin: 0 0 0 20px;
     color: #888;
+}
+/*~~~~~~~~~~booklist_detail_style.html~~~~~~~~~~*/
+.booklist_detailtexturecolor_wrapper{
+    width: 100%;
+}
+.booklist_detailtexturecolor_wrapper .title{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 19px;
+}
+.booklist_detailtexturecolor_wrapper ul{
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+}
+.booklist_detailtexturecolor_wrapper li{
+    display: inline-block;
+    margin: 0 65px 30px;
+    text-align: center;
+}
+.booklist_detailtexturecolor_wrapper li img{
+    display: block;
+}
+.booklist_detailtexturecolor_wrapper li label{
+    display: block;
+    margin: 15px 0;
+}
+.booklist_detailtexturecolor_wrapper .line{
+    margin: 0 auto;
+    width: 95%;
+    height: 1px;
+    background-color: #ddd;
+}
+.booklist_diffwithdermoid{
+    display: none;
+    font-size: 0;
+}
+.booklist_diffwithdermoid li{
+    list-style: initial;
+    color: #666;
+    line-height: 42px;
+}
+.booklist_diffwithdermoid .features{
+    display: inline-block;
+    margin: 0 0 0 15px;
+    width: 390px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.booklist_diffwithdermoid img{
+    display: inline-block;
+    vertical-align: top;
 }
