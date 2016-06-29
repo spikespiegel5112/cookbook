@@ -11,7 +11,9 @@
     <title>后台管理-菜品编辑</title>
 
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1467181705_4319384.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/zTreeStyle.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
 
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/dish_edit.css" type="text/css" media="all">
@@ -35,15 +37,17 @@
                     </li>
                 </ul>
             </div>
-            <a class="cm_btn" href="javascript:;">上传照片</a>
+            <a class="cm_btn uploadIL" href="javascript:;">上传照片</a>
         </div>
         <div class="resource_wrap">
             <p class="count">共<span>4</span>张照片</p>
             <div class="picture_list">
                 <ul>
                     <li>
-                        <div class="img">
-                            <img src="img/ky.jpg">
+                        <div class="figure">
+                            <a class="img" href="img/ky-big.jpg">
+                                <img src="img/ky.jpg">
+                            </a>
                             <label class="thumbnail">缩略</label>
                             <a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
                             <!--<div class="edit_group">
@@ -75,48 +79,60 @@
                         <p class="num">(图文编号：010-18941)</p>
                     </li>
                     <li>
-                        <div class="img">
-                            <img src="img/ky.jpg">
+                        <div class="figure">
+                            <a class="img" href="img/ky-big.jpg">
+                                <img src="img/ky.jpg">
+                            </a>
                             <label class="hd">高清</label>
                             <a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
                         </div>
                         <p class="num">(图文编号：010-18941)</p>
                     </li>
                     <li>
-                        <div class="img">
-                            <img src="img/ky.jpg">
+                        <div class="figure">
+                            <a class="img" href="img/ky-big.jpg">
+                                <img src="img/ky.jpg">
+                            </a>
                             <label class="thumbnail">缩略</label>
                             <a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
                         </div>
                         <p class="num">(图文编号：010-18941)</p>
                     </li>
                     <li>
-                        <div class="img">
-                            <img src="img/ky.jpg">
+                        <div class="figure">
+                            <a class="img" href="img/ky-big.jpg">
+                                <img src="img/ky.jpg">
+                            </a>
                             <label class="thumbnail">缩略</label>
                             <a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
                         </div>
                         <p class="num">(图文编号：010-18941)</p>
                     </li>
                     <li>
-                        <div class="img">
-                            <img src="img/ky.jpg">
+                        <div class="figure">
+                            <a class="img" href="img/ky-big.jpg">
+                                <img src="img/ky.jpg">
+                            </a>
                             <label class="thumbnail">缩略</label>
                             <a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
                         </div>
                         <p class="num">(图文编号：010-18941)</p>
                     </li>
                     <li>
-                        <div class="img">
-                            <img src="img/ky.jpg">
+                        <div class="figure">
+                            <a class="img" href="img/ky-big.jpg">
+                                <img src="img/ky.jpg">
+                            </a>
                             <label class="thumbnail">缩略</label>
                             <a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
                         </div>
                         <p class="num">(图文编号：010-18941)</p>
                     </li>
                     <li>
-                        <div class="img">
-                            <img src="img/ky.jpg">
+                        <div class="figure">
+                            <a class="img" href="img/ky-big.jpg">
+                                <img src="img/ky.jpg">
+                            </a>
                             <label class="thumbnail">缩略</label>
                             <a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
                         </div>
@@ -220,17 +236,144 @@
         </div>
     </div>
 </div>
+<!--上传照片-->
+<div id="uploadIL" class="upload_img_con hidden">
+    <div class="pc_empty_item">
+        <span class="ybiconfont ybicon-box"></span>
+        <label>目前没有任何照片</label>
+        <a class="btn active" href="javascript:;">点击选择照片</a>
+    </div>
+    <div class="choose_img_con hidden">
+        <div class="img_con">
+            <div class="finished cm_fl">
+                <!--完成上传添加class:uploading>finished .to_upload hidden-->
+                <div class="item new_up ">
+                    <div class="title">
+                        <span class="cm_fl">已经上传的照片</span>
+                        <i class="icon-angle-down cm_fl"></i>
+                    </div>
+                    <ul class="photo_list">
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="to_upload cm_fr hidden">
+                <div class="item">
+                    <div class="title">
+                        <p class="cm_fl">等待上传的照片(<span>30</span>)</p>
+                    </div>
+                    <ul class="photo_list">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <!--正在上传的 添加class:uploading-->
+                            <div class="load_per uploading">上传<span>50%</span></div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <div class="load_per uploading">上传<span>20%</span></div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <div class="load_per">等待中</div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <div class="load_per">等待中</div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <div class="load_per">等待中</div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <div class="load_per">等待中</div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <div class="load_per">等待中</div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/ky.jpg" class="cm_cp">
+                            </a>
+                            <div class="load_per">等待中</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tips">
+        <a class="btn finish" href="javascript:;"><i class="icon-ok-circle"></i>完成添加</a>
+        <a class="btn mobile" href="javascript:;"><i class="icon-mobile-phone"></i>手机上传</a>
+        <a class="btn pc active" href="javascript:;"><i class="icon-cloud-upload"></i>本地上传</a>
+    </div>
+</div>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.ztree.all.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb3"></script>
 <script>
     $(document).ready(function(){
         appendEditGroup();
-
+        previewImg();
+        uploadIL();
 
         var t = $("#tree");
         t = $.fn.zTree.init(t, setting, zNodes);
-        /*var zTree = $.fn.zTree.getZTreeObj("tree");
-        zTree.selectNode(zTree.getNodeByParam("id", 101));*/
 
     });
     //editTools
@@ -238,6 +381,29 @@
         var editGroup = $('<div class="edit_group"><div class="range"><span class="cl top"></span><span class="cl right"></span><span class="cl bottom"></span><span class="cl left"></span></div><div class="tools"><span class="arrow"></span><ul><li><div class="ybiconfont ybicon-eyeopen" title="设为缩略"></div><p>设为缩略</p></li><li><div class="ybiconfont ybicon-picture1" title="设为高清"></div><p>设为高清</p></li><li><div class="ybiconfont ybicon-adjust" title="透明背景"></div><p>透明背景</p></li></ul></div></div>');
 
         $('.picture_list li .img').append(editGroup);
+    }
+
+    function previewImg(){
+        $('.picture_list .img').fancybox({});
+    }
+
+    function uploadIL() {
+        $('.uploadIL').click(function() {
+            art.dialog({
+                title: '上传照片',
+                lock: true,
+                content: document.getElementById('uploadIL'),
+            });
+
+            //上传照片进度
+            $('.load_per.uploading').each(function() {
+                var upPercent = $(this).find('span').text();
+                var shadeHeight = 125 * (1 - parseFloat(upPercent) / 100);
+                $(this).height(shadeHeight);
+                $('.load_per.uploading:last').parent().next().find('.load_per').addClass('waiting');
+                $('.load_per.waiting').text('等待上传');
+            });
+        });
     }
 
     var zTree;
