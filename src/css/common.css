@@ -216,14 +216,14 @@ label.error, div.error {
 	position: relative;
 	margin-left: 25px;
 }
-.quick_menu .yc_menu{
+.shortcut .yc_menu{
 	position: relative;
 	margin: 0 25px;
 }
-.quick_menu .yc_menu .menu_hd b {
+.shortcut .yc_menu .menu_hd b {
 	padding-left: 5px;
 }
-.quick_menu .yc_menu .menu_bd {
+.shortcut .yc_menu .menu_bd {
 	position: absolute;
 	z-index: 99;
 	top: 32px;
@@ -233,11 +233,11 @@ label.error, div.error {
 	background-color: #fff;
 	box-shadow: 1px 1px 3px #c6c6c8;
 }
-.quick_menu .yc_menu:hover .menu_bd {
+.shortcut .yc_menu:hover .menu_bd {
 	display: block;
 	animation: transTop .3s ease-in-out;
 }
-.quick_menu .yc_menu .menu_bd::before {
+.shortcut .yc_menu .menu_bd::before {
 	position: absolute;
 	top: -8px;
 	right: 11px;
@@ -248,7 +248,7 @@ label.error, div.error {
 	border-bottom: 8px solid #dedddd;
 	border-left: 8px solid transparent;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel::before {
+.shortcut .yc_menu .menu_bd .menu_bd_panel::before {
 	position: absolute;
 	top: -7px;
 	right: 11px;
@@ -259,25 +259,25 @@ label.error, div.error {
 	border-bottom: 8px solid #fff;
 	border-left: 8px solid transparent;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel {
+.shortcut .yc_menu .menu_bd .menu_bd_panel {
 	width: 85px;
 	padding: 6px 0;
 	text-align: center;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel a {
+.shortcut .yc_menu .menu_bd .menu_bd_panel a {
 	display: block;
 	color: #333;
 	height: 32px;
 	line-height: 30px;
 	box-sizing: border-box;
 }
-.quick_menu .yc_menu .menu_bd_panel a .ybicon-turnoff {
+.shortcut .yc_menu .menu_bd_panel a .ybicon-turnoff {
 	float: none;
 	font-size: 12px;
 	font-style: normal;
 	margin-right: 3px;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel a:hover {
+.shortcut .yc_menu .menu_bd .menu_bd_panel a:hover {
 	color: #00a388;
 	border-top: 1px solid #dedddd;
 	border-bottom: 1px solid #dedddd;
