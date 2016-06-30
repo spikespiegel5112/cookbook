@@ -1296,3 +1296,99 @@ label.error, div.error {
 	line-height: 40px;
 	color: #666;
 }
+
+/*~~~~~~~~~~common_bppopup_wrapper~~~~~~~~~~*/
+.common_bppopup_wrapper{
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition:all 1s;
+}
+.common_bppopup_wrapper.active{
+    background-color: rgba(255,255,255,0.7);
+    transition:all 1s;
+}
+.common_bppopup_wrapper .closebtn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+.common_bppopup_wrapper .closebtn:hover{
+    color: #aaa;
+}
+.common_bppopup_wrapper .flipbook_wrapper{
+    /*margin-left: 0;
+    margin-top: 0;*/
+    /*margin: 0 auto;*/
+    width: 800px;
+    height: 577px;
+    opacity: 1;
+    visibility: hidden;
+    /*transition: all 1s;*/
+    /*transform: scale(0.415,0.415);
+*/    
+}
+.common_bppopup_wrapper .flipbook_wrapper.active{
+    opacity: 1;
+    /*transform: scale(1,1);
+    transition: all 1s;*/
+}
+.common_bppopup_wrapper .flipbook_wrapper > a{
+    opacity: 0;
+}
+.common_bppopup_wrapper .flipbook{}
+.common_bppopup_wrapper .page > div
+{
+    -webkit-transform: scale(.58);
+        -ms-transform: scale(.58);
+            transform: scale(.58);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+
+    /*-ms-zoom: .58!important;*/
+}
+
+.common_bppopup_wrapper .hard > div
+{
+    -webkit-transform: scale(.6);
+        -ms-transform: scale(.6);
+            transform: scale(.6);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+
+    /*-ms-zoom: .6!important;*/
+}
+
+.common_bppopup_wrapper .secondcover > div, .common_bppopup_wrapper .thirdcover > div
+{
+    top: 8px;
+
+    -webkit-transform: scale(.58);
+        -ms-transform: scale(.58);
+            transform: scale(.58);
+
+    /*-ms-zoom: .58!important;*/
+}
+
+.common_bppopup_wrapper .secondcover > div
+{
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+}
+
+.common_bppopup_wrapper .thirdcover > div
+{
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+}
