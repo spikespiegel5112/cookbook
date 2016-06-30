@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/booklist.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/bookpreview.css" type="text/css" media="all">
 	<!-- endbuild -->
 </head>
 
@@ -545,15 +546,583 @@
 			</div>
 		</div>
 	</div>
+	<!-- 书册预览 -->
+	<div class='common_bppopup_wrapper flipbook-viewport'>
+		<a class='closebtn ybiconfont ybicon-failure' href="javascript:;"></a>
+		<div class='flipbook_wrapper' pagecount='19'>
+			<a class='flipbook_prevpage_btn' href="javascript:;"></a>
+			<div class='flipbook'>
+				<div depth="5" class="hard" style="background-image:url('img/default/1_1.jpg');">
+					<link href="http://yb-test-book.qiniudn.com/pageTpl/IMAGE_TEXT/37/css/small_left.css" rel="stylesheet" type="text/css">
+					<div class="container_activity_37_small_left">
+						<div class="page_header_container">
+							<div slottype="article" class="warp1">
+								<div class="richShow" slottype="articleShow" textheight="40">
+									<div class="main_title" slottype="richText" slotnum="0">
+										雄关为头越
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="photo0_container">
+							<span id="imgMask0" imgwidth="1324" imgheight="907" slotnum="0" slottype="mask" class="photoframe_common_property photoframe0"></span>
+							<img slottype="img" slotnum="0" class="img0" src="">
+						</div>
+						<div class="photo1_container">
+							<span id="imgMask1" imgwidth="498" imgheight="334" slotnum="1" slottype="mask" class="photoframe_common_property photoframe1"></span>
+							<img slottype="img" slotnum="1" class="img1" src="">
+						</div>
+						<div class="photo2_container">
+							<span id="imgMask2" imgwidth="389" imgheight="261" slotnum="2" slottype="mask" class="photoframe_common_property photoframe2"></span>
+							<img slottype="img" slotnum="2" class="img2" src="">
+						</div>
+						<div class="content_container">
+							<strong>
+											<div slottype="article" class="warp2">
+												<div class="richShow" slottype="articleShow" textheight="30">
+													<p></p><p slottype="richText" slotnum="2" style="min-height:30px;" placeholder="活动标题" mode="inline"></p>
+													<p></p>
+												</div>
+											</div>
+										</strong>
+							<div slottype="article" class="warp3">
+								<div class="richShow" slottype="articleShow" textheight="96">
+									<p slottype="richText" slotnum="3" style="display:block;word-wrap:break-word;" placeholder="活动内容"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div depth="5" class="hard front-side secondcover even" style="background-image:url('img/default/1_2.jpg');">
+					<span class="depth"></span>
+					<link href="http://yb-test-book.qiniudn.com/pageTpl/PANO/2/css/small_left.css" rel="stylesheet" type="text/css">
+					<div class="container_panoramic_02_small_left">
+						<div slottype="article" class="warp">
+							<div slottype="articleShow" textheight="62" class="richShow">
+								<p placeholder="学校班级.." slottype="richText" slotnum="4" mode="inline" class="graduate-po">
+								</p>
+							</div>
+						</div>
+						<span id="imgMask1" imgwidth="3120" imgheight="1700" slotnum="1" slottype="mask" class="photoframe1" style="text-align:center;vertical-align:middle;display: block;"></span>
+						<img slottype="img" slotnum="1" src="" class="img1">
+					</div>
+				</div>
+				<div class="hard fixed back-side thirdcover p19" style="background-image:url('img/default/tpl_small.jpg')">
+					<span class="depth"></span>
+					<link href="http://yb-test-book.qiniudn.com/pageTpl/PANO/2/css/small_right.css" rel="stylesheet" type="text/css">
+					<div class="container_panoramic_02_small_right">
+						<div slottype="article" class="warp">
+							<div slottype="articleShow" textheight="62" class="richShow">
+								<p placeholder="学校班级.." slottype="richText" slotnum="4" mode="inline" class="graduate-po">
+								</p>
+							</div>
+						</div>
+						<span id="imgMask1" imgwidth="3120" imgheight="1700" slotnum="1" slottype="mask" class="photoframe1" style="text-align:center;vertical-align:middle;display: block;"></span>
+						<img slottype="img" slotnum="1" src="" class="img1">
+					</div>
+				</div>
+				<div class="hard p20" style="background-image:url('img/default/tpl_small.jpg')"></div>
+			</div>
+			<a class='flipbook_nextpage_btn' href="javascript:;"></a>
+		</div>
+	</div>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src='assets/js/jquery.fancybox.pack.js'></script>
+	<script type="text/javascript" src='assets/js/turn.js'></script>
 	<!-- build:js js/all.js -->
 	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src='js/check_os.js'></script>
 	<script type="text/javascript" src="js/scrollPagination.js"></script>
 	<!-- endbuild -->
 	<script>
 	$(function() {
-		fancybox();
+		// fancybox();
+
+		bookpreview({
+			container: '.common_bppopup_wrapper',
+			bookwrapper: '.flipbook_wrapper',
+			book: '.flipbook_wrapper .flipbook',
+			trigger: '.booklist_cover_wrapper .title a',
+			closebtn: '.common_bppopup_wrapper>.closebtn',
+			startposoffsetx: 15,
+			startposoffsety: -22,
+			thumbnailscale: 0.31,
+			zindex: 9999,
+			debug: false
+		})
+
+		load();
+
+
+	});
+
+	/**
+	 * 点击预览效果
+	 */
+	function bookpreview(options) {
+		options = $.extend({
+			container: '',
+			bookwrapper: '',
+			book: '',
+			trigger: '',
+			closebtn: '',
+			startposoffsetx: 0,
+			startposoffsety: 0,
+			aligncenter: true,
+			thumbnailscale: 0.415,
+			zindex: 0,
+			debug: false
+		}, options);
+
+		var doc = $(document),
+			containerEl = $(options.container),
+			bookwrapperEl = $(options.bookwrapper),
+			bookEl = $(options.book),
+			closeBtn = $(options.closebtn),
+			triggerClassname = options.trigger,
+			trigger = $(triggerClassname),
+			windowWidth = $(window).width(),
+			windowHeight = $(window).height(),
+			//big尺寸书册的0.6倍大小的高度
+			flipbookHeight = bookEl.height() * 0.6,
+			flipbookWrapperWidth = bookwrapperEl.width(),
+			destinatePositionX,
+			destinatePositionY,
+			thumbnailPositionX,
+			thumbnailPositionY,
+			preventDefault;
+
+		var ua = navigator.userAgent.toLowerCase(),
+			//判断滚轮事件是否是火狐的
+			mousewheel = (ua.indexOf("firefox") > 0) ? 'DOMMouseScroll' : 'mousewheel',
+			isIE = (function() {
+				if ("ActiveXObject" in window) {
+					return true;
+				} else {
+					return false;
+				}
+			})();
+
+		var bodyEl = (ua.indexOf("firefox") > 0 || isIE) ? $('html') : $('body'),
+			cssSetting = function(settings) {
+				var settings = $.extend({
+						positionX: 0,
+						positionY: 0,
+						scale: 1,
+						zoom: 1,
+						transition: 'none'
+					}, settings),
+					returnVal = !isIE ? {
+						transform: 'translate(' + settings.positionX + 'px, ' + settings.positionY + 'px) scale(' + settings.scale + ',' + settings.scale + ')',
+						'transform-origin': 'top left',
+						transition: settings.transition,
+					} : {
+						transform: 'translate(' + settings.positionX + 'px, ' + settings.positionY + 'px)',
+						zoom: settings.scale,
+						transition: settings.transition
+					}
+				return returnVal;
+			}
+			// trigger.on('click', function(e) {	
+		doc.on('click', triggerClassname, function(e) {
+			var thisTarget = $(e.target);
+			if (thisTarget.closest(triggerClassname).length == 0) {
+				return;
+			}
+			var $this = thisTarget,
+				documentScrollTop = bodyEl.scrollTop(),
+				thumbnailOffsetLeft = $this.offset().left,
+				thumbnailOffsetTop = $this.offset().top;
+			//图标所在位置，即起始位置
+			thumbnailPositionX = Number((thumbnailOffsetLeft + options.startposoffsetx - bookEl.width() * options.thumbnailscale));
+			thumbnailPositionY = Number(thumbnailOffsetTop - documentScrollTop - flipbookHeight * options.thumbnailscale + options.startposoffsety);
+
+			//目标位置XY
+			if (options.aligncenter) {
+				destinatePositionX = (windowWidth - flipbookWrapperWidth) / 2;
+				destinatePositionY = (windowHeight - flipbookHeight) / 2;
+			} else {
+				destinatePositionX = (windowWidth - flipbookWrapperWidth) / 2;
+				destinatePositionY = windowHeight - flipbookHeight - 120 > 0 ? (windowHeight - flipbookHeight) / 2 - 50 : 50;
+			}
+
+			expandBook();
+			//当打开后组织滚轮默认事件
+			preventDefault = $(window).bind(mousewheel, function(e) {
+				if (e.preventDefault()) {
+					e.preventDefault();
+				} else {
+					e.returnValue = false;
+				}
+			});
+
+			function expandBook() {
+				containerEl.css({
+					visibility: 'visible',
+					'background-color': 'rgba(0,0,0,0.8)',
+					transition: 'background-color 1s',
+					'z-index': options.zindex
+				});
+
+				bookwrapperEl.css(cssSetting({
+					positionX: thumbnailPositionX,
+					positionY: thumbnailPositionY,
+					scale: options.thumbnailscale
+				}));
+
+				bookwrapperEl.css({
+					visibility: 'visible',
+					opacity: 1
+				});
+
+				//翻到第一页
+				bookEl.turn('page', 2);
+				//展开书册
+				if (!options.debug) {
+					setTimeout(function() {
+						bookwrapperEl.css(cssSetting({
+							positionX: destinatePositionX,
+							positionY: destinatePositionY,
+							scale: 1,
+							transition: 'all 1s'
+						}));
+					}, 100);
+				} else {
+					return;
+				}
+
+
+
+				//显示左右翻页箭头
+				setTimeout(function() {
+					bookwrapperEl.children('a').css({
+						transition: 'all 1s',
+						opacity: 1
+					});
+				}, 1000);
+				setTimeout(function() {
+					containerEl.css({
+						'background-color': 'rgba(0,0,0,0.8)',
+					});
+				}, 1000);
+
+			};
+		});
+		closeBtn.on('click', function() {
+			//将书册缩小并归回原来位置
+			bookwrapperEl.css(cssSetting({
+				positionX: thumbnailPositionX,
+				positionY: thumbnailPositionY,
+				scale: options.thumbnailscale,
+				transition: 'all 1s'
+			}));
+			//隐藏箭头
+			bookwrapperEl.find('a').css({
+				opacity: 0
+			});
+			//隐藏书册背景
+			containerEl.css({
+				'background-color': 'rgba(0,0,0,0)'
+			});
+			bookEl.turn('page', 1);
+			//书册收回后进行收尾工作
+			setTimeout(function() {
+				bookwrapperEl.css({
+					visibility: 'hidden',
+					transition: 'none'
+				});
+				containerEl.css({
+					visibility: 'hidden'
+				});
+				//解除阻止默认滚轮事件
+				preventDefault = $(window).unbind(mousewheel);
+			}, 1000);
+		});
+
+		loadApp();
+
+		function loadApp() {
+			//这是指定当前读取的是第几本书册的变量，序号是flipbookpages文件夹里的序号
+			var bookIdx = 1;
+			var pageWidth = $('.flipbook-viewport .page').width();
+			var pageHegiht = $('.flipbook-viewport .page').height();
+			var flipbook = $('.flipbook');
+			var pageSection = $('.chapter_info ul li');
+
+			// if (flipbook.width() == 0 || flipbook.height() == 0) {
+			//     setTimeout(loadApp, 10);
+			//     return;
+			// }
+
+			flipbook.bind('first', function() {
+				$('.page-wrapper[page=1]').find('.p1').addClass('hard');
+			})
+
+			//点击章节目录中的章节名称跳转到相应的页面中，章节名称所对应的页面序号在html里用page属性做为标记
+			pageSection.click(function() {
+				var $this = $(this);
+				var pageIndex = $this.attr('page');
+				$this.addClass('active').siblings().removeClass('active');
+				flipbook.turn('page', pageIndex);
+			});
+
+			$(document).keydown(function(e) {
+				var previous = 37,
+					next = 39;
+				switch (e.keyCode) {
+					case previous:
+						flipbook.turn('previous');
+						break;
+					case next:
+						flipbook.turn('next');
+						break;
+				}
+			});
+
+			// IEcss()
+
+			flipbook.turn({
+				width: 814,
+				height: 576,
+				elevation: 0,
+				acceleration: !isChrome(),
+				autoCenter: true,
+				gradients: true,
+				duration: 1000,
+				pages: bookLength(),
+				when: {
+					turning: function(e, page, view) {
+						var book = $(this),
+							currentPage = book.turn('page'),
+							pages = book.turn('pages');
+
+						// $('.page-wrapper .page').addClass('hard')
+
+						if (currentPage > 3 && currentPage < pages - 3) {
+							if (page == 1) {
+								book.turn('page', 2).turn('stop').turn('page', page);
+								e.preventDefault();
+								return;
+							} else if (page == pages) {
+								book.turn('page', pages - 1).turn('stop').turn('page', page);
+								e.preventDefault();
+								return;
+							}
+						} else if (page > 3 && page < pages - 3) {
+							if (currentPage == 1) {
+								book.turn('page', 2).turn('stop').turn('page', page);
+								e.preventDefault();
+								return;
+							} else if (currentPage == pages) {
+								book.turn('page', pages - 1).turn('stop').turn('page', page);
+								e.preventDefault();
+								return;
+							}
+						}
+
+						if (page >= 2) {
+							$('.flipbook_wrapper .p2').addClass('fixed');
+						} else {
+							$('.flipbook_wrapper .p2').removeClass('fixed');
+						}
+						if (page < book.turn('pages')) {
+							$('.flipbook_wrapper .p' + (bookLength() - 1)).addClass('fixed');
+						} else {
+							$('.flipbook_wrapper .p' + (bookLength() - 1)).removeClass('fixed');
+						}
+						updateDepth(book, page);
+						disableControls(page);
+					},
+					turned: function(e, page, view) {
+						var book = $(this);
+						updateDepth(book);
+						disableControls(page);
+						book.turn('center');
+					},
+					start: function(e, pageObj) {},
+					end: function(e, pageObj) {
+						var book = $(this);
+						updateDepth(book);
+						//IEcss();
+					},
+					missing: function(e, pages) {
+						for (var i = 0; i < pages.length; i++) {
+							addPage(bookIdx, pages[i], $(this));
+						}
+					}
+				}
+			});
+
+			flipbook.addClass('animated');
+
+			if (!$.os.mobile) {
+				$('.flipbook_nextpage_btn').bind($.mouseEvents.down, function() {
+					$(this).addClass('next-button-down');
+				}).bind($.mouseEvents.up, function() {
+					$(this).removeClass('next-button-down');
+				}).click(function() {
+					flipbook.turn('next');
+				});
+				$('.flipbook_prevpage_btn').bind($.mouseEvents.down, function() {
+					$(this).addClass('previous-button-down');
+				}).bind($.mouseEvents.up, function() {
+					$(this).removeClass('previous-button-down');
+				}).click(function() {
+					flipbook.turn('previous');
+				});
+			} else {
+				$('.flipbook_nextpage_btn').on('touchend', function() {
+					flipbook.turn('next');
+				});
+				$('.flipbook_prevpage_btn').on('touchend', function() {
+					flipbook.turn('previous');
+				});
+			}
+
+			function bookLength() {
+				var length = bookwrapperEl.attr('pagecount');
+				if (length % 2 != 0) {
+					return parseInt(length) + 1;
+				} else {
+					return length;
+				}
+				return length;
+			}
+
+			function getViewNumber(book, page) {
+				return parseInt((page || book.turn('page')) / 2 + 1, 10);
+			}
+
+			function getViewNumber(book, page) {
+				return parseInt((page || book.turn('page')) / 2 + 1, 10);
+			}
+
+			function isChrome() {
+				return navigator.userAgent.indexOf('Chrome') != -1;
+			}
+
+			function loadPage(bookIdx, page) {
+				$.ajax({
+					url: 'flipbookpages/' + bookIdx + '/page' + page + '.html'
+				}).done(function(pageHtml) {
+					$('.flipbook .p' + page).html(pageHtml.replace('yb3.0/flipbookpages/', ''));
+				});
+			}
+
+			function addPage(bookIdx, page, book) {
+				var pages = book.turn('pages');
+				if (!book.turn('hasPage', page)) {
+					var element = $('<div />', {
+						'class': 'own-size',
+						css: {
+							width: 395,
+							height: 560,
+						}
+					}).html('<div class="loader"></div>');
+					if (book.turn('addPage', element, page)) {
+						loadPage(bookIdx, page);
+					}
+				}
+			}
+
+			function updateDepth(book, newPage) {
+				var page = book.turn('page'),
+					pages = bookLength(),
+					depthWidth = 20 * Math.min(1, (pages - (pages - page)) / pages);
+				newPage = newPage || page;
+
+				if (newPage > 3) {
+					$('.flipbook-viewport .p2 .depth').css({
+						width: depthWidth,
+						left: 12 - depthWidth,
+						'z-index': 1
+					});
+				} else {
+					$('.flipbook-viewport .p2 .depth').css({
+						width: 0,
+						'z-index': 1
+					});
+				}
+				depthWidth = 30 * Math.min(1, (pages - page) / pages);
+				if (newPage < pages - 3) {
+					$('.flipbook-viewport .p' + (pages - 1) + ' .depth').css({
+						width: depthWidth,
+						right: 12 - depthWidth,
+						'z-index': 1
+					});
+				} else {
+					$('.flipbook-viewport .p' + (pages - 1) + ' .depth').css({
+						width: 0,
+						'z-index': 1
+					});
+				}
+			}
+
+			function disableControls(page) {
+				$('.flipbook_nextpage_btn').css({
+					'background-color': 'rgba(150,150,150,0.4)',
+					'background-position': '-40px 280px'
+				});
+				$('.flipbook_prevpage_btn').css({
+					'background-color': 'rgba(150,150,150,0.4)',
+					'background-position': '0 280px'
+				})
+				if (page == 1) {
+					$('.flipbook_prevpage_btn').hide();
+					$('.flipbook_nextpage_btn').show().css({
+						right: 160,
+					});
+				} else if (page == $('.flipbook').turn('pages')) {
+					var length = $('.flipbook .page-wrapper').length;
+					$('.flipbook_prevpage_btn').show().css({
+						left: 180
+					});
+					$('.flipbook_nextpage_btn').hide();
+				} else {
+					$('.flipbook_prevpage_btn').show().css({
+						left: '-25px'
+					});
+					$('.flipbook_nextpage_btn').show().css({
+						right: '-40px'
+					});
+				}
+			}
+
+			function IEcss(argu) {
+				if (window.ActiveXObject || 'ActiveXObject' in window) {
+					$('.flipbook-viewport .secondcover>div').css({
+						left: 13
+					});
+				}
+			}
+		}
+	}
+
+	function fancybox() {
+		$('.booklist_cover_wrapper .title a').click(function() {
+			var $this = $(this),
+				thisParent = $this.closest('li'),
+				thisCover = thisParent.find('.cover'),
+				thisImageSrc = [],
+				thisImage = thisCover.find('img');
+			thisImage.each(function(index) {
+				thisImageSrc[index] = $(this).attr('src')
+			})
+			if (thisImage.length == 1) {
+				$.fancybox.open('<img width="409" height="580" src="' + thisImageSrc[0] + '"/>', {
+					openSpeed: 500
+				});
+				console.log(thisImageSrc[0])
+			} else if (thisImage.length == 2) {
+				$.fancybox.open('<img width="409" height="580" src="' + thisImageSrc[0] + '"/>' + '<img width="409" height="580" src="' + thisImageSrc[1] + '"/>', {
+					openSpeed: 500
+				});
+			}
+		})
+	}
+
+
+	function load() {
 		var testNum = 5;
 
 		function getTestHtml() {
@@ -600,30 +1169,6 @@
 			debug: true,
 			load: loadData
 		});
-
-	});
-
-	function fancybox() {
-		$('.booklist_cover_wrapper .title a').click(function() {
-			var $this = $(this),
-				thisParent = $this.closest('li'),
-				thisCover = thisParent.find('.cover'),
-				thisImageSrc = [],
-				thisImage = thisCover.find('img');
-			thisImage.each(function(index) {
-				thisImageSrc[index] = $(this).attr('src')
-			})
-			if (thisImage.length == 1) {
-				$.fancybox.open('<img width="409" height="580" src="' + thisImageSrc[0] + '"/>', {
-					openSpeed: 500
-				});
-				console.log(thisImageSrc[0])
-			} else if (thisImage.length == 2) {
-				$.fancybox.open('<img width="409" height="580" src="' + thisImageSrc[0] + '"/>' + '<img width="409" height="580" src="' + thisImageSrc[1] + '"/>', {
-					openSpeed: 500
-				});
-			}
-		})
 	}
 	</script>
 </body>
