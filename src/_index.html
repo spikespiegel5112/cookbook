@@ -4,11 +4,11 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-    <title>易彩-菜谱首页</title>
+    <title>菜谱易-首页</title>
 
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/swiper.min.css" type="text/css" media="all"/>
@@ -128,7 +128,7 @@
                                 <i></i>
                                 <b>省力</b>
 
-                                <p>X张高清菜品照片、X套菜谱模板<br>仍您挑选，简单3步完成菜谱制作
+                                <p>X张高清菜品照片、X套菜谱模板<br>任您挑选，简单3步完成菜谱制作
                                 </p>
                             </li>
                         </ul>
@@ -322,12 +322,12 @@
             slidesPerView: 1,
             speed: 600,
             paginationClickable: true,
-            spaceBetween: 30,
+            spaceBetween: 8,
             mousewheelControl: true,
             mousewheelSensitivity: 1,
             onInit: function () {
-                var usesLiH = $('.users_slide li').height();
-                $('.users_slide').height(usesLiH*2+8);
+                /*var usesLiH = $('.users_slide li').height();
+                $('.users_slide').height(usesLiH*2+8);*/
                 var winHeight = $(window).height(),
                         sectionNum = $('.yc_index_con section').length;
                 for (var i = 0; i < sectionNum; i++) {

@@ -181,7 +181,7 @@
     line-height: 125px;
     width: 100px;
     height: 125px;
-    margin: 15px auto;
+    margin: 28px auto;
     padding: 4px;
     border: 1px solid #ccc;
     background-color: #fff;
@@ -739,6 +739,9 @@
     vertical-align: middle;
     border-right: 1px solid #ddd;
 }
+.opd_paymentfailed_wrapper .opd_paymentresult_wrapper{
+    border-right: 0;
+}
 .opd_paymentresult_wrapper h2 {
     font-size: 33px;
     font-weight: bold;
@@ -915,7 +918,7 @@
     width: 14%;
 }
 .order_list li .illustration{
-    width: 17%;
+    width: 16%;
 }
 .order_list li .money span{
     color: #f40;

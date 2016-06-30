@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-    <title>易彩-个人中心-手机绑定</title>
+    <title>菜谱易-个人中心-手机绑定</title>
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
     <!-- build:css css/all.min.css -->
@@ -153,13 +153,15 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
+        //高屏下底部保持在最下方
         pcSecurityMainConHeight();
     });
 
     function pcSecurityMainConHeight(){
         var windowHeight = $(window).height();
+        var mainConHeight = $('.main_container').height();
         $('.main_container').css({'min-height':windowHeight});
-        if(windowHeight > 744){
+        if(windowHeight > mainConHeight){
             $('.footer').css({'position':'absolute','bottom':0});
         }else{
             $('.footer').css({'position':'relative','bottom':0});

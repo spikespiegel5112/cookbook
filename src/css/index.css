@@ -18,35 +18,6 @@
     height: 100%;
 }
 
-.yc_index_con .swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet {
-    margin: 15px 0;
-    display: block;
-}
-
-.yc_index_con .swiper-pagination-bullet {
-    position: relative;
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    box-shadow: 0 1px 5px #999;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background: #fff;
-}
-
-.swiper-pagination-bullet-active::before {
-    content: " ";
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: #ccc;
-}
-
 .yc_index_con section {
     position: relative;
     width: 100%;
@@ -63,7 +34,7 @@
 
 .yc_index_con .nth3 {
     background: #fff url("../img/index/section_bg_three.png") no-repeat right top;
-    background-size: cover;
+    background-size: contain;
 }
 
 .yc_index_con .nth4 {
@@ -487,6 +458,7 @@ li:hover span.cr {
 .nth4 .users_slide {
     position: relative;
     width: 904px;
+    height: 448px;
     margin: 45px auto 55px;
     opacity: 0;
     bottom: -328px;
@@ -503,6 +475,8 @@ li:hover span.cr {
     float: left;
     width: 220px;
     height: 220px;
+    min-width: 220px;
+    max-height: 220px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -594,12 +568,16 @@ li:hover span.cr {
 @media only screen and (max-height: 768px) {
     .nth4 .users_slide {
         width: 664px;
+        height: 328px;
         margin: 0 auto 15px;
     }
 
     .users_slide li {
         width: 160px;
         height: 160px;
+        min-width: 160px;
+        max-width: 160px;
+        max-height: 160px;
     }
 
     .users_slide li .info p {

@@ -1245,9 +1245,10 @@ li.method
 .access_404content_wrapper ul li a{
     color: #3caae2;
     font-size: 14px;
+    text-decoration: underline;
 }
 .access_404content_wrapper ul li a:hover{
-    text-decoration: underline;
+    color: #f40;
 }
 .access_404_wrapper .common_ilustri_item{
     padding: 40px 0 0 0;

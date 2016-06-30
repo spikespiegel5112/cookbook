@@ -1181,7 +1181,9 @@
     font-size: 14px;
     color: #999;
 }
-
+.min_screen .edit_tool_bar .left .book_info{
+    padding: 0 10px;
+}
 .edit_tool_bar .left .actions {
     float: left;
 }
@@ -1194,7 +1196,6 @@
 
 .min_screen .edit_tool_bar .actions li{
     line-height: 47px;
-    margin: 0 10px;
 }
 
 .edit_tool_bar .actions li a {
@@ -1370,7 +1371,11 @@
 }
 
 .min_screen .edit_tool_bar .view_mode{
+    /*position: relative;
+    float: left;*/
     top: 0;
+    /*width: auto;
+    margin-left: 10px;*/
 }
 
 .edit_tool_bar .view_mode label {

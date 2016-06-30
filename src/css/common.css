@@ -1281,8 +1281,6 @@ label.error, div.error {
 	width: 94%;
 }
 
-
-
 .common_gradienttitle_wrapper {
 	height: 40px;
 	background: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
@@ -1295,4 +1293,29 @@ label.error, div.error {
 	font-size: 17px;
 	line-height: 40px;
 	color: #666;
+}
+
+.swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet {
+	margin: 15px 0;
+	display: block;
+}
+
+.swiper-container-vertical .swiper-pagination-bullet {
+	position: relative;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,.7);
+	opacity: 1;
+}
+
+.swiper-container-vertical .swiper-pagination-bullet-active::before {
+	content: " ";
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background-color: #ccc;
 }
