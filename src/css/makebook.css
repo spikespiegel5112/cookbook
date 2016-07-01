@@ -1,438 +1,598 @@
-@charset "UTF-8";
-.makebook_choosespec_wrapper {
-	width: 100%;
+@charset 'UTF-8';
+.makebook_choosespec_wrapper
+{
+    width: 100%;
 }
-.makebook_process_wrapper {
-	width: 100%;
-	height: 140px;
-	background: url(../img/makebook/makebook_preocess_bg.jpg);
-	border-top: 1px solid #ddd;
+.makebook_process_wrapper
+{
+    width: 100%;
+    height: 140px;
+
+    border-top: 1px solid #ddd;
+    background: url(../img/makebook/makebook_preocess_bg.jpg);
 }
-.makebook_process_wrapper ul {
-	margin: 0 auto;
-	width: 1200px;
-	text-align: center;
+.makebook_process_wrapper ul
+{
+    width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
 }
-.makebook_process_wrapper li {
-	display: inline-block;
-	margin: 40px 0 0 0;
-	height: 70px;
-	vertical-align: top;
+.makebook_process_wrapper li
+{
+    display: inline-block;
+
+    height: 70px;
+    margin: 40px 0 0 0;
+
+    vertical-align: top;
 }
-.makebook_process_wrapper .icon {
-	display: inline-block;
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	font-size: 55px;
-	color: #cccccc;
-	vertical-align: top;
+.makebook_process_wrapper .icon
+{
+    font-size: 55px;
+    line-height: 60px;
+
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+
+    vertical-align: top;
+
+    color: #ccc;
 }
-.makebook_process_wrapper .active .icon{
-	color: #74bd93;
+.makebook_process_wrapper .active .icon
+{
+    color: #74bd93;
 }
-.makebook_process_wrapper .title {
-	display: inline-block;
+.makebook_process_wrapper .title
+{
+    display: inline-block;
 }
-.makebook_process_wrapper li.active .title label {
-	color: #74bd93;
-	font-size: 19px;
+.makebook_process_wrapper li.active .title label
+{
+    font-size: 19px;
+
+    color: #74bd93;
 }
-.makebook_process_wrapper .title label {
-	display: block;
-	height: 25px;
-	line-height: 25px;
-	text-align: center;
-	color: #999;
+.makebook_process_wrapper .title label
+{
+    line-height: 25px;
+
+    display: block;
+
+    height: 25px;
+
+    text-align: center;
+
+    color: #999;
 }
-.makebook_process_wrapper .title div {
-	width: 150px;
-	height: 20px;
-	font-size: 0;
+.makebook_process_wrapper .title div
+{
+    font-size: 0;
+
+    width: 150px;
+    height: 20px;
 }
-.makebook_process_wrapper .title div:before {
-	content: '';
-	display: inline-block;
-	height: 20px;
-	vertical-align: middle;
+.makebook_process_wrapper .title div:before
+{
+    display: inline-block;
+
+    height: 20px;
+
+    content: '';
+    vertical-align: middle;
 }
-.makebook_process_wrapper .title div i {
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	background-color: #ccc;
-	vertical-align: middle;
+.makebook_process_wrapper .title div i
+{
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: #ccc;
 }
-.makebook_process_wrapper .active .title div i {
-	background-color: #74bd93;
+.makebook_process_wrapper .active .title div i
+{
+    background-color: #74bd93;
 }
-.makebook_process_wrapper .title div span {
-	display: inline-block;
-	width: 88%;
-	height: 3px;
-	background-color: #ccc;
-	vertical-align: middle;
+.makebook_process_wrapper .title div span
+{
+    display: inline-block;
+
+    width: 88%;
+    height: 3px;
+
+    vertical-align: middle;
+
+    background-color: #ccc;
 }
-.makebook_process_wrapper .active .title div span{
-	background-color: #74bd93;
-	position: relative;
-	right: 7px;
+.makebook_process_wrapper .active .title div span
+{
+    position: relative;
+    right: 7px;
+
+    background-color: #74bd93;
 }
-.makebook_process_wrapper .title p {
-	width: 100%;
-	text-align: center;
-	color: #999;
-	font-size: 13px;
+.makebook_process_wrapper .title p
+{
+    font-size: 13px;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #999;
 }
-.makebook_stepsummary_container {
+.makebook_stepsummary_container
+{
 	/*padding: 0 0 110px 0;*/
-	width: 100%;
-	height: 85px;
-	border-top: 1px solid #cfcfcf;
+    width: 100%;
+    height: 85px;
+
+    border-top: 1px solid #cfcfcf;
 }
-.makebook_stepsummary_wrapper {
-	margin: 0 auto;
-	width: 1200px;
+.makebook_stepsummary_wrapper
+{
+    width: 1200px;
+    margin: 0 auto;
 }
-.makebook_stepsummary_wrapper .summary {
-	float: left;
-	margin: 35px 0 0 0;
+.makebook_stepsummary_wrapper .summary
+{
+    float: left;
+
+    margin: 35px 0 0 0;
 }
-.makebook_stepsummary_wrapper .summary p, .makebook_stepsummary_wrapper .summary ul {
-	display: inline-block;
+.makebook_stepsummary_wrapper .summary p, .makebook_stepsummary_wrapper .summary ul
+{
+    display: inline-block;
 }
-.makebook_stepsummary_wrapper .summary li {
-	display: inline-block;
-	margin: 0 15px 0 0;
-	color: #ff4404;
+.makebook_stepsummary_wrapper .summary li
+{
+    display: inline-block;
+
+    margin: 0 15px 0 0;
+
+    color: #ff4404;
 }
-.makebook_stepsummary_wrapper .step_btn {
-	float: right;
-	margin: 20px 0 0 0;
-	width: 180px;
-	height: 50px;
-	background-color: #ff4500;
-	border-radius: 3px;
-	text-align: center;
-	line-height: 50px;
-	color: #fff;
-	font-size: 20px;
-	transition: background-color 0.3s;
+.makebook_stepsummary_wrapper .step_btn
+{
+    font-size: 20px;
+    line-height: 50px;
+
+    float: right;
+
+    width: 180px;
+    height: 50px;
+    margin: 20px 0 0 0;
+
+    transition: background-color .3s;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 3px;
+    background-color: #ff4500;
 }
-.makebook_stepsummary_wrapper .step_btn:hover {
-	background-color: #CF3800;
+.makebook_stepsummary_wrapper .step_btn:hover
+{
+    background-color: #cf3800;
 }
-.makebook_stepsummary_wrapper .step_btn.disabled {
-	background-color: #999999;
+.makebook_stepsummary_wrapper .step_btn.disabled
+{
+    background-color: #999;
 }
-.makebook_steptitle_wrapper {
-	position: relative;
+.makebook_steptitle_wrapper
+{
+    position: relative;
 }
-.makebook_steptitle_wrapper h6 {
-	padding: 0 0 0 15px;
-	font-size: 20px;
-	color: #999;
+.makebook_steptitle_wrapper h6
+{
+    font-size: 20px;
+
+    padding: 0 0 0 15px;
+
+    color: #999;
 }
-.makebook_steptitle_wrapper p{
-	font-size: 13px;
-	color: #999;
-	padding: 10px 0 10px 15px;
+.makebook_steptitle_wrapper p
+{
+    font-size: 13px;
+
+    padding: 10px 0 10px 15px;
+
+    color: #999;
 }
-.makebook_stepblock_wrapper {
-	margin: 0 auto;
-	padding: 30px 0;
-	width: 100%;
-	max-width: 1200px;
-	position: relative;
+.makebook_stepblock_wrapper
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
 }
-.makebook_stepblock_wrapper .line {
-	position: absolute;
-	left: -20px;
-	font-size: 0;
-	height: 100%;
+.makebook_stepblock_wrapper .line
+{
+    font-size: 0;
+
+    position: absolute;
+    left: -20px;
+
+    height: 100%;
 }
-.makebook_stepblock_wrapper .line span {
-	display: block;
-	margin: 8px 0 0 0;
-	width: 12px;
-	height: 12px;
-	background-color: #79bd8f;
-	border-radius: 50%;
-	vertical-align: middle;
+.makebook_stepblock_wrapper .line span
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: 8px 0 0 0;
+
+    border-radius: 50%;
+    background-color: #79bd8f;
 }
-.makebook_stepblock_wrapper .line label {
-	display: block;
-	margin: 0 auto;
-	width: 3px;
-	height: 100%;
-	background-color: #cbcbcb;
+.makebook_stepblock_wrapper .line label
+{
+    display: block;
+
+    width: 3px;
+    height: 100%;
+    margin: 0 auto;
+
+    background-color: #cbcbcb;
 }
 
-.makebook_stepchoosesize_wrapper>li {
-	display: inline-block;
-	margin: 20px 100px 0 50px;
-	vertical-align: top;
+.makebook_stepchoosesize_wrapper > li
+{
+    display: inline-block;
+
+    margin: 20px 100px 0 50px;
+
+    vertical-align: top;
 }
-.makebook_stepchoosesize_wrapper>li>a {
-	display: inline-block;
-	width: 108px;
-	height: 135px;
-	border: #e0e0e0;
-	position: relative;
-	vertical-align: middle;
+.makebook_stepchoosesize_wrapper > li > a
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 108px;
+    height: 135px;
+
+    vertical-align: middle;
+
+    border: #e0e0e0;
 }
-.makebook_stepchoosesize_wrapper li .desc {
-	display: inline-block;
-	margin: 0 0 0 15px;
-	vertical-align: top;
+.makebook_stepchoosesize_wrapper li .desc
+{
+    display: inline-block;
+
+    margin: 0 0 0 15px;
+
+    vertical-align: top;
 }
-.makebook_stepchoosesize_wrapper li .desc h6 {
-	margin: 5px 0;
+.makebook_stepchoosesize_wrapper li .desc h6
+{
+    margin: 5px 0;
 }
-.makebook_stepchoosesize_wrapper li .desc label {
-	color: #666;
-	font-size: 14px;
+.makebook_stepchoosesize_wrapper li .desc label
+{
+    font-size: 14px;
+
+    color: #666;
 }
-.makebook_stepchoosesize_wrapper li .desc a {
-	display: block;
-	margin: 10px 0 0 0;
-	width: 25px;
-	color: #aaa;
-	font-size: 20px;
+.makebook_stepchoosesize_wrapper li .desc a
+{
+    font-size: 20px;
+
+    display: block;
+
+    width: 25px;
+    margin: 10px 0 0 0;
+
+    color: #aaa;
 }
-.makebook_stepchoosesize_wrapper li .desc a:hover{
-	color: #ff4500;
+.makebook_stepchoosesize_wrapper li .desc a:hover
+{
+    color: #ff4500;
 }
-.makebook_stepchoosesize_wrapper li .sample {
-	border: #e0e0e0;
-	background-color: #eeeeee;
-	position: relative;
-	text-align: center;
+.makebook_stepchoosesize_wrapper li .sample
+{
+    position: relative;
+
+    text-align: center;
+
+    border: #e0e0e0;
+    background-color: #eee;
 }
 
 
 
-.makebook_stepchoosesize_wrapper .active .common_check1_item, .makebook_stepsamplelist_wrapper ul .active .common_check1_item{
-	display: inline-block;
+.makebook_stepchoosesize_wrapper .active .common_check1_item, .makebook_stepsamplelist_wrapper ul .active .common_check1_item
+{
+    display: inline-block;
 }
-.makebook_stepchoosesize_wrapper li a:hover .common_check1_item, .makebook_stepsamplelist_wrapper ul li a:hover .common_check1_item{
-	display: inline-block;
+.makebook_stepchoosesize_wrapper li a:hover .common_check1_item, .makebook_stepsamplelist_wrapper ul li a:hover .common_check1_item
+{
+    display: inline-block;
 }
-.makebook_stepchoosesize_wrapper li a:hover .common_check1_item strong, .makebook_stepsamplelist_wrapper ul li a:hover .common_check1_item strong{
-	color: #fff;
+.makebook_stepchoosesize_wrapper li a:hover .common_check1_item strong, .makebook_stepsamplelist_wrapper ul li a:hover .common_check1_item strong
+{
+    color: #fff;
 }
-.makebook_stepchoosesize_wrapper li a:hover .common_check1_item i, .makebook_stepsamplelist_wrapper ul li a:hover .common_check1_item i{
-	background-color: #999;
+.makebook_stepchoosesize_wrapper li a:hover .common_check1_item i, .makebook_stepsamplelist_wrapper ul li a:hover .common_check1_item i
+{
+    background-color: #999;
 }
-.makebook_stepchoosesize_wrapper .active a:hover .common_check1_item i, .makebook_stepsamplelist_wrapper ul .active a:hover .common_check1_item i{
-	background-color: #ff4500;
+.makebook_stepchoosesize_wrapper .active a:hover .common_check1_item i, .makebook_stepsamplelist_wrapper ul .active a:hover .common_check1_item i
+{
+    background-color: #ff4500;
 }
-.makebook_stepchoosesize_wrapper .a4 .sample {
-	width: 108px;
-	height: 135px;
+.makebook_stepchoosesize_wrapper .a4 .sample
+{
+    width: 108px;
+    height: 135px;
 }
-.makebook_stepchoosesize_wrapper .b5 .sample {
-	width: 108px;
-	height: 108px;
+.makebook_stepchoosesize_wrapper .b5 .sample
+{
+    width: 108px;
+    height: 108px;
 }
-.makebook_stepchoosesize_wrapper .c3 .sample {
-	width: 80px;
-	height: 135px;
+.makebook_stepchoosesize_wrapper .c3 .sample
+{
+    width: 80px;
+    height: 135px;
 }
-.makebook_stepchoosesize_wrapper .a4 .sample>span {
-	margin: 40px 0 0 0;
+.makebook_stepchoosesize_wrapper .a4 .sample > span
+{
+    margin: 40px 0 0 0;
 }
-.makebook_stepchoosesize_wrapper .b5 .sample>span {
-	margin: 30px 0 0 0;
+.makebook_stepchoosesize_wrapper .b5 .sample > span
+{
+    margin: 30px 0 0 0;
 }
-.makebook_stepchoosesize_wrapper .c3 .sample>span {
-	margin: 40px 0 0 0;
+.makebook_stepchoosesize_wrapper .c3 .sample > span
+{
+    margin: 40px 0 0 0;
 }
-.makebook_steptab_wrapper {
-	display: inline-block;
-	margin: 0 0 0 130px;
-	font-size: 0;
-	position: absolute;
-	top: 10px;
+.makebook_steptab_wrapper
+{
+    font-size: 0;
+
+    position: absolute;
+    top: 10px;
+
+    display: inline-block;
+
+    margin: 0 0 0 130px;
 }
-.makebook_steptab_wrapper li {
-	display: inline-block;
+.makebook_steptab_wrapper li
+{
+    display: inline-block;
 	/*border-top: 1px solid #ddd;*/
 }
-.makebook_steptab_wrapper li.active{
-	border-top: none;
+.makebook_steptab_wrapper li.active
+{
+    border-top: none;
 }
-.makebook_stepchoosebinding_wrapper{
-	display: none;
+.makebook_stepchoosebinding_wrapper
+{
+    display: none;
 }
-.makebook_stepchoosetexture_wrapper{
-	display: none;
+.makebook_stepchoosetexture_wrapper
+{
+    display: none;
 }
-.makebook_stepchoosebinding_wrapper .makebook_steptab_wrapper li a{
-	width: 155px;
+.makebook_stepchoosebinding_wrapper .makebook_steptab_wrapper li a
+{
+    width: 155px;
 }
-.makebook_steptab_wrapper li a {
-	font-size: 18px;
-	line-height: 55px;
-	display: block;
-	width: 100px;
-	text-align: center;
-	color: #666;
-	font-weight: bold;
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-radius: 4px 4px 0 0;
+.makebook_steptab_wrapper li a
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 55px;
+
+    display: block;
+
+    width: 100px;
+
+    text-align: center;
+
+    color: #666;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
 }
-.makebook_steptab_wrapper li.active{
-	background-color: #fff;
-	position: relative;
-	top: 0;
-	border-bottom: 2px solid transparent;
+.makebook_steptab_wrapper li.active
+{
+    position: relative;
+    top: 0;
+
+    border-bottom: 2px solid transparent;
+    background-color: #fff;
 }
-.makebook_steptab_wrapper li.active a{
-	border-top: 3px solid #79bd8f;
-	background-color: #fff;
-	color: #79bd8f;
+.makebook_steptab_wrapper li.active a
+{
+    color: #79bd8f;
+    border-top: 3px solid #79bd8f;
+    background-color: #fff;
 }
-.makebook_steptab_wrapper li:first-child a {
-	border-left: 1px solid #ddd;
+.makebook_steptab_wrapper li:first-child a
+{
+    border-left: 1px solid #ddd;
 }
 
-.makebook_steptab_wrapper li a:hover {
-	color: #00a388;
+.makebook_steptab_wrapper li a:hover
+{
+    color: #00a388;
 }
-.makebook_stepchoosesize_wrapper .common_shtagging_wrapper .vertical {
-	left: -15px;
+.makebook_stepchoosesize_wrapper .common_shtagging_wrapper .vertical
+{
+    left: -15px;
 }
-.makebook_stepchoosesize_wrapper .common_shtagging_wrapper .vertical p {
-	position: relative;
-	right: 25px;
+.makebook_stepchoosesize_wrapper .common_shtagging_wrapper .vertical p
+{
+    position: relative;
+    right: 25px;
 }
-.makebook_stepsamplelist_wrapper{
-	margin: 12px 0 0 0;
-	width: 100%;
-	border-top: 2px solid #dfdfdf;
+.makebook_stepsamplelist_wrapper
+{
+    width: 100%;
+    margin: 12px 0 0 0;
+
+    border-top: 2px solid #dfdfdf;
 }
-.makebook_stepsamplelist_wrapper ul{
-	display: none;
-	width: 100%;
+.makebook_stepsamplelist_wrapper ul
+{
+    display: none;
+
+    width: 100%;
 }
-.makebook_stepsamplelist_wrapper ul.active{
-	display: block;
+.makebook_stepsamplelist_wrapper ul.active
+{
+    display: block;
 }
-.makebook_stepsamplelist_wrapper li{
-	display: inline-block;
-	margin: 30px 10px 0;
-	width: 170px;
-	border: 1px solid #ccc;
-	box-shadow: 5px 5px 0 #e6e6e6;
+.makebook_stepsamplelist_wrapper li
+{
+    display: inline-block;
+
+    width: 170px;
+    margin: 30px 10px 0;
+
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 0 #e6e6e6;
 }
-.makebook_stepsamplelist_wrapper li>a{
-	display: block;
-	width: 150px;
-	height: 150px;
-	margin: 10px auto;
-	border: 0;
-	position: relative;
+.makebook_stepsamplelist_wrapper li > a
+{
+    position: relative;
+
+    display: block;
+
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+
+    border: 0;
 }
-.makebook_stepsamplelist_wrapper li>a span{
-	position: absolute;
-	right: 0;
-	bottom: 0;
+.makebook_stepsamplelist_wrapper li > a span
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
-.makebook_stepsamplelist_wrapper li img{
-	display: block;
-	width: 100%;
-	height: 100%;
-	border: 0;
+.makebook_stepsamplelist_wrapper li img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
 }
-.makebook_stepsamplelist_wrapper li .title{
-	overflow: hidden;
-	margin: 10px 0;
+.makebook_stepsamplelist_wrapper li .title
+{
+    overflow: hidden;
+
+    margin: 10px 0;
 }
-.makebook_stepsamplelist_wrapper li .title label{
-	float: left;
-	padding: 0 0 0 10px;
-	text-align: left;
+.makebook_stepsamplelist_wrapper li .title label
+{
+    float: left;
+
+    padding: 0 0 0 10px;
+
+    text-align: left;
 }
-.makebook_stepsamplelist_wrapper li .title a{
-	float: right;
-	margin: 0 10px 0 0;
+.makebook_stepsamplelist_wrapper li .title a
+{
+    float: right;
+
+    margin: 0 10px 0 0;
 }
 
-.makebook_pricecalculator_container{
-	margin: 0 auto;
-	width: 1200px;
-	position: relative;
-}
-.makebook_pricecalculator_wrapper{
-	display: inline-block;
-	width: 940px;
-}
-.makebook_pricecalculator_wrapper .makebook_stepchoosesize_wrapper>li{
-	margin: 20px 50px;
+.makebook_pricecalculator_container
+{
+    position: relative;
 
+    width: 1200px;
+    margin: 0 auto;
 }
-.makebook_pricecalculator_wrapper .makebook_stepsamplelist_wrapper li{
-	margin: 30px 6px 0;
+.makebook_pricecalculator_wrapper
+{
+    display: inline-block;
+
+    width: 940px;
+}
+.makebook_pricecalculator_wrapper .makebook_stepchoosesize_wrapper > li
+{
+    margin: 20px 50px;
+}
+.makebook_pricecalculator_wrapper .makebook_stepsamplelist_wrapper li
+{
+    margin: 30px 6px 0;
 }
 .pricecalculator_result_wrapper
 {
-	display: inline-block;
-	width: 235px;
-	margin: 66px 0 0;
-	vertical-align: top;
+    display: inline-block;
+
+    width: 235px;
+    margin: 66px 0 0;
+
+    vertical-align: top;
 }
-.pricecalculator_result{
-	border: 1px solid #dbdad9;
-	background-color: #fff;
-	box-shadow: 2px 2px 4px #ddd;
+.pricecalculator_result
+{
+    border: 1px solid #dbdad9;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px #ddd;
 }
 .pricecalculator_result_wrapper h5
 {
-	background-color: #f2f5ea;
+    background-color: #f2f5ea;
 }
 .pricecalculator_result_wrapper h5, .pricecalculator_result_wrapper h6
 {
-	font-size: 14px;
+    font-size: 14px;
 
-	padding: 10px 0;
+    padding: 10px 0;
 
-	text-align: center;
+    text-align: center;
 
-	color: #666;
-	border-bottom: 1px solid #dbdad9;
+    color: #666;
+    border-bottom: 1px solid #dbdad9;
 }
 
 .makebook_pcresultindicator_wrapper li
 {
-	display: block;
+    display: block;
 
-	width: 90%;
-	padding: 0 5%;
+    width: 90%;
+    padding: 0 5%;
 
-	text-align: right;
+    text-align: right;
 }
 .makebook_pcresultindicator_wrapper label
 {
-	font-size: 14px;
+    font-size: 14px;
 
-	display: block;
+    display: block;
 
-	margin: 10px 0;
+    margin: 10px 0;
 
-	color: #666;
+    color: #666;
 }
 .makebook_pcresultindicator_wrapper span
 {
-	font-size: 24px;
+    font-size: 24px;
 
-	display: block;
+    display: block;
 
-	margin: 10px 0;
+    margin: 10px 0;
 
-	color: #ff3f1f;
+    color: #ff3f1f;
 }
 
 .makebook_slidecountor_wrapper

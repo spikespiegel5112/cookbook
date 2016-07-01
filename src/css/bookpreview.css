@@ -327,7 +327,6 @@
         transform: scale(.58);
     -ms-transform-origin: top left;
         transform-origin: top left;
-
     /*-ms-zoom: .58;*/
 }
 
@@ -337,7 +336,6 @@
         transform: scale(.6);
     -ms-transform-origin: top left;
         transform-origin: top left;
-
    /* -ms-zoom: .6;*/
 }
 
@@ -347,7 +345,6 @@
 
     -ms-transform: scale(.58);
         transform: scale(.58);
-
     /*-ms-zoom: .58;*/
 }
 
