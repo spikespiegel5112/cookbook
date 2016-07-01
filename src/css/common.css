@@ -90,7 +90,7 @@ button{
 
     filter: alpha(opacity=65) !important;
 }
-.cm_header_shadow {
+/*.cm_header_shadow {
 	position: absolute;
 	z-index: 1;
 	top: 140px;
@@ -98,7 +98,7 @@ button{
 	width: 100%;
 	height: 5px;
 	background: url('../img/header_shadow_bg.png') repeat-x;
-}
+}*/
 .common_btn {
 	padding: 5px 10px;
 	color: #000;
@@ -124,6 +124,7 @@ label.error, div.error {
 	margin: 0 auto;
 	background-color: #fff;
 	box-shadow: 0 2px 3px #ccc;
+	z-index: 1;
 }
 .yc_cm_header .shortcut_container {
 	font-size: 12px;
@@ -205,9 +206,14 @@ label.error, div.error {
 .yc_cm_header .shortcut .yc_logo{
 	position: relative;
 	float: left;
-	width: 58px;
+	width: 80px;
 	height: 38px;
-	margin: 1px 10px 1px 0;
+	margin: -1px 10px 1px 0;
+}
+.yc_cm_header .shortcut .yc_logo img{
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
 }
 .yc_cm_header .shortcut .nav_bar li {
 	float: left;
@@ -292,18 +298,22 @@ label.error, div.error {
 	box-sizing: border-box;
 	width: 100%;
 	max-width: 1200px;
-	height: 100px;
+	height: 80px;
 	margin: 0 auto;
 	padding: 0;
 }
 .main_nav .header_con .logo {
 	position: absolute;
-	top: 21px;
+	top: 22px;
 	left: 15px;
+}
+.main_nav .header_con .logo img{
+	width: 110px;
+	height: 40px;
 }
 .main_nav .header_con .hot_line {
 	position: absolute;
-	top: 33px;
+	top: 19px;
 	right: 15px;
 	width: 135px;
 	text-align: center;
@@ -336,7 +346,7 @@ label.error, div.error {
 }
 .yc_cm_header .main_nav .navigation {
 	position: relative;
-	top: 55px;
+	top: 29px;
 	left: 0;
 	text-align: center;
 }
@@ -1009,7 +1019,7 @@ label.error, div.error {
 	display: inline-block;
 	vertical-align: middle;
 	color: #aab93e;
-	background-image: url(../img/logo_100_55_00000.png);
+	background-image: url(../img/logo.png);
 	background-size: 85%;
 	background-repeat: no-repeat;
 	background-position: center;
