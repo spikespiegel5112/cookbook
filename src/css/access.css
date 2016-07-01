@@ -262,7 +262,7 @@
     font-size: 14px;
 }
 .access_resetstep_wrapper .active span{
-    background-color: #a5d750;
+    background-color: #79bd8f;
     color: #fff;
 }
 .access_resetstep_wrapper li label{
@@ -273,7 +273,7 @@
     vertical-align: middle;
 }
 .access_resetstep_wrapper .active label{
-    color: #609507;
+    color: #00a388;
 }
 .access_resetform_wrapper{
     margin: 0 auto;
@@ -432,7 +432,7 @@
     color: #fff;
     border: none;
     border-radius: 2px!important;
-    background-color: #6ba72b!important;
+    background-color: #00a388!important;
 
     -webkit-appearance: none;
 }
@@ -458,7 +458,7 @@
 
 .login_from .lf_right form .login_btn a:active
 {
-    color: #557e1f;
+    color: #00a388;
 }
 
 .lf_des
@@ -1243,7 +1243,7 @@ li.method
     font-size: 14px;
 }
 .access_404content_wrapper ul li a{
-    color: #3caae2;
+    color: #00a388;
     font-size: 14px;
     text-decoration: underline;
 }

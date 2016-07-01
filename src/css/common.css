@@ -733,7 +733,7 @@ label.error, div.error {
 	width: 100%;
 	max-width: 1200px;
 	font-family: 'microsoft yahei';
-	border-bottom: 4px solid #7ebd8a;
+	border-bottom: 4px solid #79bd8f;
 }
 .common_crumb_wrapper li {
 	display: inline-block;
@@ -922,7 +922,7 @@ label.error, div.error {
 	display: inline-block;
 	width: 80%;
 	height: 80%;
-	background-color: #ff4500;
+	background-color: #ff4400;
 	border-radius: 50%;
 	position: absolute;
 	top: 10%;
@@ -1179,13 +1179,13 @@ label.error, div.error {
 	margin: 15px auto;
 	text-align: center;
 	color: #fff;
-	background-color: #7bba38;
+	background-color: #00a388;
 }
 .common_loginbtn_item:hover {
-	background-color: #82c43b;
+	background-color: #187963;
 }
 .common_loginbtn_item:active {
-	background-color: #689d2f;
+	background-color: #146250;
 }
 .common_loginproviso_item {
 	font-size: 12px;
@@ -1197,7 +1197,7 @@ label.error, div.error {
 	border-radius: 6px;
 }
 .common_loginproviso_item a {
-	color: #7bba38;
+	color: #00a388;
 }
 .common_loginproviso_item a:hover {
 	text-decoration: underline;
@@ -1246,7 +1246,7 @@ label.error, div.error {
 
     float: right;
 
-    color: #7bba38;
+    color: #00a388;
 }
 
 .common_logincheckbox_wrapper a:hover

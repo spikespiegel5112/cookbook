@@ -932,7 +932,7 @@
     box-sizing: border-box;
 }
 .order_list .action .common_btn:hover{
-    color: #79bd8f;
+    color: #f40;
 }
 .order_list .illustration a{
     position: relative;
@@ -1053,7 +1053,7 @@
 }
 .bookshelf_wrap .filter_group a:hover,
 .bookshelf_wrap .filter_group a.on {
-    color: #79bd8f;
+    color: #00a388;
 }
 .bookshelf_wrap .filter_wrap .btns {
     font-size: 18px;
@@ -1186,7 +1186,7 @@
     height: 25px;
     margin-right: 5px;
     text-align: center;
-    color: #97c76c;
+    color: #79bd8f;
     border: 1px solid #ccc;
     border-radius: 2px;
     background-color: #fff;
@@ -1241,7 +1241,7 @@
     width: 0;
     height: 100%;
     border-radius: 5px;
-    background-color: #90c132;
+    background-color: #00a388;
 }
 .bookshelf .grid .actions {
     position: absolute;
@@ -1266,11 +1266,14 @@
     font-size: 14px;
     color: #fff;
     border-radius: 2px;
-    background-color: #90c132;
+    background-color: #00a388;
 }
 .grid .actions .btn:hover {
     color: #fff;
-    background-color: #79bd8f;
+    background-color: #187963;
+}
+.grid .actions .btn:active {
+    box-shadow: 0 0 10px #333 inset;
 }
 .bookshelf.recycle_bin .grid .display, .bookshelf.recycle_bin .grid .describe {
     pointer-events: none;

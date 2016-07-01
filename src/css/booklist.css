@@ -104,7 +104,7 @@
 .booklist_filter_wrapper {
     margin: 15px 0 0 0;
     background-color: #f9f9f9;
-    border-left: 2px solid #78bd90;
+    border-left: 2px solid #79bd8f;
 }
 .booklist_filter_wrapper .list {
     height: 40px;
@@ -377,10 +377,10 @@
     border: 1px solid #ccc;
 }
 .book_img .hd li.on {
-    border: 2px solid #9cd65d;
+    border: 2px solid #79bd8f;
 }
 .book_img .hd li:hover {
-    border: 2px solid #e7b54b;
+    border: 2px solid #beeb9f;
 }
 .book_img .hd li img {
     width: 50px;
@@ -628,8 +628,8 @@
 }
 .book_details_box .detail_more .hd ul li.on a, .book_details_box .more_tpl .parhd ul li.on a {
     z-index: 1;
-    color: #81d42f;
-    border-bottom: 2px solid #81d42f;
+    color: #00a388;
+    border-bottom: 2px solid #79bd8f;
 }
 .book_details_box .detail_more {
     width: 100%;
@@ -710,7 +710,7 @@
     margin: 0 15px 0 0;
     content: ' ';
     vertical-align: middle;
-    background-color: #81d42f;
+    background-color: #79bd8f;
 }
 .books_really .imgs_dis ul li {
     position: relative;
