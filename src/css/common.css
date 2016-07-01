@@ -290,7 +290,8 @@ label.error, div.error {
 .yc_cm_header .main_nav .header_con {
 	position: relative;
 	box-sizing: border-box;
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
 	height: 100px;
 	margin: 0 auto;
 	padding: 0;
@@ -329,10 +330,9 @@ label.error, div.error {
 	right: 0;
 }
 .header_con .hot_line p{
-	font-size: 18px;
+	font-size: 19px;
 	color: #f40;
 	line-height: 30px;
-	letter-spacing: 1px;
 }
 .yc_cm_header .main_nav .navigation {
 	position: relative;
