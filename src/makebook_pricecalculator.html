@@ -697,22 +697,24 @@
 				</div>
 			</div>
 			<div class='pricecalculator_result_wrapper'>
-				<h5>书价计算器</h5>
-				<h6>页面/配件（数量）</h6>
-				<ul class='makebook_pcresultindicator_wrapper'>
-					<li>
-						<label>每本书单价</label>
-						<span>￥101.1</span>
-					</li>
-					<li>
-						<label>菜谱数量</label>
-						<span>x1</span>
-					</li>
-					<li>
-						<label>总价</label>
-						<span class='totalpeice'>￥101.1</span>
-					</li>
-				</ul>
+				<div class="pricecalculator_result">
+					<h5>书价计算器</h5>
+					<h6>页面/配件（数量）</h6>
+					<ul class='makebook_pcresultindicator_wrapper'>
+						<li>
+							<label>每本书单价</label>
+							<span>￥101.1</span>
+						</li>
+						<li>
+							<label>菜谱数量</label>
+							<span>x1</span>
+						</li>
+						<li>
+							<label>总价</label>
+							<span class='totalpeice'>￥101.1</span>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="footer">
@@ -755,6 +757,7 @@
 	</div>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src='assets/js/jquery.fancybox.pack.js'></script>
+	<script type="text/javascript" src='assets/js/jquery.pin.js'></script>
 	<!-- build:js js/all.js -->
 	<script type="text/javascript" src="js/base.js"></script>
 	<!-- endbuild -->
@@ -856,11 +859,11 @@
 	}
 
 	function calculator(){
-		var resultEl=$('.pricecalculator_result_wrapper');
+		/*var resultEl=$('.pricecalculator_result_wrapper');
 		$(window).scroll(function(){
 			var offsetTop=$('body').scrollTop();
 			console.log(offsetTop)
-			if (offsetTop>=320) {
+			if (offsetTop>=206) {
 				resultEl.css({
 					position: 'fixed',
 					top: 0,
@@ -872,7 +875,9 @@
 					margin: '66px 5px 0'
 				})
 			}
-		})
+		});*/
+
+		$('.pricecalculator_result').pin();
 	}
 	</script>
 </body>

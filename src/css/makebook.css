@@ -381,13 +381,13 @@
 {
 	display: inline-block;
 	width: 235px;
-	margin: 66px 5px 0;
-
+	margin: 66px 0 0;
+	vertical-align: top;
+}
+.pricecalculator_result{
 	border: 1px solid #dbdad9;
 	background-color: #fff;
 	box-shadow: 2px 2px 4px #ddd;
-	vertical-align: top;
-
 }
 .pricecalculator_result_wrapper h5
 {
