@@ -872,6 +872,8 @@
 .coupon_list
 {
     min-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .coupon_list li.caption
 {
@@ -1092,4 +1094,15 @@
     margin: 0 auto;
 
     background-color: #f40;
+}
+.ia_message_more_btn
+{
+    font-size: 12px;
+    width: 85px;
+    margin: 10px auto 20px;
+    color: #666;
+    text-align: center;
+}
+.ia_message_more_btn:hover{
+    color: #00a388;
 }
