@@ -607,3 +607,63 @@ textarea:focus
     text-align: center;
     color: #a8a8a8;
 }
+
+.pagination_wrap
+{
+    position: relative;
+
+    clear: both;
+
+    width: 100%;
+    margin: 20px auto;
+
+    text-align: center;
+}
+
+.turn_btn > a, .turn_btn > span
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+
+    display: inline-block;
+
+    height: 30px;
+    margin: 0 3px;
+    padding: 0 10px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    background-color: #ccc;
+}
+.turn_btn > a
+{
+    border: 0;
+}
+.turn_btn > span
+{
+    cursor: default;
+}
+.turn_btn > span.current
+{
+    color: #fff;
+    border: 0;
+    background-color: #79bd8f;
+}
+.turn_btn > span.current.prev, .turn_btn > span.current.next
+{
+    display: none;
+}
+.turn_btn > span.prev, .turn_btn > span.next
+{
+    color: #fff;
+    background-color: #ccc;
+}
+.turn_btn > a:hover
+{
+    color: #fff;
+    background-color: #999;
+}
