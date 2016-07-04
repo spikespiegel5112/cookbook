@@ -267,6 +267,22 @@
         </li>
     </ul>
 </div>
+<!--弹出 支付提示-->
+<div class="pay_tip hidden">
+    <h3>请在新页面完成支付</h3>
+    <p class="help-block">支付完成前请不要关闭此窗口，完成支付后根据您的情况点击下面的按钮</p>
+    <div class="btn_group">
+        <a href="my_orders.html" class="success">已完成支付</a>
+        <a href="javascript:;" class="fail">支付遇到问题</a>
+    </div>
+</div>
+<div class="pay_fail hidden" id="pay_fail">
+    <h3>如果您的支付遇到问题</h3>
+    <p class="help-block">请联系客服电话4000610127，QQ4000610127</p>
+    <div class="btn_group">
+        <a href="javascript:;" class="confirm">确定</a>
+    </div>
+</div>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src='assets/js/jquery.SuperSlide.2.1.1.js'></script>
 <script type="text/javascript" src='assets/js/jquery.artDialog.js?skin=yb313'></script>
@@ -274,6 +290,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         recharge();
+        popPayTip();
     });
 
     function recharge(){
@@ -296,6 +313,24 @@
         jQuery(".coupon_slidebox").slide({
             trigger: "click"
         }); //优惠券TAB选项卡
+    }
+
+    //弹出支付提示
+    function popPayTip() {
+        $('.go_recharge .btn').click(function() {
+            art.dialog({
+                id: "pay_tip",
+                title: '支付提示',
+                lock: true,
+                content: document.querySelector('.pay_tip')
+            });
+        });
+        $('.btn_group .fail').click(function() {
+            art.dialog.list['pay_tip'].content(document.getElementById('pay_fail')).title('温馨提示');
+        });
+        $('.btn_group .confirm').click(function() {
+            art.dialog.list['pay_tip'].close();
+        });
     }
 </script>
 </body>

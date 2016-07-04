@@ -2,7 +2,8 @@
 
 .pc_personalcenter_container
 {
-    width: 100%;
+    width: 100%;
+
     padding: 15px 0 0 0;
 
     background-color: #f5f5f5;
@@ -11,7 +12,8 @@
 {
     overflow: hidden;
 
-    width: 1200px;
+    width: 1200px;
+
     margin: 15px auto;
 
     background-color: #fff;
@@ -22,7 +24,8 @@
     font-size: 14px;
 
     box-sizing: border-box;
-    width: 90%;
+    width: 90%;
+
     margin: 0 auto;
 	/*min-height: 800px;*/
     padding: 25px;
@@ -334,7 +337,8 @@
 {
     overflow: hidden;
 
-    width: 520px;
+    width: 520px;
+
     margin: 0 0 10px 0;
 }
 .form-control
@@ -441,7 +445,8 @@
 {
     cursor: pointer;
 
-    color: #fff;
+    color: #fff;
+
     background: #e7b54b;
 }
 .change_head > button:active
@@ -1018,4 +1023,73 @@
 {
     color: #ffff9d;
     box-shadow: none;
+}
+.pay_tip h3,
+.pay_fail h3
+{
+    font-size: 20px;
+
+    width: 460px;
+    height: 45px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.pay_tip p,
+.pay_fail p
+{
+    font-size: 12px;
+
+    margin: 25px 0 30px;
+
+    text-align: center;
+}
+
+.pay_tip .btn_group,
+.pay_fail .btn_group
+{
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+
+.pay_tip .btn_group a,
+.pay_fail .btn_group a
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+
+    width: 150px;
+    height: 30px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    background-color: #00a388;
+}
+
+.pay_tip .btn_group a.success
+{
+    float: left;
+}
+
+.pay_tip .btn_group a.fail
+{
+    float: right;
+
+    background-color: #f40;
+}
+
+.pay_fail .btn_group a.confirm
+{
+    display: block;
+
+    margin: 0 auto;
+
+    background-color: #f40;
 }
