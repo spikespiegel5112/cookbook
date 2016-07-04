@@ -181,7 +181,7 @@
     line-height: 125px;
     width: 100px;
     height: 125px;
-    margin: 15px auto;
+    margin: 28px auto;
     padding: 4px;
     border: 1px solid #ccc;
     background-color: #fff;
@@ -739,6 +739,9 @@
     vertical-align: middle;
     border-right: 1px solid #ddd;
 }
+.opd_paymentfailed_wrapper .opd_paymentresult_wrapper{
+    border-right: 0;
+}
 .opd_paymentresult_wrapper h2 {
     font-size: 33px;
     font-weight: bold;
@@ -915,7 +918,7 @@
     width: 14%;
 }
 .order_list li .illustration{
-    width: 17%;
+    width: 16%;
 }
 .order_list li .money span{
     color: #f40;
@@ -929,7 +932,7 @@
     box-sizing: border-box;
 }
 .order_list .action .common_btn:hover{
-    color: #79bd8f;
+    color: #f40;
 }
 .order_list .illustration a{
     position: relative;
@@ -1050,7 +1053,7 @@
 }
 .bookshelf_wrap .filter_group a:hover,
 .bookshelf_wrap .filter_group a.on {
-    color: #79bd8f;
+    color: #00a388;
 }
 .bookshelf_wrap .filter_wrap .btns {
     font-size: 18px;
@@ -1183,7 +1186,7 @@
     height: 25px;
     margin-right: 5px;
     text-align: center;
-    color: #97c76c;
+    color: #79bd8f;
     border: 1px solid #ccc;
     border-radius: 2px;
     background-color: #fff;
@@ -1238,7 +1241,7 @@
     width: 0;
     height: 100%;
     border-radius: 5px;
-    background-color: #90c132;
+    background-color: #00a388;
 }
 .bookshelf .grid .actions {
     position: absolute;
@@ -1263,11 +1266,14 @@
     font-size: 14px;
     color: #fff;
     border-radius: 2px;
-    background-color: #90c132;
+    background-color: #00a388;
 }
 .grid .actions .btn:hover {
     color: #fff;
-    background-color: #79bd8f;
+    background-color: #187963;
+}
+.grid .actions .btn:active {
+    box-shadow: 0 0 10px #333 inset;
 }
 .bookshelf.recycle_bin .grid .display, .bookshelf.recycle_bin .grid .describe {
     pointer-events: none;

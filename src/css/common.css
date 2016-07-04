@@ -90,7 +90,7 @@ button{
 
     filter: alpha(opacity=65) !important;
 }
-.cm_header_shadow {
+/*.cm_header_shadow {
 	position: absolute;
 	z-index: 1;
 	top: 140px;
@@ -98,7 +98,7 @@ button{
 	width: 100%;
 	height: 5px;
 	background: url('../img/header_shadow_bg.png') repeat-x;
-}
+}*/
 .common_btn {
 	padding: 5px 10px;
 	color: #000;
@@ -124,6 +124,7 @@ label.error, div.error {
 	margin: 0 auto;
 	background-color: #fff;
 	box-shadow: 0 2px 3px #ccc;
+	z-index: 1;
 }
 .yc_cm_header .shortcut_container {
 	font-size: 12px;
@@ -205,9 +206,14 @@ label.error, div.error {
 .yc_cm_header .shortcut .yc_logo{
 	position: relative;
 	float: left;
-	width: 58px;
+	width: 80px;
 	height: 38px;
-	margin: 1px 10px 1px 0;
+	margin: -1px 10px 1px 0;
+}
+.yc_cm_header .shortcut .yc_logo img{
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
 }
 .yc_cm_header .shortcut .nav_bar li {
 	float: left;
@@ -216,14 +222,14 @@ label.error, div.error {
 	position: relative;
 	margin-left: 25px;
 }
-.quick_menu .yc_menu{
+.shortcut .yc_menu{
 	position: relative;
 	margin: 0 25px;
 }
-.quick_menu .yc_menu .menu_hd b {
+.shortcut .yc_menu .menu_hd b {
 	padding-left: 5px;
 }
-.quick_menu .yc_menu .menu_bd {
+.shortcut .yc_menu .menu_bd {
 	position: absolute;
 	z-index: 99;
 	top: 32px;
@@ -233,11 +239,11 @@ label.error, div.error {
 	background-color: #fff;
 	box-shadow: 1px 1px 3px #c6c6c8;
 }
-.quick_menu .yc_menu:hover .menu_bd {
+.shortcut .yc_menu:hover .menu_bd {
 	display: block;
 	animation: transTop .3s ease-in-out;
 }
-.quick_menu .yc_menu .menu_bd::before {
+.shortcut .yc_menu .menu_bd::before {
 	position: absolute;
 	top: -8px;
 	right: 11px;
@@ -248,7 +254,7 @@ label.error, div.error {
 	border-bottom: 8px solid #dedddd;
 	border-left: 8px solid transparent;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel::before {
+.shortcut .yc_menu .menu_bd .menu_bd_panel::before {
 	position: absolute;
 	top: -7px;
 	right: 11px;
@@ -259,25 +265,25 @@ label.error, div.error {
 	border-bottom: 8px solid #fff;
 	border-left: 8px solid transparent;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel {
+.shortcut .yc_menu .menu_bd .menu_bd_panel {
 	width: 85px;
 	padding: 6px 0;
 	text-align: center;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel a {
+.shortcut .yc_menu .menu_bd .menu_bd_panel a {
 	display: block;
 	color: #333;
 	height: 32px;
 	line-height: 30px;
 	box-sizing: border-box;
 }
-.quick_menu .yc_menu .menu_bd_panel a .ybicon-turnoff {
+.shortcut .yc_menu .menu_bd_panel a .ybicon-turnoff {
 	float: none;
 	font-size: 12px;
 	font-style: normal;
 	margin-right: 3px;
 }
-.quick_menu .yc_menu .menu_bd .menu_bd_panel a:hover {
+.shortcut .yc_menu .menu_bd .menu_bd_panel a:hover {
 	color: #00a388;
 	border-top: 1px solid #dedddd;
 	border-bottom: 1px solid #dedddd;
@@ -290,24 +296,57 @@ label.error, div.error {
 .yc_cm_header .main_nav .header_con {
 	position: relative;
 	box-sizing: border-box;
-	width: 1200px;
-	height: 100px;
+	width: 100%;
+	max-width: 1200px;
+	height: 80px;
 	margin: 0 auto;
 	padding: 0;
 }
 .main_nav .header_con .logo {
 	position: absolute;
-	top: 21px;
+	top: 22px;
 	left: 15px;
+}
+.main_nav .header_con .logo img{
+	width: 110px;
+	height: 40px;
 }
 .main_nav .header_con .hot_line {
 	position: absolute;
-	top: 33px;
+	top: 19px;
 	right: 15px;
+	width: 135px;
+	text-align: center;
+}
+.header_con .hot_line span{
+	position: relative;
+	display: block;
+	font-size: 12px;
+	color: #999;
+}
+.header_con .hot_line span::before,
+.header_con .hot_line span::after{
+	content: " ";
+	position: absolute;
+	width: 35px;
+	height: 1px;
+	background-color: #ccc;
+	top: 8px;
+}
+.header_con .hot_line span::before{
+	left: 0;
+}
+.header_con .hot_line span::after{
+	right: 0;
+}
+.header_con .hot_line p{
+	font-size: 19px;
+	color: #f40;
+	line-height: 30px;
 }
 .yc_cm_header .main_nav .navigation {
 	position: relative;
-	top: 55px;
+	top: 29px;
 	left: 0;
 	text-align: center;
 }
@@ -694,7 +733,7 @@ label.error, div.error {
 	width: 100%;
 	max-width: 1200px;
 	font-family: 'microsoft yahei';
-	border-bottom: 4px solid #7ebd8a;
+	border-bottom: 4px solid #79bd8f;
 }
 .common_crumb_wrapper li {
 	display: inline-block;
@@ -883,7 +922,7 @@ label.error, div.error {
 	display: inline-block;
 	width: 80%;
 	height: 80%;
-	background-color: #ff4500;
+	background-color: #ff4400;
 	border-radius: 50%;
 	position: absolute;
 	top: 10%;
@@ -980,7 +1019,7 @@ label.error, div.error {
 	display: inline-block;
 	vertical-align: middle;
 	color: #aab93e;
-	background-image: url(../img/logo_100_55_00000.png);
+	background-image: url(../img/logo.png);
 	background-size: 85%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1140,13 +1179,13 @@ label.error, div.error {
 	margin: 15px auto;
 	text-align: center;
 	color: #fff;
-	background-color: #7bba38;
+	background-color: #00a388;
 }
 .common_loginbtn_item:hover {
-	background-color: #82c43b;
+	background-color: #187963;
 }
 .common_loginbtn_item:active {
-	background-color: #689d2f;
+	background-color: #146250;
 }
 .common_loginproviso_item {
 	font-size: 12px;
@@ -1158,7 +1197,7 @@ label.error, div.error {
 	border-radius: 6px;
 }
 .common_loginproviso_item a {
-	color: #7bba38;
+	color: #00a388;
 }
 .common_loginproviso_item a:hover {
 	text-decoration: underline;
@@ -1207,7 +1246,7 @@ label.error, div.error {
 
     float: right;
 
-    color: #7bba38;
+    color: #00a388;
 }
 
 .common_logincheckbox_wrapper a:hover
@@ -1281,8 +1320,6 @@ label.error, div.error {
 	width: 94%;
 }
 
-
-
 .common_gradienttitle_wrapper {
 	height: 40px;
 	background: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
@@ -1297,6 +1334,30 @@ label.error, div.error {
 	color: #666;
 }
 
+.swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet {
+	margin: 15px 0;
+	display: block;
+}
+
+.swiper-container-vertical .swiper-pagination-bullet {
+	position: relative;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,.7);
+	opacity: 1;
+}
+
+.swiper-container-vertical .swiper-pagination-bullet-active::before {
+	content: " ";
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background-color: #ccc;
+}
 /*~~~~~~~~~~common_bppopup_wrapper~~~~~~~~~~*/
 .common_bppopup_wrapper{
     display: block;

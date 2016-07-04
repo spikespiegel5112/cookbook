@@ -18,7 +18,7 @@
 }
 /*~~~~~~~~~~static_customprocess.html~~~~~~~~~~*/
 .static_customprocess_wrapper {
-	margin: 0 auto;
+	margin: 3px auto 0;
 	width: 1200px;
 	background-color: #f5f5f5;
 	overflow: hidden;
@@ -30,6 +30,9 @@
 	height: 100%;
 	position: absolute;
 	left: 47px;
+}
+.static_customprocess_wrapper  .swiper-pagination{
+	position: fixed;
 }
 .static_cpstep_wrapper {
 	

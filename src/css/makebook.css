@@ -157,7 +157,7 @@
 	margin: 8px 0 0 0;
 	width: 12px;
 	height: 12px;
-	background-color: #74bd93;
+	background-color: #79bd8f;
 	border-radius: 50%;
 	vertical-align: middle;
 }
@@ -258,7 +258,7 @@
 }
 .makebook_steptab_wrapper li {
 	display: inline-block;
-	border-top: 1px solid #ddd;
+	/*border-top: 1px solid #ddd;*/
 }
 .makebook_steptab_wrapper li.active{
 	border-top: none;
@@ -273,30 +273,34 @@
 	width: 155px;
 }
 .makebook_steptab_wrapper li a {
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 55px;
 	display: block;
 	width: 100px;
 	text-align: center;
-	border-top: 1px solid transparent;
+	color: #666;
+	font-weight: bold;
+	border-top: 1px solid #ddd;
 	border-right: 1px solid #ddd;
+	border-radius: 4px 4px 0 0;
 }
 .makebook_steptab_wrapper li.active{
 	background-color: #fff;
 	position: relative;
-	top: 1px;
+	top: 0;
+	border-bottom: 2px solid transparent;
 }
 .makebook_steptab_wrapper li.active a{
-	border-top: 3px solid #77bc8d;
+	border-top: 3px solid #79bd8f;
 	background-color: #fff;
-	border-radius: 3px;
+	color: #79bd8f;
 }
 .makebook_steptab_wrapper li:first-child a {
 	border-left: 1px solid #ddd;
 }
 
 .makebook_steptab_wrapper li a:hover {
-	color: #80c132;
+	color: #00a388;
 }
 .makebook_stepchoosesize_wrapper .common_shtagging_wrapper .vertical {
 	left: -15px;
@@ -308,7 +312,7 @@
 .makebook_stepsamplelist_wrapper{
 	margin: 12px 0 0 0;
 	width: 100%;
-	border-top: 1px solid #dfdfdf;
+	border-top: 2px solid #dfdfdf;
 }
 .makebook_stepsamplelist_wrapper ul{
 	display: none;
@@ -377,13 +381,13 @@
 {
 	display: inline-block;
 	width: 235px;
-	margin: 40px 5px 0;
-
+	margin: 66px 0 0;
+	vertical-align: top;
+}
+.pricecalculator_result{
 	border: 1px solid #dbdad9;
 	background-color: #fff;
 	box-shadow: 2px 2px 4px #ddd;
-	vertical-align: top;
-
 }
 .pricecalculator_result_wrapper h5
 {

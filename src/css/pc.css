@@ -17,7 +17,7 @@
 	font-size: 14px;
 	box-sizing: border-box;
 	width: 90%;
-	min-height: 800px;
+	/*min-height: 800px;*/
 	padding: 25px;
 	color: #333;
 	/*border-left: 1px solid #d9d9d9;*/
@@ -136,7 +136,7 @@
 }
 .binding_mode > li a > span:last-child {
 	float: right;
-	color: #6ea11f;
+	color: #00a388;
 }
 .binding_mode > li .sum{
 	font-size: 18px;
@@ -270,19 +270,20 @@
 	border: 1px solid #d9d9d9;
 	border-radius: 4px;
 	background-color: #f5f6f7;
+	transition: all .35s ease-in-out;
 }
 .btn_group > button.selected {
 	margin-right: 15px;
 	color: #fff;
-	border: 1px solid #50a000;
-	background-color: #a0d350;
+	border: 1px solid #00a388;
+	background-color: #79bd8f;
 }
 .btn_group > button.selected:hover {
-	border: 1px solid #dcbb37;
-	background: #e7b54b;
+	border: 1px solid #f80;
+	background: #f40;
 }
 .btn_group > button.selected:active {
-	color: #a97913;
+	color: #ffff9d;
 }
 .binding_mode .user_name input {
 	display: inline-block;
@@ -373,14 +374,14 @@
 
 .form-group .icon-ok
 {
-	color: #a0d350;
+	color: #00a388;
 }
 
 .form-group .icon-remove
 {
 	display: none;
 
-	color: #f00;
+	color: #f40;
 }
 
 .form-group .icon-eye-open
@@ -451,7 +452,7 @@
 
 	color: #fff;
 	border-radius: 21px;
-	background-color: #a0d350;
+	background-color: #79bd8f;
 }
 
 .step_nav > div p
@@ -514,19 +515,19 @@
 	margin: 10px auto;
 
 	color: #fff;
-	border: 1px solid #6ea11f;
-	background-color: #a0d350;
+	border: 1px solid #00a388;
+	background-color: #79bd8f;
 }
 
 .bind_mobile_container .selected:hover
 {
-	border: 1px solid #e9a81d;
-	background-color: #e7b54b;
+	border: 1px solid #f80;
+	background-color: #f40;
 }
 
 .bind_mobile_container .selected:active
 {
-	color: #a97913;
+	color: #ffff9d;
 }
 .input_mobile .help-block
 {
@@ -649,8 +650,8 @@
 	width: 65px;
 	height: 30px;
 	padding: 0;
-	background-color: #6ac96d;
-	border: 1px solid #ccc;
+	background-color: #00a388;
+	border: 1px solid #79bd8f;
 }
 .conversion .exchange {
 	font-size: 14px;
@@ -659,8 +660,8 @@
 	height: 30px;
 	margin-left: 15px;
 	padding: 0;
-	border: 1px solid #eaa14b;
-	background-color: #f88f1f;
+	border: 1px solid #f80;
+	background-color: #f40;
 }
 
 .coin_certificate {
@@ -680,8 +681,8 @@
 	border-bottom: none;
 }
 .coin_certificate .coupon_slidebox .hd ul > li.on {
-	color: #6cb767;
-	border: 1px solid #6cb767;
+	color: #00a388;
+	border: 1px solid #00a388;
 	border-radius: 20px;
 }
 .coin_certificate .coupon_slidebox .bd {
@@ -789,13 +790,13 @@
 	cursor: pointer;
 	text-align: center;
 	border-radius: 2px;
-	background-color: #ecac3c;
+	background-color: #f40;
 }
 .recharge_con .go_recharge div a {
 	display: block;
 	color: #fff;
 }
 .recharge_con .go_recharge div a:hover {
-	color: #aa7d2d;
+	color: #ffff9d;
 	box-shadow: none;
 }

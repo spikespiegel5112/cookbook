@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
-	<title>易彩-选规格</title>
+	<title>菜谱易-选规格</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
@@ -44,7 +44,7 @@
 			<div class="main_nav">
 				<div class="header_con">
 					<div class="logo">
-						<a href="_index.html"><img src="img/logo_100_55_00000.png"></a>
+						<a href="_index.html"><img src="img/logo.png"></a>
 					</div>
 					<div class="navigation">
 						<ul>
@@ -56,7 +56,10 @@
 						</ul>
 					</div>
 					<div class="hot_line">
-						<a href="javascript:;"><img src="img/hot_line.png"></a>
+						<a href="javascript:;">
+							<span>客服热线</span>
+							<p>400-0610-127</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -712,7 +715,7 @@
 		});
 		$('.makebook_stepsummary_container').align({
 			position: 'bottom',
-			ignorey: 744
+			ignorey: 682
 		})
 	})
 
@@ -770,7 +773,7 @@
 
 			skin = choosebindingWrapperEl.find('.makebook_steptab_wrapper .active a').text();
 			binding = thisLi.find('.title label').text();
-			summaryLiEl.eq(1).text('规格：' + skin + ' + ' + binding);
+			summaryLiEl.eq(1).text('装订方式：' + skin + ' + ' + binding);
 			if (choosetextureWrapperEl.is(':visible')) {
 				return;
 			} else {

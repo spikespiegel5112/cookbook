@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keywords" content="">
-	<title>易彩-价格计算器</title>
+	<title>菜谱易-价格计算器</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
@@ -44,7 +44,7 @@
 			<div class="main_nav">
 				<div class="header_con">
 					<div class="logo">
-						<a href="_index.html"><img src="img/logo_100_55_00000.png"></a>
+						<a href="_index.html"><img src="img/logo.png"></a>
 					</div>
 					<div class="navigation">
 						<ul>
@@ -56,12 +56,15 @@
 						</ul>
 					</div>
 					<div class="hot_line">
-						<a href="javascript:;"><img src="img/hot_line.png"></a>
+						<a href="javascript:;">
+							<span>客服热线</span>
+							<p>400-0610-127</p>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class='makebook_choosespec_wrapper'>
+		<!--<div class='makebook_choosespec_wrapper'>
 			<div class='makebook_process_wrapper'>
 				<ul>
 					<li class='active'>
@@ -95,7 +98,7 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</div>-->
 		<div class='makebook_pricecalculator_container'>
 			<div class='makebook_pricecalculator_wrapper'>
 				<div class='common_crumb_wrapper'>
@@ -697,22 +700,24 @@
 				</div>
 			</div>
 			<div class='pricecalculator_result_wrapper'>
-				<h5>书价计算器</h5>
-				<h6>页面/配件（数量）</h6>
-				<ul class='makebook_pcresultindicator_wrapper'>
-					<li>
-						<label>每本书单价</label>
-						<span>￥101.1</span>
-					</li>
-					<li>
-						<label>纪念册本数</label>
-						<span>x1</span>
-					</li>
-					<li>
-						<label>总价</label>
-						<span class='totalpeice'>￥101.1</span>
-					</li>
-				</ul>
+				<div class="pricecalculator_result">
+					<h5>书价计算器</h5>
+					<h6>页面/配件（数量）</h6>
+					<ul class='makebook_pcresultindicator_wrapper'>
+						<li>
+							<label>每本书单价</label>
+							<span>￥101.1</span>
+						</li>
+						<li>
+							<label>菜谱数量</label>
+							<span>x1</span>
+						</li>
+						<li>
+							<label>总价</label>
+							<span class='totalpeice'>￥101.1</span>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="footer">
@@ -755,6 +760,7 @@
 	</div>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src='assets/js/jquery.fancybox.pack.js'></script>
+	<script type="text/javascript" src='assets/js/jquery.pin.js'></script>
 	<!-- build:js js/all.js -->
 	<script type="text/javascript" src="js/base.js"></script>
 	<!-- endbuild -->
@@ -856,11 +862,11 @@
 	}
 
 	function calculator(){
-		var resultEl=$('.pricecalculator_result_wrapper');
+		/*var resultEl=$('.pricecalculator_result_wrapper');
 		$(window).scroll(function(){
 			var offsetTop=$('body').scrollTop();
 			console.log(offsetTop)
-			if (offsetTop>=320) {
+			if (offsetTop>=206) {
 				resultEl.css({
 					position: 'fixed',
 					top: 0,
@@ -869,10 +875,12 @@
 			}else{
 				resultEl.css({
 					position: 'relative',
-					margin: '40px 5px 0'
+					margin: '66px 5px 0'
 				})
 			}
-		})
+		});*/
+
+		$('.pricecalculator_result').pin();
 	}
 	</script>
 </body>
