@@ -178,37 +178,19 @@
 
     color: #333;
     border: 0;
+    width: 100px;
 }
 
 .opd_checklist_wrapper thead tr th:nth-child(1),
-.opd_checklist_wrapper thead tr th:nth-child(2)
-{
-    width: 200px;
-}
-
+.opd_checklist_wrapper thead tr th:nth-child(2),
 .opd_checklist_wrapper thead tr th:nth-child(3)
 {
-    width: 120px;
-}
-
-.opd_checklist_wrapper thead tr th:nth-child(4)
-{
-    width: 130px;
-}
-
-.opd_checklist_wrapper thead tr th:nth-child(5)
-{
-    width: 130px;
+    width: 160px;
 }
 
 .opd_checklist_wrapper thead tr th:nth-child(6)
 {
     width: 120px;
-}
-
-.opd_checklist_wrapper thead tr th:nth-child(7)
-{
-    width: 100px;
 }
 
 .opd_checklist_wrapper tbody tr
@@ -220,7 +202,9 @@
 {
     text-align: center;
 }
-
+.opd_checklist_wrapper td .ybcommon_counter_item{
+    margin: 0 auto;
+}
 .opd_product_info
 {
     padding: 10px 0;
@@ -287,7 +271,7 @@
 {
     display: block;
 
-    width: 160px;
+    width: 120px;
     margin: 10px auto;
 
     text-align: center;
@@ -1126,6 +1110,7 @@
     padding: 0 18px;
 
     color: #333;
+    overflow: hidden;
 }
 .hr
 {
@@ -1790,4 +1775,246 @@
 .bannertitleedit_wrapper label.error
 {
     float: none;
+}
+.order_details
+{
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.order_details .title
+{
+    line-height: 40px;
+
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+
+    border: 1px solid #e5e5e5;
+    background-color: #eaeaea;
+}
+
+.order_details .title li
+{
+    font-size: 12px;
+
+    display: inline-block;
+
+    margin-right: 25px;
+
+    color: #333;
+}
+
+.order_details .title li:nth-child(3) span
+{
+    color: #3a84c9;
+}
+
+.order_details .title li:last-child
+{
+    float: right;
+
+    margin-right: 0;
+}
+
+.order_details .title li:last-child span
+{
+    font-size: 16px;
+
+    color: #e90000;
+}
+
+.order_details .opd_checklist_wrapper
+{
+    box-sizing: border-box;
+
+    border-top: 1px solid #ddd;
+}
+
+.order_details .opd_checklist_wrapper thead tr
+{
+    width: 100%;
+
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9fafb;
+    background-image: linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 30px);
+}
+
+.order_details .opd_checklist_wrapper thead tr th:nth-child(1)
+{
+    width: 110px;
+}
+
+.order_details .opd_checklist_wrapper thead tr th:nth-child(2)
+{
+    width: 120px;
+}
+
+.order_details .opd_checklist_wrapper thead tr th:nth-child(3),
+.order_details .opd_checklist_wrapper thead tr th:nth-child(4)
+{
+    width: 145px;
+}
+
+.order_details .opd_checklist_wrapper thead tr th:nth-child(5),
+.order_details .opd_checklist_wrapper thead tr th:nth-child(6),
+.order_details .opd_checklist_wrapper thead tr th:nth-child(7)
+{
+    width: 90px;
+}
+
+.order_details .opd_checklist_wrapper td .book span
+{
+    display: block;
+
+    padding: 5px 0;
+}
+
+.order_details .opd_checklist_wrapper td .img span
+{
+    font-size: 28px;
+
+    display: block;
+
+    padding: 5px 0;
+
+    color: #ff696a;
+}
+
+.order_details .opd_checklist_wrapper td .book.photo span
+{
+    font-size: 30px;
+
+    color: #5ec9d3;
+}
+
+.order_details .opd_checklist_wrapper td .book.ia span
+{
+    font-size: 36px;
+
+    color: #70ca5d;
+}
+
+.order_details .opd_product_info .cover
+{
+    width: 90px;
+    height: 115px;
+}
+
+.order_details .opd_sketch_item select
+{
+    width: 100px;
+}
+
+.order_details .opd_actions .share:hover .common_sharelist_wrapper
+{
+    display: block;
+}
+
+.order_info {
+    position: relative;
+    margin-bottom: 25px;
+}
+.order_info > a {
+    font-weight: bold;
+    padding-left: 20px;
+}
+.address_list > label {
+    font-size: 12px;
+    line-height: 30px;
+    display: block;
+    height: 30px;
+    padding-left: 20px;
+}
+.address_list li {
+    display: inline-block;
+    overflow: hidden;
+    min-width: 30px;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.address_list li:first-child {
+    min-width: 22px;
+}
+.address_list .address {
+    width: 39%;
+}
+.address_list .recipients {
+    width: 17%;
+}
+.address_list .mobile {
+    width: 20%;
+}
+.logistics_list > ul > li {
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 20px;
+}
+.logistics_list > ul > li.caption {
+    font-size: 14px;
+}
+.logistics_list li li {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+}
+/*.logistics_list li li:first-child {
+    width: 5%;
+}*/
+.invoice_info {
+    font-size: 14px;
+    width: 500px;
+}
+.invoice .invoice_info li {
+    font-size: 12px;
+    line-height: 25px;
+    height: 25px;
+    padding-left: 20px;
+}
+.coupon div p {
+    font-size: 12px;
+    line-height: 40px;
+    height: 40px;
+    padding-left: 20px;
+}
+.amount_payable div p {
+    font-size: 12px;
+    line-height: 30px;
+    position: relative;
+    height: 30px;
+    padding-left: 20px;
+}
+.amount_payable div p .total_pay {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+}
+.amount_payable .total_pay b {
+    font-size: 18px;
+    color: #db4040;
+}
+.go_pay {
+    font-size: 16px;
+    line-height: 30px;
+    float: right;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #f40;
+}
+.go_pay a {
+    display: block;
+    color: #fff;
+}
+.go_pay a:hover {
+    color: #f80;
 }
