@@ -240,17 +240,20 @@
 
 .opd_sketch_item .size_fig{
     position: relative;
-    margin: 28px auto;
-    width: 68px;
-    height: 102px;
     cursor: default;
 }
 
-.order_details .opd_sketch_item .size_fig{
-    margin: -7px auto 28px;
+.opd_sketch_item .size_fig.min{
+    margin: 20px auto;
+    width: 101px;
+    height: 119px;
 }
 
-.size_fig .vertical{
+.order_details .opd_sketch_item .size_fig{
+    margin: 0 auto;
+}
+
+/*.size_fig .vertical{
     bottom: -1px;
     right: -68px;
 }
@@ -267,7 +270,7 @@
     bottom: -15px;
 }
 
-/*.size_fig .horizonal p{
+.size_fig .horizonal p{
     position: absolute;
     top: -15px;
     width: 100%;
@@ -276,11 +279,11 @@
 .opd_sketch_item .size_fig img
 {
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 0;
     margin: 0;
-    width: 68px;
-    height: 102px;
+    width: 100%;
+    height: 100%;
     border-radius: 0;
     border: 0;
 }
