@@ -91,9 +91,10 @@
                 <table>
                     <thead>
                     <tr>
-                        <th>商品信息</th>
-                        <th>规格材质</th>
-                        <th>尺寸大小</th>
+                        <th>尺寸选择</th>
+                        <th>封面材质</th>
+                        <th>装订工艺</th>
+                        <th>皮样颜色</th>
                         <th>内页数量</th>
                         <th>单价</th>
                         <th>下单数量</th>
@@ -104,25 +105,68 @@
                     <tbody>
                     <tr>
                         <td>
-                            <div class="opd_product_info">
-                                <h5>《<span>祥云阁菜谱</span>》</h5>
-                                <div class="cover"><img src="img/sample/cookbook_01.jpg"></div><!--<a class="change_book" href="javascript:;">更换模板</a>-->
+                            <div class='opd_sketch_item'>
+                                <select>
+                                    <option val='1'>B3尺寸</option>
+                                    <option val='2'>B3尺寸</option>
+                                </select>
+                                <div class="size_fig">
+                                    <img src="img/order/size_diagram.png">
+                                    <ul class="common_shtagging_wrapper">
+                                        <li class="vertical">
+                                            <span></span>
+                                            <p>370mm</p>
+                                        </li>
+                                        <li class="horizonal">
+                                            <span></span>
+                                            <p>250mm</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </td>
                         <td>
                             <div class='opd_sketch_item'>
                                 <select>
-                                    <option val='1'>外钉PVC油边 普通尺寸</option>
-                                    <option val='2'>外钉PVC油边 普通尺寸</option>
+                                    <option val='1'>纸面</option>
+                                    <option val='2'>软皮封面</option>
+                                    <option val='2'>硬壳封面</option>
                                 </select>
-                                <img src="img/sample/material_01.jpg">
+                                <div class="cover_fig">
+                                    <img src="img/sample/material_01.jpg">
+                                </div>
                                 <!--示例图待提供-->
-                                <label>材质实例图
+                                <label>封面实例图
+                                    <div class='ybcommon_queryicon_item'>
+                                        <span class='ybiconfont ybicon-querysolid'></span>
+                                        <div>
+                                            <p>纸面</p>
+                                            <a class='ybcommon_qimoredetail_btn' href="javascript:;" target='_blank'>查看详情</a>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class='opd_sketch_item binding'>
+                                <select>
+                                    <option val='1'>分体外铜钉</option>
+                                    <option val='2'>分体内铜钉</option>
+                                    <option val='3'>连体外铜钉</option>
+                                    <option val='4'>连体内铜钉</option>
+                                    <option val='5'>连体仿古线</option>
+                                    <option val='6'>分体仿古线</option>
+                                </select>
+                                <div class="binding_fig">
+                                    <img src="img/sample/material_01.jpg">
+                                </div>
+                                <!--示例图待提供-->
+                                <label>装订实例图
                                     <div class='ybcommon_queryicon_item'>
                                         <span class='ybiconfont ybicon-querysolid'></span>
                                         <div>
                                             <p>
-                                                外钉PVC油边 普通尺寸
+                                                分体外铜钉
                                             </p>
                                             <a class='ybcommon_qimoredetail_btn' href="javascript:;" target='_blank'>查看详情</a>
                                         </div>
@@ -133,16 +177,25 @@
                         <td>
                             <div class='opd_sketch_item'>
                                 <select>
-                                    <option val='1'>外钉PVC油边 普通尺寸</option>
-                                    <option val='2'>外钉PVC油边 普通尺寸</option>
+                                    <option val='1'>葵花纹-红</option>
+                                    <option val='1'>葵花纹-蓝</option>
+                                    <option val='1'>葵花纹-土黄</option>
+                                    <option val='1'>篮球纹-酒红</option>
+                                    <option val='1'>篮球纹-灰</option>
+                                    <option val='1'>石子纹-咖啡</option>
+                                    <option val='1'>石子纹-蓝</option>
+                                    <option val='1'>石子纹-灰</option>
+                                    <option val='1'>石子纹-黄</option>
                                 </select>
-                                <img src="img/sample/material_01.jpg">
-                                <label>材质实例图
+                                <div class="pattern_fig">
+                                    <img src="img/makebook/dictionary/L01/L01001/0.jpg">
+                                </div>
+                                <label>皮样实例图
                                     <div class='ybcommon_queryicon_item'>
                                         <span class='ybiconfont ybicon-querysolid'></span>
                                         <div>
                                             <p>
-                                                外钉PVC油边 普通尺寸
+                                                葵花纹-红
                                             </p>
                                             <a class='ybcommon_qimoredetail_btn' href="javascript:;" target='_blank'>查看详情</a>
                                         </div>
@@ -152,7 +205,7 @@
                         </td>
                         <td>
                             <div>20P</div>
-                            <div>36张</div>
+                            <!--<div>36张</div>-->
                         </td>
                         <td class='opd_unitprice_item'>
                             ￥38.00
@@ -371,18 +424,24 @@
         $('.opd_sketch_item select').change(function() {
             $this = $(this);
             switch ($this.closest('td').index()) {
+                case 0:
+                    break;
                 case 1:
                     var selected = $this.find('option:selected'),
                             relatedImgEl = $this.parent().find('img'),
                             realterTextEl = $this.parent().find('.ybcommon_queryicon_item div p');
                     switch (selected.val()) {
-                        case '外钉PVC油边 普通尺寸':
-                            relatedImgEl.attr('src', 'img/default/material_01.jpg');
-                            realterTextEl.text('外钉PVC油边 普通尺寸');
+                        case '纸面':
+                            relatedImgEl.attr('src', 'img/sample/material_01.jpg');
+                            realterTextEl.text('纸面');
                             break;
-                        case '外钉PVC油边 普通尺寸':
-                            relatedImgEl.attr('src', 'img/default/material_01.jpg');
-                            realterTextEl.text('外钉PVC油边 普通尺寸');
+                        case '软皮封面':
+                            relatedImgEl.attr('src', 'img/sample/material_01.jpg');
+                            realterTextEl.text('软皮封面');
+                            break;
+                        case '硬壳封面':
+                            relatedImgEl.attr('src', 'img/sample/material_01.jpg');
+                            realterTextEl.text('硬壳封面');
                             break;
                     }
                     break;

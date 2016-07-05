@@ -178,14 +178,15 @@
 
     color: #333;
     border: 0;
-    width: 100px;
+    width: 95px;
 }
 
 .opd_checklist_wrapper thead tr th:nth-child(1),
 .opd_checklist_wrapper thead tr th:nth-child(2),
-.opd_checklist_wrapper thead tr th:nth-child(3)
+.opd_checklist_wrapper thead tr th:nth-child(3),
+.opd_checklist_wrapper thead tr th:nth-child(4)
 {
-    width: 160px;
+    width: 125px;
 }
 
 .opd_checklist_wrapper thead tr th:nth-child(6)
@@ -195,6 +196,7 @@
 
 .opd_checklist_wrapper tbody tr
 {
+    background-color: #f8fdf5;
     border-bottom: 1px solid #ddd;
 }
 
@@ -210,58 +212,6 @@
     padding: 10px 0;
 }
 
-.opd_product_info h5
-{
-    font-size: 12px;
-
-    margin: 10px auto;
-
-    color: #333;
-}
-
-.opd_product_info .cover
-{
-    line-height: 125px;
-
-    width: 100px;
-    height: 125px;
-    margin: 28px auto;
-    padding: 4px;
-
-    border: 1px solid #ccc;
-    background-color: #fff;
-}
-
-.opd_product_info .cover img
-{
-    width: 100%;
-    height: 100%;
-}
-
-.opd_product_info a
-{
-    font-size: 12px;
-    line-height: 20px;
-
-    display: block;
-
-    width: 60px;
-    height: 22px;
-    margin: 10px auto;
-
-    text-align: center;
-
-    color: #666;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.opd_product_info a:hover
-{
-    color: #fff;
-    background-color: #00a388;
-}
-
 .opd_sketch_item
 {
     padding: 10px 0;
@@ -271,7 +221,7 @@
 {
     display: block;
 
-    width: 120px;
+    width: 90px;
     margin: 10px auto;
 
     text-align: center;
@@ -279,12 +229,68 @@
 
 .opd_sketch_item img
 {
-    width: 106px;
-    height: 106px;
+    width: 86px;
+    height: 86px;
     margin: 16px auto;
 
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.opd_sketch_item .size_fig{
+    position: relative;
+    margin: 28px auto;
+    width: 68px;
+    height: 102px;
+    cursor: default;
+}
+
+.order_details .opd_sketch_item .size_fig{
+    margin: -7px auto 28px;
+}
+
+.size_fig .vertical{
+    bottom: -1px;
+    right: -68px;
+}
+.size_fig .vertical p{
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 32px;
+    min-width: initial;
+    margin-top: -16px;
+}
+
+.size_fig .horizonal{
+    bottom: -15px;
+}
+
+/*.size_fig .horizonal p{
+    position: absolute;
+    top: -15px;
+    width: 100%;
+}*/
+
+.opd_sketch_item .size_fig img
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 68px;
+    height: 102px;
+    border-radius: 0;
+    border: 0;
+}
+
+.opd_sketch_item .pattern_fig img{
+    margin: 21px auto;
+    width: 75px;
+    height: 75px;
+    border: 0;
+    border-radius: 0;
 }
 
 .opd_sketch_item label
@@ -293,7 +299,7 @@
 
     display: block;
 
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
 
     text-align: center;
 
