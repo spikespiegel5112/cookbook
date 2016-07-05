@@ -66,7 +66,7 @@
 .yc_index_con .nth1 .con p,
 .yc_index_con .nth1 .con span
 {
-    background: url('../img/yc_words.png') no-repeat;
+    background: url('../img/index/yc_words.png') no-repeat;
     background-size: cover;
 }
 
@@ -197,7 +197,8 @@
     line-height: 60px;
 
     width: 212px;
-    height: 60px;
+    height: 60px;
+
     margin: 0;
 
     border-radius: 16px;
@@ -697,7 +698,8 @@ li:hover span.cr
 
     overflow: hidden;
 
-    max-width: 100%;
+    max-width: 100%;
+
     margin-top: 64px;
     margin-bottom: 10px;
 
