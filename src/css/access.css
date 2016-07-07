@@ -37,15 +37,19 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.access_reset_wrapper{
+.access_reset_wrapper
+{
     position: relative;
     z-index: 1;
+
     margin: 0 auto;
+
     border: 1px solid #ccc;
     border-radius: 6px;
     background: #fff;
 }
-.access_reset_wrapper{
+.access_reset_wrapper
+{
     width: 730px;
 }
 .verticalalgin_container
@@ -198,97 +202,131 @@
 
     width: 100%;
 }
-.access_resetstep_wrapper{
+.access_resetstep_wrapper
+{
+    font-size: 0;
+
+    width: 100%;
     margin: 0 auto;
-    width: 100%;
+
     text-align: center;
+}
+.access_resetstep_wrapper ul
+{
     font-size: 0;
 }
-.access_resetstep_wrapper ul{
+.access_resetstep_wrapper li
+{
     font-size: 0;
-}
-.access_resetstep_wrapper li{
+
+    position: relative;
+
     display: inline-block;
+
     width: 30%;
     height: 35px;
-    background-color: #efefef;
+
     text-align: center;
-    position: relative;
-    font-size: 0;
+
+    background-color: #efefef;
 }
-.access_resetstep_wrapper li div{
+.access_resetstep_wrapper li div
+{
     position: absolute;
-    right: -15px;
+    z-index: 1;
     top: 0;
+    right: -15px;
+
     width: 0;
     height: 0;
-    border-style: solid;
+
     border-width: 18px 0 18px 15px;
+    border-style: solid;
     border-color: transparent transparent transparent #fff;
-    z-index: 1;
 }
 
-.access_resetstep_wrapper li div i{
-    content: '';
+.access_resetstep_wrapper li div i
+{
+    position: absolute;
+    top: -18px;
+    right: 2px;
+
     display: block;
+
     width: 0;
     height: 0;
-    position: absolute;
-    right: 2px;
-    top: -18px;
-    border-style: solid;
+
+    content: '';
+
     border-width: 18px 0 18px 15px;
+    border-style: solid;
     border-color: transparent transparent transparent #efefef;
 }
-.access_resetstep_wrapper .active div i{
+.access_resetstep_wrapper .active div i
+{
     border-color: transparent transparent transparent #dcefc4;
 }
-.access_resetstep_wrapper .active{
+.access_resetstep_wrapper .active
+{
     background-color: #dcefc4;
-    
 }
-.access_resetstep_wrapper .active label{
+.access_resetstep_wrapper .active label
+{
     color: #000;
 }
-.access_resetstep_wrapper li span{
+.access_resetstep_wrapper li span
+{
+    font-size: 14px;
+
     display: inline-block;
-    margin: 0 5px;
+
     width: 20px;
     height: 20px;
-    background-color: #ababab;
+    margin: 0 5px;
+
+    vertical-align: middle;
+
     color: #efefef;
     border-radius: 50%;
-    vertical-align: middle;
-    font-size: 14px;
+    background-color: #ababab;
 }
-.access_resetstep_wrapper .active span{
-    background-color: #79bd8f;
+.access_resetstep_wrapper .active span
+{
     color: #fff;
+    background-color: #79bd8f;
 }
-.access_resetstep_wrapper li label{
-    display: inline-block;
-    color: #ccc;
+.access_resetstep_wrapper li label
+{
     font-size: 15px;
     line-height: 35px;
+
+    display: inline-block;
+
     vertical-align: middle;
+
+    color: #ccc;
 }
-.access_resetstep_wrapper .active label{
+.access_resetstep_wrapper .active label
+{
     color: #00a388;
 }
-.access_resetform_wrapper{
-    margin: 0 auto;
+.access_resetform_wrapper
+{
     width: 70%;
+    margin: 0 auto;
 }
-.access_resetpwhint_wrapper{
-    margin: 15px auto 0;
+.access_resetpwhint_wrapper
+{
     width: 200px;
-    
+    margin: 15px auto 0;
 }
-.access_resetpwhint_wrapper p{
+.access_resetpwhint_wrapper p
+{
     font-size: 13px;
     line-height: 37px;
 }
-.access_resetpwhint_wrapper p strong{
+.access_resetpwhint_wrapper p strong
+{
     font-weight: bold;
 }
 .login_from
@@ -1205,52 +1243,74 @@ li.method
 }
 
 /*~~~~~~~~~~access_404_container~~~~~~~~~~*/
-.access_404_container{
-    padding: 30px 0 0 0;
-    background-color: #f5f5f5;
+.access_404_container
+{
     overflow: hidden;
+
+    padding: 30px 0 0 0;
+
+    background-color: #f5f5f5;
 }
-.access_404_wrapper{
+.access_404_wrapper
+{
+    width: 1200px;
     margin: 0 auto;
     padding: 30px 0;
-    width: 1200px;
 }
-.access_404content_wrapper{
+.access_404content_wrapper
+{
     margin: 0 0 150px 0;
+
     text-align: center;
 }
-.access_404content_wrapper h6{
-    margin: 0 0 20px 0;
-    font-size: 85px;
-    color: #475059;
-    font-weight: bold;
+.access_404content_wrapper h6
+{
     font-family: 'simhei';
+    font-size: 85px;
+    font-weight: bold;
+
+    margin: 0 0 20px 0;
+
     letter-spacing: 5px;
+
+    color: #475059;
 }
-.access_404content_wrapper ul li{
+.access_404content_wrapper ul li
+{
     display: inline-block;
+
     margin: 0 30px;
+
     color: #475059;
 }
-.access_404content_wrapper p{
+.access_404content_wrapper p
+{
     color: #475059;
 }
-.access_404content_wrapper .main{
+.access_404content_wrapper .main
+{
     font-size: 18px;
 }
-.access_404content_wrapper .hint{
+.access_404content_wrapper .hint
+{
+    font-size: 14px;
+
     margin: 30px 0;
-    font-size: 14px;
 }
-.access_404content_wrapper ul li a{
-    color: #00a388;
+.access_404content_wrapper ul li a
+{
     font-size: 14px;
+
     text-decoration: underline;
+
+    color: #00a388;
 }
-.access_404content_wrapper ul li a:hover{
+.access_404content_wrapper ul li a:hover
+{
     color: #f40;
 }
-.access_404_wrapper .common_ilustri_item{
+.access_404_wrapper .common_ilustri_item
+{
     padding: 40px 0 0 0;
 }
 

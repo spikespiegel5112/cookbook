@@ -1,101 +1,136 @@
-@media (min-width:768px) and (orientation: portrait) {
-
+@media (min-width:768px) and (orientation: portrait)
+{
 }
-@media (max-width:1024px) {
-    label.error, div.error {
+@media (max-width:1024px)
+{
+    label.error, div.error
+    {
         font-size: .4rem!important;
     }
-    .transition_btn {
+    .transition_btn
+    {
         transition: background-color .4s;
     }
-    .access_logininner_container {
+    .access_logininner_container
+    {
         width: 100%;
     }
-    .common_login_wrapper {
+    .common_login_wrapper
+    {
         width: 15.5rem;
     }
-    .common_loginbtn_item {
+    .common_loginbtn_item
+    {
         font-size: .5rem;
         line-height: 1.5rem;
+
         height: 1.5rem;
         margin: .5rem auto;
     }
-    .common_logincheckbox_wrapper li {
+    .common_logincheckbox_wrapper li
+    {
         margin: 0 .2rem;
     }
-    .common_logininput_wrapper li {
+    .common_logininput_wrapper li
+    {
         height: 2.4rem;
         margin: .8rem 0 0 0;
     }
-    .common_logincheckbox_wrapper a {
+    .common_logincheckbox_wrapper a
+    {
         font-size: .4rem;
     }
-    .common_logininput_wrapper .input_item {
+    .common_logininput_wrapper .input_item
+    {
         font-size: .6rem;
+
         width: 100%;
+
         background-color: rgba(255, 255, 255, 0);
     }
-    .common_login_wrapper .common_logininput_wrapper .input_item input{
-        padding: 0 0 0 2rem;
+    .common_login_wrapper .common_logininput_wrapper .input_item input
+    {
         height: 1.5rem;
+        padding: 0 0 0 2rem;
     }
-    .common_logininput_wrapper .input_item input {
+    .common_logininput_wrapper .input_item input
+    {
         font-size: .6rem;
+
         width: 100%;
         height: 1.5rem;
         padding: 0 0 0 2rem;
+
         background-color: rgba(255, 255, 255, 0);
     }
-    .common_logininput_wrapper span {
+    .common_logininput_wrapper span
+    {
         font-size: 1rem;
-        height: 1.5rem;
         line-height: 1.5rem;
+
         width: 2rem;
+        height: 1.5rem;
     }
-    .common_loginheader_wrapper div {
+    .common_loginheader_wrapper div
+    {
         height: 2rem;
     }
-    .common_loginheader_wrapper div span {
+    .common_loginheader_wrapper div span
+    {
         font-size: 2rem;
     }
-    .common_loginheader_wrapper div label {
+    .common_loginheader_wrapper div label
+    {
         font-size: .6rem;
     }
-    .common_logincheckbox_wrapper label {
+    .common_logincheckbox_wrapper label
+    {
         font-size: .4rem;
     }
-    .access_ssologin_wrapper {
+    .access_ssologin_wrapper
+    {
         height: 2.7rem;
     }
-    .access_ssologin_wrapper div, .common_triplelap_wrapper span {
+    .access_ssologin_wrapper div, .common_triplelap_wrapper span
+    {
         margin: 0 auto;
     }
-    .access_ssologin_wrapper div {
+    .access_ssologin_wrapper div
+    {
         width: 60%;
         padding: .2rem 0;
+
         background: none;
     }
     /*.common_triplelap_wrapper span {
         background-color: rgba(255, 255, 255, .8);
     }*/
-    .access_ssologin_wrapper p {
+    .access_ssologin_wrapper p
+    {
         font-size: .4rem;
+
         margin: .3rem 0;
     }
-    .access_ssologin_wrapper ul {
+    .access_ssologin_wrapper ul
+    {
         width: 100%;
     }
-    .access_ssologin_wrapper ul li a span {
+    .access_ssologin_wrapper ul li a span
+    {
         font-size: .9rem;
         line-height: 1.5rem;
+
         width: 1.5rem;
         height: 1.5rem;
     }
-    .common_loginproviso_item {
+    .common_loginproviso_item
+    {
         font-size: .4rem;
+
         margin: .5rem 0;
     }
-    .common_loginproviso_item a {
+    .common_loginproviso_item a
+    {
         font-size: .4rem;
     }
     /*.common_triplelap_wrapper{
@@ -108,6 +143,6 @@
         bottom: 0.7rem;
     }*/
 }
-@media (max-height:900px) {
-   
+@media (max-height:900px)
+{
 }
