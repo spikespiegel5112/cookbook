@@ -1252,6 +1252,16 @@
 			<a class="cm_btn cancel" href="javascript:;">取消</a>
 		</div>
 	</div>
+	<!--编辑分类名称-->
+	<div class='title_edit_wrapper hidden'>
+		<ul>
+			<li>
+				<label>分类名称：</label>
+				<input type='text'>
+				<label class="error">请输入分类名称。</label>
+			</li>
+		</ul>
+	</div>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
 <script type="text/javascript">
@@ -1435,6 +1445,19 @@
 				}
 			});
 		});
+
+		//编辑分类名称
+		$('.menu_list section .edit').click(function(){
+			art.dialog({
+				title: "编辑分类名称",
+				lock: true,
+				content: document.querySelector('.title_edit_wrapper'),
+				okVal: "确定",
+				ok:function(){},
+				cancelVal: "取消",
+				cancel: function(){}
+			})
+		})
 	}
 
 	function quickSort(){

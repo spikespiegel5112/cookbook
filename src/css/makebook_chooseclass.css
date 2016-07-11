@@ -592,6 +592,30 @@
     color: #79bd8f;
 }
 
+.title_edit_wrapper li {
+    margin: .2em;
+}
+
+.title_edit_wrapper label {
+    line-height: 2em;
+    float: left;
+    min-width: 5em;
+}
+
+.title_edit_wrapper label.error {
+    float: none;
+}
+
+.title_edit_wrapper input {
+    font-size: 15px;
+    line-height: 30px;
+    width: 200px;
+    height: 30px;
+    padding: 0 6px;
+    color: #555;
+    border: 1px solid #ccc;
+}
+
 .menu_list_wrap .header
 {
     line-height: 30px;
@@ -3985,4 +4009,32 @@
 .tpl_slide_wrap .tpl_list .next:hover
 {
     color: #666;
+}
+
+.edit_group {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    color: #fff;
+}
+
+.edit_group .pull_down {
+    position: absolute;
+    top: 15px;
+    left: 195px;
+    width: 18px;
+    padding-bottom: 3px;
+    text-align: center;
+    opacity: .7;
+    border-radius: 4px;
+    background-color: #3c3c3c;
+}
+
+.sortable-bg
+{
+    height: 205px;
+
+    border: 2px dashed #eee;
+    background-color: #ffe45c;
 }
