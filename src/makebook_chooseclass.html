@@ -1312,7 +1312,7 @@
 			$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
 		});
 
-		classNav.find('.prev').click(function(){
+		classNav.find('.next').click(function(){
 			var prev = $('.classes li.active');
 			if(!(prev.next().length == '0')){
 				var cur = prev.next(),
@@ -1335,7 +1335,7 @@
 			classNav.find('ul').css({'transform':'translateX('+left+'px'});
 		});
 
-		classNav.find('.next').click(function(){
+		classNav.find('.prev').click(function(){
 			var next = $('.classes li.active');
 			if(!(next.prev().length == '0')){
 				var cur = next.prev(),
