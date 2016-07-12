@@ -564,13 +564,15 @@
     padding: 0 26px 0 88px;
     white-space: nowrap;
     box-sizing: border-box;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .class_nav .classes li{
     float: left;
     margin-top: 3px;
-    width: 65px;
+    min-width: 65px;
+    width: auto;
+    padding: 0 12px;
     text-align: center;
     font-size: 14px;
     color: #666;
@@ -579,6 +581,10 @@
     border-radius: 4px 4px 0 0;
     box-sizing: border-box;
     cursor: pointer;
+}
+
+.edit_space_pop .class_nav .classes li{
+    min-width: 62.2px;
 }
 
 .class_nav .classes li.active{
