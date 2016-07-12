@@ -1740,7 +1740,7 @@
 
     float: left;
 
-    padding: 0 10px 0 45px;
+    padding: 0 8px 0 12px;
 
     color: #999;
 }
@@ -1767,7 +1767,7 @@
 
     float: left;
 
-    margin: 0 5px;
+    margin: 0 8px;
 }
 
 .min_screen .edit_tool_bar .actions li
@@ -1830,6 +1830,11 @@
 {
     font-size: 33px;
 
+    vertical-align: middle;
+}
+
+.edit_tool_bar .actions li .save i{
+    font-size: 26px;
     vertical-align: middle;
 }
 
@@ -2005,8 +2010,9 @@
     left: 0;
 
     width: 100%;
-
+    padding: 0 240px 0 662px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .min_screen .edit_tool_bar .view_mode
@@ -2014,6 +2020,7 @@
     /*position: relative;
     float: left;*/
     top: 0;
+    padding: 0 240px 0 460px;
     /*width: auto;
     margin-left: 10px;*/
 }
@@ -2043,8 +2050,9 @@
     text-align: center;
     vertical-align: middle;
 
-    color: #fff;
-    background-color: #586e6a;
+    color: #00a388;
+    background-color: transparent;
+    box-shadow: inset 0 0 8px rgba(120, 120, 120, .6);
 }
 
 .edit_tool_bar .view_mode .to_list
@@ -2060,9 +2068,8 @@
 .edit_tool_bar .view_mode .btn:hover,
 .edit_tool_bar .view_mode .btn.active
 {
-    color: #00a388;
-    background-color: transparent;
-    box-shadow: inset 0 0 8px rgba(120, 120, 120, .6);
+    color: #fff;
+    background-color: #586e6a;
 }
 
 .edit_tool_bar .right
@@ -2667,6 +2674,11 @@
     color: #333;
 }
 
+.category .food_list li.join .con{
+    color: #00a388;
+    font-weight: bold;
+}
+
 .category .food_list .con .name
 {
     font-size: 14px;
@@ -2691,6 +2703,10 @@
     display: none;
 
     color: #ccc;
+}
+
+.category .food_list li.join .warn{
+    display: block;
 }
 
 .category .food_list .move
@@ -3992,6 +4008,7 @@
     float: left;
 
     width: 180px;
+    height: 160px;
     margin: 0;
 
     transition: all .35s ease-in-out;
