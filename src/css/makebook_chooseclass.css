@@ -4164,3 +4164,33 @@
     min-width: 30px;
     height: 20px;
 }
+
+.drag_con {
+    font-size: 14px!important;
+    line-height: 25px;
+    z-index: 50000;
+    width: 160px!important;
+    height: auto!important;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 1!important;
+    color: #666!important;
+    background: rgba(255,255,255,.8)!important;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.drag_con img {
+    display: block;
+    width: 100px!important;
+    height: auto!important;
+    margin: 5px auto!important;
+}
+
+.drag_con p{
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
