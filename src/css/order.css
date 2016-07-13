@@ -389,7 +389,9 @@
 
     margin-bottom: 10px;
 }
-
+.personal_content_box .coupon .opd_coupon_wrapper label {
+    display: inline;
+}
 .opd_coupon_wrapper select
 {
     width: 225px;
@@ -1106,7 +1108,7 @@
     color: #00a388;
 }
 /*my orders list*/
-.personal_content_box
+.order_manage .personal_content_box
 {
     font-size: 14px;
 
@@ -1260,7 +1262,7 @@
     display: block;
 
     box-sizing: border-box;
-    width: 50px;
+    width: 75px;
     margin: 10px auto;
 
     color: #00a388;
@@ -1933,6 +1935,20 @@
     font-weight: bold;
     padding-left: 20px;
 }
+.receive_address .edit_icon_group {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: inline-block;
+}
+.edit_icon_group .new_address {
+    font-size: 14px;
+    color: #999;
+}
+.edit_icon_group .new_address b{
+    font-size: 14px;
+    margin-right: 5px;
+}
 .address_list > label {
     font-size: 12px;
     line-height: 30px;
@@ -1959,6 +1975,81 @@
 }
 .address_list .mobile {
     width: 20%;
+}
+.address_list .edit,
+.address_list .delete,
+.address_list .default,
+.address_list .set_default{
+    float: right;
+}
+.address_list .edit a,
+.address_list .delete a
+{
+    margin-right: 15px;
+    font-size: 12px;
+
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+
+    width: 30px;
+
+    color: #999;
+}
+.address_list .set_default a
+{
+    margin-right: 15px;
+    font-size: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    box-sizing: border-box;
+    width: 60px;
+
+    text-align: center;
+
+    color: #f60;
+}
+
+.address_list label:hover
+{
+    background-color: #fff;
+}
+
+.address_list label:hover .edit a,
+.address_list label:hover .delete a,
+.address_list label:hover .set_default a
+{
+    /*display: block;*/
+    opacity: 1;
+    visibility: visible;
+}
+
+.address_list .edit a:hover,
+.address_list .delete a:hover,
+.address_list .set_default a:hover
+{
+    color: #333;
+}
+
+.address_list .default a
+{
+    margin-right: 15px;
+    font-weight: bold;
+
+    box-sizing: border-box;
+    width: 60px;
+    padding: 0 4px;
+
+    cursor: default;
+
+    color: #f5a8a8 ;
+    border: 2px solid #f5a8a8;
+    border-radius: 2px;
+}
+.logistics_list li li:first-child {
+    width: 5%;
 }
 .logistics_list > ul > li {
     font-size: 12px;
@@ -1992,6 +2083,101 @@
     line-height: 40px;
     height: 40px;
     padding-left: 20px;
+}
+.invoice label {
+    font-size: 12px;
+    padding: 0 20px;
+}
+.invoice label div {
+    margin-right: 25px;
+}
+.invoice_info
+{
+    font-size: 14px;
+
+    width: 500px;
+}
+
+.invoice_info .hd
+{
+    height: 40px;
+    padding: 0;
+
+    border-bottom: 2px solid #427d38;
+}
+
+.invoice_info .hd ul
+{
+    position: relative;
+    left: 0;
+
+    height: 40px!important;
+}
+
+.invoice_info .hd li
+{
+    line-height: 40px!important;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 120px;
+    height: 40px!important;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #999;
+    border: 1px solid #ddd!important;
+    border-bottom: none!important;
+    background-color: #fff!important;
+}
+
+.invoice_info .hd li.on
+{
+    color: #fff!important;
+    border: none!important;
+    border-top: 1px solid #ddd!important;
+    background-color: #519247!important;
+}
+
+.invoice_info .bd
+{
+    padding: 15px 0;
+}
+
+.invoice_info .bd li
+{
+    line-height: 35px;
+
+    height: 35px;
+}
+
+.invoice_info .bd .form-control
+{
+    display: inline-block;
+
+    width: 230px;
+    height: 28px;
+}
+
+.invoice_info .bd li span
+{
+    display: inline-block;
+
+    width: 110px;
+
+    text-align: right;
+}
+
+.invoice_info .bd li span b
+{
+    color: #f00;
+}
+
+.invoice_info .bd li div
+{
+    margin-right: 5px;
 }
 .amount_payable div p {
     font-size: 12px;

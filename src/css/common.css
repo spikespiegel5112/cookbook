@@ -408,6 +408,7 @@ label.error, div.error
     position: absolute;
     top: 22px;
     left: 15px;
+    z-index: 1;
 }
 .main_nav .header_con .logo img
 {

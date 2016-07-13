@@ -9,8 +9,9 @@
 	<meta name="author" content="">
 	<meta name="keywords" content="">
 	<title>菜谱易-选菜品</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1466673011_0953794.css" type="text/css" media="all">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1468313335_437068.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/swiper.min.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -272,19 +273,44 @@
 						<h3 class="caption">菜品列表: </h3>
 						<a class="new_class" href="javascript:;"><i class="ybiconfont ybicon-add2"></i>新增分类</a>
 					</div>
-					<div class="header">
-						<ul>
-							<li>配图</li>
-							<li>菜名</li>
-							<li>价格</li>
-							<li>操作</li>
-						</ul>
+					<!--分类 导航-->
+					<div class="class_nav">
+						<label>分类：</label>
+						<a class="ybiconfont ybicon-backward2 prev" href="javascript:;"></a>
+						<div class="classes">
+							<div class="swiper-container">
+								<ul class="swiper-wrapper">
+									<li class="active swiper-slide" data-type="specialty">招牌菜</li>
+									<li class="swiper-slide" data-type="cold">凉菜</li>
+									<li class="swiper-slide" data-type="lucai">卤菜</li>
+									<li class="swiper-slide" data-type="xiaochao">小炒</li>
+									<li class="swiper-slide" data-type="iron-plate">铁板</li>
+									<li class="swiper-slide" data-type="pot">锅仔</li>
+									<li class="swiper-slide" data-type="staple">主食</li>
+									<li class="swiper-slide" data-type="drinks">酒水</li>
+									<li class="swiper-slide" data-type="tea">茶水</li>
+									<li class="swiper-slide" data-type="other">……</li>
+									<li class="swiper-slide" data-type="other1">……</li>
+								</ul>
+							</div>
+						</div>
+						<a class="ybiconfont ybicon-forward2 next" href="javascript:;"></a>
 					</div>
 					<div class="menu_list">
-						<section>
+						<section class="active" data-type="specialty">
 							<div class="sign"></div>
 							<h3 class="caption">招牌菜</h3>
-							<a class="new_food" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
 							<div class="food_list">
 								<table>
 									<tr>
@@ -338,11 +364,721 @@
 											</div>
 										</td>
 									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
 								</table>
 							</div>
 						</section>
-						<section>
-							<h3 class="caption">无分类</h3>
+						<section class="" data-type="cold">
+							<div class="sign"></div>
+							<h3 class="caption">凉菜</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="lucai">
+							<div class="sign"></div>
+							<h3 class="caption">卤菜</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="xiaochao">
+							<div class="sign"></div>
+							<h3 class="caption">小炒</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="iron-plate">
+							<div class="sign"></div>
+							<h3 class="caption">铁板</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="pot">
+							<div class="sign"></div>
+							<h3 class="caption">锅仔</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="staple">
+							<div class="sign"></div>
+							<h3 class="caption">主食</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="drinks">
+							<div class="sign"></div>
+							<h3 class="caption">酒水</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="tea">
+							<div class="sign"></div>
+							<h3 class="caption">茶水</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="other">
+							<div class="sign"></div>
+							<h3 class="caption">其他</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="food_list">
+								<table>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/sjccx.jpg">
+											</div>
+										</td>
+										<td><p class="name">什锦串串香</p></td>
+										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="figure">
+												<img src="img/sample/food/ddbcj.jpg">
+											</div>
+										</td>
+										<td><p class="name">大东北菜卷</p></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
+										<td>
+											<div class="actions">
+												<a class="edit" href="javascript:;">编辑</a>
+												<a class="delete" href="javascript:;">删除</a>
+												<a class="cancel" href="javascript:;">取消</a>
+												<a class="ok" href="javascript:;">确认</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<section class="" data-type="other1">
+							<div class="sign"></div>
+							<h3 class="caption">其他</h3>
+							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
+							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
+							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+							<div class="header">
+								<ul>
+									<li>配图</li>
+									<li>菜名</li>
+									<li>价格</li>
+									<li>操作</li>
+								</ul>
+							</div>
 							<div class="food_list">
 								<table>
 									<tr>
@@ -590,12 +1326,24 @@
 			<a class="cm_btn cancel" href="javascript:;">取消</a>
 		</div>
 	</div>
+	<!--编辑分类名称-->
+	<div class='title_edit_wrapper hidden'>
+		<ul>
+			<li>
+				<label>分类名称：</label>
+				<input type='text'>
+				<label class="error">请输入分类名称。</label>
+			</li>
+		</ul>
+	</div>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
+<script type="text/javascript" src="assets/js/swiper.jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		chooseMenuClass();
 		chooseMenuClassPops();
+		dishListSwitchTab();
 	});
 
 	//选择菜品
@@ -634,6 +1382,111 @@
 				input.val(newVal).attr('placeholder','').closest('tr').removeClass('active');
 			});
 		});
+	}
+
+	function dishListSwitchTab(){
+		var swiperTab = new Swiper('.classes .swiper-container',{
+			slidesPerView:"auto",
+			prevButton:'.class_nav .prev',
+			nextButton:'.class_nav .next',
+			onInit: function(){
+				var classNav = $('.class_nav'),
+						tab = classNav.find('li');
+
+				tab.click(function(){
+					var type = $(this).attr('data-type');
+					$('.classes li').removeClass('active');
+					$(this).addClass('active');
+					$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
+				});
+			},
+			onSlideNextEnd: function(swiper){
+				var cur = $('.classes li.active').next();
+				if(!(cur.length == '0')){
+					var curIndex = cur.index(),
+							type =cur.attr('data-type');
+				}else{
+					return
+				}
+
+				$('.classes li').removeClass('active');
+				cur.addClass('active');
+				$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
+			},
+			onSlidePrevEnd: function(){
+				var cur = $('.classes li.active').prev();
+				if(!(cur.length == '0')){
+					var curIndex = cur.index(),
+							type =cur.attr('data-type');
+				}else{
+					return
+				}
+
+				$('.classes li').removeClass('active');
+				cur.addClass('active');
+				$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
+			}
+
+		});
+
+		/*var classNav = $('.class_nav'),
+				tab = classNav.find('li'),
+				classWidth = tab.length*65;
+		classNav.find('ul').width(classWidth);
+
+		tab.click(function(){
+			var type = $(this).attr('data-type');
+			$('.classes li').removeClass('active');
+			$(this).addClass('active');
+			$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
+		});
+
+		classNav.find('.next').click(function(){
+			var prev = $('.classes li.active');
+			if(!(prev.next().length == '0')){
+				var cur = prev.next(),
+					curIndex = cur.index(),
+					type =cur.attr('data-type');
+			}else{
+				return
+			}
+
+			$('.classes li').removeClass('active');
+			cur.addClass('active');
+			$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
+
+			if(curIndex < 9){
+				curIndex= tab.length
+			}
+			var left = (curIndex - tab.length) * 65;
+
+
+			classNav.find('ul').css({'transform':'translateX('+left+'px'});
+		});
+
+		classNav.find('.prev').click(function(){
+			var next = $('.classes li.active');
+			if(!(next.prev().length == '0')){
+				var cur = next.prev(),
+						curIndex = cur.index(),
+						type =cur.attr('data-type');
+			}else{
+				return
+			}
+
+			$('.classes li').removeClass('active');
+			cur.addClass('active');
+			$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
+
+			if(curIndex > tab.length-9){
+				curIndex = tab.length-9
+			}
+
+			var left = -65 * curIndex;
+
+			classNav.find('ul').css({'transform':'translateX('+left+'px'});
+		});*/
+
 	}
 
 	function chooseMenuClassPops(){
@@ -713,6 +1566,19 @@
 				}
 			});
 		});
+
+		//编辑分类名称
+		$('.menu_list section .edit').click(function(){
+			art.dialog({
+				title: "编辑分类名称",
+				lock: true,
+				content: document.querySelector('.title_edit_wrapper'),
+				okVal: "确定",
+				ok:function(){},
+				cancelVal: "取消",
+				cancel: function(){}
+			})
+		})
 	}
 
 	function quickSort(){
