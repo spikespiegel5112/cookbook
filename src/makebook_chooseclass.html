@@ -1243,22 +1243,107 @@
 		<div class="edit_form">
 			<form>
 				<div class="item">
-					<label>图片：</label>
-					<div class="figure">
-						<input type="file">
-						<img src="img/default/default_img.jpg">
-						<!--<label class="error">请上传菜品配图</label>-->
+					<label class="must">图片：</label>
+					<div class="upload_figure">
+						<div class="default hidden">
+							<input type="file">
+							<!--<img src="img/default/default_img.jpg">-->
+							<div class="upload" href="javascript:;"><i class="ybiconfont ybicon-add"></i>点击上传</div>
+							<label class="error">请上传菜品配图</label>
+						</div>
+						<div class="edit_figure">
+							<img src="img/sample/food/sbhyzs.jpg">
+							<a class="change_img" href="javascript:;">修改</a>
+						</div>
 					</div>
-					<p class="tips">系统未找到相匹配的图片，<br>创建菜品后，您可在后台继续上传图片~</p>
+					<!--<p class="tips">系统未找到相匹配的图片，<br>创建菜品后，您可在后台继续上传图片~</p>-->
+					<!--下拉方案-->
+					<a class="change_img_btn" href="javascript:;">修改图片<i class="ybiconfont ybicon-down1"></i></a>
+					<div class="chose_figure_con">
+						<div class="figure_list">
+							<ul>
+								<li>
+									<a class="upload" href="javascript:;"><i class="ybiconfont ybicon-add"></i>本地上传</a>
+									<p class="figure_num">&nbsp;</p>
+								</li>
+								<li>
+									<div class="figure">
+										<img src="img/sample/food/sbhyzs.jpg">
+										<a class="cur" href="javascript:;">当前</a>
+										<div class="bg">
+											<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+										</div>
+										<span class="ybiconfont ybicon-ok"></span>
+									</div>
+									<p class="figure_num">(图文编号：010-18941)</p>
+								</li>
+								<li>
+									<div class="figure">
+										<img src="img/sample/food/sbhyzs.jpg">
+										<div class="bg">
+											<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+										</div>
+										<span class="ybiconfont ybicon-ok"></span>
+									</div>
+									<p class="figure_num">(图文编号：010-18941)</p>
+								</li>
+								<li>
+									<div class="figure">
+										<img src="img/sample/food/sbhyzs.jpg">
+										<div class="bg">
+											<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+										</div>
+										<span class="ybiconfont ybicon-ok"></span>
+									</div>
+									<p class="figure_num">(图文编号：010-18941)</p>
+								</li>
+								<li>
+									<div class="figure">
+										<img src="img/sample/food/sbhyzs.jpg">
+										<div class="bg">
+											<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+										</div>
+										<span class="ybiconfont ybicon-ok"></span>
+									</div>
+									<p class="figure_num">(图文编号：010-18941)</p>
+								</li>
+								<li>
+									<div class="figure">
+										<img src="img/sample/food/sbhyzs.jpg">
+										<div class="bg">
+											<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+										</div>
+										<span class="ybiconfont ybicon-ok"></span>
+									</div>
+									<p class="figure_num">(图文编号：010-18941)</p>
+								</li>
+							</ul>
+							<div class="pagination_wrap small">
+                                <div class="turn_btn">
+                                    <span class="prev sPrev"> < </span>
+                                    <span class="current">1</span>
+                                    <a>2</a>
+                                    <a>3</a>
+                                    <a>4</a>
+                                    <a class="next sNext"> > </a>
+                                </div>
+                            </div>
+						</div>
+					</div>
 				</div>
 				<div class="item">
-					<label>菜名：</label>
+					<label class="must">菜名：</label><!--必填项可加class:must-->
 					<input type="text" placeholder="请输入菜品名称">
 					<!--<label class="error">请输入菜品名称</label>-->
 				</div>
 				<div class="item">
 					<label>价格：</label>
 					<input type="number" placeholder="请输入菜品单价">
+					<!--<label class="error">请输入菜品单价</label>-->
+				</div>
+				<div class="item">
+					<label>单位：</label>
+					<input type="text" placeholder="请输入菜品单位">
 					<!--<label class="error">请输入菜品单价</label>-->
 				</div>
 				<div class="item">
@@ -1293,10 +1378,14 @@
 						</div>
 					</div>
 				</div>
+				<div class="next_wrap">
+					<a class="add_next" href="javascript:;">添加下一个</a>
+					<p class="tips">您还可以添加<span>6</span>个菜品</p>
+				</div>
 			</form>
 		</div>
 		<div class="action_bar">
-			<a class="delete" href="javascript:;">删除</a>
+			<!--<a class="delete" href="javascript:;">删除</a>-->
 			<a class="cm_btn ok" href="javascript:;">保存</a>
 			<a class="cm_btn cancel" href="javascript:;">取消</a>
 		</div>
@@ -1335,6 +1424,124 @@
 				<label class="error">请输入分类名称。</label>
 			</li>
 		</ul>
+	</div>
+	<!--编辑配图（修改弹出）-->
+	<div class="chose_figure_con hidden">
+		<label class="dish_name">法式牛肉</label>
+		<div class="figure_list">
+			<ul>
+				<li>
+					<a class="upload" href="javascript:;"><i class="ybiconfont ybicon-add"></i>本地上传</a>
+					<p class="figure_num">&nbsp;</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<a class="cur" href="javascript:;">当前</a>
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+				<li>
+					<div class="figure">
+						<img src="img/sample/food/sbhyzs.jpg">
+						<div class="bg">
+							<a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+						</div>
+						<span class="ybiconfont ybicon-ok"></span>
+					</div>
+					<p class="figure_num">(图文编号：010-18941)</p>
+				</li>
+			</ul>
+			<!--<div class="pagination_wrap small">
+				<div class="turn_btn">
+					<span class="prev sPrev"> < </span>
+					<span class="current">1</span>
+					<a>2</a>
+					<a>3</a>
+					<a>4</a>
+					<a class="next sNext"> > </a>
+				</div>
+			</div>-->
+		</div>
+		<div class="action_bar">
+			<!--<a class="delete" href="javascript:;">删除</a>-->
+			<a class="cm_btn ok" href="javascript:;">保存</a>
+			<a class="cm_btn cancel" href="javascript:;">取消</a>
+		</div>
 	</div>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
@@ -1548,10 +1755,20 @@
 
 					//口味
 					$('.taste li').click(function(){
+
 						if($(this).hasClass('select')){
-							$(this).removeClass('select');
+							if($(this).index() != 0){
+								$(this).nextAll().removeClass('select');
+							}else{
+								if($(this).next().hasClass('select')){
+									$(this).nextAll().removeClass('select');
+								}else{
+									$(this).removeClass('select');
+								}
+							}
+
 						}else{
-							$(this).addClass('select');
+							$(this).addClass('select').prevAll().addClass('select');
 						}
 					});
 
@@ -1563,12 +1780,43 @@
 							$(this).addClass('active');
 						}
 					});
+
+					//修改配图 弹出式
+					$('.change_img').click(function(){
+						art.dialog({
+							title: "配图",
+							lock: true,
+							padding: 0,
+							content: document.querySelectorAll('.chose_figure_con')[1],
+							init: function(){
+								$('.figure_list li').click(function(){
+									$(this).addClass('select').siblings().removeClass('select');
+								});
+							}
+						});
+					});
+
+					//下拉式
+					$('.change_img_btn').click(function(){
+						if(!$(this).hasClass('active')){
+							$(this).addClass('active');
+							$('.chose_figure_con').eq(0).slideDown();
+							$('.edit_single_food .edit_form').css({'max-height':'528px','overflow-y':'auto'});
+							$('.figure_list li').click(function(){
+								$(this).addClass('select').siblings().removeClass('select');
+							});
+						}else{
+							$(this).removeClass('active');
+							$('.chose_figure_con').eq(0).slideUp();
+							$('.edit_single_food .edit_form').css({'max-height':'none','overflow-y':'auto'})
+						}
+					});
 				}
 			});
 		});
 
 		//编辑分类名称
-		$('.menu_list section .edit').click(function(){
+		$('.menu_list section > .edit').click(function(){
 			art.dialog({
 				title: "编辑分类名称",
 				lock: true,

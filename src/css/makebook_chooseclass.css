@@ -1308,13 +1308,22 @@
 
 .edit_single_food .edit_form label
 {
+    position: relative;
     font-size: 14px;
-
     display: inline-block;
 
     vertical-align: middle;
 
     color: #999;
+}
+
+.edit_single_food .edit_form label.must::before{
+    content: "*";
+    position: absolute;
+    left: -10px;
+    color: #f00;
+    top: 2px;
+    font-weight: bold;
 }
 
 .edit_single_food .edit_form input,
@@ -1339,7 +1348,7 @@
     border: 1px solid #ddd;
 }
 
-.edit_single_food .edit_form .figure
+.edit_single_food .edit_form .upload_figure
 {
     position: relative;
 
@@ -1350,11 +1359,11 @@
     height: 88px;
 
     vertical-align: middle;
-
+    background-color: #eee;
     border: 1px solid #ddd;
 }
 
-.edit_single_food .edit_form .figure img
+.edit_single_food .edit_form .upload_figure img
 {
     display: block;
 
@@ -1364,7 +1373,25 @@
     cursor: pointer;
 }
 
-.edit_single_food .edit_form .figure input
+.upload_figure .default .upload{
+    display: block;
+    font-size: 12px;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 16px;
+    width: 100%;
+    height: 88px;
+    text-align: center;
+    color: #ccc;
+    z-index: 0;
+}
+
+.upload_figure .default .upload i {
+    font-size: 36px;
+    display: block;
+}
+
+.edit_single_food .edit_form .upload_figure input
 {
     position: absolute;
     top: 0;
@@ -1376,6 +1403,31 @@
     cursor: pointer;
 
     opacity: 0;
+    z-index: 1;
+}
+
+.upload_figure .edit_figure{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.edit_figure .change_img{
+    font-size: 14px;
+    line-height: 22px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 38px;
+    height: 22px;
+    text-align: center;
+    color: #fff;
+    background-color: #f40;
+}
+
+.edit_figure .change_img:hover {
+    color: #f40;
+    background-color: #fff;
 }
 
 .edit_single_food .edit_form .tips
@@ -1402,6 +1454,7 @@
 
 .edit_single_food .edit_form .figure label.error
 {
+    margin-bottom: 9px;
     padding-left: 0;
 }
 
@@ -1585,8 +1638,44 @@
     font-size: 22px;
 }
 
+.edit_single_food .next_wrap{
+    position: relative;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.next_wrap .add_next{
+    float: left;
+    width: 75px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #f40;
+    border-radius: 4px;
+}
+
+.next_wrap .add_next:hover{
+    background-color: #f60;
+}
+
+.edit_single_food .next_wrap .tips{
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+.next_wrap .tips span{
+    color: #f40;
+    font-weight: bold;
+}
+
 .edit_single_food .action_bar,
-.add_new_food .action_bar
+.add_new_food .action_bar,
+.chose_figure_con .action_bar
 {
     position: relative;
 
@@ -1619,7 +1708,8 @@
 
 .edit_single_food .action_bar .cm_btn,
 .add_new_food .action_bar .cm_btn,
-.chapter_config_con .action_bar .cm_btn
+.chapter_config_con .action_bar .cm_btn,
+.chose_figure_con .action_bar .cm_btn
 {
     float: right;
 
@@ -3676,13 +3766,62 @@
     color: #a0d350;
     background: rgba(20, 20, 20, .6) none repeat scroll 0 0;
 }
+
+.edit_single_food .change_img_btn{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.edit_single_food .change_img_btn i{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.edit_single_food .change_img_btn.active i{
+    transform: rotate(180deg);
+}
+
+.edit_single_food .chose_figure_con{
+    display: none;
+    width: 100%;
+}
+
+.edit_single_food .chose_figure_con .figure_list{
+    padding: 0;
+    margin: 15px 0 0 47px;
+    overflow: hidden;
+}
+
+.edit_single_food .chose_figure_con .figure_list li{
+    width: 118px;
+}
+
+.edit_single_food .figure_list .upload{
+    height: 118px;
+}
+
+.edit_single_food .figure_list .upload i{
+    margin: 20px 0 0;
+}
+
+.edit_single_food .chose_figure_con .figure_list .figure{
+    width: 118px;
+    height: 118px;
+}
+
 .chose_figure_con
 {
     position: relative;
-
-    display: none;
-
-    width: 640px;
+    width: 698px;
+    padding: 0;
 }
 .chose_figure_con .search_wrap
 {
@@ -3696,8 +3835,17 @@
     position: relative;
 
     clear: both;
-
-    margin-top: 15px;
+    padding: 0 25px;
+    margin: 10px 0 15px;
+    max-height: 360px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.chose_figure_con .dish_name{
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 25px 0;
 }
 .chose_figure_con .figure_list .pagination_wrap
 {
@@ -3759,6 +3907,13 @@
     height: 150px;
 
     border: 1px solid #ddd;
+    cursor: pointer;
+}
+.figure_list .figure:hover{
+    border: 2px solid #79bd8f;
+}
+.figure_list li.select .figure{
+    border: 2px solid #f40;
 }
 .figure_list .figure img
 {
@@ -3784,14 +3939,14 @@
 {
     opacity: 1;
 }
-.figure_list .figure .use
+.figure_list .figure .cur
 {
     font-size: 14px;
     line-height: 22px;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 4px;
+    left: 4px;
 
     width: 38px;
     height: 22px;
@@ -3800,34 +3955,41 @@
 
     color: #fff;
     background-color: #f40;
+    border-radius: 4px;
 }
-.figure_list .figure .use:hover
-{
-    color: #f40;
-    background-color: #fff;
-}
+
 .figure_list .figure .preview
 {
-    font-size: 48px;
+    font-size: 24px;
 
     position: absolute;
-    bottom: -150px;
-    left: 50px;
+    right: 6px;
 
     transition: all .35s ease-in-out;
 
-    opacity: 0;
     color: #fff;
 }
-.figure_list .figure:hover .preview
-{
-    bottom: 48px;
 
-    opacity: 1;
-}
 .figure_list .figure .preview:hover
 {
     color: #f40;
+}
+.figure_list .figure .ybicon-ok{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    width: 0;
+    height: 0;
+    line-height: 16px;
+    border-width: 22px;
+    border-style: solid;
+    border-color: transparent #f40 #f40 transparent;
+    font-size: 20px;
+}
+.figure_list li.select .figure .ybicon-ok{
+    display: block;
 }
 .figure_list li p
 {
@@ -3837,6 +3999,9 @@
     text-align: center;
 
     color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .edit_space_pop .menu_class_con
 {
@@ -4166,31 +4331,52 @@
 }
 
 .drag_con {
-    font-size: 14px!important;
+    font-size: 12px!important;
     line-height: 25px;
     z-index: 50000;
-    width: 160px!important;
-    height: auto!important;
-    padding: 10px;
+    width: 150px!important;
+    height: 150px!important;
     cursor: pointer;
     text-align: center;
     opacity: 1!important;
     color: #666!important;
-    background: rgba(255,255,255,.8)!important;
+    background: #fff!important;
     box-shadow: 0 0 5px #aaa;
+    border: 2px solid #beeb9f;
+    box-sizing: border-box;
 }
 
 .drag_con img {
     display: block;
-    width: 100px!important;
-    height: auto!important;
-    margin: 5px auto!important;
+    width: 100%!important;
+    height: 121px!important;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
-.drag_con p{
-    position: relative;
+.drag_con .tips{
+    position: absolute;
+    left: 8px;
     width: 100%;
+    font-size: 12px;
+    color: #f40;
+    text-align: left;
+}
+
+.drag_con .name{
+    float: left;
+    color: #333;
+    line-height: 26px;
+    padding-left: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 75px;
+}
+
+.drag_con .price{
+    float: right;
+    color: #333;
+    line-height: 26px;
+    padding-right: 5px;
 }

@@ -1094,10 +1094,12 @@
                 <a class="next" href="javascript:;">
                     <i class="icon-angle-right icon-4x"></i>
                 </a>
-                <div class="drag_con">
+                <!--<div class="drag_con">
+                    <p class="tips">拖动我到图片槽</p>
                     <img src="img/sample/cookbook_01.jpg">
-                    <p>自贡大麻鱼</p>
-                </div>
+                    <div class="name">自贡大麻鱼</div>
+                    <span class="price">20元/例</span>
+                </div>-->
             </div>
             <div class="chapter_list min">
                 <div class="list_con">
@@ -1256,31 +1258,9 @@
     </div>
 </div>
 <!--弹出部分-->
-<!--编辑配图-->
-<div class="chose_figure_con">
-    <div class="search_wrap">
-        <input type="text" placeholder="输入您想要找的菜名" value="">
-        <button class="search_btn" type="button">搜索</button>
-        <div class="search_result">
-            <label>您可能想找：</label>
-            <div class="sr_list">
-                <ul>
-                    <li>
-                        <img class="figure" src="img/sample/food/sbhyzs.jpg">
-                        <p><b>烤</b>鱼</p>
-                    </li>
-                    <li>
-                        <img class="figure" src="img/sample/food/sbhyzs.jpg">
-                        <p><b>烤</b>鱼</p>
-                    </li>
-                    <li>
-                        <img class="figure" src="img/sample/food/sbhyzs.jpg">
-                        <p><b>烤</b>鱼</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<!--编辑配图（修改弹出）-->
+<div class="chose_figure_con hidden">
+    <label class="dish_name">法式牛肉</label>
     <div class="figure_list">
         <ul>
             <li>
@@ -1290,10 +1270,11 @@
             <li>
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
+                    <a class="cur" href="javascript:;">当前</a>
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1301,9 +1282,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1311,9 +1292,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1321,9 +1302,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1331,9 +1312,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1341,9 +1322,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1351,14 +1332,34 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/food/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                    <span class="ybiconfont ybicon-ok"></span>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/food/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
         </ul>
-        <div class="pagination_wrap small">
+        <!--<div class="pagination_wrap small">
             <div class="turn_btn">
                 <span class="prev sPrev"> < </span>
                 <span class="current">1</span>
@@ -1367,7 +1368,12 @@
                 <a>4</a>
                 <a class="next sNext"> > </a>
             </div>
-        </div>
+        </div>-->
+    </div>
+    <div class="action_bar">
+        <!--<a class="delete" href="javascript:;">删除</a>-->
+        <a class="cm_btn ok" href="javascript:;">保存</a>
+        <a class="cm_btn cancel" href="javascript:;">取消</a>
     </div>
 </div>
 <!--新增菜品-->
@@ -3051,20 +3057,16 @@
         });
 
         //点击模板图片，弹出编辑配图
-        /*art.dialog({
+        art.dialog({
          title:"配图",
-         lock: true,
+         lock: true, padding: 0,
          content: document.querySelector('.chose_figure_con'),
          init: function(){
-         //搜索
-         $('.search_wrap > input').focusin(function(){
-         $(this).closest('.search_wrap').addClass('active');
-         });
-         $('.search_wrap > input').focusout(function(){
-         $(this).closest('.search_wrap').removeClass('active');
-         });
+             $('.figure_list li').click(function(){
+                 $(this).addClass('select').siblings().removeClass('select');
+             });
          }
-         });*/
+         });
 
         //新增菜品
         $('.add_food').click(function(){
