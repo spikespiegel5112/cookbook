@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>皮样样本</title>
+	<!-- build:css css/all.min.css -->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/makebook_texturesample.css" type="text/css" media="all">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class='main_container'>
+		<div class='makebook_texturesample_wrapper'>
+			<div class='L01001'>
+				<span class='left'></span>
+				<span class='right'></span>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+
+	var sequenceNaming = {
+		para: {
+			cssArr: [],
+			lGroupArr: [3, 2, 4, 7, 5, 3, 2, 3],
+			groupedIndexArr: [],
+			allIndexArr: [],
+			allIndex: 0
+		},
+		cssTemplate: function(groupedIndexArr, allIndexArr, index) {
+			var sampleFullName = function() {
+				var groupedIndex = ('000'.substring(0, 2 - groupedIndexArr[index-1])) + groupedIndexArr[index - 1];
+				var allIndex = ('000'.substring(0, 3 - allIndexArr[index-1])) + allIndexArr[index - 1];
+				return groupedIndex
+				// return 'L' + groupedIndex + allIndex;
+			}
+			console.log(sampleFullName())
+			var sampleSimpleName;
+			return '.makebook_texturesample_wrapper .' + sampleFullName + ' span{background-image: url(../img/makebook/dictionary2/' + sampleSimpleName + '/' + sampleFullName + '/0.png);}'
+		},
+		init: function() {
+			for (var i = 0; i < this.para.lGroupArr.length; i++) {
+				thisVal = this.para.lGroupArr[i];
+				for (var j = 1; j <= thisVal; j++) {
+					this.para.groupedIndexArr.push(j);
+					this.para.allIndex++;
+					this.para.allIndexArr.push(this.para.allIndex);
+					this.para.cssArr.push(this.cssTemplate(this.para.groupedIndexArr, this.para.allIndexArr, this.para.allIndex));
+				}
+			}
+		}
+	}
+	sequenceNaming.init();
+	console.log(sequenceNaming.para.groupedIndexArr);
+	console.log(sequenceNaming.para.allIndexArr);
+
+})
+</script>
+
+</html>

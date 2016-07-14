@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+.makebook_texturesample_wrapper{
+	margin: 0 auto;
+	width: 880px;
+	height: 640px;
+	background-color: #ccc;
+}
+.makebook_texturesample_wrapper>div{
+	height: 100%;
+	font-size: 0;
+}
+.makebook_texturesample_wrapper span{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+}
+.makebook_texturesample_wrapper .L01001 span{
+	background-image: url(../img/makebook/dictionary2/L01/L01001/body-bg17.png);
+}
+/*.makebook_texturesample_wrapper .L01001 span{
+	background-image: url(../img/makebook/dictionary2/L01/L01001/0.png);
+}*/
