@@ -211,7 +211,7 @@
     line-height: 34px;
 
     display: block;
-
+    width: 100%;
     box-sizing: border-box;
     height: 35px;
     padding: 0 12px;
@@ -1299,11 +1299,20 @@
 
 .edit_single_food .edit_form .item
 {
+    position: relative;
     display: block;
     clear: both;
 
     margin: 20px 0;
     padding-left: 15px;
+}
+
+.edit_single_food .item .search_wrap{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 380px;
+    height: 40px;
 }
 
 .edit_single_food .edit_form label
@@ -1346,6 +1355,7 @@
 
     color: #333;
     border: 1px solid #ddd;
+    border-radius: 0;
 }
 
 .edit_single_food .edit_form .upload_figure
@@ -3821,7 +3831,7 @@
 {
     position: relative;
     width: 698px;
-    padding: 0;
+    padding: 10px 0 0;
 }
 .chose_figure_con .search_wrap
 {
@@ -3829,6 +3839,8 @@
 
     width: 368px;
     height: 38px;
+    float: right;
+    margin: 0 25px;
 }
 .chose_figure_con .figure_list
 {
@@ -3842,10 +3854,12 @@
     overflow-y: auto;
 }
 .chose_figure_con .dish_name{
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 38px;
     font-size: 16px;
     color: #333;
-    margin: 10px 25px 0;
+    margin: 0 25px;
 }
 .chose_figure_con .figure_list .pagination_wrap
 {
