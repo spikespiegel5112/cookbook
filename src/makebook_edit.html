@@ -2873,6 +2873,10 @@
         menuEditEvents();
         chooseMenuClass();
         chooseMenuClassPops();
+        $('html, body').css({
+            height: 0
+        })
+        alert($(window).height())
     });
 
     function menuEditEvents() {

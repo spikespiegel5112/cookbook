@@ -40,14 +40,21 @@ $(function() {
 		},
 		cssTemplate: function(groupedIndexArr, allIndexArr, index) {
 			var sampleFullName = function() {
-				var groupedIndex = ('000'.substring(0, 2 - groupedIndexArr[index-1])) + groupedIndexArr[index - 1];
-				var allIndex = ('000'.substring(0, 3 - allIndexArr[index-1])) + allIndexArr[index - 1];
-				return groupedIndex
-				// return 'L' + groupedIndex + allIndex;
+				var groupedIndex = ('000'.substring(0, 2 - String(groupedIndexArr[index - 1]).length)) + groupedIndexArr[index - 1];
+				var allIndex = ('000'.substring(0, 3 - String(allIndexArr[index - 1]).length)) + allIndexArr[index - 1];
+				return 'L' + groupedIndex + allIndex;
 			}
-			console.log(sampleFullName())
-			var sampleSimpleName;
-			return '.makebook_texturesample_wrapper .' + sampleFullName + ' span{background-image: url(../img/makebook/dictionary2/' + sampleSimpleName + '/' + sampleFullName + '/0.png);}'
+			var sampleSimpleName = function() {
+				var groupedIndex = ('000'.substring(0, 2 - String(groupedIndexArr[index - 1]).length)) + groupedIndexArr[index - 1];
+				return 'L' + groupedIndex;
+			}
+			console.log('.makebook_texturesample_wrapper .' + sampleFullName() + ' span{background-image: url(../img/makebook/dictionary2/' + sampleSimpleName() + '/' + sampleFullName() + '/0.png);}');
+			return '.makebook_texturesample_wrapper .' + sampleFullName() + ' span{background-image: url(../img/makebook/dictionary2/' + sampleSimpleName() + '/' + sampleFullName() + '/0.png);}'
+		},
+		output: function(cssArr) {
+			var output = cssArr;
+			output = String(output).replace(',', '');
+			$('.main_container').text(String(cssArr));
 		},
 		init: function() {
 			for (var i = 0; i < this.para.lGroupArr.length; i++) {
@@ -59,12 +66,11 @@ $(function() {
 					this.para.cssArr.push(this.cssTemplate(this.para.groupedIndexArr, this.para.allIndexArr, this.para.allIndex));
 				}
 			}
+			this.output(this.para.cssArr);
 		}
 	}
-	sequenceNaming.init();
-	console.log(sequenceNaming.para.groupedIndexArr);
-	console.log(sequenceNaming.para.allIndexArr);
 
+	sequenceNaming.init();
 })
 </script>
 
