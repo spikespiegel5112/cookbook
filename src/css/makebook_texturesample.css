@@ -2,6 +2,7 @@
 .makebook_texturesample_wrapper {
 	margin: 0 auto;
 	width: 880px;
+	/*width: 100%;*/
 	height: 640px;
 	background-color: #ccc;
 }
@@ -16,154 +17,174 @@
 }
 
 /*葵花红*/
-.texturesample_L01_red{
-	background-image: url(../img/makebook/textureexample_dictionary/L01.png);
+.texturesample_L01001{
+	background-image: url(../img/makebook/textureexample_dictionary/sunflower.png);
 	background-color: #da3b35;
 }
-/*葵花红*/
-.texturesample_L01_blue{
-	background-image: url(../img/makebook/textureexample_dictionary/L01.png);
+/*葵花蓝*/
+.texturesample_L02002{
+	background-image: url(../img/makebook/textureexample_dictionary/sunflower.png);
 	background-color: #425d82;
 }
-/*葵花红*/
-.texturesample_L01_yellowishbrown{
-	background-image: url(../img/makebook/textureexample_dictionary/L01.png);
+/*葵花土黄*/
+.texturesample_L03003{
+	background-image: url(../img/makebook/textureexample_dictionary/sunflower.png);
 	background-color: #977351;
 }
 
 /*篮球纹酒红*/
-.texturesample_L02_winered{
-	background-image: url(../img/makebook/textureexample_dictionary/L01.png);
+.texturesample_L01004{
+	background-image: url(../img/makebook/textureexample_dictionary/sunflower.png);
 	background-color: #713331;
 }
 /*篮球纹灰*/
-.texturesample_L02_grey{
-	background-image: url(../img/makebook/textureexample_dictionary/L02.png);
+.texturesample_L02005{
+	background-image: url(../img/makebook/textureexample_dictionary/basketball.png);
 	background-color: #8e8572;
 }
 
 /*石子纹咖啡*/
-.texturesample_L03_coofee{
-	background-image: url(../img/makebook/textureexample_dictionary/L03.png);
+.texturesample_L01006{
+	background-image: url(../img/makebook/textureexample_dictionary/stone.png);
 	background-color: #713500;
 }
 /*石子纹蓝*/
-.texturesample_L03_blue{
-	background-image: url(../img/makebook/textureexample_dictionary/L03.png);
+.texturesample_L02007{
+	background-image: url(../img/makebook/textureexample_dictionary/stone.png);
 	background-color: #2992eb;
 }
 /*石子纹灰*/
-.texturesample_L03_grey{
-	background-image: url(../img/makebook/textureexample_dictionary/L03.png);
+.texturesample_L03008{
+	background-image: url(../img/makebook/textureexample_dictionary/stone.png);
 	background-color: #756e5e;
 }
 /*石子纹黄*/
-.texturesample_L03_yellow{
-	background-image: url(../img/makebook/textureexample_dictionary/L03.png);
+.texturesample_L04009{
+	background-image: url(../img/makebook/textureexample_dictionary/stone.png);
 	background-color: #b25309;
 }
 
 /*水牛纹黑*/
-.texturesample_L04_black{
-	background-image: url(../img/makebook/textureexample_dictionary/L04.png);
+.texturesample_L01010{
+	background-image: url(../img/makebook/textureexample_dictionary/buffalo.png);
 	background-color: #4c4940;
+	background-size: cover;
 }
 /*水牛纹深绿*/
-.texturesample_L04_deepgreen{
-	background-image: url(../img/makebook/textureexample_dictionary/L04.png);
+.texturesample_L02011{
+	background-image: url(../img/makebook/textureexample_dictionary/buffalo.png);
 	background-color: #44615a;
+	background-size: cover;
 }
 /*水牛纹棕红*/
-.texturesample_L04_brownishred{
-	background-image: url(../img/makebook/textureexample_dictionary/L04.png);
+.texturesample_L03012{
+	background-image: url(../img/makebook/textureexample_dictionary/buffalo.png);
 	background-color: #e6684e;
+	background-size: cover;
 }
 /*水牛纹土黄*/
-.texturesample_L04_yellowishbrown{
-	background-image: url(../img/makebook/textureexample_dictionary/L04.png);
+.texturesample_L04013{
+	background-image: url(../img/makebook/textureexample_dictionary/buffalo.png);
 	background-color: #b3895f;
+	background-size: cover;
 }
 /*水牛纹棕黄*/
-.texturesample_L04_lightbrown{
-	background-image: url(../img/makebook/textureexample_dictionary/L04.png);
+.texturesample_L05014{
+	background-image: url(../img/makebook/textureexample_dictionary/buffalo.png);
 	background-color: #83524e;
+	background-size: cover;
 }
 /*水牛纹蓝*/
-.texturesample_L04_blue{
-	background-image: url(../img/makebook/textureexample_dictionary/L04.png);
+.texturesample_L06015{
+	background-image: url(../img/makebook/textureexample_dictionary/buffalo.png);
 	background-color: #1b4c9a;
+	background-size: cover;
 }
 /*水牛纹深红*/
-.texturesample_L04_deepred{
-	background-image: url(../img/makebook/textureexample_dictionary/L04.png);
+.texturesample_L07016{
+	background-image: url(../img/makebook/textureexample_dictionary/buffalo.png);
 	background-color: #cb3e3f;
+	background-size: cover;
 }
 
 /*绒面深绿*/
-.texturesample_L05_deepgreen{
-	background-image: url(../img/makebook/textureexample_dictionary/L05.png);
+.texturesample_L01017{
+	background-image: url(../img/makebook/textureexample_dictionary/suede.png);
 	background-color: #5b5f54;
+	background-size: cover;
 }
 /*绒面深红*/
-.texturesample_L05_deepred{
-	background-image: url(../img/makebook/textureexample_dictionary/L05.png);
+.texturesample_L02018{
+	background-image: url(../img/makebook/textureexample_dictionary/suede.png);
 	background-color: #d0393c;
+	background-size: cover;
 }
 /*绒面棕红*/
-.texturesample_L05_brownishred{
-	background-image: url(../img/makebook/textureexample_dictionary/L05.png);
+.texturesample_L03019{
+	background-image: url(../img/makebook/textureexample_dictionary/suede.png);
 	background-color: #d45938;
+	background-size: cover;
 }
 /*绒面浅绿*/
-.texturesample_L05_lightgreen{
-	background-image: url(../img/makebook/textureexample_dictionary/L05.png);
+.texturesample_L04020{
+	background-image: url(../img/makebook/textureexample_dictionary/suede.png);
 	background-color: #3d6743;
+	background-size: cover;
 }
 /*绒面棕黄*/
-.texturesample_L05_lightbrown{
-	background-image: url(../img/makebook/textureexample_dictionary/L05.png);
+.texturesample_L05021{
+	background-image: url(../img/makebook/textureexample_dictionary/suede.png);
 	background-color: #8b6a4e;
+	background-size: cover;
 }
 
 /*毛皮纹棕红*/
-.texturesample_L06_winered{
-	background-image: url(../img/makebook/textureexample_dictionary/L06.png);
+.texturesample_L01022{
+	background-image: url(../img/makebook/textureexample_dictionary/fur.png);
 	background-color: #4d302b;
+	background-size: cover;
 }
 /*毛皮纹棕*/
-.texturesample_L06_brown{
-	background-image: url(../img/makebook/textureexample_dictionary/L06.png);
+.texturesample_L02023{
+	background-image: url(../img/makebook/textureexample_dictionary/fur.png);
 	background-color: #7e3617;
+	background-size: cover;
 }
 /*毛皮纹咖啡*/
-.texturesample_L06_coffee{
-	background-image: url(../img/makebook/textureexample_dictionary/L06.png);
+.texturesample_L03024{
+	background-image: url(../img/makebook/textureexample_dictionary/fur.png);
 	background-color: #372212;
+	background-size: cover;
 }
 
 /*闪电纹咖啡*/
-.texturesample_L07_coffee{
-	background-image: url(../img/makebook/textureexample_dictionary/L07.png);
+.texturesample_L01025{
+	background-image: url(../img/makebook/textureexample_dictionary/lighting.png);
 	background-color: #83524e;
+	background-size: cover;
 }
 /*闪电纹黑*/
-.texturesample_L07_black{
-	background-image: url(../img/makebook/textureexample_dictionary/L07.png);
+.texturesample_L02026{
+	background-image: url(../img/makebook/textureexample_dictionary/lighting.png);
 	background-color: #262626;
+	background-size: cover;
 }
 
 /*真皮黑*/
-.texturesample_L08_black{
-	background-image: url(../img/makebook/textureexample_dictionary/L08.png);
+.texturesample_L01027{
+	background-image: url(../img/makebook/textureexample_dictionary/dermis.png);
 	background-color: #3b3c37;
+	background-size: cover;
 }
 /*真皮棕*/
-.texturesample_L08_brown{
-	background-image: url(../img/makebook/textureexample_dictionary/L08.png);
+.texturesample_L02028{
+	background-image: url(../img/makebook/textureexample_dictionary/dermis.png);
 	background-color: #94482e;
+	background-size: cover;
 }
 /*真皮绿*/
-.texturesample_L08_green{
-	background-image: url(../img/makebook/textureexample_dictionary/L08.png);
+.texturesample_L03029{
+	background-image: url(../img/makebook/textureexample_dictionary/dermis.png);
 	background-color: #5c6954;
+	background-size: cover;
 }
