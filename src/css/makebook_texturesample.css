@@ -1,22 +1,130 @@
 @charset 'UTF-8';
-.makebook_texturesample_wrapper{
-	margin: 0 auto;
-	width: 880px;
-	height: 640px;
-	background-color: #ccc;
+.makebook_texturesample_wrapper {
+    margin: 0 auto;
+    width: 880px;
+    height: 640px;
+    background-color: #ccc;
 }
-.makebook_texturesample_wrapper>div{
-	height: 100%;
-	font-size: 0;
+.makebook_texturesample_wrapper>div {
+    height: 100%;
+    font-size: 0;
 }
-.makebook_texturesample_wrapper span{
-	display: inline-block;
-	width: 50%;
-	height: 100%;
+.makebook_texturesample_wrapper span {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
 }
-.makebook_texturesample_wrapper .L01001 span{
-	background-image: url(../img/makebook/dictionary2/L01/L01001/body-bg17.png);
+.red{
+	background-color: #b83b3f;
 }
-/*.makebook_texturesample_wrapper .L01001 span{
-	background-image: url(../img/makebook/dictionary2/L01/L01001/0.png);
-}*/
+.black{
+	background-color: #000;
+}
+.deepgreen{
+	background-color: #344942;
+}
+.brownishred{
+	background-color: #cb5642;
+}
+.yellowishbrown{
+	background-color: #98795d;
+}
+.lightbrown{
+	background-color: #74543d;
+}
+.blue{
+	background-color: #153b7c;
+}
+.deepred{
+	background-color: #b42f30;
+}
+.red{
+	background-color: #b83b3f;
+}
+.makebook_texturesample_wrapper .sunflower span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l03 span {
+    background-image: url(../img/makebook/dictionary2/l03/0.png);
+}
+.makebook_texturesample_wrapper .l01 span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l01 span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l03 span {
+    background-image: url(../img/makebook/dictionary2/l03/0.png);
+}
+.makebook_texturesample_wrapper .l04 span {
+    background-image: url(../img/makebook/dictionary2/l04/0.png);
+}
+.makebook_texturesample_wrapper .l01 span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l03 span {
+    background-image: url(../img/makebook/dictionary2/l03/0.png);
+}
+.makebook_texturesample_wrapper .l04 span {
+    background-image: url(../img/makebook/dictionary2/l04/0.png);
+}
+.makebook_texturesample_wrapper .l05 span {
+    background-image: url(../img/makebook/dictionary2/l05/0.png);
+}
+.makebook_texturesample_wrapper .l06 span {
+    background-image: url(../img/makebook/dictionary2/l06/0.png);
+}
+.makebook_texturesample_wrapper .l07 span {
+    background-image: url(../img/makebook/dictionary2/l07/0.png);
+}
+.makebook_texturesample_wrapper .l01 span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l03 span {
+    background-image: url(../img/makebook/dictionary2/l03/0.png);
+}
+.makebook_texturesample_wrapper .l04 span {
+    background-image: url(../img/makebook/dictionary2/l04/0.png);
+}
+.makebook_texturesample_wrapper .l05 span {
+    background-image: url(../img/makebook/dictionary2/l05/0.png);
+}
+.makebook_texturesample_wrapper .l01 span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l03 span {
+    background-image: url(../img/makebook/dictionary2/l03/0.png);
+}
+.makebook_texturesample_wrapper .l01 span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l01 span {
+    background-image: url(../img/makebook/dictionary2/l01/0.png);
+}
+.makebook_texturesample_wrapper .l02 span {
+    background-image: url(../img/makebook/dictionary2/l02/0.png);
+}
+.makebook_texturesample_wrapper .l03 span {
+    background-image: url(../img/makebook/dictionary2/l03/0.png);
+}
