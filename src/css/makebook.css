@@ -7,39 +7,31 @@
 {
     width: 100%;
     height: 140px;
-
-    border-top: 1px solid #ddd;
     background: url(../img/makebook/makebook_preocess_bg.jpg);
+    border-top: 1px solid #ddd;
 }
 .makebook_process_wrapper ul
 {
     width: 1200px;
     margin: 0 auto;
-
     text-align: center;
 }
 .makebook_process_wrapper li
 {
     display: inline-block;
-
     height: 70px;
     margin: 40px 0 0 0;
-
     vertical-align: top;
 }
 .makebook_process_wrapper .icon
 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
     font-size: 55px;
     line-height: 60px;
-
-    display: inline-block;
-
-    width: 60px;
-    height: 60px;
-
-    vertical-align: top;
-
     color: #ccc;
+    vertical-align: top;
 }
 .makebook_process_wrapper .active .icon
 {
@@ -52,48 +44,37 @@
 .makebook_process_wrapper li.active .title label
 {
     font-size: 19px;
-
     color: #74bd93;
 }
 .makebook_process_wrapper .title label
 {
-    line-height: 25px;
-
     display: block;
-
-    height: 25px;
-
-    text-align: center;
-
+    height: 25px;
+    line-height: 25px;
     color: #999;
+    text-align: center;
 }
 .makebook_process_wrapper .title div
 {
-    font-size: 0;
-
     width: 150px;
     height: 20px;
+    font-size: 0;
 }
 .makebook_process_wrapper .title div:before
 {
     display: inline-block;
-
     height: 20px;
-
-    content: '';
     vertical-align: middle;
+    content: '';
 }
 .makebook_process_wrapper .title div i
 {
     display: inline-block;
-
     width: 18px;
     height: 18px;
-
     vertical-align: middle;
-
-    border-radius: 50%;
     background-color: #ccc;
+    border-radius: 50%;
 }
 .makebook_process_wrapper .active .title div i
 {
@@ -102,37 +83,29 @@
 .makebook_process_wrapper .title div span
 {
     display: inline-block;
-
     width: 88%;
     height: 3px;
-
     vertical-align: middle;
-
     background-color: #ccc;
 }
 .makebook_process_wrapper .active .title div span
 {
     position: relative;
     right: 7px;
-
     background-color: #74bd93;
 }
 .makebook_process_wrapper .title p
 {
+    width: 100%;
     font-size: 13px;
-
-    width: 100%;
-
-    text-align: center;
-
     color: #999;
+    text-align: center;
 }
 .makebook_stepsummary_container
 {
 	/*padding: 0 0 110px 0;*/
     width: 100%;
     height: 85px;
-
     border-top: 1px solid #cfcfcf;
 }
 .makebook_stepsummary_wrapper
@@ -143,7 +116,6 @@
 .makebook_stepsummary_wrapper .summary
 {
     float: left;
-
     margin: 35px 0 0 0;
 }
 .makebook_stepsummary_wrapper .summary p, .makebook_stepsummary_wrapper .summary ul
@@ -153,28 +125,22 @@
 .makebook_stepsummary_wrapper .summary li
 {
     display: inline-block;
-
     margin: 0 15px 0 0;
-
     color: #ff4404;
 }
 .makebook_stepsummary_wrapper .step_btn
 {
-    font-size: 20px;
-    line-height: 50px;
-
     float: right;
-
     width: 180px;
     height: 50px;
-    margin: 20px 0 0 0;
-
-    transition: background-color .3s;
-    text-align: center;
-
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    line-height: 50px;
     color: #fff;
-    border-radius: 3px;
+    text-align: center;
     background-color: #ff4500;
+    border-radius: 3px;
+    transition: background-color .3s;
 }
 .makebook_stepsummary_wrapper .step_btn:hover
 {
@@ -190,87 +156,68 @@
 }
 .makebook_steptitle_wrapper h6
 {
+    padding: 0 0 0 15px;
     font-size: 20px;
-
-    padding: 0 0 0 15px;
-
     color: #999;
 }
 .makebook_steptitle_wrapper p
 {
+    padding: 10px 0 10px 15px;
     font-size: 13px;
-
-    padding: 10px 0 10px 15px;
-
     color: #999;
 }
 .makebook_stepblock_wrapper
 {
     position: relative;
-
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     padding: 30px 0;
+    margin: 0 auto;
 }
 .makebook_stepblock_wrapper .line
 {
-    font-size: 0;
-
     position: absolute;
     left: -20px;
-
     height: 100%;
+    font-size: 0;
 }
 .makebook_stepblock_wrapper .line span
 {
     display: block;
-
     width: 12px;
     height: 12px;
     margin: 8px 0 0 0;
-
-    border-radius: 50%;
     background-color: #79bd8f;
+    border-radius: 50%;
 }
 .makebook_stepblock_wrapper .line label
 {
     display: block;
-
     width: 3px;
     height: 100%;
     margin: 0 auto;
-
     background-color: #cbcbcb;
 }
 
 .makebook_stepchoosesize_wrapper > li
 {
     display: inline-block;
-
     margin: 20px 100px 0 50px;
-
     vertical-align: top;
 }
 .makebook_stepchoosesize_wrapper > li > a
 {
     position: relative;
-
     display: inline-block;
-
     width: 108px;
     height: 135px;
-
     vertical-align: middle;
-
     border: #e0e0e0;
 }
 .makebook_stepchoosesize_wrapper li .desc
 {
     display: inline-block;
-
     margin: 0 0 0 15px;
-
     vertical-align: top;
 }
 .makebook_stepchoosesize_wrapper li .desc h6
@@ -280,18 +227,14 @@
 .makebook_stepchoosesize_wrapper li .desc label
 {
     font-size: 14px;
-
     color: #666;
 }
 .makebook_stepchoosesize_wrapper li .desc a
 {
-    font-size: 20px;
-
     display: block;
-
     width: 25px;
-    margin: 10px 0 0 0;
-
+    margin: 10px 0 0 0;
+    font-size: 20px;
     color: #aaa;
 }
 .makebook_stepchoosesize_wrapper li .desc a:hover
@@ -301,11 +244,9 @@
 .makebook_stepchoosesize_wrapper li .sample
 {
     position: relative;
-
     text-align: center;
-
-    border: #e0e0e0;
     background-color: #eee;
+    border: #e0e0e0;
 }
 
 
@@ -359,20 +300,17 @@
 }
 .makebook_steptab_wrapper
 {
-    font-size: 0;
-
     position: absolute;
     top: 10px;
-
     display: inline-block;
-
     margin: 0 0 0 130px;
+    font-size: 0;
 }
 .makebook_steptab_wrapper li
 {
-    display: inline-block;
     position: relative;
     top: 2px;
+    display: inline-block;
 }
 
 .makebook_stepchoosebinding_wrapper
@@ -389,31 +327,27 @@
 }
 .makebook_steptab_wrapper li a
 {
+    display: block;
+    width: 100px;
     font-size: 18px;
     font-weight: bold;
     line-height: 55px;
-
-    display: block;
-
-    width: 100px;
-
-    text-align: center;
-
     color: #666;
+    text-align: center;
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
 }
 .makebook_steptab_wrapper li.active
 {
-    border-bottom: 2px solid transparent;
     background-color: #fff;
+    border-bottom: 2px solid transparent;
 }
 .makebook_steptab_wrapper li.active a
 {
     color: #79bd8f;
-    border-top: 3px solid #79bd8f;
     background-color: #fff;
+    border-top: 3px solid #79bd8f;
 }
 .makebook_steptab_wrapper li:first-child a
 {
@@ -437,13 +371,11 @@
 {
     width: 100%;
     margin: 12px 0 0 0;
-
     border-top: 2px solid #dfdfdf;
 }
 .makebook_stepsamplelist_wrapper ul
 {
     display: none;
-
     width: 100%;
 }
 .makebook_stepsamplelist_wrapper ul.active
@@ -453,23 +385,18 @@
 .makebook_stepsamplelist_wrapper li
 {
     display: inline-block;
-
     width: 170px;
     margin: 30px 10px 0;
-
     border: 1px solid #ccc;
     box-shadow: 5px 5px 0 #e6e6e6;
 }
 .makebook_stepsamplelist_wrapper li > a
 {
     position: relative;
-
     display: block;
-
     width: 150px;
     height: 150px;
     margin: 10px auto;
-
     border: 0;
 }
 .makebook_stepsamplelist_wrapper li > a span
@@ -481,44 +408,36 @@
 .makebook_stepsamplelist_wrapper li img
 {
     display: block;
-
     width: 100%;
     height: 100%;
-
     border: 0;
 }
 .makebook_stepsamplelist_wrapper li .title
 {
-    overflow: hidden;
-
     margin: 10px 0;
+    overflow: hidden;
 }
 .makebook_stepsamplelist_wrapper li .title label
 {
     float: left;
-
     padding: 0 0 0 10px;
-
     text-align: left;
 }
 .makebook_stepsamplelist_wrapper li .title a
 {
     float: right;
-
     margin: 0 10px 0 0;
 }
 
 .makebook_pricecalculator_container
 {
     position: relative;
-
     width: 1200px;
     margin: 0 auto;
 }
 .makebook_pricecalculator_wrapper
 {
     display: inline-block;
-
     width: 940px;
 }
 .makebook_pricecalculator_wrapper .makebook_stepchoosesize_wrapper > li
@@ -532,16 +451,14 @@
 .pricecalculator_result_wrapper
 {
     display: inline-block;
-
     width: 235px;
     margin: 66px 0 0;
-
     vertical-align: top;
 }
 .pricecalculator_result
 {
+    background-color: #fff;
     border: 1px solid #dbdad9;
-    background-color: #fff;
     box-shadow: 2px 2px 4px #ddd;
 }
 .pricecalculator_result_wrapper h5
@@ -550,66 +467,50 @@
 }
 .pricecalculator_result_wrapper h5, .pricecalculator_result_wrapper h6
 {
+    padding: 10px 0;
     font-size: 14px;
-
-    padding: 10px 0;
-
-    text-align: center;
-
     color: #666;
+    text-align: center;
     border-bottom: 1px solid #dbdad9;
 }
 
 .makebook_pcresultindicator_wrapper li
 {
     display: block;
-
     width: 90%;
     padding: 0 5%;
-
     text-align: right;
 }
 .makebook_pcresultindicator_wrapper label
 {
-    font-size: 14px;
-
     display: block;
-
-    margin: 10px 0;
-
+    margin: 10px 0;
+    font-size: 14px;
     color: #666;
 }
 .makebook_pcresultindicator_wrapper span
 {
-    font-size: 24px;
-
     display: block;
-
-    margin: 10px 0;
-
+    margin: 10px 0;
+    font-size: 24px;
     color: #ff3f1f;
 }
 
 .makebook_slidecountor_wrapper
 {
     width: 495px;
-    margin: 0 0 20px 0;
     padding: 20px;
-
-    border: 1px solid #dcdbda;
+    margin: 0 0 20px 0;
     background-color: #f7f7f7;
+    border: 1px solid #dcdbda;
 }
 .makebook_slidecountor_wrapper label, .makebook_slidecountor_wrapper input
 {
-    font-size: 13px;
-
     display: inline-block;
-
-    height: 20px;
-
-    text-align: center;
-
+    height: 20px;
+    font-size: 13px;
     color: #333;
+    text-align: center;
 }
 .makebook_slidecountor_wrapper label
 {
@@ -618,13 +519,11 @@
 .makebook_slidecountor_wrapper input
 {
     width: 100px;
-
     border: 1px solid #dbdad9;
 }
 .makebook_slidecountor_wrapper .common_slider_wrapper
 {
     float: right;
-
     width: 64%;
     padding: 0 10px;
 }
