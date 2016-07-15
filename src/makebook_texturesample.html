@@ -19,10 +19,10 @@
 <body>
 	<div class='main_container'>
 		<div class='makebook_texturesample_wrapper'>
-			<div class='L01001'>
-				<span class='left'></span>
-				<span class='right'></span>
-			</div>
+			<ul class='l01 brownishred'>
+				<li></li>
+				<li></li>
+			</ul>
 		</div>
 	</div>
 </body>
@@ -54,7 +54,7 @@ $(function() {
 		output: function(cssArr) {
 			var output = cssArr;
 			output = String(output).replace(',', '');
-			$('.main_container').text(String(cssArr));
+			$('.main_container').append(String(cssArr));
 		},
 		init: function() {
 			for (var i = 0; i < this.para.lGroupArr.length; i++) {

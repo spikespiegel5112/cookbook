@@ -5,11 +5,11 @@
     height: 640px;
     background-color: #ccc;
 }
-.makebook_texturesample_wrapper>div {
+.makebook_texturesample_wrapper ul {
     height: 100%;
     font-size: 0;
 }
-.makebook_texturesample_wrapper span {
+.makebook_texturesample_wrapper li {
     display: inline-block;
     width: 50%;
     height: 100%;
@@ -41,90 +41,27 @@
 .red{
 	background-color: #b83b3f;
 }
-.makebook_texturesample_wrapper .sunflower span {
+.makebook_texturesample_wrapper .l01 li {
     background-image: url(../img/makebook/dictionary2/l01/0.png);
 }
-.makebook_texturesample_wrapper .l02 span {
+.makebook_texturesample_wrapper .l02 li {
     background-image: url(../img/makebook/dictionary2/l02/0.png);
 }
-.makebook_texturesample_wrapper .l03 span {
+.makebook_texturesample_wrapper .l03 li {
     background-image: url(../img/makebook/dictionary2/l03/0.png);
 }
-.makebook_texturesample_wrapper .l01 span {
-    background-image: url(../img/makebook/dictionary2/l01/0.png);
-}
-.makebook_texturesample_wrapper .l02 span {
-    background-image: url(../img/makebook/dictionary2/l02/0.png);
-}
-.makebook_texturesample_wrapper .l01 span {
-    background-image: url(../img/makebook/dictionary2/l01/0.png);
-}
-.makebook_texturesample_wrapper .l02 span {
-    background-image: url(../img/makebook/dictionary2/l02/0.png);
-}
-.makebook_texturesample_wrapper .l03 span {
-    background-image: url(../img/makebook/dictionary2/l03/0.png);
-}
-.makebook_texturesample_wrapper .l04 span {
+.makebook_texturesample_wrapper .l04 li {
     background-image: url(../img/makebook/dictionary2/l04/0.png);
 }
-.makebook_texturesample_wrapper .l01 span {
-    background-image: url(../img/makebook/dictionary2/l01/0.png);
-}
-.makebook_texturesample_wrapper .l02 span {
-    background-image: url(../img/makebook/dictionary2/l02/0.png);
-}
-.makebook_texturesample_wrapper .l03 span {
-    background-image: url(../img/makebook/dictionary2/l03/0.png);
-}
-.makebook_texturesample_wrapper .l04 span {
-    background-image: url(../img/makebook/dictionary2/l04/0.png);
-}
-.makebook_texturesample_wrapper .l05 span {
+.makebook_texturesample_wrapper .l05 li {
     background-image: url(../img/makebook/dictionary2/l05/0.png);
 }
-.makebook_texturesample_wrapper .l06 span {
+.makebook_texturesample_wrapper .l06 li {
     background-image: url(../img/makebook/dictionary2/l06/0.png);
 }
-.makebook_texturesample_wrapper .l07 span {
+.makebook_texturesample_wrapper .l07 li {
     background-image: url(../img/makebook/dictionary2/l07/0.png);
 }
-.makebook_texturesample_wrapper .l01 span {
-    background-image: url(../img/makebook/dictionary2/l01/0.png);
-}
-.makebook_texturesample_wrapper .l02 span {
-    background-image: url(../img/makebook/dictionary2/l02/0.png);
-}
-.makebook_texturesample_wrapper .l03 span {
-    background-image: url(../img/makebook/dictionary2/l03/0.png);
-}
-.makebook_texturesample_wrapper .l04 span {
-    background-image: url(../img/makebook/dictionary2/l04/0.png);
-}
-.makebook_texturesample_wrapper .l05 span {
-    background-image: url(../img/makebook/dictionary2/l05/0.png);
-}
-.makebook_texturesample_wrapper .l01 span {
-    background-image: url(../img/makebook/dictionary2/l01/0.png);
-}
-.makebook_texturesample_wrapper .l02 span {
-    background-image: url(../img/makebook/dictionary2/l02/0.png);
-}
-.makebook_texturesample_wrapper .l03 span {
-    background-image: url(../img/makebook/dictionary2/l03/0.png);
-}
-.makebook_texturesample_wrapper .l01 span {
-    background-image: url(../img/makebook/dictionary2/l01/0.png);
-}
-.makebook_texturesample_wrapper .l02 span {
-    background-image: url(../img/makebook/dictionary2/l02/0.png);
-}
-.makebook_texturesample_wrapper .l01 span {
-    background-image: url(../img/makebook/dictionary2/l01/0.png);
-}
-.makebook_texturesample_wrapper .l02 span {
-    background-image: url(../img/makebook/dictionary2/l02/0.png);
-}
-.makebook_texturesample_wrapper .l03 span {
-    background-image: url(../img/makebook/dictionary2/l03/0.png);
+.makebook_texturesample_wrapper .l08 li {
+    background-image: url(../img/makebook/dictionary2/l08/0.png);
 }
