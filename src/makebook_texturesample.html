@@ -53,8 +53,8 @@ $(function() {
 			return '.texturesample_'+sampleFullName()
 		},
 		output: function(cssArr) {
-			var output = String(cssArr).replace(',', '');
-			$('.makebook_texturesample_wrapper').append(String(output));
+			var output = String(cssArr.join()).replace(',', '');
+			$('.main_container').append(String(output));
 		},
 		init: function() {
 			for (var i = 0; i < this.para.lGroupArr.length; i++) {
