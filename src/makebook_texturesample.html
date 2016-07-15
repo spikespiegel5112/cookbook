@@ -20,8 +20,8 @@
 	<div class='main_container'>
 		<div class='makebook_texturesample_wrapper'>
 			<ul>
-				<li class='texturesample_L04_deepgreen'></li>
-				<li class='texturesample_L04_deepgreen'></li>
+				<li class='texturesample_L01027'></li>
+				<li class='texturesample_L01027'></li>
 			</ul>
 		</div>
 	</div>
@@ -49,13 +49,12 @@ $(function() {
 				var groupedIndex = ('000'.substring(0, 2 - String(groupedIndexArr[index - 1]).length)) + groupedIndexArr[index - 1];
 				return 'L' + groupedIndex;
 			}
-			console.log('.makebook_texturesample_wrapper .' + sampleFullName() + ' span{background-image: url(../img/makebook/dictionary2/' + sampleSimpleName() + '/' + sampleFullName() + '/0.png);}');
-			return '.makebook_texturesample_wrapper .' + sampleFullName() + ' span{background-image: url(../img/makebook/dictionary2/' + sampleSimpleName() + '/' + sampleFullName() + '/0.png);}'
+			console.log('.texturesample_'+sampleFullName());
+			return '.texturesample_'+sampleFullName()
 		},
 		output: function(cssArr) {
-			var output = cssArr;
-			output = String(output).replace(',', '');
-			$('.main_container').append(String(cssArr));
+			var output = String(cssArr).replace(',', '');
+			$('.makebook_texturesample_wrapper').append(String(output));
 		},
 		init: function() {
 			for (var i = 0; i < this.para.lGroupArr.length; i++) {
