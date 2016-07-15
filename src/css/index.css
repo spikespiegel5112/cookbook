@@ -221,7 +221,7 @@
     transition: all .6s ease-in-out;
     text-align: center;
 
-    color: #000;
+    color: #333;
 }
 
 .swiper-slide-active .con .caption

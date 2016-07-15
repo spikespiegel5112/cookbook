@@ -206,7 +206,8 @@
 {
     font-size: 0;
 
-    width: 100%;
+    width: 100%;
+
     margin: 0 auto;
 
     text-align: center;
@@ -272,7 +273,7 @@
 }
 .access_resetstep_wrapper .active label
 {
-    color: #000;
+    color: #333;
 }
 .access_resetstep_wrapper li span
 {

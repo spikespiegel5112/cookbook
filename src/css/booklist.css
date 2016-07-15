@@ -763,11 +763,11 @@
 }
 .booklist_bookinfo_wrapper .book_text .page_num dd:hover, .booklist_bookinfo_wrapper .book_text .cover dd:hover, .booklist_bookinfo_wrapper .book_text .size dd:hover
 {
-    color: #000;
+    color: #333;
 }
 .booklist_bookinfo_wrapper .book_text .page_num dd.selected, .booklist_bookinfo_wrapper .book_text .cover dd.selected, .booklist_bookinfo_wrapper .book_text .size dd.selected
 {
-    color: #000;
+    color: #333;
     border: 2px solid #e22929;
 }
 .booklist_bookinfo_wrapper .book_text dd .icon
@@ -1468,7 +1468,7 @@
     cursor: pointer;
     text-align: center;
 
-    color: #000;
+    color: #333;
 }
 .agbcover_wrapper .agbcover_title:hover
 {

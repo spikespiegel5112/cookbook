@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/chosen.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
     <!-- build:css css/all.min.css -->
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -1094,6 +1095,12 @@
                 <a class="next" href="javascript:;">
                     <i class="icon-angle-right icon-4x"></i>
                 </a>
+                <!--<div class="drag_con">
+                    <p class="tips">拖动我到图片槽</p>
+                    <img src="img/sample/cookbook_01.jpg">
+                    <div class="name">自贡大麻鱼</div>
+                    <span class="price">20元/例</span>
+                </div>-->
             </div>
             <div class="chapter_list min">
                 <div class="list_con">
@@ -1252,8 +1259,9 @@
     </div>
 </div>
 <!--弹出部分-->
-<!--编辑配图-->
-<div class="chose_figure_con">
+<!--编辑配图（修改弹出）-->
+<div class="chose_figure_con hidden">
+    <label class="dish_name">法式牛肉</label>
     <div class="search_wrap">
         <input type="text" placeholder="输入您想要找的菜名" value="">
         <button class="search_btn" type="button">搜索</button>
@@ -1286,10 +1294,11 @@
             <li>
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
+                    <a class="cur" href="javascript:;">当前</a>
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1297,9 +1306,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1307,9 +1316,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1317,9 +1326,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1327,9 +1336,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1337,9 +1346,9 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
@@ -1347,14 +1356,34 @@
                 <div class="figure">
                     <img src="img/sample/food/sbhyzs.jpg">
                     <div class="bg">
-                        <a class="use" href="javascript:;">使用</a>
                         <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
                     </div>
+                    <span class="ybiconfont ybicon-ok"></span>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/food/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                    <span class="ybiconfont ybicon-ok"></span>
+                </div>
+                <p class="figure_num">(图文编号：010-18941)</p>
+            </li>
+            <li>
+                <div class="figure">
+                    <img src="img/sample/food/sbhyzs.jpg">
+                    <div class="bg">
+                        <a class="preview ybiconfont ybicon-eyeopen" href="javascript:;"></a>
+                    </div>
+                    <span class="ybiconfont ybicon-ok"></span>
                 </div>
                 <p class="figure_num">(图文编号：010-18941)</p>
             </li>
         </ul>
-        <div class="pagination_wrap small">
+        <!--<div class="pagination_wrap small">
             <div class="turn_btn">
                 <span class="prev sPrev"> < </span>
                 <span class="current">1</span>
@@ -1363,7 +1392,12 @@
                 <a>4</a>
                 <a class="next sNext"> > </a>
             </div>
-        </div>
+        </div>-->
+    </div>
+    <div class="action_bar">
+        <!--<a class="delete" href="javascript:;">删除</a>-->
+        <a class="cm_btn ok" href="javascript:;">保存</a>
+        <a class="cm_btn cancel" href="javascript:;">取消</a>
     </div>
 </div>
 <!--新增菜品-->
@@ -2567,6 +2601,44 @@
 </div>
 <!--添加页面-->
 <div class="add_page_con">
+    <div class="filter_wrap lock"><!--收缩class:lock-->
+        <div class="filter_options">
+            <form>
+                <div class="option">
+                    <span>风格筛选：</span>
+                    <div class="labels">
+                        <a class="label" href="javascript:;">萌萌哒</a>
+                        <a class="label" href="javascript:;">团结喜庆</a>
+                        <a class="label" href="javascript:;">简约</a>
+                        <a class="label" href="javascript:;">时尚</a>
+                        <a class="label" href="javascript:;">黑</a>
+                        <a class="label" href="javascript:;">自然</a>
+                        <a class="label" href="javascript:;">简约</a>
+                        <a class="label" href="javascript:;">时尚</a>
+                        <a class="label" href="javascript:;">黑</a>
+                        <a class="label" href="javascript:;">自然</a>
+                        <a class="label" href="javascript:;">几米漫画</a>
+                    </div>
+                </div>
+                <div class="option">
+                    <span>展示方式：</span>
+                    <label>
+                        <input type="radio" value="null" name="needTwo" checked="checked">全部</label>
+                    <label>
+                        <input type="radio" value="false" name="needTwo">单页</label>
+                    <label>
+                        <input type="radio" value="true" name="needTwo">双页</label>
+                </div>
+                <div class="option">
+                    <span>图片数量：</span>
+                    <input type="number" name="imageNum" placeholder="" value="">
+                    <span>文本数量：</span>
+                    <input type="number" name="textNum" placeholder="" value="">
+                </div>
+            </form>
+        </div>
+        <a class="locker" href="javascript:;" title=""><i class="ybiconfont ybicon-down1"></i>筛选</a>
+    </div>
     <div class="target_chapter">
         <label>1-选择分类：</label>
         <select class="choose_chapter">
@@ -2578,145 +2650,188 @@
     </div>
     <div class="tpl_slide_wrap">
         <label>2-选择使用的模板</label>
-        <div class="tpl_list ">
-            <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                    <li class="select swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_07.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_08.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_11.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_12.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_15.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_16.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_13.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_14.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_03.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_04.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_05.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_06.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_05.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_06.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_05.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_06.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_05.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_06.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-                    </li>
-                    <li class="swiper-slide">
-                        <div class="tpl double">
-                            <div class="left">
-                                <img src="img/sample/bookdetail/inner_page_05.jpg">
-                            </div>
-                            <div class="right">
-                                <img src="img/sample/bookdetail/inner_page_06.jpg">
-                            </div>
-                            <span class="ybiconfont ybicon-ok"></span>
-                        </div>
-                        <p class="tpl_num">模板03：国色天香</p>
-                    </li>
-                </ul>
-            </div>
+        <div class="hd">
             <a class="prev ybiconfont ybicon-backward2" href="javascript:;"></a>
             <a class="next ybiconfont ybicon-forward2" href="javascript:;"></a>
         </div>
+        <div class="bd">
+            <div class="chaptermake_tpl">
+                <ul>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                    <li>
+                        <span class="icon-columns double_page" title="双页模板"></span>
+                        <div class="photo ">
+                            <span class="ybiconfont ybicon-ok"></span>
+                            <p class="preview_btn"><i class=" icon-eye-open"></i></p>
+                            <p class="default_book hidden"><i class=" icon-book"></i>当前</p>
+                            <div><img src="img/sample/cookbook_01.jpg"></div>
+                        </div>
+                        <div class="tpl_title" title="漫画风格漫画风格漫画风格漫画风格">漫画风格漫画风格漫画风格漫画风格</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="action_bar">
-        <label>添加数量：</label>
+    <div class="page_num">
+        <label>想要添加的页面数量：</label>
         <ul class='ybcommon_counter_item'>
             <a href="javascript:;">-</a>
             <input type='text' value='0'>
             <a href="javascript:;">+</a>
         </ul>
+    </div>
+    <div class="action_bar">
         <a href="javascript:;" class="cm_btn cm_fr ok">确认添加</a>
     </div>
 </div>
@@ -2863,8 +2978,14 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/swiper.jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ui.touch-punch.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
 <script type="text/javascript" src="assets/js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.js"></script>
+<script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
+<!-- build:js js/all.js -->
+<script type="text/javascript" src="js/base.js"></script>
+<!-- endbuild -->
 <script>
     $(document).ready(function () {
         asideConShrink('chapter_shrink', 'chapter_list');
@@ -2873,12 +2994,16 @@
         menuEditEvents();
         chooseMenuClass();
         chooseMenuClassPops();
-        $('html, body').css({
-            height: 0
-        })
-        alert($(window).height())
+        changeButtonCss();
     });
-
+    //渲染控件样式
+    function changeButtonCss() {
+        $("input[type=radio],input[type=checkbox]").iCheck({
+            checkboxClass: 'icheckbox_minimal-green',
+            radioClass: 'iradio_minimal-green',
+            increaseArea: '20%'
+        });
+    }
     function menuEditEvents() {
         determineWindowSize();
         //列表详情切换
@@ -3053,16 +3178,12 @@
         //点击模板图片，弹出编辑配图
         /*art.dialog({
          title:"配图",
-         lock: true,
+         lock: true, padding: 0,
          content: document.querySelector('.chose_figure_con'),
          init: function(){
-         //搜索
-         $('.search_wrap > input').focusin(function(){
-         $(this).closest('.search_wrap').addClass('active');
-         });
-         $('.search_wrap > input').focusout(function(){
-         $(this).closest('.search_wrap').removeClass('active');
-         });
+             $('.figure_list li').click(function(){
+                 $(this).addClass('select').siblings().removeClass('select');
+             });
          }
          });*/
 
@@ -3079,7 +3200,30 @@
             });
         });
 
-
+        //筛选伸缩
+        $('.filter_wrap .locker').click(function(){
+            var filteWrap = $(this).parent();
+            if(filteWrap.hasClass('lock')){
+                filteWrap.removeClass('lock');
+                var filterH = filteWrap.find('.filter_options').height();
+                filteWrap.height(filterH);
+                filteWrap.parent().find('.tips').hide();
+                filteWrap.find('.locker').html('<i class="ybiconfont ybicon-down1"></i>');
+                //选择风格标签
+                filteWrap.find('.label').click(function(){
+                    if($(this).hasClass('select')){
+                        $(this).removeClass('select');
+                    }else{
+                        $(this).addClass('select');
+                    }
+                })
+            }else{
+                filteWrap.height(0);
+                filteWrap.addClass('lock');
+                filteWrap.parent().find('.tips').show('slow');
+                filteWrap.find('.locker').html('<i class="ybiconfont ybicon-down1"></i>筛选');
+            }
+        })
         //新增页面
         $('.add_page').click(function(){
             art.dialog({
@@ -3088,21 +3232,31 @@
                 padding: 0,
                 content: document.querySelector('.add_page_con'),
                 init: function(){
-                    var addPageSwiper = new Swiper('.tpl_list .swiper-container', {
-                        nextButton: '.next',
-                        prevButton: '.prev',
-                        slidesPerView: 4,
-                        slidesPerColumn: 2,
-                        spaceBetween : 10
+                    //单页模板slide
+                    $('.tpl_slide_wrap').slide({
+                        mainCell: ".bd .chaptermake_tpl",
+                        autoPage: true,
+                        pnLoop: false,
+                        effect: "left",
+                        autoPlay: false,
+                        vis: 1,
+                        scroll: 1,
+                        trigger: "click"
                     });
 
                     $('.choose_chapter').chosen({
                         width: "200px"
                     });
 
-                    $('.tpl_list li').click(function(){
-                        $(this).addClass('select').siblings().removeClass('select');
-                    })
+                    //添加数量
+                    $('.ybcommon_counter_item').priceCalculator();
+
+                    $('.chaptermake_tpl ul li').click(function() {
+                        $('.chaptermake_tpl ul li').each(function(i) {
+                            $(this).removeClass('select');
+                        });
+                        $(this).addClass('select');
+                    });
                 }
             });
         });
