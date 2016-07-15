@@ -4133,6 +4133,111 @@
     color: #333;
     background-color: #fff;
 }
+
+.add_page_con .filter_wrap{
+    position: relative;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding: 0 65px;
+    z-index: 1;
+    visibility: visible;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: all .35s ease-in-out;
+}
+
+.add_page_con .filter_wrap{
+    margin: -3px 0 30px;
+}
+.filter_wrap .filter_options{
+    opacity: 1;
+    transition: all .35s ease-in-out;
+}
+
+.filter_wrap.lock .filter_options{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+.filter_wrap .filter_options .option{
+    line-height: 48px;
+    display: block;
+    box-sizing: border-box;
+}
+.filter_options .option label{
+    padding: 0;
+    margin-right: 20px;
+}
+.filter_options .option input {
+    line-height: 20px;
+    box-sizing: border-box;
+    width: 115px;
+    height: 22px;
+    margin: 0 0 0 4px;
+    padding: 0 0 0 6px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 0 3px #ccc;
+}
+.filter_options .option span:nth-of-type(2) {
+    margin-left: 20px;
+}
+.filter_wrap .locker{
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    margin-left: -24px;
+    width: 48px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    color: #999;
+    background-color: #e6e6e6;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+}
+.filter_wrap.lock .locker{
+    height: 20px;
+    line-height: 20px;
+    bottom: -20px;
+}
+.filter_wrap .locker i{
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    transform: rotate(180deg);
+}
+.filter_wrap.lock .locker i{
+    transform: rotate(0deg);
+    vertical-align: middle;
+}
+.option .labels{
+    display: inline-block;
+    max-width: 635px;
+    vertical-align: top;
+}
+.labels .label{
+    position: relative;
+    display: inline-block;
+    padding: 0 6px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 12px;
+    min-width: 50px;
+    height: 23px;
+    line-height: 21px;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.labels .label:hover,
+.labels .label.select{
+    color: #81b430;
+    border: 1px solid #81b430;
+}
+
 .add_page_con .target_chapter
 {
     line-height: 45px;
@@ -4165,8 +4270,7 @@
 .change_tpl_con div label
 {
     padding-left: 45px;
-
-    color: #999;
+    color: #333;
 }
 .change_tpl_con div label
 {
@@ -4176,6 +4280,7 @@
 
     vertical-align: middle;
 }
+/*
 .tpl_slide_wrap .tpl_list
 {
     position: relative;
@@ -4271,6 +4376,145 @@
 {
     color: #666;
 }
+*/
+
+.tpl_slide_wrap {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.tpl_slide_wrap .hd {
+    position: relative;
+}
+.tpl_slide_wrap .hd a {
+    font-size: 40px;
+    line-height: 338px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    height: 338px;
+    color: rgba(153,153,153,.6);
+    background-color: #fff;
+}
+.tpl_slide_wrap .hd .prev {
+    left: 0;
+}
+.tpl_slide_wrap .hd .next {
+    right: 0;
+}
+.tpl_slide_wrap .hd a:hover {
+    color: #00a388;
+}
+.tempWrap {
+    margin: 0 auto;
+}
+.tpl_slide_wrap .chaptermake_tpl ul {
+    width: 756px;
+    min-height: 338px;
+    margin: 0 30px;
+}
+.tpl_slide_wrap .chaptermake_tpl li{
+    font-size: 14px;
+    position: relative;
+    float: left;
+    margin: 5px 10px 10px;
+    text-align: center;
+}
+.double_page {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #00a388;
+}
+.chaptermake_tpl li .photo {
+    position: relative;
+    box-sizing: border-box;
+    width: 106px;
+    height: 130px;
+    border: 1px solid transparent;
+    margin-bottom: 5px;
+    padding: 1px 0 0 1px;
+    background: url('../img/makebook/chaptermark_tpl_bg.png') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.tpl_slide_wrap .chaptermake_tpl li:hover .photo,
+.tpl_slide_wrap .chaptermake_tpl li.select .photo {
+    border: 1px solid #00a388;
+}
+.chaptermake_tpl li .ybicon-ok {
+    line-height: 10px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    display: none;
+    width: 0;
+    height: 0;
+    color: #fff;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #00a388 #00a388 transparent;
+}
+.chaptermake_tpl li.select .ybicon-ok {
+    display: block;
+}
+.chaptermake_tpl ul li .photo .preview_btn {
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 3px;
+    background: #4dbbe6;
+}
+.chaptermake_tpl ul li .photo:hover .preview_btn {
+    display: block;
+}
+.chaptermake_tpl ul li .photo p.default_book {
+    font-size: 12px;
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+    padding: 3px 5px;
+    color: #fff;
+    border: 1px solid #e43c3c;
+    border-radius: 3px;
+    background: #d6413d;
+    -khtml-border-radius: 3px;
+}
+.chaptermake_tpl ul li .photo div {
+    width: 101px;
+    height: 127px;
+}
+.chaptermake_tpl ul li .photo div img {
+    width: 100px;
+    height: 126px;
+}
+.chaptermake_tpl ul li .tpl_title {
+    overflow: hidden;
+    width: 104px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.add_page_con .page_num {
+    position: relative;
+    margin: 10px 0;
+    padding: 0 15px 0 0;
+}
+.add_page_con .page_num .ybcommon_counter_item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 .edit_group {
     font-size: 12px;
