@@ -3,14 +3,11 @@
 {
     position: fixed;
     z-index: 0;
-
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
-
-    transition: all .3s ease-in-out .5s;
-
+    box-sizing: border-box;
     background-color: #fff;
+    transition: all .3s ease-in-out .5s;
 }
 
 .yc_index_con .swiper-container
@@ -22,15 +19,11 @@
 .yc_index_con section
 {
     position: relative;
-
-    overflow: hidden;
-
     width: 100%;
     height: 100%;
-
-    transition: all .3s;
-
+    overflow: hidden;
     background-color: #fff;
+    transition: all .3s;
 }
 
 .yc_index_con .nth1
@@ -55,11 +48,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
-    box-sizing: border-box;
     width: 976px;
-    margin-left: -488px;
+    box-sizing: border-box;
     padding-top: 73px;
+    margin-left: -488px;
 }
 
 .yc_index_con .nth1 .con h1,
@@ -74,20 +66,16 @@
 {
     position: relative;
     left: -316px;
-
     width: 516px;
     height: 60px;
-
-    transition: all .6s ease-in-out;
-
-    opacity: 0;
     background-position: 0 0;
+    opacity: 0;
+    transition: all .6s ease-in-out;
 }
 
 .yc_index_con .swiper-slide-active .con h1
 {
     left: 0;
-
     opacity: 1;
 }
 
@@ -95,23 +83,19 @@
 {
     position: relative;
     right: -316px;
-
     width: 516px;
     height: 48px;
     margin: 25px 0;
-
-    transition: all .6s ease-in-out;
-
-    opacity: 0;
+    background-position: 0 -63px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background-position: 0 -63px;
+    opacity: 0;
+    transition: all .6s ease-in-out;
 }
 
 .yc_index_con .swiper-slide-active .con p
 {
     right: 0;
-
     opacity: 1;
 }
 
@@ -119,59 +103,46 @@
 {
     position: relative;
     bottom: -48px;
-
     display: block;
-
     width: 516px;
     height: 48px;
     margin: 64px 0;
-
-    transition: all .6s ease-in-out .2s;
-
-    opacity: 0;
     background-position: 0 -118px;
+    opacity: 0;
+    transition: all .6s ease-in-out .2s;
 }
 
 .yc_index_con .swiper-slide-active .con span
 {
     bottom: 0;
-
     opacity: 1;
 }
 
 .start_made
 {
-    font-size: 24px;
-    line-height: 48px;
-
     position: relative;
-
     display: block;
-
     width: 224px;
     height: 48px;
-    margin: 25px auto;
-
-    text-align: center;
-
+    margin: 25px auto;
+    font-size: 24px;
+    line-height: 48px;
     color: #fff;
-    border-radius: 24px;
+    text-align: center;
     background-color: #f40;
+    border-radius: 24px;
 }
 
 .yc_index_con .start_made
 {
     bottom: -60px;
-
-    transition: bottom .6s ease-in-out .2s;
-
     opacity: 0;
+    transition: bottom .6s ease-in-out .2s;
 }
 
 .yc_index_con .swiper-slide-active .start_made
 {
     bottom: 0;
-
     opacity: 1;
 }
 
@@ -193,14 +164,11 @@
 
 .start_made.max
 {
-    font-size: 28px;
-    line-height: 60px;
-
     width: 212px;
     height: 60px;
-
-    margin: 0;
-
+    margin: 0;
+    font-size: 28px;
+    line-height: 60px;
     border-radius: 16px;
 }
 
@@ -211,17 +179,13 @@
 
 .yc_index_con .con .caption
 {
-    font-size: 48px;
-
     position: relative;
     top: -64px;
-
-    margin-top: 25px;
-
-    transition: all .6s ease-in-out;
-    text-align: center;
-
+    margin-top: 25px;
+    font-size: 48px;
     color: #333;
+    text-align: center;
+    transition: all .6s ease-in-out;
 }
 
 .swiper-slide-active .con .caption
@@ -231,19 +195,15 @@
 
 .yc_index_con .con .smaller
 {
-    font-size: 28px;
-
     position: relative;
     bottom: -64px;
-
-    margin: 15px 0 55px;
-
-    transition: all .6s ease-in-out;
-    text-align: center;
-    word-spacing: 10px;
-    text-transform: uppercase;
-
+    margin: 15px 0 55px;
+    font-size: 28px;
     color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    transition: all .6s ease-in-out;
 }
 
 .yc_index_con .swiper-slide-active .con .smaller
@@ -265,117 +225,98 @@
 {
     position: absolute;
     top: 50%;
-
     width: 100%;
 }
 
 .nth2 .steps
 {
-    clear: both;
-    overflow: hidden;
-
     width: 100%;
     min-width: 1024px;
     max-width: 1120px;
     margin: 0 auto;
+    overflow: hidden;
+    clear: both;
 }
 
 .nth2 .steps li
 {
     position: relative;
     left: -26%;
-
     float: left;
-
     width: 24%;
     margin: 0 .5%;
-
     opacity: 0;
 }
 
 .swiper-slide-active .steps li
 {
     left: 0;
-
     opacity: 1;
 }
 
 .nth2 .steps li i
 {
     display: block;
-
     height: 256px;
     margin: 55px auto 20px;
-
     background: url('../img/index/steps.png') no-repeat;
     background-size: cover;
 }
 
 .nth2 .steps .step_one
 {
-    transition: all .6s ease-in-out 0s;
-
     border-top: 3px solid #ff9c79;
+    transition: all .6s ease-in-out 0s;
 }
 
 .nth2 .steps .step_two
 {
-    transition: all .6s ease-in-out .2s;
-
     border-top: 3px solid #79ff7f;
+    transition: all .6s ease-in-out .2s;
 }
 
 .nth2 .steps .step_three
 {
-    transition: all .6s ease-in-out .4s;
-
     border-top: 3px solid #79c4ff;
+    transition: all .6s ease-in-out .4s;
 }
 
 .nth2 .steps .step_four
 {
-    transition: all .6s ease-in-out .6s;
-
     border-top: 3px solid #f7a0ed;
+    transition: all .6s ease-in-out .6s;
 }
 
 .nth2 .steps .step_one i
 {
     width: 205px;
-
     background-position: 0 0;
 }
 
 .nth2 .steps .step_two i
 {
     width: 221px;
-
     background-position: -267px 0;
 }
 
 .nth2 .steps .step_three i
 {
     width: 163px;
-
     background-position: -585px 0;
 }
 
 .nth2 .steps .step_four i
 {
     width: 238px;
-
     background-position: -832px 0;
 }
 
 .nth2 .steps li::after
 {
     position: absolute;
-
     width: 36px;
     height: 20px;
-
     content: ' ';
-
     background: url('../img/index/steps.png') no-repeat;
 }
 
@@ -383,7 +324,6 @@
 {
     top: 157px;
     right: -13px;
-
     background-position: -207px -102px;
 }
 
@@ -391,7 +331,6 @@
 {
     top: 149px;
     right: -30px;
-
     background-position: -520px -94px;
 }
 
@@ -399,7 +338,6 @@
 {
     top: 149px;
     right: -3px;
-
     background-position: -775px -99px;
 }
 
@@ -412,33 +350,26 @@
 {
     position: absolute;
     top: 50%;
-
     width: 100%;
 }
 
 .nth3 .advantages
 {
     position: relative;
-
-    clear: both;
-    overflow: hidden;
-
     width: 810px;
     margin: 0 auto;
+    overflow: hidden;
+    clear: both;
 }
 
 .nth3 .advantages li
 {
     position: relative;
-
     float: left;
-
     width: 240px;
     margin: 0 15px;
-
-    transition: all .6s ease-in-out;
-
     opacity: 0;
+    transition: all .6s ease-in-out;
 }
 
 .advantages .time
@@ -449,7 +380,6 @@
 .swiper-slide-active .advantages .time
 {
     left: 0;
-
     opacity: 1;
 }
 
@@ -461,7 +391,6 @@
 .swiper-slide-active .advantages .money
 {
     bottom: 0;
-
     opacity: 1;
 }
 
@@ -473,18 +402,15 @@
 .swiper-slide-active .advantages .power
 {
     right: 0;
-
     opacity: 1;
 }
 
 .advantages li i
 {
     display: block;
-
     width: 115px;
     height: 120px;
     margin: 34px auto 0;
-
     background: url('../img/index/advantage_icons.png') no-repeat;
     background-size: cover;
 }
@@ -501,13 +427,10 @@
 
 .advantages li b
 {
+    display: block;
+    margin: 20px 0;
     font-size: 32px;
     font-weight: 100;
-
-    display: block;
-
-    margin: 20px 0;
-
     text-align: center;
 }
 
@@ -516,15 +439,11 @@
     position: absolute;
     top: 14px;
     left: 40px;
-
     display: block;
-
     width: 160px;
     height: 160px;
-
-    transition: all .5s ease-in-out 0s;
-
     background: url(../img/index/circles.png) no-repeat;
+    transition: all .5s ease-in-out 0s;
 }
 
 span.cl
@@ -564,14 +483,11 @@ li:hover span.cr
 
 .advantages li p
 {
+    margin: 35px 0 25px;
     font-size: 16px;
     line-height: 1.8;
-
-    margin: 35px 0 25px;
-
-    text-align: center;
-
     color: #333;
+    text-align: center;
 }
 
 .advantages .time b,
@@ -596,47 +512,38 @@ li:hover span.cr
 {
     position: absolute;
     top: 50%;
-
-    clear: both;
-    overflow: hidden;
-
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    clear: both;
 }
 
 .nth4 .users_slide
 {
     position: relative;
     bottom: -328px;
-
     width: 904px;
     height: 448px;
     margin: 45px auto 55px;
-
-    transition: all .6s ease-in-out;
-
     opacity: 0;
+    transition: all .6s ease-in-out;
 }
 
 .swiper-slide-active .users_slide
 {
     bottom: 0;
-
     opacity: 1;
 }
 
 .users_slide li
 {
     position: relative;
-
     float: left;
-    overflow: hidden;
-
     width: 220px;
     min-width: 220px;
     height: 220px;
     max-height: 220px;
-
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -644,7 +551,6 @@ li:hover span.cr
 {
     width: 100%;
     height: 100%;
-
     transition: all .4s ease-in-out;
     -ms-transform: scale(1);
         transform: scale(1);
@@ -652,10 +558,9 @@ li:hover span.cr
 
 .users_slide li:hover img
 {
+    opacity: 0;
     -ms-transform: scale(5);
         transform: scale(5);
-
-    opacity: 0;
 }
 
 .users_slide li .info
@@ -663,56 +568,45 @@ li:hover span.cr
     position: absolute;
     top: 0;
     left: 0;
-
-    visibility: hidden;
-    overflow: hidden;
-
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
     padding: 20px;
-
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    background-color: #f40;
+    opacity: 0;
     transition: all .4s ease-in-out;
     -ms-transform: scale(0);
         transform: scale(0);
-    text-align: center;
-
-    opacity: 0;
-    color: #fff;
-    background-color: #f40;
 }
 
 .users_slide li:hover .info
 {
     visibility: visible;
-
+    opacity: 1;
     -ms-transform: scale(1);
         transform: scale(1);
-
-    opacity: 1;
 }
 
 .users_slide li .info p
 {
-    font-size: 17px;
-
-    overflow: hidden;
-
     max-width: 100%;
-
     margin-top: 64px;
     margin-bottom: 10px;
-
-    white-space: nowrap;
+    overflow: hidden;
+    font-size: 17px;
     text-overflow: ellipsis;
     word-break: break-all;
+    white-space: nowrap;
 }
 
 .users_slide li .info span
 {
-    font-size: 14px;
-
     display: block;
+    font-size: 14px;
 }
 
 .users_slide .swiper-button-next,
@@ -720,24 +614,20 @@ li:hover span.cr
 {
     position: absolute;
     top: 50%;
-
     width: 25px;
     height: 45px;
-
     background: url(../img/index/slide_arrows.png) no-repeat;
 }
 
 .users_slide .swiper-button-prev
 {
     left: -80px;
-
     background-position: 0 0;
 }
 
 .users_slide .swiper-button-next
 {
     right: -80px;
-
     background-position: -25px 0;
 }
 
@@ -759,24 +649,24 @@ li:hover span.cr
 
 @media only screen and (max-height: 768px)
 {
-    .nth4 .users_slide
-    {
+  .nth4 .users_slide
+        {
         width: 664px;
         height: 328px;
         margin: 0 auto 15px;
-    }
+  }
 
-    .users_slide li
-    {
+  .users_slide li
+        {
         width: 160px;
         min-width: 160px;
         max-width: 160px;
         height: 160px;
         max-height: 160px;
-    }
+  }
 
-    .users_slide li .info p
-    {
+  .users_slide li .info p
+        {
         margin-top: 34px;
-    }
+  }
 }

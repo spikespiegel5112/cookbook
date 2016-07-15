@@ -3,52 +3,44 @@
 .order_manage
 {
     position: relative;
-
     width: 100%;
     min-height: 610px;
-    margin: 0;
     padding: 25px 0;
-
+    margin: 0;
     background-color: #f5f5f5;
 }
 
 .opd_wrapper
 {
     position: relative;
-
     width: 1000px;
     margin: 0 auto;
 }
 
 .opd_wrapper .opd_title
 {
-    line-height: 90px;
-
-    overflow: hidden;
-
     width: 100%;
     height: 90px;
+    overflow: hidden;
+
+    line-height: 90px;
 }
 
 .opd_wrapper .opd_title h1
 {
-    font-size: 25px;
-
     float: left;
 
+    font-size: 25px;
     color: #666;
 }
 
 .opd_wrapper .opd_title h1 span
 {
     display: inline-block;
-
     width: 52px;
     height: 52px;
     margin: 0 20px 0 0;
-
     vertical-align: middle;
-
     background: url('../img/icon/shopping_cart.png') no-repeat center;
 }
 
@@ -59,32 +51,25 @@
 
 .progress_bar ul li
 {
-    font-size: 14px;
-    line-height: 35px;
-
     position: relative;
-
     display: inline-block;
-
     width: 128px;
 
-    text-align: center;
-
+    font-size: 14px;
+    line-height: 35px;
     color: #ccc;
+    text-align: center;
 }
 
 .progress_bar ul li::after
 {
     position: absolute;
-    z-index: 0;
     top: 27px;
     left: 50%;
-
+    z-index: 0;
     width: 128px;
     height: 6px;
-
     content: ' ';
-
     background-color: #ccc;
 }
 
@@ -105,18 +90,16 @@
 
 .progress_bar ul li div
 {
-    line-height: 26px;
-
     position: relative;
     z-index: 1;
-
     width: 26px;
     height: 26px;
     margin: 16px auto 0;
 
+    line-height: 26px;
     color: #fff;
-    border-radius: 100%;
     background-color: #ccc;
+    border-radius: 100%;
 }
 
 .progress_bar ul li.cur div
@@ -153,7 +136,6 @@
 .opd_checklist_wrapper table
 {
     width: 100%;
-
     background-color: #fff;
 }
 
@@ -166,19 +148,17 @@
 .opd_checklist_wrapper thead tr
 {
     height: 50px;
-
+    background-color: #fff;
     border-top: 3px solid #00a388;
     border-bottom: 1px solid #ddd;
-    background-color: #fff;
 }
 
 .opd_checklist_wrapper thead tr th
 {
+    width: 95px;
     font-size: 14px;
-
     color: #333;
     border: 0;
-    width: 95px;
 }
 
 .opd_checklist_wrapper thead tr th:nth-child(1),
@@ -220,10 +200,8 @@
 .opd_sketch_item select
 {
     display: block;
-
     width: 90px;
     margin: 10px auto;
-
     text-align: center;
 }
 
@@ -231,11 +209,10 @@
 {
     width: 86px;
     height: 86px;
+    box-sizing: border-box;
     margin: 16px auto;
-
     border: 1px solid #ccc;
     border-radius: 100%;
-    box-sizing: border-box;
 }
 
 .opd_sketch_item .size_fig{
@@ -244,9 +221,9 @@
 }
 
 .opd_sketch_item .size_fig.min{
-    margin: 20px auto;
     width: 101px;
     height: 119px;
+    margin: 20px auto;
 }
 
 .order_details .opd_sketch_item .size_fig{
@@ -279,50 +256,46 @@
 .opd_sketch_item .size_fig img
 {
     position: absolute;
-    left: 10px;
     top: 0;
-    margin: 0;
+    left: 10px;
     width: 100%;
     height: 100%;
-    border-radius: 0;
+    margin: 0;
     border: 0;
+    border-radius: 0;
 }
 
 .opd_sketch_item .pattern_fig img{
-    margin: 21px auto;
     width: 75px;
     height: 75px;
+
+    margin: 21px auto;
     border: 0;
     border-radius: 0;
 }
 
 .opd_sketch_item label
 {
-    font-size: 12px;
-
     display: block;
-
     margin: 0 auto 10px;
 
-    text-align: center;
-
+    font-size: 12px;
     color: #666;
+    text-align: center;
 }
 
 .opd_checklist_wrapper .opd_actions a
 {
     font-size: 14px;
     line-height: 30px;
-
     color: #999;
 }
 
 .opd_checklist_wrapper .opd_actions a i
 {
+    margin-right: 5px;
     font-size: 14px;
     line-height: 30px;
-
-    margin-right: 5px;
 }
 
 .opd_checklist_wrapper .opd_actions div > a:hover
@@ -339,7 +312,6 @@
 {
     top: 30px;
     left: -32px;
-
     display: block;
 }
 
@@ -351,23 +323,19 @@
 .opd_summarize_wrapper
 {
     position: relative;
-
     width: 100%;
-
+    background-color: #fff;
     border-right: 1px solid #ddd;
     border-bottom: 6px solid #d9d9d9;
     border-left: 1px solid #ddd;
-    background-color: #fff;
 }
 
 .opd_preferential_wrapper
 {
-    font-size: 14px;
-
     float: left;
-
     padding: 20px 30px;
 
+    font-size: 14px;
     color: #777;
 }
 
@@ -379,14 +347,12 @@
 .opd_coupon_wrapper > div
 {
     position: relative;
-
     margin: 0 0 10px;
 }
 
 .opd_coupon_wrapper label
 {
     display: block;
-
     margin-bottom: 10px;
 }
 .personal_content_box .coupon .opd_coupon_wrapper label {
@@ -411,31 +377,27 @@
 
 .opd_privilege_wrapper
 {
-    font-size: 14px;
-
     float: left;
+    font-size: 14px;
 }
 
 .opd_privilege_wrapper p
 {
-    margin: 10px 0 0;
     padding-left: 25px;
+    margin: 10px 0 0;
 }
 
 .opd_privilege_wrapper p a
 {
-    font-size: 12px;
-    line-height: 18px;
-
     display: inline-block;
-
     width: 18px;
     height: 18px;
     margin: 0 5px 0 0;
 
-    text-align: center;
-
+    font-size: 12px;
+    line-height: 18px;
     color: #333;
+    text-align: center;
     border: 1px solid #999;
 }
 
@@ -457,7 +419,6 @@
 .opd_subtotal_wrapper
 {
     float: right;
-
     padding: 10px 15px;
 }
 
@@ -469,56 +430,47 @@
 .opd_subtotal_wrapper ul li
 {
     float: left;
-
     margin: 20px 0 0 0;
 }
 
 .opd_subtotal_wrapper ul li label
 {
-    font-size: 14px;
-
     display: inline-block;
-
     width: 6em;
 
-    text-align: right;
-
+    font-size: 14px;
     color: #666;
+    text-align: right;
 }
 
 .opd_subtotalprice_item
 {
     /* float: right; */
     margin: 10px 0 15px;
-
     text-align: right;
 }
 
 .opd_subtotalprice_item strong
 {
-    font-size: 30px;
-
     display: inline-block;
 
+    font-size: 30px;
     color: #f40;
 }
 
 .opd_confirm_item
 {
-    font-size: 16px;
-    line-height: 40px;
-
     float: right;
-
     width: 145px;
     height: 40px;
     margin: 10px 0 15px;
 
-    text-align: center;
-
+    font-size: 16px;
+    line-height: 40px;
     color: #fff;
-    border-radius: 4px;
+    text-align: center;
     background-color: #f40;
+    border-radius: 4px;
 }
 
 .opd_confirm_item:hover
@@ -529,49 +481,43 @@
 .opd_receivingaddress_wrapper
 {
     width: 100%;
-
-    border: 1px solid #ddd;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 .opd_header_item
 {
     position: relative;
-
     width: 100%;
     padding: 0;
-
+    background-color: #fff;
     border-top: 3px solid #00a388;
     border-bottom: 1px solid #ddd;
-    background-color: #fff;
 }
 
 .opd_header_item p
 {
-    font-size: 16px;
-    line-height: 50px;
-
     margin: 0 20px;
 
+    font-size: 16px;
+    line-height: 50px;
     color: #333;
 }
 
 .opd_addnewaddress_item
 {
-    font-size: 14px;
-
     position: absolute;
     top: 10px;
     right: 20px;
 
+    font-size: 14px;
     color: #999;
 }
 
 .opd_addnewaddress_item span
 {
-    font-size: 14px;
-
     padding: 0 3px;
+    font-size: 14px;
 }
 
 .opd_addnewaddress_item:hover
@@ -592,15 +538,15 @@
 
 .opd_addressandmode_wrapper table tr
 {
-    box-sizing: border-box;
     height: 45px;
+    box-sizing: border-box;
 }
 
 .opd_addressandmode_wrapper tbody tr:hover
 {
+    background-color: #f8fdf5;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    background-color: #f8fdf5;
 }
 
 .opd_addressandmode_wrapper td
@@ -621,12 +567,10 @@
 
 .opd_editaddress_wrapper a
 {
-    font-size: 14px;
-
     display: inline-block;
-
     margin: 0 4px;
 
+    font-size: 14px;
     color: #666;
 }
 
@@ -634,11 +578,9 @@
 {
     display: none;
     float: right;
-
     width: 210px;
-    margin: 0 auto;
     padding: 0 15px;
-
+    margin: 0 auto;
     text-align: right;
 }
 
@@ -661,19 +603,16 @@
 
 .opd_editaddress_wrapper a.default_btn
 {
-    font-weight: bold;
-
     display: block;
     float: right;
-
-    box-sizing: border-box;
     width: 72px;
+    box-sizing: border-box;
     margin: 0 4px 0 10px;
 
-    cursor: default;
-    text-align: center;
-
+    font-weight: bold;
     color: #f5c8c8;
+    text-align: center;
+    cursor: default;
     border: 2px solid #f5c8c8;
     border-radius: 2px;
 }
@@ -681,10 +620,8 @@
 .opd_editaddress_wrapper a.set_default
 {
     width: 72px;
-
-    text-align: center;
-
     color: #f40;
+    text-align: center;
 }
 
 .opd_editaddress_wrapper .set_default:hover
@@ -705,54 +642,48 @@
 .opd_sumprice_wrapper .opd_subtotal_wrapper ul li
 {
     float: none;
-
     margin: 10px 0 0;
-
     text-align: right;
 }
 
 .opd_confirm_wrapper
 {
-    box-sizing: border-box;
     width: 100%;
     height: 70px;
-    padding: 0 50px 0 15px;
 
-    border-bottom: 6px solid #d9d9d9;
+    box-sizing: border-box;
+    padding: 0 50px 0 15px;
     background-color: #f2f2f2;
+    border-bottom: 6px solid #d9d9d9;
 }
 
 .opd_confirm_wrapper .tips
 {
-    font-size: 14px;
-    line-height: 60px;
-
     float: left;
 
+    font-size: 14px;
+    line-height: 60px;
     color: #999;
 }
 
 .opd_confirm_wrapper .tips span
 {
-    font-size: 14px;
-
     margin-right: 5px;
+    font-size: 14px;
 }
 
 .opd_confirm_wrapper .btn_group
 {
     float: right;
-
     margin: 15px 25px 0 0;
 }
 
 .opd_confirm_wrapper .btn_group .btn
 {
-    font-size: 14px;
-    line-height: 30px;
-
     margin-left: 20px;
 
+    font-size: 14px;
+    line-height: 30px;
     color: #666;
 }
 
@@ -763,17 +694,17 @@
 
 .opd_modeofpayment_wrapper
 {
-    overflow: hidden;
-
     width: 100%;
+    overflow: hidden;
 }
 
 .opd_modeofpayment_wrapper > ul
 {
-    box-sizing: border-box;
     width: 100%;
-    margin: 20px auto;
+
+    box-sizing: border-box;
     padding-left: 20px;
+    margin: 20px auto;
 }
 
 .opd_modeofpayment_wrapper li:first-child
@@ -788,42 +719,35 @@
 
 .opd_modeofpayment_wrapper > ul > li > label
 {
-    font-size: 13px;
-
     float: left;
-
     margin: 15px 0 0 0;
+    font-size: 13px;
 }
 
 .opd_modeofpayment_wrapper li span
 {
-    line-height: 19px;
-
     float: left;
-
     margin: 15px 0 0 0;
+    line-height: 19px;
 }
 
 .opd_modeofpayment_wrapper li ul
 {
     float: left;
-
     width: 200px;
 }
 
 .opd_modeofpayment_wrapper li ul li input
 {
     float: left;
-
     margin: 18px 10px 0 10px;
 }
 
 .opd_modeofpayment_wrapper li ul li label
 {
     display: inline-block;
-
-    cursor: pointer;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .opd_modeofpayment_wrapper li:first-child span
@@ -833,34 +757,29 @@
 
 .opd_orderinfo_wrapper
 {
-    font-size: 16px;
-
-    overflow: hidden;
-
     width: 100%;
     padding: 15px 0;
+    overflow: hidden;
 
+    font-size: 16px;
     color: #333;
 }
 
 .opd_sumprice_wrapper .opd_orderinfo_wrapper
 {
     float: left;
-
     max-width: 600px;
 }
 
 .opd_orderinfo_wrapper ul li
 {
-    line-height: 30px;
-
     padding-left: 20px;
+    line-height: 30px;
 }
 
 .opd_orderinfo_wrapper ul li:last-child span
 {
     display: inline-block;
-
     text-indent: 80px;
 }
 
@@ -871,28 +790,24 @@
 
 .add_new_address
 {
-    font-size: 14px;
-
     width: 600px;
+    font-size: 14px;
 }
 
 .add_new_address .item
 {
     float: none;
-
     width: 100%;
     margin: 0;
 }
 
 .add_new_address label
 {
-    line-height: 45px;
-
     display: inline-block;
-
     width: 85px;
     height: 45px;
 
+    line-height: 45px;
     text-align: right;
 }
 
@@ -903,45 +818,39 @@
 
 .form-control
 {
-    line-height: 1.42857143;
-
     display: block;
-
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
     padding: 6px 12px;
 
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-
+    line-height: 1.42857143;
     color: #555;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     background-color: #fff;
     background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
 .add_new_address .form-control
 {
     display: inline-block;
-
     width: 230px;
     height: 30px;
 }
 
 .add_new_address button
 {
-    line-height: 25px;
-
     height: 25px;
-    margin-left: 10px;
     padding: 0 12px;
+    margin-left: 10px;
 
+    line-height: 25px;
     cursor: pointer;
-
+    background: #e2e2e2 linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 25px) repeat scroll 0 0;
     border: 1px solid #bbb;
     border-radius: 6px;
-    background: #e2e2e2 linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 25px) repeat scroll 0 0;
 }
 
 .add_new_address button:hover,
@@ -952,16 +861,14 @@
 
 .add_new_address .btn
 {
-    line-height: 30px;
-
     width: 160px;
     height: 30px;
     margin: 20px 90px;
 
+    line-height: 30px;
     text-align: center;
-
-    border-radius: 2px;
     background-color: #f40;
+    border-radius: 2px;
 }
 
 .add_new_address .btn a
@@ -972,20 +879,16 @@
 .opd_paymentsuccess_wrapper, .opd_paymentfailed_wrapper
 {
     overflow: hidden;
-
     text-align: center;
 }
 .opd_paymentresult_wrapper
 {
     display: inline-block;
-
     width: 380px;
-    margin: 20px 0 20px 30px;
     padding-right: 30px;
-
+    margin: 20px 0 20px 30px;
     text-align: center;
     vertical-align: middle;
-
     border-right: 1px solid #ddd;
 }
 .opd_paymentfailed_wrapper .opd_paymentresult_wrapper
@@ -994,11 +897,10 @@
 }
 .opd_paymentresult_wrapper h2
 {
-    font-size: 33px;
-    font-weight: bold;
-
     margin: 30px 0;
 
+    font-size: 33px;
+    font-weight: bold;
     color: #f40;
 }
 .opd_paymentresult_wrapper p
@@ -1009,182 +911,148 @@
 .opd_paymentsuccess_wrapper .opd_paymentresult_wrapper span
 {
     display: block;
-
     width: 215px;
     height: 100px;
     margin: 20px 0 10px 60px;
-
     background: url(../img/order/truck.png) 0 0 no-repeat;
 }
 .opd_successbind_wrapper
 {
     display: inline-block;
-
     width: 370px;
     height: 200px;
-    margin: 60px 30px;
     padding: 35px 35px;
-
+    margin: 60px 30px;
     vertical-align: middle;
-
-    border: 1px solid #e2e2e2;
     background-color: #f8fdf5;
+    border: 1px solid #e2e2e2;
 }
 .opd_successbind_wrapper p
 {
     font-size: 12px;
-
     color: #999;
 }
 .opd_successbind_wrapper ul
 {
-    overflow: hidden;
-
     width: 100%;
     margin: 60px auto;
+    overflow: hidden;
 }
 .opd_successbind_wrapper li
 {
     display: inline-block;
-
     width: 45%;
 }
 .opd_successbind_wrapper ul li a
 {
-    font-size: 18px;
-
     float: left;
-
     width: 100%;
 
-    text-align: center;
-
+    font-size: 18px;
     color: #00a388;
+    text-align: center;
 }
 .opd_successbind_wrapper ul li span
 {
-    font-size: 21px;
-
     width: 1em;
     height: 30px;
 
+    font-size: 21px;
     vertical-align: middle;
 }
 .opd_successbind_wrapper ul li label
 {
     font-size: 18px;
     line-height: 36px;
-
     vertical-align: middle;
 }
 .opd_successbind_wrapper ul li a:hover label
 {
-    cursor: pointer;
     text-decoration: underline;
+    cursor: pointer;
 }
 .opd_revieworderlist_item
 {
-    font-size: 13px;
-
     display: block;
-
     width: 90px;
     margin: 0 auto;
 
+    font-size: 13px;
     color: #aaa;
 }
 .opd_revieworderlist_item:hover label
 {
     display: inline-block;
-
-    cursor: pointer;
     text-decoration: underline;
+    cursor: pointer;
 }
 .opd_paymentfailed_wrapper .opd_revieworderlist_item
 {
     width: 110px;
     margin: 30px auto;
-
     color: #00a388;
 }
 /*my orders list*/
 .order_manage .personal_content_box
 {
-    font-size: 14px;
-
     position: relative;
-
-    box-sizing: border-box;
     width: 1200px;
     min-height: 800px;
-    margin: 0 auto;
+    box-sizing: border-box;
     padding: 0 18px;
-
-    color: #333;
+    margin: 0 auto;
     overflow: hidden;
+    font-size: 14px;
+    color: #333;
 }
 .hr
 {
     position: relative;
-
-    clear: both;
-
     padding: 5px 0;
+    clear: both;
 }
 .hr .green
 {
     position: absolute;
     z-index: 1;
-
     display: inline-block;
-
     width: 13%;
-
     border-top: 1px solid #00a388;
 }
 .hr .gray
 {
     position: absolute;
-
     display: block;
-
     width: 100%;
-
     border-top: 1px solid #b4b4b4;
 }
 .personal_content_box .common_crumb_wrapper
 {
     float: left;
-
     width: 60%;
     padding: 0 0 0 10px;
 }
 .personal_content_box .common_crumb_wrapper ul
 {
     width: 100%;
-
     border: 0;
 }
 .personal_content_box .query_group
 {
     float: right;
-
     width: 175px;
     margin-top: 4px;
 }
 .query_group
 {
     position: relative;
-
     display: block;
-
     width: 100%;
     height: 40px;
 }
 .query_group .status_query
 {
     display: inline-block;
-
     margin: 10px;
 }
 .status_query .chosen-container
@@ -1194,20 +1062,17 @@
 .order_list
 {
     position: relative;
-
     width: 100%;
-    margin: 10px 0;
     padding-bottom: 10px;
-
+    margin: 10px 0;
     background-color: #fff;
 }
 .order_list > ul > li
 {
-    overflow: hidden;
-
-    margin: 0 15px;
     padding: 10px 0;
+    margin: 0 15px;
 
+    overflow: hidden;
     border-bottom: 1px dashed #ddd;
 }
 .order_list > ul > li:last-child
@@ -1222,10 +1087,9 @@
 {
     width: 100%;
     margin-left: -1px;
-
-    border: 1px solid #e5e5e5;
     background-color: #f9fafb;
     background-image: linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 30px);
+    border: 1px solid #e5e5e5;
 }
 .order_list .caption ul
 {
@@ -1233,15 +1097,13 @@
 }
 .order_list li li
 {
-    font-size: 12px;
-
     display: inline-block;
-
     width: 11%;
 
+    font-size: 12px;
     text-align: center;
-    vertical-align: middle;
     word-break: break-all;
+    vertical-align: middle;
 }
 .order_list li .number
 {
@@ -1254,17 +1116,14 @@
 .order_list li .money span
 {
     font-size: 16px;
-
     color: #f40;
 }
 .order_list .action .common_btn
 {
     display: block;
-
-    box-sizing: border-box;
     width: 75px;
+    box-sizing: border-box;
     margin: 10px auto;
-
     color: #00a388;
 }
 .order_list .action .common_btn:hover
@@ -1274,15 +1133,12 @@
 .order_list .illustration a
 {
     position: relative;
-
     display: block;
-
-    box-sizing: border-box;
     width: 88px;
     height: 122px;
-    margin: 5px auto;
+    box-sizing: border-box;
     padding: 3px 4px 1px 0;
-
+    margin: 5px auto;
     background: url('../img/order/cookbook_bg.png') no-repeat 0 0;
 }
 .illustration a img
@@ -1293,29 +1149,23 @@
 /*my cookbook*/
 .personal_content_box .tool_wrap
 {
-    line-height: 42px;
-
     top: 0;
-
     float: right;
-
     margin: 5px 10px 0 0;
+    line-height: 42px;
 }
 .tool_wrap .search_bar
 {
-    line-height: 25px;
-
     position: relative;
-
     display: inline-block;
-    overflow: hidden;
-
     width: 0;
     min-width: 30px;
     height: 25px;
+    overflow: hidden;
 
-    transition: width .3s;
+    line-height: 25px;
     vertical-align: middle;
+    transition: width .3s;
 
     -webkit-backface-visibility: hidden;
 }
@@ -1325,25 +1175,22 @@
 }
 .tool_wrap .search_bar .input
 {
-    font-size: 14px;
-    line-height: 25px;
-
     position: absolute;
-    z-index: 0;
     top: 0;
     right: 0;
-
+    z-index: 0;
     display: none;
-
-    box-sizing: border-box;
     width: 100%;
     height: 25px;
+    box-sizing: border-box;
     padding: 0 10px;
 
+    font-size: 14px;
+    line-height: 25px;
     color: #666;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 0 4px 4px 0;
-    background-color: #fff;
 }
 .tool_wrap .search_bar.search_open input
 {
@@ -1352,32 +1199,27 @@
 .tool_wrap .search_bar .search_ico,
 .tool_wrap .search_bar .search_btn
 {
-    line-height: 25px;
-
     position: absolute;
-    z-index: 1;
     top: 0;
     right: 0;
-
+    z-index: 1;
     display: block;
-
     width: 30px;
     height: 25px;
-    margin: 0;
     padding: 0;
+    margin: 0;
 
-    cursor: pointer;
+    line-height: 25px;
     text-align: center;
-
-    border: 0;
+    cursor: pointer;
     background-color: transparent;
+    border: 0;
 }
 .tool_wrap .search_bar .search_ico
 {
-    font-size: 20px;
-
     z-index: 3;
 
+    font-size: 20px;
     color: #abaebd;
 }
 .search_bar .search_ico:hover
@@ -1387,51 +1229,45 @@
 .tool_wrap .search_bar.search_open .search_ico
 {
     color: #fff;
-    border-radius: 0 4px 4px 0;
     background-color: #00a388;
+    border-radius: 0 4px 4px 0;
 }
 .personal_content_box .bookshelf_wrap
 {
     position: relative;
-
     width: 100%;
-    margin: -4px 0 0;
     padding: 0;
+    margin: -4px 0 0;
 }
 .bookshelf_wrap .filter_wrap
 {
-    line-height: 60px;
-
     position: relative;
-
     width: 100%;
     height: 60px;
-    margin: 0 0 12px;
     padding: 0;
+    margin: 0 0 12px;
 
+    line-height: 60px;
     background-color: #fff;
     box-shadow: 0 0 3px #ddd;
 }
 .bookshelf_wrap .filter_wrap .check_all
 {
     float: left;
-
     margin-left: 10px;
 }
 .bookshelf_wrap .filter_group
 {
     float: left;
-
     margin-left: 15px;
 }
 .bookshelf_wrap .filter_group a
 {
+    padding: 5px 10px;
+    margin: 10px 5px 10px 0;
+
     font-size: 16px;
     line-height: 30px;
-
-    margin: 10px 5px 10px 0;
-    padding: 5px 10px;
-
     color: #666;
 }
 .bookshelf_wrap .filter_group a:hover,
@@ -1441,22 +1277,18 @@
 }
 .bookshelf_wrap .filter_wrap .btns
 {
+    float: right;
     font-size: 18px;
     line-height: 36px;
-
-    float: right;
 }
 .bookshelf_wrap .filter_wrap .btns a
 {
     display: inline-block;
-
     width: 145px;
     height: 36px;
     margin: 12px 10px 12px 0;
-
-    text-align: center;
-
     color: #fff;
+    text-align: center;
     border-radius: 4px;
 }
 .filter_wrap .btns .new_book
@@ -1477,27 +1309,24 @@
 }
 .bookshelf_wrap .filter_wrap .btns .printings.disabled
 {
-    cursor: default;
     pointer-events: none;
 
+    cursor: default;
     background-color: #c9c9c9;
 }
 .bookshelf_wrap .bookshelf
 {
     position: relative;
-
-    box-sizing: border-box;
     width: 100%;
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 .bookshelf_wrap .bookshelf .grid
 {
     position: relative;
-
-    margin-bottom: 10px;
     padding-bottom: 10px;
-
+    margin-bottom: 10px;
     border-bottom: 2px solid #eee;
     box-shadow: 0 1px 0 #fff;
 }
@@ -1506,28 +1335,23 @@
     position: absolute;
     top: 71px;
     left: 10px;
-
     background-color: #fff;
 }
 .bookshelf .grid .display
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
-
+    z-index: 1;
     /* float: left; */
     margin: 0 10px 0 30px;
 }
 .bookshelf .grid .display a
 {
     position: relative;
-
     display: block;
-
     width: 158px;
     height: 160px;
-
     background: url('../img/order/pc_bookshelf.png') no-repeat center bottom;
 }
 .bookshelf .grid .display .cover
@@ -1535,12 +1359,10 @@
     position: absolute;
     top: 18px;
     left: 37px;
-
-    box-sizing: border-box;
     width: 88px;
     height: 122px;
+    box-sizing: border-box;
     padding: 3px 4px 1px 0;
-
     background: url('../img/order/cookbook_bg.png') no-repeat 0 0;
 }
 
@@ -1551,37 +1373,33 @@
 }
 .bookshelf .grid .describe
 {
-    box-sizing: border-box;
     width: 100%;
     height: 160px;
+
+    box-sizing: border-box;
     padding: 22px 65px 0 193px;
 }
 .bookshelf .grid .describe .info
 {
-    line-height: 30px;
-
     float: left;
-
     width: 71%;
+    line-height: 30px;
 }
 .describe .info .name
 {
-    font-size: 16px;
-
     display: inline-block;
 
+    font-size: 16px;
     color: #333;
 }
 .describe .info .time
 {
     font-size: 12px;
-
     color: #999;
 }
 .describe .info .config a
 {
     font-size: 14px;
-
     color: #666;
 }
 .describe .info .config a:hover
@@ -1591,7 +1409,6 @@
 .describe .config span
 {
     display: inline-block;
-
     margin-right: 15px;
 }
 .describe .config b
@@ -1601,32 +1418,27 @@
 .describe .info .btn_group
 {
     display: block;
-
     margin: 10px 0;
 }
 .describe .btn_group .btn
 {
     position: relative;
-
     display: inline-block;
 }
 .describe .btn_group .btn > a
 {
-    font-size: 14px;
-    line-height: 25px;
-
     display: inline-block;
-
     width: 45px;
     height: 25px;
     margin-right: 5px;
 
-    text-align: center;
-
+    font-size: 14px;
+    line-height: 25px;
     color: #79bd8f;
+    text-align: center;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 2px;
-    background-color: #fff;
 }
 .describe .btn_group .btn > a:hover
 {
@@ -1637,93 +1449,77 @@
 {
     top: 36px;
     left: -70px;
-
     display: block;
 }
 .bookshelf .describe .progress
 {
-    font-size: 12px;
-
     float: left;
-
     width: 29%;
     max-width: 163px;
     margin: 20px 0;
 
+    font-size: 12px;
     color: #666;
 }
 .progress .percent
 {
-    overflow: hidden;
-
     margin: 0 0 10px;
+    overflow: hidden;
 }
 .describe .progress a
 {
     display: block;
-
     color: #666;
 }
 .progress .percent > div
 {
     display: block;
     float: left;
-
     box-sizing: border-box;
     padding: 14px 0 0 0;
 }
 .progress .percent span
 {
     display: inline-block;
-
     width: 60px;
-
     text-align: center;
 }
 .progress .percent .bar
 {
     display: inline-block;
     float: none;
-
     width: 60px;
     height: 5px;
     padding: 0;
-
-    border-radius: 5px;
     background-color: #ccc;
+    border-radius: 5px;
 }
 .progress .percent .bar span
 {
     display: block;
-
     width: 0;
     height: 100%;
-
-    border-radius: 5px;
     background-color: #00a388;
+    border-radius: 5px;
 }
 .bookshelf .grid .actions
 {
     position: absolute;
     top: 65px;
     right: 5px;
-
     width: 65px;
 }
 .grid .actions a
 {
-    font-size: 12px;
-    line-height: 30px;
-
     display: block;
-
     width: 55px;
     height: 30px;
     margin: 0 auto;
 
-    text-align: center;
-
+    font-size: 12px;
+    line-height: 30px;
     color: #666;
+    text-align: center;
 }
 .grid .actions a:hover
 {
@@ -1732,10 +1528,9 @@
 .grid .actions .btn
 {
     font-size: 14px;
-
     color: #fff;
-    border-radius: 2px;
     background-color: #00a388;
+    border-radius: 2px;
 }
 .grid .actions .btn:hover
 {
@@ -1749,15 +1544,14 @@
 .bookshelf.recycle_bin .grid .display, .bookshelf.recycle_bin .grid .describe
 {
     pointer-events: none;
-
     background-color: #ececec;
+                    filter: grayscale(100%);
+                    filter: gray;/*ie 9*/
 
-    -webkit-filter: grayscale(100%);
-       -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-         -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-            filter: gray;/*ie 9*/
+        -webkit-filter: grayscale(100%);
+               -moz-filter: grayscale(100%);
+                -ms-filter: grayscale(100%);
+                 -o-filter: grayscale(100%);
 }
 .bannertitleedit_wrapper li
 {
@@ -1765,21 +1559,18 @@
 }
 .bannertitleedit_wrapper label
 {
-    line-height: 2em;
-
     float: left;
-
     min-width: 5em;
+    line-height: 2em;
 }
 .bannertitleedit_wrapper input
 {
-    font-size: 15px;
-    line-height: 30px;
-
     width: 200px;
     height: 30px;
     padding: 0 6px;
 
+    font-size: 15px;
+    line-height: 30px;
     color: #555;
     border: 1px solid #ccc;
 }
@@ -1790,33 +1581,29 @@
 .order_details
 {
     position: relative;
-    margin-top: 10px;
     padding-bottom: 20px;
+    margin-top: 10px;
 }
 
 .order_details .title
 {
-    line-height: 40px;
-
     position: relative;
-
-    box-sizing: border-box;
     width: 100%;
     height: 40px;
+    box-sizing: border-box;
     padding: 0 20px;
 
-    border: 1px solid #e5e5e5;
+    line-height: 40px;
     background-color: #eaeaea;
+    border: 1px solid #e5e5e5;
 }
 
 .order_details .title li
 {
-    font-size: 12px;
-
     display: inline-block;
-
     margin-right: 25px;
 
+    font-size: 12px;
     color: #333;
 }
 
@@ -1828,32 +1615,28 @@
 .order_details .title li:last-child
 {
     float: right;
-
     margin-right: 0;
 }
 
 .order_details .title li:last-child span
 {
     font-size: 16px;
-
     color: #e90000;
 }
 
 .order_details .opd_checklist_wrapper
 {
     box-sizing: border-box;
-
     border-top: 1px solid #ddd;
 }
 
 .order_details .opd_checklist_wrapper thead tr
 {
     width: 100%;
-
-    border-top: 0;
-    border-bottom: 1px solid #ddd;
     background-color: #f9fafb;
     background-image: linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 30px);
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .order_details .opd_checklist_wrapper thead tr th:nth-child(1)
@@ -1882,32 +1665,27 @@
 .order_details .opd_checklist_wrapper td .book span
 {
     display: block;
-
     padding: 5px 0;
 }
 
 .order_details .opd_checklist_wrapper td .img span
 {
-    font-size: 28px;
-
     display: block;
-
     padding: 5px 0;
 
+    font-size: 28px;
     color: #ff696a;
 }
 
 .order_details .opd_checklist_wrapper td .book.photo span
 {
     font-size: 30px;
-
     color: #5ec9d3;
 }
 
 .order_details .opd_checklist_wrapper td .book.ia span
 {
     font-size: 36px;
-
     color: #70ca5d;
 }
 
@@ -1932,8 +1710,8 @@
     margin-bottom: 25px;
 }
 .order_info > a {
-    font-weight: bold;
     padding-left: 20px;
+    font-weight: bold;
 }
 .receive_address .edit_icon_group {
     position: absolute;
@@ -1946,23 +1724,23 @@
     color: #999;
 }
 .edit_icon_group .new_address b{
-    font-size: 14px;
     margin-right: 5px;
+    font-size: 14px;
 }
 .address_list > label {
-    font-size: 12px;
-    line-height: 30px;
     display: block;
     height: 30px;
     padding-left: 20px;
+    font-size: 12px;
+    line-height: 30px;
 }
 .address_list li {
     display: inline-block;
-    overflow: hidden;
     min-width: 30px;
+    overflow: hidden;
     text-align: left;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .address_list li:first-child {
     min-width: 22px;
@@ -1985,31 +1763,26 @@
 .address_list .edit a,
 .address_list .delete a
 {
-    margin-right: 15px;
-    font-size: 12px;
-
-    /*display: none;*/
-    opacity: 0;
-    visibility: hidden;
-
     width: 30px;
 
+    margin-right: 15px;
+    font-size: 12px;
     color: #999;
+    visibility: hidden;
+    /*display: none;*/
+    opacity: 0;
 }
 .address_list .set_default a
 {
+    width: 60px;
+    box-sizing: border-box;
+
     margin-right: 15px;
     font-size: 12px;
-
-    opacity: 0;
-    visibility: hidden;
-
-    box-sizing: border-box;
-    width: 60px;
-
-    text-align: center;
-
     color: #f60;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .address_list label:hover
@@ -2021,9 +1794,9 @@
 .address_list label:hover .delete a,
 .address_list label:hover .set_default a
 {
+    visibility: visible;
     /*display: block;*/
     opacity: 1;
-    visibility: visible;
 }
 
 .address_list .edit a:hover,
@@ -2035,16 +1808,14 @@
 
 .address_list .default a
 {
-    margin-right: 15px;
-    font-weight: bold;
-
-    box-sizing: border-box;
     width: 60px;
+    box-sizing: border-box;
     padding: 0 4px;
 
-    cursor: default;
-
+    margin-right: 15px;
+    font-weight: bold;
     color: #f5a8a8 ;
+    cursor: default;
     border: 2px solid #f5a8a8;
     border-radius: 2px;
 }
@@ -2052,10 +1823,10 @@
     width: 5%;
 }
 .logistics_list > ul > li {
-    font-size: 12px;
-    line-height: 30px;
     height: 30px;
     padding-left: 20px;
+    font-size: 12px;
+    line-height: 30px;
 }
 .logistics_list > ul > li.caption {
     font-size: 14px;
@@ -2069,40 +1840,38 @@
     width: 5%;
 }*/
 .invoice_info {
-    font-size: 14px;
     width: 500px;
+    font-size: 14px;
 }
 .invoice .invoice_info li {
-    font-size: 12px;
-    line-height: 25px;
     height: 25px;
     padding-left: 20px;
+    font-size: 12px;
+    line-height: 25px;
 }
 .coupon div p {
-    font-size: 12px;
-    line-height: 40px;
     height: 40px;
     padding-left: 20px;
+    font-size: 12px;
+    line-height: 40px;
 }
 .invoice label {
-    font-size: 12px;
     padding: 0 20px;
+    font-size: 12px;
 }
 .invoice label div {
     margin-right: 25px;
 }
 .invoice_info
 {
-    font-size: 14px;
-
     width: 500px;
+    font-size: 14px;
 }
 
 .invoice_info .hd
 {
     height: 40px;
     padding: 0;
-
     border-bottom: 2px solid #427d38;
 }
 
@@ -2110,35 +1879,31 @@
 {
     position: relative;
     left: 0;
-
     height: 40px!important;
 }
 
 .invoice_info .hd li
 {
-    line-height: 40px!important;
-
     display: inline-block;
-
-    box-sizing: border-box;
     width: 120px;
     height: 40px!important;
+    box-sizing: border-box;
 
-    cursor: pointer;
-    text-align: center;
-
+    line-height: 40px!important;
     color: #999;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff!important;
     border: 1px solid #ddd!important;
     border-bottom: none!important;
-    background-color: #fff!important;
 }
 
 .invoice_info .hd li.on
 {
     color: #fff!important;
+    background-color: #519247!important;
     border: none!important;
     border-top: 1px solid #ddd!important;
-    background-color: #519247!important;
 }
 
 .invoice_info .bd
@@ -2148,15 +1913,13 @@
 
 .invoice_info .bd li
 {
-    line-height: 35px;
-
     height: 35px;
+    line-height: 35px;
 }
 
 .invoice_info .bd .form-control
 {
     display: inline-block;
-
     width: 230px;
     height: 28px;
 }
@@ -2164,9 +1927,7 @@
 .invoice_info .bd li span
 {
     display: inline-block;
-
     width: 110px;
-
     text-align: right;
 }
 
@@ -2180,31 +1941,32 @@
     margin-right: 5px;
 }
 .amount_payable div p {
-    font-size: 12px;
-    line-height: 30px;
     position: relative;
     height: 30px;
     padding-left: 20px;
+    font-size: 12px;
+    line-height: 30px;
 }
 .amount_payable div p .total_pay {
-    font-size: 14px;
     position: absolute;
     right: 0;
+    font-size: 14px;
 }
 .amount_payable .total_pay b {
     font-size: 18px;
     color: #db4040;
 }
 .go_pay {
-    font-size: 16px;
-    line-height: 30px;
     float: right;
     width: 160px;
     height: 30px;
-    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 30px;
     text-align: center;
-    border-radius: 2px;
+    cursor: pointer;
     background-color: #f40;
+    border-radius: 2px;
 }
 .go_pay a {
     display: block;

@@ -3,27 +3,21 @@
 {
     position: relative;
     z-index: 4;
-
     width: 100%;
-    margin: 0 auto;
     padding: 20px 0 0 0;
-
+    margin: 0 auto;
     text-align: center;
 }
 
 .bp_title
 {
-    font-size: 18px;
-
     position: relative;
-
     display: inline-block;
-
-    margin: 0 auto;
     padding: 0 30px;
-
-    opacity: 0;
+    margin: 0 auto;
+    font-size: 18px;
     color: #d1e648;
+    opacity: 0;
 }
 
 .bp_titlehint_item
@@ -31,55 +25,47 @@
     position: absolute;
     top: 0;
     right: 0;
-
     width: 20px;
     height: 20px;
-    margin: 0 0 0 10px;
     padding: 5px 0 0 0;
-
-    cursor: pointer;
-
+    margin: 0 0 0 10px;
     color: #5c3000;
+    cursor: pointer;
     border-radius: 50%;
 }
 
 .bp_titlehint_item:hover
 {
-    opacity: 1;
     color: #d1e648;
+    opacity: 1;
 }
 
 .bp_titlehint_item:hover .bp_des
 {
+    opacity: 1;
     -webkit-transition: opacity .5s;
        -moz-transition: opacity .5s;
         -ms-transition: opacity .5s;
-
-    opacity: 1;
 }
 
 .bp_des
 {
-    font-size: 14px;
-
     position: absolute;
-    z-index: 4;
     top: 25px;
     left: -70px;
-
+    z-index: 4;
     width: 270px;
     height: auto;
-    margin: 10px 0 0 0;
     padding: 10px;
-
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #333;
     text-align: left;
     text-overflow: ellipsis;
-
-    opacity: 0;
-    color: #333;
+    background: rgba(187, 163, 45, .8);
     border: 1px solid rgba(187, 163, 45, .8);
     border-radius: 12px;
-    background: rgba(187, 163, 45, .8);
+    opacity: 0;
 }
 
 .bp_des:before
@@ -87,39 +73,30 @@
     position: absolute;
     top: -14px;
     right: 204px;
-
     display: block;
-
     width: 0;
     height: 0;
-
     content: '';
-
-    border-width: 0 8px 13px 8px;
-    border-style: solid;
     border-color: transparent transparent rgba(187, 163, 45, .8) transparent;
+    border-style: solid;
+    border-width: 0 8px 13px 8px;
 }
 
 .bp_des ul li
 {
     margin: 10px 0 0 20px;
-
-    list-style: disc;
-
     color: #fff;
+    list-style: disc;
 }
 
 .bp_tips
 {
-    font-size: 12px;
-
     position: absolute;
     right: -100%;
     bottom: 0;
-
     width: 205px;
-    height: 225px;
-
+    height: 225px;
+    font-size: 12px;
     color: #fff;
     background: url('../img/previewpage/book_preview_right_bg.png') 0 0;
 }
@@ -131,47 +108,39 @@
 
 .bp_tips p
 {
-    line-height: 24px;
-
     width: 140px;
     margin: 10px 0 0 20px;
+    line-height: 24px;
 }
 
 .bp_btn
 {
+    position: relative;
+    top: 0;
+    z-index: 2;
+    width: 320px;
+    padding: 0 0 30px 0;
+    margin: 0 auto;
     font-family: 'microsoft yahei';
     font-size: 16px;
-
-    position: relative;
-    z-index: 2;
-    top: 0;
-
-    width: 320px;
-    margin: 0 auto;
-    padding: 0 0 30px 0;
-
     text-align: center;
 }
 
 .bp_btn a
 {
     display: inline-block;
-
     min-width: 6em;
     min-width: 100px;
-    margin: 0 5px;
     padding: 5px 20px;
-
+    margin: 0 5px;
     color: #fff;
 }
 
 .bp_btn span:before
 {
-    line-height: 1.6em;
-
     float: left;
-
     margin: 0 0 0 5px;
+    line-height: 1.6em;
 }
 
 .bp_iwanttomake_btn
@@ -196,13 +165,10 @@
 .bp_login_container
 {
     position: fixed;
-    z-index: 4;
     top: 0;
-
+    z-index: 4;
     display: none;
-
     width: 100%;
-
     background-color: rgba(0,0,0,.5);
 }
 .bp_login_container.active
@@ -216,7 +182,6 @@
 {
     top: 0;
     left: 0;
-
     height: 600px;
     margin: 50px auto;
 }
@@ -232,7 +197,6 @@
 {
     position: relative;
     z-index: 1;
-
     height: 100%;
     /*margin: 2% 0 0 0;*/
 }
@@ -252,43 +216,35 @@
 .page-wrapper .odd.own-size:before, .page-wrapper .even.own-size:after
 {
     position: absolute;
-    z-index: 999;
     top: 0;
-
+    z-index: 999;
     width: 24px;
     height: 100%;
-
-    content: '';
-
     color: #333;
+    content: '';
     background-size: 100%;
 }
 
 .page-wrapper .odd.own-size:before
 {
     left: 0;
-
     background-image: url(../img/previewpage/shadow_right.png);
 }
 
 .page-wrapper .even.own-size:after
 {
     right: 0;
-
     background-image: url(../img/previewpage/shadow_left.png);
 }
 
 .flipbook_wrapper > a
 {
     position: absolute;
-    z-index: 1;
     top: 0;
-
+    z-index: 1;
     display: block;
-
     width: 25px;
     height: 100%;
-
     background-color: rgba(255, 255, 255, .4);
     background-image: url(../img/previewpage/bookpreview_arrows.png);
     background-repeat: no-repeat;
@@ -301,24 +257,23 @@
 
 .flipbook_wrapper > a:hover
 {
-    opacity: 1;
     background-color: rgba(238, 238, 238, .8);
+    opacity: 1;
 }
 
 .flipbook_prevpage_btn
 {
     left: -25px;
-
+    background-position: 0 400px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-position: 0 400px;
 }
 
 .flipbook_nextpage_btn
 {
+    background-position: -40px 400px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-position: -40px 400px;
 }
 
 .bmindex_main_wrapper .flipbook-viewport .page > div, .bp_preview_container .flipbook-viewport .page > div
@@ -342,7 +297,6 @@
 .bmindex_main_wrapper .flipbook-viewport .secondcover > div, .bmindex_main_wrapper .flipbook-viewport .thirdcover > div, .bp_preview_container .flipbook-viewport .secondcover > div, .bp_preview_container .flipbook-viewport .thirdcover > div
 {
     top: 8px;
-
     -ms-transform: scale(.58);
         transform: scale(.58);
     /*-ms-zoom: .58;*/
@@ -369,7 +323,6 @@
 {
     position: absolute;
     right: 0;
-
     margin: 0;
 }
 
@@ -377,17 +330,14 @@
 {
     position: absolute;
     left: 0;
-
     margin: 0;
 }
 
 .flipbook_wrapper .depth
 {
     position: absolute;
-
     width: 20px;
     height: 98%;
-
     background-image: url(../img/previewpage/pages-depth.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -406,31 +356,25 @@
 .back-side .depth
 {
     right: 0;
-
     background-position: -20px 0;
 }
 
 .bppreloadmask_wrapper
 {
     position: absolute;
-    z-index: 10001;
     top: 0;
-
+    z-index: 10001;
     display: none;
-
     width: 100%;
     height: 100%;
-
     background-color: #000;
 }
 
 .bppreloadmask_wrapper p
 {
     font-size: 12px;
-
-    text-align: center;
-
     color: #ccc;
+    text-align: center;
 }
 
 .bppreloadmask_logo_item
@@ -438,7 +382,6 @@
     width: 75px;
     height: 45px;
     margin: 30% auto 30px;
-
     background: url(../img/sprite/imgsprite_yb3_wbl_00000.png);
 }
 
@@ -447,17 +390,14 @@
     width: 150px;
     height: 2px;
     margin: 0 auto;
-
     background: #999;
 }
 
 .bppreloadmask_prograssbar_item span
 {
     display: block;
-
     width: 30%;
     height: 100%;
-
     background-color: #23aa43;
 }
 
@@ -465,29 +405,22 @@
 {
     position: absolute;
     bottom: 10px;
-
     width: 100%;
 }
 
 .bp_container
 {
-    font-family: 'microsoft yahei';
-
     position: relative;
-
-    overflow: hidden;
-
     min-width: 1200px;
-
+    overflow: hidden;
+    font-family: 'microsoft yahei';
     background-image: url(../img/previewpage/bookpreview_bg_00000.jpg);
 }
 
 .bp_toolbarhead_wrapper
 {
     overflow: hidden;
-
     text-align: center;
-
     border-bottom: 1px solid #ddd;
 }
 
@@ -495,12 +428,10 @@
 
 .bp_toolbarhead_wrapper div
 {
+    width: 90%;
+    margin: 0 auto 15px;
     font-size: 13px;
     line-height: 1.6em;
-
-    width: 90%;
-    margin: 0 auto 15px;
-
     text-align: center;
 }
 
@@ -517,15 +448,13 @@
 .bp_toolbar_wrapper
 {
     position: absolute;
-    z-index: 4;
     top: 0;
     left: 0;
-
+    z-index: 4;
     width: 80px;
     height: 100%;
-
-    border-right: 1px solid #000;
     background: #fff;
+    border-right: 1px solid #000;
     box-shadow: 0 2px 5px #000;
 }
 
@@ -533,17 +462,14 @@
 {
     position: relative;
     z-index: 1;
-
     width: 100%;
     height: 100%;
-
     background: #eee;
 }
 
 .bp_toolbar_wrapper.shrink
 {
     left: -80px;
-
     -webkit-transition: left 1s;
        -moz-transition: left 1s;
         -ms-transition: left 1s;
@@ -552,7 +478,6 @@
 .bp_toolbar_wrapper.active
 {
     left: 0;
-
     -webkit-transition: left .5s;
        -moz-transition: left .5s;
         -ms-transition: left .5s;
@@ -561,59 +486,46 @@
 .bp_toolbar_wrapper > ul > li
 {
     position: relative;
-
-    margin: 0;
     padding: 10px 0 15px;
-
+    margin: 0;
     border-bottom: 1px solid #ddd;
 }
 
 .bp_toolbar_wrapper ul li a
 {
-    font-size: 30px;
-
     display: block;
-    overflow: hidden;
-
+    overflow: hidden;
+    font-size: 30px;
     color: #aaadbc;
 }
 
 .bp_toolbar_wrapper ul li a label
 {
-    font-size: 13px;
-
     display: block;
-
-    width: 100%;
-
-    cursor: pointer;
+    width: 100%;
+    font-size: 13px;
     text-align: center;
+    cursor: pointer;
 }
 
 .bp_toolbar_wrapper > ul > li > a > span
 {
-    font-size: 32px;
-    line-height: 40px;
-
     display: block;
-
     width: 50%;
     height: 40px;
-    margin: 0 auto;
-
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 40px;
     text-align: center;
 }
 
 .bp_toolbar_wrapper .praise_par a p
 {
+    width: 100%;
     font-size: 12px;
-
-    width: 100%;
-
-    cursor: pointer;
-    text-align: center;
-
     color: #08f;
+    text-align: center;
+    cursor: pointer;
 }
 
 .bp_toolbar_wrapper .praise_par a p span,
@@ -627,12 +539,9 @@
     position: absolute;
     top: 200px;
     left: 76px;
-
     display: none;/*yb 3.9.2*/
-
     width: 20px;
     height: 95px;
-
     background: url(../img/sprite/imgsprite_yb3_wbl_00000.png) -218px -87px no-repeat;
 }
 
@@ -737,19 +646,15 @@
 
 .bp_slidefold_btn
 {
+    position: absolute;
+    bottom: 205px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
     font-size: 16px;
     line-height: 40px;
-
-    position: absolute;
-    z-index: 1;
-    bottom: 205px;
-
-    width: 40px;
-    height: 40px;
-
-    text-align: center;
-
     color: #aaadbc;
+    text-align: center;
     background-color: #eee;
 /*	background: #eee url("../img/sprite/bp_slide_icons.png") no-repeat;*/
 }
@@ -757,7 +662,6 @@
 .bp_slidefold_btn.open
 {
     left: 25px;
-
     background-position: -250px 0;
 }
 
@@ -771,12 +675,10 @@
     position: fixed;
     bottom: 20px;
     left: 0;
-
     display: block;
-
+    background-position: -250px -40px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-position: -250px -40px;
 }
 
 .bp_slidefold_btn.fold:hover
@@ -801,12 +703,10 @@
 .bp_toolbar_wrapper .active .common_sharelist_wrapper
 {
     display: block;
-
+    opacity: 1;
     -webkit-transition: opacity .5s;
        -moz-transition: opacity .5s;
         -ms-transition: opacity .5s;
-
-    opacity: 1;
 }
 
 /*.common_sharelist_wrapper ul {
@@ -848,26 +748,20 @@
 
 .bp_instrucion_wrapper
 {
-    font-size: 14px;
-
     position: absolute;
     top: 40%;
     right: 10%;
-
-    width: 155px;
-
+    width: 155px;
+    font-size: 14px;
     color: #fff;
 }
 
 .bp_instrucion_wrapper h5
 {
+    margin: 10px 0;
     font-size: 18px;
-
-    margin: 10px 0;
-
-    text-align: center;
-
     color: #cbe13a;
+    text-align: center;
 }
 
 .bp_instrucion_wrapper p
@@ -879,7 +773,6 @@
 {
     position: relative;
     z-index: 3;
-
     width: 860px;
     height: 50px;
     margin: 0 auto;
@@ -895,24 +788,19 @@
 .bp_sliderbaroption_wrapper li
 {
     float: left;
-
     width: 35px;
     height: 35px;
 }
 
 .bp_sliderbaroption_wrapper li a
 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     font-size: 25px;
     line-height: 35px;
-
-    display: inline-block;
-
-    width: 100%;
-    height: 100%;
-
     text-align: center;
     vertical-align: middle;
-
     opacity: .5;
 }
 
@@ -925,12 +813,10 @@
 {
     position: relative;
     z-index: 3;/*NEWYB-1414*/
-
-    overflow: visible;
-
     width: 1070px;
     height: auto;
     margin: 0 auto;
+    overflow: visible;
 }
 
 .bp_container .flipbook-viewport .shadow
@@ -941,12 +827,10 @@
 .bp_mask_item
 {
     position: absolute;
-    z-index: 2;
     top: 0;
-
+    z-index: 2;
     width: 100%;
     height: 100%;
-
     background: rgba(0, 0, 0, .8);
 }
 
@@ -965,20 +849,16 @@
 .bp_toolbar_wrapper .chapter_info
 {
     position: absolute;
-    z-index: 4;
     top: -11px;
     left: 100px;
-
+    z-index: 4;
     display: none;
-
-    box-sizing: border-box;
     width: 130px;
+    box-sizing: border-box;
     padding: 10px;
-
     text-align: center;
-
-    border-radius: 8px;
     background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 2px 8px #333;
 }
 
@@ -992,12 +872,9 @@
     position: absolute;
     top: 30px;
     left: -15px;
-
     width: 0;
     height: 0;
-
     content: ' ';
-
     border-top: 15px solid transparent;
     border-right: 15px solid #fff;
     border-bottom: 15px solid transparent;
@@ -1007,7 +884,6 @@
 {
     font-size: 16px;
     line-height: 2.5;
-
     color: #666;
     border-bottom: 1px solid #dfdfdf;
 }
@@ -1016,11 +892,9 @@
 {
     display: none;
     float: left;
-
     width: 20px;
     height: 20px;
     margin: 3px 0 0 0;
-
     background: url(../img/sprite/imgsprite_yb3_wbl_00000.png) -65px -82px;
 }
 
@@ -1039,49 +913,39 @@
 
 .chapter_info ul
 {
+    max-height: 395px;
     overflow-x: hidden;
     overflow-y: auto;
-
-    max-height: 395px;
 }
 
 .chapter_info ul li
 {
-    font-size: 12px;
-    line-height: 20px;
-
     position: relative;
-
     width: 6em;
     height: 20px;
-    margin: 10px 0 10px 20px;
     padding: 0 8px 0 0;
-
-    list-style-type: disc;
-
+    margin: 10px 0 10px 20px;
+    font-size: 12px;
+    line-height: 20px;
     color: #999;
+    list-style-type: disc;
 }
 
 .chapter_info ul div
 {
     width: 90%;
-
     color: #fff;
 }
 
 .chapter_info ul li a
 {
-    font-size: 14px;
-
     float: right;
-    overflow: hidden;
-
     width: 5em;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
+    overflow: hidden;
+    font-size: 14px;
     color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .chapter_info ul li:hover, .chapter_info ul .active a, .chapter_info ul .active
@@ -1100,7 +964,6 @@
 {
     width: 530px;
     height: 740px;
-
     background: #fff;
 }
 
@@ -1149,78 +1012,63 @@
 
 .bp_preview_container .flipbook-viewport
 {
-    overflow: visible;
-
     width: 800px;
     margin: 0 auto;
+    overflow: visible;
 }
 
 .bp_preview_container .chapter_info ul li
 {
-    font-size: 12px;
-    line-height: 20px;
-
-    overflow: hidden;
-
     width: 140px;
     height: 20px;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
     color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .bp_preview_container .chapter_info
 {
     position: absolute;
-    z-index: 2;
     top: 50px;
     right: 10px;
     left: auto;
-
+    z-index: 2;
     width: 140px;
     margin: 10px 20px;
-
     text-align: center;
 }
 
 .bp_preview_container .chapter_info h4
 {
     font-size: 14px;
-
     color: #d9a236;
 }
 
 .bp_preview_container .chapter_info ul li
 {
-    font-size: 12px;
-    line-height: 20px;
-
-    overflow: hidden;
-
     width: 140px;
     height: 20px;
     margin: 0;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
     color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .book_preview_tite
 {
-    overflow: hidden;
-
     width: 300px;
-    margin: 0 auto;
-
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
+    margin: 0 auto;
+    overflow: hidden;
     color: #d9a236;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .book_preview_tite_wrapper
@@ -1230,31 +1078,24 @@
 
 .book_preview_des
 {
-    font-size: 12px;
-    line-height: 24px;
-
     float: left;
-    overflow: hidden;
-
     width: 200px;
     margin: 20px 0 0 0;
-
-    text-overflow: ellipsis;
-
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 24px;
     color: #999;
+    text-overflow: ellipsis;
 }
 
 .book_preview_tips
 {
-    font-size: 12px;
-
     position: absolute;
     right: 0;
     bottom: 0;
-
     width: 205px;
-    height: 225px;
-
+    height: 225px;
+    font-size: 12px;
     color: #fff;
     background: url('../img/previewpage/book_preview_right_bg.png') no-repeat;
 }
@@ -1266,27 +1107,22 @@
 
 .book_preview_tips p
 {
-    line-height: 24px;
-
     width: 140px;
     margin: 10px 0 0 20px;
+    line-height: 24px;
 }
 
 .book_preview_btn
 {
-    font-size: 16px;
-
     position: absolute;
     top: 0;
     right: 10px;
-
     width: 8em;
-    margin: 10px 20px;
     padding: 5px;
-
-    text-align: center;
-
+    margin: 10px 20px;
+    font-size: 16px;
     color: #fff;
+    text-align: center;
     background: #d9a236;
 }
 
@@ -1305,20 +1141,16 @@
 {
 	/*background-color: rgba(0,0,0,0.6);*/
     position: absolute;
-    z-index: -1;
     top: 0;
-
+    z-index: -1;
     width: 100%;
-
-    transition: opacity .5s;
-
 	/*height: 980px;*/
     opacity: 0;
+    transition: opacity .5s;
 }
 .bp_donate_container.active
 {
     z-index: 4;
-
     opacity: 1;
 }
 
@@ -1329,52 +1161,44 @@
 .bp_donate_wrapper
 {
     position: relative;
-
     display: block;
-
-    box-sizing: content-box;
     width: 560px;
 	/*height: 410px;*/
     min-height: 310px;
-    margin: 0 auto;
+    box-sizing: content-box;
     padding: 0;
-
-    border-radius: 10px;
+    margin: 0 auto;
     background-color: #fff;
+    border-radius: 10px;
 }
 .bp_donatestep_wrapper ul li
 {
     position: relative;
-
     display: inline-block;
-
     text-align: center;
     vertical-align: middle;
 }
 .bp_donate_wrapper h3
 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 30px 15px 30px;
+    margin: 0 auto;
     font-size: 35px;
     font-weight: normal;
-
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px 30px 15px 30px;
 }
 .bp_donate_wrapper h4
 {
-    font-size: 20px;
-    font-weight: normal;
-
     width: 100%;
     padding: 10px 0;
+    font-size: 20px;
+    font-weight: normal;
 }
 .bp_donate_wrapper h5
 {
+    margin: 0 auto;
     font-size: 16px;
     font-weight: normal;
-
-    margin: 0 auto;
 }
 .bp_donate_wrapper ul
 {
@@ -1383,31 +1207,24 @@
 
 .bp_donatedperson_wrapper
 {
-    overflow: hidden;
-
-    box-sizing: border-box;
     width: 100%;
-    margin: 20px 0 0;
+    box-sizing: border-box;
     padding: 0 30px 30px;
-
+    margin: 20px 0 0;
+    overflow: hidden;
+    background-color: #eee;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: #eee;
 }
 .bp_donatedperson_wrapper label
 {
+    position: relative;
+    display: block;
+    height: 40px;
     font-size: 12px;
     line-height: 40px;
-
-    position: relative;
-
-    display: block;
-
-    height: 40px;
-
-    text-align: center;
-
     color: #666;
+    text-align: center;
 }
 
 .bp_donatedperson_wrapper label::before
@@ -1415,12 +1232,9 @@
     position: absolute;
     top: 20px;
     left: 0;
-
     width: 195px;
     height: 1px;
-
     content: ' ';
-
     background-color: #dfdfdf;
 }
 
@@ -1429,21 +1243,17 @@
     position: absolute;
     top: 20px;
     right: 0;
-
     width: 195px;
     height: 1px;
-
     content: ' ';
-
     background-color: #dfdfdf;
 }
 
 .bp_donatedperson_wrapper .user_list
 {
+    max-height: 280px;
     overflow-x: hidden;
     overflow-y: auto;
-
-    max-height: 280px;
 }
 
 .bp_donatedperson_wrapper .user_list li
@@ -1454,7 +1264,6 @@
 .bp_donatedperson_wrapper .user_list .user_item .user_item_bd
 {
     position: relative;
-
     padding: 0 0 0 68px;
 }
 
@@ -1469,78 +1278,63 @@
 {
     width: 40px;
     height: 40px;
-
     border: 1px solid #e1e1e1;
     border-radius: 100%;
 }
 
 .user_list .user_item .user_item_bd .user_op
 {
-    line-height: 25px;
-
     position: relative;
+    line-height: 25px;
 }
 
 .user_list .user_item .user_item_bd .user_op .name
 {
     font-size: 12px;
-
     color: #999;
 }
 
 .user_list .user_item .user_item_bd .user_op .state
 {
-    font-size: 12px;
-
     float: right;
-
-    margin: 0 10px;
-
+    margin: 0 10px;
+    font-size: 12px;
     color: #999;
 }
 
 .user_list .user_item .user_item_bd .user_op i
 {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0 0 0 6px;
     font-size: 14px;
     font-style: normal;
     line-height: 22px;
-
-    display: inline-block;
-
-    width: 22px;
-    height: 22px;
-    margin: 0 0 0 6px;
-
-    text-align: center;
-
     color: #fff;
-    border-radius: 50%;
+    text-align: center;
     background-color: #abaebd;
+    border-radius: 50%;
 }
 
 .user_list .user_item .user_item_bd .user_op .money
 {
     font-size: 12px;
     font-weight: bold;
-
     color: #ff696a;
 }
 
 .user_list .user_item .user_item_bd .user_content p
 {
-    font-size: 12px;
-
     position: relative;
-
     display: inline-block;
-
     width: auto;
-    margin: 10px 0;
     padding: 10px;
-
+    margin: 10px 0;
+    font-size: 12px;
     color: #333;
-    border-radius: 8px;
     background-color: #e1e1e4;
+    border-radius: 8px;
 }
 
 .user_list .user_item .user_item_bd .user_content p::before
@@ -1548,9 +1342,7 @@
     position: absolute;
     top: 10px;
     left: -10px;
-
     content: ' ';
-
     border-right: 10px solid #e1e1e4;
     border-bottom: 10px solid transparent;
 }
@@ -1560,29 +1352,24 @@
     position: absolute;
     top: -15px;
     right: -10px;
-
     width: 30px;
     height: 30px;
-
     background: url('../img/previewpage/donate_top3.png') no-repeat;
 }
 
 .bp_donatedperson_wrapper .user_list li:nth-child(1) .user_item_bd .user_head:after
 {
     content: ' ';
-
     background-position: 0 0;
 }
 .bp_donatedperson_wrapper .user_list li:nth-child(2) .user_item_bd .user_head:after
 {
     content: ' ';
-
     background-position: 0 -30px;
 }
 .bp_donatedperson_wrapper .user_list li:nth-child(3) .user_item_bd .user_head:after
 {
     content: ' ';
-
     background-position: 0 -60px;
 }
 
@@ -1603,30 +1390,25 @@
 }
 .bp_donatestep_wrapper ul li:last-child a
 {
+    display: inline-block;
     font-size: 1.1rem;
     line-height: 4rem;
-
-    display: inline-block;
 }
 .bp_donatestep_wrapper h5
 {
-    font-weight: bolder;
-    line-height: 16px;
-
     width: 100%;
     height: 16px;
-    margin: 0;
-
+    margin: 0;
+    font-weight: bolder;
+    line-height: 16px;
     background-color: #fff;
 }
 .bp_donatestep_wrapper ul li label
 {
-    font-size: .5rem;
-
     position: relative;
     top: 10px;
-    left: 10px;
-
+    left: 10px;
+    font-size: .5rem;
     color: #df7262;
 }
 .bp_donatestep_wrapper ul li:last-child label
@@ -1646,26 +1428,22 @@
 .bp_donatestep_wrapper ul li a, .bp_donatestep_wrapper ul li input
 {
     display: block;
-
     width: 100%;
     height: 100%;
-
     border: 2px solid #df7262;
     border-radius: 5px;
 }
 .bp_donatestep_wrapper ul li a span
 {
-    font-size: 45px;
-    line-height: 4rem;
-
     position: relative;
     left: 10px;
+    font-size: 45px;
+    line-height: 4rem;
 }
 .bp_donatestep_wrapper ul li a span, .bp_donatestep_wrapper ul li input
 {
-    text-align: center;
-
     color: #df7262;
+    text-align: center;
 }
 .bp_donatestep_wrapper ul li input
 {
@@ -1675,24 +1453,19 @@
 .bp_donatestep_wrapper ul li input::-webkit-input-placeholder
 {
     font-family: 'microsoft yahei';
-
     color: #df7262;
 }
 .bp_donate_wrapper .donatebtn
 {
-    font-size: 25px;
-
     display: block;
-
     width: 100%;
-    margin: 15px 0;
     padding: 3% 0;
-
-    text-align: center;
-
+    margin: 15px 0;
+    font-size: 25px;
     color: #fff;
-    border-radius: 6px;
+    text-align: center;
     background-color: #ff696a;
+    border-radius: 6px;
 }
 .bp_donate_wrapper .donatebtn:hover
 {
@@ -1700,40 +1473,31 @@
 }
 .bp_donatestep_wrapper p
 {
+    margin: 3% 0 0 0;
     font-size: 13px;
-
-    margin: 3% 0 0 0;
-
-    text-align: center;
-
     color: red;
+    text-align: center;
 }
 
 .bp_iwanttodonate_btn
 {
-    font-size: 1.5rem;
-
     display: block;
-
     width: 80%;
-    margin: 3% auto 0;
     padding: 2%;
-
-    text-align: center;
-
+    margin: 3% auto 0;
+    font-size: 1.5rem;
     color: #ff696a;
+    text-align: center;
     border: 2px solid #ff696a;
 }
 .bp_donatestep_wrapper.step_2
 {
     display: none;
-
     padding: 0 20px;
 }
 .bp_donatestep_wrapper.step_2 h4
 {
     font-weight: normal;
-
     color: #62af56;
 }
 .bp_donatestep_wrapper.step_2 ul
@@ -1743,9 +1507,7 @@
 .bp_donatestep_wrapper.step_2 ul li a
 {
     display: block;
-
     padding: 5px 0;
-
     border-bottom: 1px solid #e5e5e5;
 }
 .bp_donatestep_wrapper.step_2 ul li a span
@@ -1756,7 +1518,6 @@
 .bp_donatestep_wrapper.step_2 ul .active a span
 {
     display: block;
-
     color: #62af56;
 }
 .bp_donatestep_wrapper.step_3
@@ -1764,52 +1525,40 @@
     position: absolute;
     top: 0;
     left: 0;
-
     display: none;
-
     width: 100%;
     height: 100%;
-
-    border-radius: 10px;
     background-color: #ff696a;
+    border-radius: 10px;
 }
 .bp_donatestep_wrapper.step_3 img
 {
     display: block;
-
     width: 75px;
-    margin: 0 auto;
     padding: 120px 0 0 0;
+    margin: 0 auto;
 }
 .bp_donatestep_wrapper > a
 {
-    font-size: 2rem;
-    font-weight: lighter;
-    line-height: 1em;
-
     position: absolute;
     top: 0;
     right: 0;
-
     display: block;
-
     height: .5em;
-    margin: 20px;
-
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1em;
     color: #ccc;
 }
 .bp_donatestep_wrapper.step_3 label
 {
-    font-size: 1.2rem;
-
     display: block;
-
     width: 100%;
-    margin: 20px 0 0 0;
-
-    text-align: center;
-
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
     color: #fff;
+    text-align: center;
 }
 .bp_donatestep_wrapper.step_3 a
 {
@@ -1819,43 +1568,35 @@
 /*赞助留言*/
 .donate_msg
 {
-    line-height: 45px;
-
     position: relative;
-
     width: 100%;
     height: 45px;
-    margin: 10px 0;
     padding: 0;
-
+    margin: 10px 0;
+    line-height: 45px;
     border: 2px solid #ddd;
     border-radius: 6px;
 }
 
 .donate_msg label
 {
-    font-size: 16px;
-
     position: absolute;
-    z-index: 1;
     left: 10px;
-
+    z-index: 1;
+    font-size: 16px;
     color: #333;
 }
 
 .donate_msg input
 {
-    font-size: 14px;
-
     position: absolute;
-    z-index: 0;
     left: 0;
-
-    box-sizing: border-box;
+    z-index: 0;
     width: 100%;
     height: 45px;
-    padding-left: 60px;
-
+    box-sizing: border-box;
+    padding-left: 60px;
+    font-size: 14px;
     color: #333;
     border: 0;
 }
@@ -1864,22 +1605,18 @@
 .bp_comment_container
 {
     position: fixed;
-    z-index: -1;
     top: 0;
-
+    z-index: -1;
     width: 100%;
     height: 100%;
-
-    transition: opacity .5s;
-
-    opacity: 0;
     background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 .bp_comment_container.active
 {
     z-index: 4;
-
     opacity: 1;
 }
 
@@ -1887,17 +1624,14 @@
 {
     position: relative;
     left: 100px;
-
     display: block;
-
-    box-sizing: border-box;
     width: 520px;
     min-height: 196px;
-    margin: 0;
+    box-sizing: border-box;
     padding: 20px 25px;
-
-    border-radius: 8px;
+    margin: 0;
     background-color: #fff;
+    border-radius: 8px;
 }
 
 .bp_comment_wrapper::before
@@ -1905,12 +1639,9 @@
     position: absolute;
     top: 30px;
     left: -15px;
-
     width: 0;
     height: 0;
-
     content: ' ';
-
     border-top: 15px solid transparent;
     border-right: 15px solid #fff;
     border-bottom: 15px solid transparent;
@@ -1918,19 +1649,15 @@
 
 .bp_comment_wrapper .closebtn, .bp_praise_container .closebtn
 {
-    font-size: 2rem;
-    font-weight: lighter;
-    line-height: 1em;
-
     position: absolute;
     top: -4px;
     right: 4px;
-
     display: block;
-
     height: 1em;
-    margin: 20px;
-
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1em;
     color: #ccc;
 /*	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -1945,40 +1672,31 @@
 
 .bp_comment_wrapper form label
 {
-    font-size: 16px;
-
     display: block;
-
-    margin: 5px 0 10px;
-
+    margin: 5px 0 10px;
+    font-size: 16px;
     color: #333;
 }
 
 .bp_comment_wrapper form textarea
 {
-    font-size: 14px;
-
     display: block;
-
-    box-sizing: border-box;
     width: 100%;
     height: 98px;
-    margin: 10px 0;
+    box-sizing: border-box;
     padding: 10px;
-
-    resize: none;
-
+    margin: 10px 0;
+    font-size: 14px;
     color: #333;
+    resize: none;
 }
 
 .bp_comment_wrapper .font_limit
 {
-    font-size: 12px;
-
     position: absolute;
     top: 130px;
-    right: 32px;
-
+    right: 32px;
+    font-size: 12px;
     color: #999;
 }
 
@@ -1989,34 +1707,29 @@
 
 .bp_comment_wrapper .btn_wrap
 {
-    overflow: hidden;
-
     margin: 10px 0;
+    overflow: hidden;
 }
 
 .bp_comment_wrapper .btn_wrap span
 {
+    margin: 0 10px;
     font-size: 12px;
     line-height: 36px;
-
-    margin: 0 10px;
-
     color: #999;
 }
 
 .bp_comment_wrapper .btn_wrap button
 {
-    font-size: 16px;
-    line-height: 36px;
-
     width: 75px;
     height: 36px;
-    margin: 0;
     padding: 0;
-
+    margin: 0;
+    font-size: 16px;
+    line-height: 36px;
     color: #fff;
-    border: 0;
     background: #70ca5d;
+    border: 0;
 }
 
 .bp_comment_wrapper .btn_wrap button:hover,
@@ -2027,29 +1740,25 @@
 
 .bp_comment_wrapper .btn_wrap button:focus
 {
-    outline: 0;
     background: #89c27e;
+    outline: 0;
 }
 
 .mod_comments
 {
     position: relative;
-
-    overflow-y: auto;
-
-    box-sizing: border-box;
     max-height: 335px;
-    margin: 15px 0 0;
+    box-sizing: border-box;
     padding: 0 10px 12px;
+    margin: 15px 0 0;
+    overflow-y: auto;
 }
 
 .comments_list .empty, .bp_praise_wrapper .user_list .empty
 {
-    font-size: 30px;
-
     width: 200px;
-    margin: 40px auto;
-
+    margin: 40px auto;
+    font-size: 30px;
     color: #ccc;
 }
 
@@ -2061,28 +1770,22 @@
 
 .comments_list .empty span, .bp_praise_wrapper .user_list .empty span
 {
+    display: inline-block;
     font-size: 53px;
-
-    display: inline-block;
-
     vertical-align: middle;
 }
 
 .comments_list .empty label, .bp_praise_wrapper .user_list .empty label
 {
+    display: inline-block;
     font-size: 28px;
-
-    display: inline-block;
-
-    vertical-align: middle;
-
     color: #ccc;
+    vertical-align: middle;
 }
 
 .comments_list .comments_item
 {
     margin-bottom: 10px;
-
     border-bottom: 1px solid #ddd;
 }
 
@@ -2094,7 +1797,6 @@
 .comments_list .comments_item .comments_item_bd
 {
     position: relative;
-
     padding: 0 0 0 70px;
 }
 
@@ -2109,15 +1811,13 @@
 {
     width: 45px;
     height: 45px;
-
     border-radius: 100%;
 }
 
 .comments_list .comments_content
 {
-    line-height: 25px;
-
     position: relative;
+    line-height: 25px;
 }
 
 .mod_comments .comments_item_bd .mod_comments_sub
@@ -2128,7 +1828,6 @@
 .comments_list.mod_comments_sub .comments_item .comments_item_bd
 {
     position: relative;
-
     padding: 0 0 0 65px;
 }
 
@@ -2136,39 +1835,32 @@
 {
     width: 40px;
     height: 40px;
-
     border-radius: 100%;
 }
 
 .comments_list .comments_content a
 {
     font-size: 12px;
-
     color: #666;
 }
 
 .comments_list .comments_content span
 {
+    margin: 0 0 0 10px;
     font-size: 12px;
-
-    margin: 0 0 0 10px;
-
     color: #999;
 }
 
 .comments_list .comments_content p
 {
     font-size: 14px;
-
     color: #333;
 }
 
 .comments_list .comments_content .comments_op a
 {
+    margin: 0 15px 0 0;
     font-size: 12px;
-
-    margin: 0 15px 0 0;
-
     color: #369;
 }
 
@@ -2181,20 +1873,17 @@
 .bp_toolbar_wrapper .bp_praise_container
 {
     position: absolute;
-    z-index: 4;
     top: -8px;
     left: 100px;
-
+    z-index: 4;
     display: none;
-
-    box-sizing: border-box;
     width: 420px;
     min-height: 196px;
-    margin: 0;
+    box-sizing: border-box;
     padding: 20px 25px;
-
-    border-radius: 8px;
+    margin: 0;
     background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 2px 10px #333;
 }
 
@@ -2208,12 +1897,9 @@
     position: absolute;
     top: 30px;
     left: -15px;
-
     width: 0;
     height: 0;
-
     content: ' ';
-
     border-top: 15px solid transparent;
     border-right: 15px solid #fff;
     border-bottom: 15px solid transparent;
@@ -2221,29 +1907,23 @@
 
 .bp_praise_wrapper label
 {
-    font-size: 16px;
-
     display: block;
-
-    margin-bottom: 10px;
-
+    margin-bottom: 10px;
+    font-size: 16px;
     color: #333;
 }
 
 .bp_praise_wrapper .user_list
 {
+    max-height: 210px;
     overflow-x: hidden;
     overflow-y: auto;
-
-    max-height: 210px;
 }
 
 .bp_praise_wrapper .user_list li
 {
     position: relative;
-
     display: inline-block;
-
     width: 60px;
     height: 60px;
     margin: 0 6px 10px 0;
@@ -2252,12 +1932,10 @@
 .bp_praise_wrapper .user_list li img
 {
     display: inline-block;
-
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
-
     border: 1px solid #ddd;
 }
 
@@ -2268,35 +1946,28 @@
 
 .bp_praise_wrapper .user_list li label
 {
-    font-size: 14px;
-    line-height: 30px;
-
     position: absolute;
-    z-index: 5;
     bottom: -50px;
     left: -16px;
-
+    z-index: 5;
     display: none;
-
     width: 95px;
-    height: 30px;
-
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
     text-align: center;
-
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    background-color: #fff;
 }
 
 .bp_praise_wrapper .user_list li label::before
 {
     position: absolute;
-    z-index: 1;
     top: -8px;
     left: 37px;
-
+    z-index: 1;
     content: ' ';
-
     border-right: 8px solid transparent;
     border-bottom: 8px solid #fff;
     border-left: 8px solid transparent;
@@ -2307,9 +1978,7 @@
     position: absolute;
     top: -9px;
     left: 36px;
-
     content: ' ';
-
     border-right: 9px solid transparent;
     border-bottom: 9px solid #ddd;
     border-left: 9px solid transparent;
@@ -2318,14 +1987,12 @@
 .bp_praise_wrapper .user_list li label span
 {
     display: block;
-    overflow: hidden;
-
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
     padding: 0 5px;
-
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .bp_praise_wrapper .user_list li:hover label
@@ -2335,22 +2002,18 @@
 
 .bp_praise_wrapper .praise_btn
 {
+    display: block;
+    width: 180px;
+    height: 40px;
+    margin: 10px auto 0;
     font-size: 16px;
     font-weight: bold;
     line-height: 40px;
-
-    display: block;
-
-    width: 180px;
-    height: 40px;
-    margin: 10px auto 0;
-
-    text-align: center;
-
     color: #ff696a;
+    text-align: center;
+    background-color: #fff;
     border: 2px solid #ff696a;
     border-radius: 4px;
-    background-color: #fff;
 }
 
 .bp_praise_wrapper .praise_btn.active
@@ -2361,14 +2024,11 @@
 
 .bp_praise_wrapper .praise_btn i
 {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
     font-size: 30px;
     line-height: 35px;
-
-    display: inline-block;
-
-    width: 30px;
-    height: 40px;
-
     vertical-align: middle;
 }
 
@@ -2389,10 +2049,10 @@
 		left: 5.5%;
 	}*/
 
-    .bp_instrucion_wrapper
-    {
+  .bp_instrucion_wrapper
+        {
         right: 3%;
-    }
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 1559px)
@@ -2401,21 +2061,21 @@
 		left: 2%;
 	}*/
 
-    .flipbook-viewport .page
-    {
+  .flipbook-viewport .page
+        {
         width: 375px;
         height: 575px;
-    }
+  }
 
-    .bp_instrucion_wrapper
-    {
+  .bp_instrucion_wrapper
+        {
         right: 4%;
-    }
+  }
 
-    .bp_container .flipbook-viewport
-    {
+  .bp_container .flipbook-viewport
+        {
         margin: 0 0 0 10%;
-    }
+  }
 }
 
 @media (max-width: 1439px)
@@ -2432,33 +2092,27 @@
 {
     position: relative;
     top: 17px;
-
     width: 700px;
     height: 8px;
     margin: 20px auto 0;
-
-    border-radius: 5px;
     background: rgba(0, 0, 0, .2);
+    border-radius: 5px;
 }
 
 .turnjs-slider .thumbnail
 {
     position: absolute;
-    z-index: 10000;
     top: -100px;
     left: -17px;
-
+    z-index: 10000;
     display: none;
-
     width: 115px;
     height: 85px;
-
+    background: rgba(0, 0, 0, .5);
+    border-radius: 5px;
     transition: transform .2s;
     -ms-transform: translate3d(0px, 50px, 0px) scale(.1, .1);
         transform: translate3d(0px, 50px, 0px) scale(.1, .1);
-
-    border-radius: 5px;
-    background: rgba(0, 0, 0, .5);
 }
 
 .no-transition
@@ -2474,25 +2128,21 @@
     width: 100px;
     height: 70px;
     margin: 7px;
-
     background-color: white;
 }
 
 .turnjs-slider .ui-state-hover .thumbnail
 {
     display: block;
-
     opacity: 0;
 }
 
 .turnjs-slider .ui-state-active .thumbnail
 {
     display: block;
-
+    opacity: 1;
     -ms-transform: scale(1, 1);
         transform: scale(1, 1);
-
-    opacity: 1;
 }
 
 .animated
@@ -2570,7 +2220,6 @@
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
 }
@@ -2578,7 +2227,6 @@
 .turnjs-slider .ui-slider
 {
     position: relative;
-
     text-align: left;
 }
 
@@ -2586,12 +2234,9 @@
 {
     position: absolute;
     z-index: 0;
-
     width: 80px;
     height: 8px;
-
     cursor: default;
-
     border-radius: 5px;
 }
 
@@ -2614,12 +2259,10 @@
 .turnjs-slider .ui-slider-handle
 {
     display: block;
-
-    transition: opacity .2s;
-
-    opacity: .2;
-    border: 1px solid white;
     background-color: black;
+    border: 1px solid white;
+    opacity: .2;
+    transition: opacity .2s;
 }
 
 .turnjs-slider .ui-state-hover
@@ -2665,9 +2308,8 @@
 
 .flipbook-viewport .shadow
 {
+        box-shadow: 0 0 20px #ccc;
     -ms-transition: -ms-box-shadow .5s;
-
-        box-shadow: 0 0 20px #ccc;
 
      -o-box-shadow: 0 0 20px #ccc;
     -ms-box-shadow: 0 0 20px #ccc;

@@ -3,43 +3,33 @@
 .pc_personalcenter_container
 {
     width: 100%;
-
     padding: 15px 0 0 0;
-
     background-color: #f5f5f5;
 }
 .pc_personalcenter_wrapper
 {
-    overflow: hidden;
-
     width: 1200px;
-
-    margin: 15px auto;
-
+    margin: 15px auto;
+    overflow: hidden;
     background-color: #fff;
 }
 
 .common_block_wrapper .personal_content_box
 {
-    font-size: 14px;
-
-    box-sizing: border-box;
     width: 90%;
-
-    margin: 0 auto;
+    box-sizing: border-box;
 	/*min-height: 800px;*/
     padding: 25px;
-
+    margin: 0 auto;
+    font-size: 14px;
     color: #333;
 	/*border-left: 1px solid #d9d9d9;*/
 }
 .personal_content_box > a, .right_content_container > a
 {
-    font-size: 14px;
-
     display: inline-block;
-
     padding-left: 20px;
+    font-size: 14px;
 }
 .personal_content_box > a
 {
@@ -50,7 +40,6 @@
     position: absolute;
     top: 25px;
     right: 20px;
-
     display: inline-block;
 }
 .personal_content_box .query_date
@@ -62,89 +51,70 @@
     position: absolute;
     top: 20px;
     right: 25px;
-
     display: inline-block;
 }
 .personal_content_box .tool_wrap .yb_menu
 {
     position: relative;
     z-index: 9;
-
     display: inline-block;
-
     width: 95px;
-
     text-align: center;
     vertical-align: top;
-
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 2px;
-    background-color: #fff;
 }
 .personal_content_box .tool_wrap .yb_menu .menu_hd
 {
+    position: relative;
+    display: block;
     font-size: 12px;
     line-height: 25px;
-
-    position: relative;
-
-    display: block;
-
     color: #666;
 }
 .personal_content_box .tool_wrap .yb_menu .menu_hd b
 {
-    font-size: 12px;
-
     padding-left: 5px;
+    font-size: 12px;
 }
 .personal_content_box .tool_wrap .ybicon-addfriend
 {
-    font-size: 35px;
-    line-height: 25px;
-
     display: inline-block;
-
     width: 34px;
     height: 25px;
-    margin: 0 15px 0 10px;
-
-    vertical-align: middle;
-
+    margin: 0 15px 0 10px;
+    font-size: 35px;
+    line-height: 25px;
     color: #abaebd;
+    vertical-align: middle;
 }
 .personal_content_box .tool_wrap .search_bar
 {
-    line-height: 25px;
-
     position: relative;
-
     display: inline-block;
-    overflow: hidden;
-
     width: 0;
     min-width: 30px;
     height: 25px;
-
-    transition: width .3s;
+    overflow: hidden;
+    line-height: 25px;
     vertical-align: middle;
+    transition: width .3s;
 
     -webkit-backface-visibility: hidden;
 }
 .personal_content_box .bookshelf_wrap
 {
     position: relative;
-
     width: 100%;
-    margin: -8px 0 0;
     padding: 0;
+    margin: -8px 0 0;
 }
 .opd_wrapper .opd_payoff_wrapper, .personal_content_box .opd_payoff_wrapper
 {
     position: relative;
-
-    border: 1px solid #ddd;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 .personal_content_box .opd_successbind_wrapper ul
 {
@@ -153,7 +123,6 @@
 .personal_content_box .opd_paymentresult_wrapper, .personal_content_box .opd_successbind_wrapper
 {
     display: block;
-
     margin: 0 auto 30px;
 }
 .personal_content_box .opd_successbind_wrapper
@@ -168,67 +137,53 @@
 }
 .binding_mode > li
 {
-    line-height: 50px;
-
     display: inline-block;
-
-    box-sizing: border-box;
     width: 48%;
-    margin: 0 10px 20px 0;
+    box-sizing: border-box;
     padding: 5px 15px;
-
-    border-radius: 8px;
+    margin: 0 10px 20px 0;
+    line-height: 50px;
     background-color: #fff;
+    border-radius: 8px;
     box-shadow: 1px 0 5px #ccc;
 }
 .binding_mode > li a div
 {
     display: inline-block;
-
     width: 45px;
     height: 40px;
     margin-right: 5px;
-
     text-align: center;
     vertical-align: middle;
 }
 .binding_mode > li a > span:last-child
 {
     float: right;
-
     color: #00a388;
 }
 .binding_mode > li .sum
 {
     font-size: 18px;
-
     color: #e73939;
 }
 .hr
 {
     position: relative;
-
     padding: 5px 0;
 }
 .hr div.green
 {
     position: absolute;
     z-index: 1;
-
     display: inline-block;
-
     width: 13%;
-
     border-top: 1px solid #00a388;
 }
 .hr div.gray
 {
     position: absolute;
-
     display: block;
-
     width: 100%;
-
     border-top: 1px solid #b4b4b4;
 }
 
@@ -243,7 +198,6 @@
 {
     font-size: 16px;
     font-weight: normal;
-
     text-align: left;
 }
 .info_details .form-group label.error
@@ -252,23 +206,18 @@
 }
 .info_details .form-group .title
 {
-    line-height: 35px;
-
     display: inline-block;
-
     width: 90px;
-    margin-right: 5px;
-
+    margin-right: 5px;
+    line-height: 35px;
     text-align: right;
 }
 .info_details .form-group input
 {
-    font-size: 16px;
-
     display: inline-block;
-
     width: 200px;
     height: 40px;
+    font-size: 16px;
 }
 .info_details .form-group input[readonly]
 {
@@ -276,13 +225,11 @@
 }
 .info_details .form-group select
 {
-    font-size: 16px;
-
     display: inline-block;
-
     width: 75px;
     height: 30px;
     padding: 0 0 0 6px;
+    font-size: 16px;
 }
 .info_details .form-group select option
 {
@@ -291,32 +238,26 @@
 .info_details .form-group textarea
 {
     display: inline-block;
-
     width: 425px;
     height: 105px;
-
-    resize: none;
     vertical-align: middle;
+    resize: none;
 }
 .info_details .form-group .btn
 {
-    line-height: 25px;
-
     display: inline-block;
-
     width: 50px;
     height: 25px;
-    margin-left: 5px;
-
-    cursor: pointer;
-    text-align: center;
-
+    margin-left: 5px;
+    line-height: 25px;
     color: #333;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
     background-color: #fff;
     background-image: linear-gradient(to bottom, #fff 0px, #e0e0e0 100%);
     background-repeat: repeat-x;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, .15) inset, 0 1px 1px rgba(0, 0, 0, .075);
 }
 .info_details .form-group .btn:hover
@@ -326,7 +267,6 @@
 .info_details .btn_group
 {
     width: 100%;
-
     text-align: center;
 }
 .info_details .infolist
@@ -335,30 +275,24 @@
 }
 .info_details .infolist .form-group
 {
-    overflow: hidden;
-
     width: 520px;
-
     margin: 0 0 10px 0;
+    overflow: hidden;
 }
 .form-control
 {
-    line-height: 1.42857143;
-
     display: block;
-
-    box-sizing: border-box;
     width: 100%;
-    padding: 6px 12px;
-
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-
+    box-sizing: border-box;
+    padding: 6px 12px;
+    line-height: 1.42857143;
     color: #555;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     background-color: #fff;
     background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus
 {
@@ -370,34 +304,29 @@
 .feedback_container .btn_group > button,
 .info_details .btn_group > button
 {
+    display: inline-block;
+    width: 110px;
+    height: 40px;
     font-size: 16px;
     font-weight: bold;
-
-    display: inline-block;
-
-    width: 110px;
-    height: 40px;
-
-    cursor: pointer;
-    transition: all .35s ease-in-out;
-
     color: #666;
+    cursor: pointer;
+    background-color: #f5f6f7;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
-    background-color: #f5f6f7;
+    transition: all .35s ease-in-out;
 }
 .btn_group > button.selected
 {
     margin-right: 15px;
-
     color: #fff;
-    border: 1px solid #00a388;
     background-color: #79bd8f;
+    border: 1px solid #00a388;
 }
 .btn_group > button.selected:hover
 {
-    border: 1px solid #f80;
     background: #f40;
+    border: 1px solid #f80;
 }
 .btn_group > button.selected:active
 {
@@ -406,13 +335,11 @@
 .binding_mode .user_name input
 {
     display: inline-block;
-
     width: 160px;
     height: 25px;
     padding: 0 6px;
-
-    border: none;
     background-color: #fff;
+    border: none;
     box-shadow: none;
 }
 .binding_mode .user_name input.active
@@ -424,7 +351,6 @@
 .change_head
 {
     position: relative;
-
     text-align: center;
 }
 .change_head div img
@@ -435,18 +361,15 @@
 .change_head > button
 {
     font-size: 12px;
-
+    background-color: #fff;
     border: 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
 }
 .change_head > button:hover
 {
+    color: #fff;
     cursor: pointer;
-
-    color: #fff;
-
     background: #e7b54b;
 }
 .change_head > button:active
@@ -459,8 +382,8 @@
 {
     width: 95%;
     height: 305px;
-    margin: 20px auto;
     padding: 25px 0;
+    margin: 20px auto;
 }
 
 .change_password_container .form-group
@@ -471,22 +394,18 @@
 
 .change_password_container .form-group > label.password_label
 {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
     font-size: 14px;
     font-weight: normal;
     line-height: 40px;
-
-    display: inline-block;
-
-    width: 100px;
-    height: 40px;
-
     text-align: right;
 }
 
 .change_password_container .form-group > label.error
 {
     margin: 0 0 0 15px;
-
     text-align: left;
 }
 
@@ -494,7 +413,6 @@
 .bind_mobile_container .form-group input
 {
     display: inline-block;
-
     width: 205px;
     height: 40px;
 }
@@ -511,54 +429,44 @@
 .form-group .icon-remove
 {
     display: none;
-
     color: #f40;
 }
 
 .form-group .icon-eye-open
 {
     margin: 0 10px 0 -30px;
-
     color: #a2a2a2;
 }
 .change_password_container .btn_group,
 .bind_mobile_container .btn_group
 {
     position: relative;
-
     margin-top: 40px;
-
     text-align: center;
 }
 .step_nav
 {
     position: relative;
-
     width: 405px;
     height: 10px;
     margin: 20px auto;
-
     text-align: center;
-
     background-color: #f0f0f0;
     box-shadow: 0 -1px 0 #dadada;
 }
 
 .step_nav div
 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
     font-size: 24px;
     font-weight: bold;
     line-height: 50px;
-
-    display: inline-block;
-
-    width: 50px;
-    height: 50px;
-    margin-top: -25px;
-
     color: #a2a2a2;
-    border-radius: 25px;
     background-color: #f0f0f0;
+    border-radius: 25px;
     box-shadow: -1px -1px 0 #dadada;
 }
 
@@ -576,28 +484,23 @@
 
 .step_nav > div > div.current
 {
-    line-height: 42px;
-
     width: 42px;
-    height: 42px;
-
+    height: 42px;
+    line-height: 42px;
     color: #fff;
-    border-radius: 21px;
     background-color: #79bd8f;
+    border-radius: 21px;
 }
 
 .step_nav > div p
 {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    margin-left: -15px;
     font-size: 12px;
     font-weight: normal;
     line-height: 40px;
-
-    position: absolute;
-
-    width: 80px;
-    height: 40px;
-    margin-left: -15px;
-
     color: #666;
 }
 
@@ -608,54 +511,45 @@
 
 .bind_mobile_container .input_mobile
 {
-    font-size: 14px;
-
     position: relative;
     top: 65px;
-
     width: 340px;
     height: 135px;
-    margin: 0 auto;
-
-    text-align: center;
-
+    margin: 0 auto;
+    font-size: 14px;
     color: #666;
+    text-align: center;
 }
 
 .bind_mobile_container .btn
 {
+    display: inline-block;
+    width: 110px;
+    height: 45px;
     font-size: 16px;
     font-weight: bold;
     line-height: 45px;
-
-    display: inline-block;
-
-    width: 110px;
-    height: 45px;
-
-    cursor: pointer;
-    text-align: center;
-
     color: #666;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f5f6f7;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
-    background-color: #f5f6f7;
 }
 
 .bind_mobile_container .next,
 .bind_mobile_container .selected
 {
     margin: 10px auto;
-
     color: #fff;
-    border: 1px solid #00a388;
     background-color: #79bd8f;
+    border: 1px solid #00a388;
 }
 
 .bind_mobile_container .selected:hover
 {
-    border: 1px solid #f80;
     background-color: #f40;
+    border: 1px solid #f80;
 }
 
 .bind_mobile_container .selected:active
@@ -669,27 +563,23 @@
 
 .input_mobile .help-block.align_left
 {
+    padding-left: 28px;
     margin-bottom: 10px;
-    padding-left: 28px;
-
     text-align: left;
 }
 
 .btn_group div.again
 {
-    font-weight: normal;
-
     width: 160px;
     margin-left: 10px;
+    font-weight: normal;
 }
 
 .input_mobile > h4
 {
-    font-size: 18px;
-
     position: relative;
-    top: 25px;
-
+    top: 25px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -706,16 +596,14 @@
 .personal_content_box .common_crumb_wrapper ul
 {
     width: 100%;
-
     border: 0;
 }
 .balance
 {
-    box-sizing: border-box;
     width: 100%;
-    height: 100px;
+    height: 100px;
+    box-sizing: border-box;
     padding: 10px;
-
     border: 1px solid #ddd;
     border-radius: 4px;
 	/*background-color: #f7f8fa;*/
@@ -723,37 +611,29 @@
 }
 .available_balance
 {
-    font-size: 16px;
-    line-height: 1.8em;
-
     position: relative;
-
     display: inline-block;
-
     width: 48%;
     margin: 5px 0 0 10px;
+    font-size: 16px;
+    line-height: 1.8em;
 }
 
 .available_balance span
 {
     font-size: 24px;
-
     color: #444;
 }
 
 .vertical_line
 {
     position: relative;
-    z-index: 1;
     left: 53px;
-
+    z-index: 1;
     display: inline-block;
-
     height: 135px;
     margin-top: 5px;
-
     vertical-align: top;
-
     border-left: 1px solid #b4b4b4;
 }
 
@@ -761,26 +641,21 @@
 {
     position: absolute;
     left: 50%;
-
     height: 70px;
-
     border-left: 1px dashed #ddd;
 }
 .conversion
 {
     float: right;
-
-    box-sizing: border-box;
     width: 48%;
+    box-sizing: border-box;
     padding: 15px 0 0 15px;
-
     vertical-align: middle;
 }
 
 .conversion input
 {
     display: inline-block;
-
     width: 61%;
     min-width: 180px;
     height: 45px;
@@ -788,14 +663,11 @@
 .balance .btn,
 .query_date .btn
 {
+    height: 25px;
     font-size: 14px;
     font-weight: bold;
-
-    height: 25px;
-
-    cursor: pointer;
-
     color: #fff;
+    cursor: pointer;
     border-radius: 6px;
     outline: 0 none;
 }
@@ -806,54 +678,44 @@
 }
 .available_balance .recharge
 {
-    line-height: 30px;
-
     position: absolute;
     top: 16px;
     right: 25px;
-
     width: 65px;
     height: 30px;
-    padding: 0;
-
-    border: 1px solid #79bd8f;
+    padding: 0;
+    line-height: 30px;
     background-color: #00a388;
+    border: 1px solid #79bd8f;
 }
 .conversion .exchange
 {
-    font-size: 14px;
-    line-height: 30px;
-
     min-width: 85px;
     height: 30px;
-    margin-left: 15px;
     padding: 0;
-
-    border: 1px solid #f80;
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 30px;
     background-color: #f40;
+    border: 1px solid #f80;
 }
 
 .coin_certificate
 {
     padding: 10px 0 0 0;
-
     background: #fff;
 }
 .coin_certificate .coupon_slidebox .hd ul > li
 {
-    line-height: 30px;
-
     display: inline-block;
-
-    box-sizing: border-box;
     width: 100px;
     height: 30px;
-    margin: 10px 0 10px 20px;
-
-    cursor: pointer;
-    text-align: center;
-
+    box-sizing: border-box;
+    margin: 10px 0 10px 20px;
+    line-height: 30px;
     color: #999;
+    text-align: center;
+    cursor: pointer;
     border-bottom: none;
 }
 .coin_certificate .coupon_slidebox .hd ul > li.on
@@ -865,32 +727,28 @@
 .coin_certificate .coupon_slidebox .bd
 {
     padding-bottom: 10px;
-
-    border: 1px solid #ddd;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 .coupon_list
 {
     min-height: 200px;
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 .coupon_list li.caption
 {
-    line-height: 40px;
-
 	/* padding: 8px 0 4px; */
-    height: 40px;
-
+    height: 40px;
+    line-height: 40px;
     border-bottom: none;
 }
 .coupon_list > li
 {
-    line-height: 40px;
-
     height: 40px;
-    margin: 0 auto;
     padding: 0;
+    margin: 0 auto;
+    line-height: 40px;
 }
 
 .coupon_list .list
@@ -899,19 +757,15 @@
 }
 .coupon_list li li
 {
+    display: inline-block;
+    width: 22%;
+    overflow: hidden;
     font-size: 12px;
     font-weight: bold;
-
-    display: inline-block;
-    overflow: hidden;
-
-    width: 22%;
-
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
     color: #444;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .coupon_list li li:last-child
 {
@@ -936,20 +790,15 @@
 .account_recharge
 {
     position: relative;
-
     display: none;
-
     width: 420px;
 }
 
 .account_recharge .recharge_con
 {
-    font-size: 14px;
-
     position: relative;
-
-    padding: 0;
-
+    padding: 0;
+    font-size: 14px;
     background-color: #fff;
 }
 .recharge_con .account_balance
@@ -962,21 +811,17 @@
 }
 .recharge_con .input_money
 {
-    font-size: 14px;
-
     display: inline-block;
-
-    box-sizing: border-box;
     width: 160px;
     height: 35px;
+    box-sizing: border-box;
     padding: 5px 12px;
+    font-size: 14px;
 }
 .recharge_con .payment
 {
     display: inline-block;
-
     padding-left: 10px;
-
     vertical-align: top;
 }
 .recharge_con .payment label
@@ -986,39 +831,31 @@
 .recharge_con .payment label img
 {
     padding-left: 10px;
-
     vertical-align: middle;
 }
 .recharge_con .go_recharge
 {
+    padding-right: 10px;
     margin-top: 25px;
-    padding-right: 10px;
-
     text-align: right;
-
     border-top: 1px dashed #ddd;
 }
 .recharge_con .go_recharge div
 {
-    font-size: 16px;
-    line-height: 30px;
-
     display: inline-block;
-
     width: 160px;
     height: 30px;
-    margin-top: 25px;
-
-    cursor: pointer;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 30px;
     text-align: center;
-
-    border-radius: 2px;
+    cursor: pointer;
     background-color: #f40;
+    border-radius: 2px;
 }
 .recharge_con .go_recharge div a
 {
     display: block;
-
     color: #fff;
 }
 .recharge_con .go_recharge div a:hover
@@ -1029,23 +866,18 @@
 .pay_tip h3,
 .pay_fail h3
 {
-    font-size: 20px;
-
     width: 460px;
-    height: 45px;
-
+    height: 45px;
+    font-size: 20px;
     text-align: center;
-
     border-bottom: 1px solid #dcdcdc;
 }
 
 .pay_tip p,
 .pay_fail p
 {
+    margin: 25px 0 30px;
     font-size: 12px;
-
-    margin: 25px 0 30px;
-
     text-align: center;
 }
 
@@ -1053,26 +885,23 @@
 .pay_fail .btn_group
 {
     height: 30px;
-    margin: 10px 0;
     padding: 0 30px;
+    margin: 10px 0;
 }
 
 .pay_tip .btn_group a,
 .pay_fail .btn_group a
 {
+    width: 150px;
+    height: 30px;
     font-size: 14px;
     font-weight: bold;
     line-height: 30px;
-
-    width: 150px;
-    height: 30px;
-
-    text-align: center;
-
     color: #fff;
+    text-align: center;
+    background-color: #00a388;
     border: 0;
     border-radius: 2px;
-    background-color: #00a388;
 }
 
 .pay_tip .btn_group a.success
@@ -1083,23 +912,20 @@
 .pay_tip .btn_group a.fail
 {
     float: right;
-
     background-color: #f40;
 }
 
 .pay_fail .btn_group a.confirm
 {
     display: block;
-
     margin: 0 auto;
-
     background-color: #f40;
 }
 .ia_message_more_btn
 {
-    font-size: 12px;
     width: 85px;
-    margin: 10px auto 20px;
+    margin: 10px auto 20px;
+    font-size: 12px;
     color: #666;
     text-align: center;
 }

@@ -3,35 +3,27 @@
 
 .login_body
 {
-    font-family: Microsoft YaHei, Verdana, sans-serif, 宋体;
-
 	/*	min-height:650px;*/
-    min-width: 1200px;
-
+    min-width: 1200px;
+    font-family: Microsoft YaHei, Verdana, sans-serif, 宋体;
     background: #fff url('../img/index_GB.jpg') center fixed;
 }
 
 .login_main_container
 {
     position: relative;
-
-    overflow: hidden;
-
     width: 640px;
     height: 100%;
     margin: 7em auto;
-
-    border: 1px solid #d0d1d2;
+    overflow: hidden;
     background-color: #fff;
+    border: 1px solid #d0d1d2;
 }
 .access_login_container
 {
     position: relative;
-
-    overflow: hidden;
-
     width: 100%;
-
+    overflow: hidden;
     background-color: #f2f5e9;
     background-image: url(../img/access/login_bg.jpg);
     background-repeat: no-repeat;
@@ -41,12 +33,10 @@
 {
     position: relative;
     z-index: 1;
-
     margin: 0 auto;
-
+    background: #fff;
     border: 1px solid #ccc;
     border-radius: 6px;
-    background: #fff;
 }
 .access_reset_wrapper
 {
@@ -59,7 +49,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-
         /*background: red;*/
     text-align: center;
 }
@@ -68,36 +57,29 @@
 {
     position: relative;
     z-index: 2;
-
 /*    padding: 0 0 10px 0;*/
     width: 100%;
     min-height: 20px;
-
 /*    border-bottom: 1px solid #ccc;*/
     border-radius: 6px;
 }
 
 .access_ssologin_wrapper p
 {
-    font-size: 12px;
-
     width: 100%;
-    margin: 15px 0;
-
-    text-align: center;
-
+    margin: 15px 0;
+    font-size: 12px;
     color: #666;
+    text-align: center;
 }
 
 .access_ssologin_wrapper div
 {
-    overflow: hidden;
-
     width: 100%;
-    padding: 10px 0;
-
-    border-radius: 6px;
+    padding: 10px 0;
+    overflow: hidden;
     background-color: #e7e7e6;
+    border-radius: 6px;
 }
 .access_ssologin_wrapper ul
 {
@@ -108,18 +90,14 @@
 .access_ssologin_wrapper ul li
 {
     float: left;
-
     width: 33%;
-
     text-align: center;
 }
 .access_ssologin_wrapper ul li a
 {
     display: inline-block;
-
-    margin: 0 auto;
     padding: 0;
-
+    margin: 0 auto;
     border-radius: 50%;
 }
 .access_ssologin_wrapper ul li a
@@ -148,17 +126,13 @@
 
 .access_ssologin_wrapper ul li a  span
 {
+    display: block;
+    width: 45px;
+    height: 45px;
     font-size: 30px;
     line-height: 45px;
-
-    display: block;
-
-    width: 45px;
-    height: 45px;
-
-    text-align: center;
-
     color: #fff;
+    text-align: center;
 }
 
 .access_ssologin_wrapper ul .qq a
@@ -179,17 +153,13 @@
 .verticalalgin_container .verticalalgin
 {
     display: inline-block;
-
     height: 100%;
-
     vertical-align: middle;
 }
 .access_logininner_container
 {
     position: relative;
-
     display: inline-block;
-
     vertical-align: middle;
 }
 
@@ -197,19 +167,14 @@
 {
     position: absolute;
     top: 0;
-
     display: block;
-
     width: 100%;
 }
 .access_resetstep_wrapper
 {
-    font-size: 0;
-
     width: 100%;
-
-    margin: 0 auto;
-
+    margin: 0 auto;
+    font-size: 0;
     text-align: center;
 }
 .access_resetstep_wrapper ul
@@ -218,32 +183,25 @@
 }
 .access_resetstep_wrapper li
 {
-    font-size: 0;
-
     position: relative;
-
     display: inline-block;
-
     width: 30%;
-    height: 35px;
-
+    height: 35px;
+    font-size: 0;
     text-align: center;
-
     background-color: #efefef;
 }
 .access_resetstep_wrapper li div
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     right: -15px;
-
+    z-index: 1;
     width: 0;
     height: 0;
-
-    border-width: 18px 0 18px 15px;
-    border-style: solid;
     border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 18px 0 18px 15px;
 }
 
 .access_resetstep_wrapper li div i
@@ -251,17 +209,13 @@
     position: absolute;
     top: -18px;
     right: 2px;
-
     display: block;
-
     width: 0;
     height: 0;
-
     content: '';
-
-    border-width: 18px 0 18px 15px;
-    border-style: solid;
     border-color: transparent transparent transparent #efefef;
+    border-style: solid;
+    border-width: 18px 0 18px 15px;
 }
 .access_resetstep_wrapper .active div i
 {
@@ -277,19 +231,15 @@
 }
 .access_resetstep_wrapper li span
 {
-    font-size: 14px;
-
     display: inline-block;
-
     width: 20px;
     height: 20px;
-    margin: 0 5px;
-
-    vertical-align: middle;
-
+    margin: 0 5px;
+    font-size: 14px;
     color: #efefef;
-    border-radius: 50%;
+    vertical-align: middle;
     background-color: #ababab;
+    border-radius: 50%;
 }
 .access_resetstep_wrapper .active span
 {
@@ -298,14 +248,11 @@
 }
 .access_resetstep_wrapper li label
 {
+    display: inline-block;
     font-size: 15px;
     line-height: 35px;
-
-    display: inline-block;
-
-    vertical-align: middle;
-
     color: #ccc;
+    vertical-align: middle;
 }
 .access_resetstep_wrapper .active label
 {
@@ -338,46 +285,37 @@
 .login_from .lf_left
 {
     float: left;
-
     width: 221px;
     margin-left: 25px;
-
     background-color: #fff;
 }
 
 .login_from .lf_left a
 {
     display: block;
-
     width: 220px;
     height: 45px;
 }
 
 .login_from .lf_left a span
 {
-    font-size: 25px;
-    line-height: 45px;
-
     float: left;
-
     width: 30px;
     height: 45px;
-    margin: 0 10px 0 20px;
-
+    margin: 0 10px 0 20px;
+    font-size: 25px;
+    line-height: 45px;
     color: #fff;
 }
 
 .login_from .lf_left a label
 {
+    float: left;
+    height: 45px;
     font-family: 'helvetica';
     font-size: 16px;
     font-weight: lighter;
     line-height: 49px;
-
-    float: left;
-
-    height: 45px;
-
     color: #fff;
 }
 .login_from .weixin
@@ -409,18 +347,15 @@
 .login_from .lf_middle
 {
     float: left;
-
     width: 1px;
     height: 148px;
     margin: 0 29px;
-
     background-color: #ddd;
 }
 
 .login_from .lf_right
 {
     float: left;
-
     width: 318px;
 }
 
@@ -436,19 +371,15 @@
 
 .login_from .lf_right form input.login_input
 {
-    font-size: 16px;
-
     display: inline-block;
-
-    box-sizing: border-box;
     width: 100%;
     max-width: none !important;
-    margin-bottom: 9px;
+    box-sizing: border-box;
     padding: 12px 10px 11px !important;
-
-    resize: none;
-
+    margin-bottom: 9px;
+    font-size: 16px;
     color: #333;
+    resize: none;
     border: 1px solid #ccc;
     border-radius: 2px !important;
     box-shadow: inset 0 1px 3px #ddd;
@@ -456,24 +387,20 @@
 
 .login_from .lf_right form .login_btn
 {
+    width: 100%;
+    height: 43px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    padding: 0;
     font-family: Microsoft YaHei, Verdana, sans-serif, 宋体;
     font-size: 16px;
     line-height: 43px;
-
-    box-sizing: border-box;
-    width: 100%;
-    height: 43px;
-    padding: 0;
-
-    cursor: pointer;
-    text-align: center;
-
     color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: #00a388!important;
     border: none;
     border-radius: 2px!important;
-    background-color: #00a388!important;
-
-    -webkit-appearance: none;
 }
 
 .login_from .lf_right form .login_btn:hover
@@ -484,9 +411,7 @@
 .login_from .lf_right form .login_btn a
 {
     display: inline-block;
-
     width: 100%;
-
     color: #fff;
 }
 
@@ -502,22 +427,19 @@
 
 .lf_des
 {
+    padding: 20px 25px;
+    margin-top: 30px;
     font-size: 13px;
     line-height: 1.7;
-
-    margin-top: 30px;
-    padding: 20px 25px;
-
-    border-top: 1px solid #ddd;
     background: #f7f7f7;
+    border-top: 1px solid #ddd;
 }
 
 .lf_des a
 {
-    cursor: pointer;
-    text-decoration: none;
-
     color: #0a88d3;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -525,31 +447,27 @@
 
 .sso_main_container
 {
-    overflow: hidden;
-
     width: 100%;
     min-width: 1200px;
-    height: 760px;
-
+    height: 760px;
+    overflow: hidden;
     background: url(../img/bm_bg_00000.jpg);
 }
 
 .sso_bindandlogin_wrapper
 {
     position: relative;
-
     width: 1170px;
     height: 560px;
-    margin: 60px auto;
     padding: 15px;
-
+    margin: 60px auto;
     background-color: #fff;
 }
 
 .sso_header_wrapper h5
 {
-    margin: 0 0 10px 0;
     padding: 0 0 0 16px;
+    margin: 0 0 10px 0;
 }
 
 .sso_bindandlogin_wrapper .dash_92c153
@@ -561,7 +479,6 @@
 {
     position: relative;
     right: 0;
-
     width: 550px;
     margin: 0 auto;
 }
@@ -569,7 +486,6 @@
 .sso_dialogue_wrapper.active
 {
     right: 240px;
-
     -webkit-transition: right .5s;
        -moz-transition: right .5s;
         -ms-transition: right .5s;
@@ -578,9 +494,7 @@
 .sso_avatar_item
 {
     position: relative;
-
     display: block;
-
     width: 100px;
     height: 100px;
     margin: 80px auto 50px;
@@ -588,31 +502,24 @@
 
 .sso_avatar_item img
 {
+    width: 100%;
     overflow: hidden;
-
-    width: 100%;
-
     border-radius: 50%;
 }
 
 .sso_avatar_item span
 {
-    font-size: 28px;
-    line-height: 45px;
-
 /*	background-image: url(../img/sprite/imgsprite_yb3_wbl_00000.png);*/
     position: absolute;
     right: -10px;
     bottom: -6px;
-
     display: block;
-
     width: 45px;
-    height: 45px;
-
-    text-align: center;
-
+    height: 45px;
+    font-size: 28px;
+    line-height: 45px;
     color: #fff;
+    text-align: center;
     border-radius: 50%;
 }
 
@@ -636,13 +543,10 @@
 
 .sso_nickname_item
 {
-    font-size: 16px;
-
     display: block;
-
     width: 100%;
-    margin: 0 0 65px 0;
-
+    margin: 0 0 65px 0;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -653,17 +557,13 @@
 
 .sso_btn_wrapper a
 {
-    font-size: 14px;
-    line-height: 40px;
-
     display: block;
-
     width: 335px;
     height: 40px;
-    margin: 40px auto;
-
+    margin: 40px auto;
+    font-size: 14px;
+    line-height: 40px;
     text-align: center;
-
     border: 1px solid #7bba33;
 }
 .sso_hollow_btn:hover
@@ -673,8 +573,8 @@
 .sso_hollow_btn:active
 {
     color: #fff;
-    border: 1px solid #b5de87;
     background-color: #b5de87;
+    border: 1px solid #b5de87;
 }
 .sso_solid_btn:active
 {
@@ -695,24 +595,20 @@
 .sso_login_wrapper
 {
     position: absolute;
-    z-index: -1;
     top: 40px;
     right: 0;
-
+    z-index: -1;
     width: 550px;
-
     opacity: 0;
 }
 
 .sso_login_wrapper.active
 {
     z-index: 0;
-
+    opacity: 1;
     -webkit-transition: opacity .5s;
        -moz-transition: opacity .5s;
         -ms-transition: opacity .5s;
-
-    opacity: 1;
 }
 
 .sso_login_wrapper ul
@@ -729,38 +625,30 @@
 
 .sso_login_wrapper ul li label
 {
-    font-size: 14px;
-
     display: inline-block;
-
-    margin: 0 15px 0 0;
-
+    margin: 0 15px 0 0;
+    font-size: 14px;
     vertical-align: middle;
 }
 
 .sso_login_wrapper ul li > div
 {
     position: relative;
-
     display: inline-block;
-
     width: 340px;
     height: 100%;
 }
 
 .sso_login_wrapper ul li input
 {
-    font-family: 'Microsoft yahei';
-    font-size: 15px;
-
     display: block;
-
     width: 295px;
     height: 100%;
-    padding: 0 0 0 40px;
-
-    border: 1px solid #ccc;
+    padding: 0 0 0 40px;
+    font-family: 'Microsoft yahei';
+    font-size: 15px;
     background-color: #faffbd;
+    border: 1px solid #ccc;
 }
 
 .sso_login_wrapper ul li input::-webkit-input-placeholder
@@ -780,14 +668,11 @@
 
 .sso_login_wrapper ul li div span
 {
-    font-size: 18px;
-
     position: absolute;
     top: 17px;
     left: 15px;
-
-    display: block;
-
+    display: block;
+    font-size: 18px;
     color: #999;
 }
 
@@ -798,43 +683,36 @@
 {
     min-width: 1200px;
     padding: 50px 0 250px;
-
     background: url('../img/index_GB.jpg') repeat center center;
 }
 
 .reset_password
 {
     position: relative;
-
-    box-sizing: border-box;
     width: 1080px;
     height: 570px;
-    margin: 0 auto;
+    box-sizing: border-box;
     padding: 15px 20px;
-
-    border: 1px solid #d0d1d2;
+    margin: 0 auto;
     background-color: #fff;
+    border: 1px solid #d0d1d2;
 }
 
 .reset_password .bread_nav
 {
+    padding-bottom: 15px;
     font-size: 14px;
     font-weight: bold;
-
-    padding-bottom: 15px;
-
     color: #3c3c3c;
     border-bottom: 1px solid #d0d1d2;
 }
 
 .reset_password .close
 {
-    font-size: 30px;
-
     position: absolute;
     top: 0;
-    right: 15px;
-
+    right: 15px;
+    font-size: 30px;
     color: #3c3c3c;
 }
 
@@ -854,34 +732,27 @@
 
 .reset_nav .nav li
 {
-    font-size: 14px;
-
     float: left;
-
-    box-sizing: border-box;
     width: 230px;
     height: 34px;
-    padding-top: 6px;
-
-    text-align: center;
-
+    box-sizing: border-box;
+    padding-top: 6px;
+    font-size: 14px;
     color: #aaa;
+    text-align: center;
     background-color: #eee;
 }
 
 .reset_nav .nav li div
 {
     display: inline-block;
-
     width: 20px;
     height: 20px;
     margin-right: 5px;
-
-    vertical-align: middle;
-
     color: #fff;
-    border-radius: 50%;
+    vertical-align: middle;
     background-color: #aaa;
+    border-radius: 50%;
 }
 
 .nav li.current
@@ -922,19 +793,15 @@
 
 .reset_password .form_group input
 {
-    font-size: 14px;
-
     display: inline-block;
-
-    box-sizing: border-box;
     width: 205px;
     max-width: none;
     height: 45px;
-    padding: 12px 10px 11px;
-
-    resize: none;
-
+    box-sizing: border-box;
+    padding: 12px 10px 11px;
+    font-size: 14px;
     color: #919191;
+    resize: none;
     border: 1px solid #ccc;
     border-radius: 2px;
     box-shadow: 0 1px 3px #ddd inset;
@@ -953,15 +820,12 @@
 
 .reset_password .btn
 {
+    width: 110px;
+    height: 45px;
     font-weight: bold;
     line-height: 45px;
-
-    width: 110px;
-    height: 45px;
-
-    cursor: pointer;
     text-align: center;
-
+    cursor: pointer;
     border-radius: 4px;
 }
 
@@ -969,16 +833,15 @@
 .reset_password .success
 {
     margin: 40px auto;
-
     color: #fff;
-    border: 1px solid #6ea11f;
     background-color: #a0d350;
+    border: 1px solid #6ea11f;
 }
 
 .reset_password .next:hover
 {
-    border: 1px solid #e9a81d;
     background-color: #e7b54b;
+    border: 1px solid #e9a81d;
 }
 
 .reset_password .next:active
@@ -988,8 +851,8 @@
 
 .reset_password .success:hover
 {
-    border: 1px solid #e9a81d;
     background-color: #e7b54b;
+    border: 1px solid #e9a81d;
 }
 
 .reset_password .success:active
@@ -1005,10 +868,9 @@
 .mobile_check,
 .mail_check
 {
-    font-size: 14px;
-
     width: 335px;
     margin: 0 400px 10px;
+    font-size: 14px;
 }
 
 .mobile_check li,
@@ -1030,18 +892,14 @@ li.method
 .form_group.inline form
 {
     display: inline-block;
-
     margin-right: 12px;
 }
 
 .send_identifying_code
 {
-    font-size: 12px;
-
     display: inline-block;
-
-    height: 40px !important;
-
+    height: 40px !important;
+    font-size: 12px;
     color: #919191;
     background-color: #eee;
 }
@@ -1050,7 +908,6 @@ li.method
 {
     width: 100%;
     margin: 30px auto;
-
     border-top: 1px solid #d0d1d2;
 }
 
@@ -1071,12 +928,10 @@ li.method
 
 .set_new_password
 {
-    font-size: 14px;
-
     position: relative;
-
     width: 335px;
     margin: 0 auto;
+    font-size: 14px;
 }
 
 .set_new_password .form_group
@@ -1102,14 +957,11 @@ li.method
 
 .set_new_password .help_block
 {
-    font-size: 12px;
-
     position: absolute;
     top: 50px;
     left: 290px;
-
-    width: 250px;
-
+    width: 250px;
+    font-size: 12px;
     color: #919191;
 }
 
@@ -1120,26 +972,21 @@ li.method
 
 .success_info
 {
+    height: 35px;
     line-height: 35px;
-
-    height: 35px;
-
     text-align: center;
 }
 
 .success_info a
 {
-    text-decoration: underline;
-
     color: #6ea11f;
+    text-decoration: underline;
 }
 
 .success_info img
 {
     display: inline-block;
-
     margin-right: 10px;
-
     vertical-align: middle;
 }
 
@@ -1148,21 +995,17 @@ li.method
 
 .error_con
 {
-    overflow: hidden;
-
     width: 900px;
-    margin: 50px auto;
-
-    border: 1px solid #d0d1d2;
+    margin: 50px auto;
+    overflow: hidden;
     background-color: #fff;
+    border: 1px solid #d0d1d2;
 }
 
 .error_con h3
 {
+    height: 40px;
     line-height: 40px;
-
-    height: 40px;
-
     color: #fff;
     background-color: #a0d350;
 }
@@ -1174,54 +1017,44 @@ li.method
 
 .error_main
 {
-    overflow: hidden;
-
     width: 700px;
     margin: 50px auto;
+    overflow: hidden;
 }
 
 .error_main .error_right
 {
     float: left;
-
     width: 220px;
     height: 140px;
     margin-top: 40px;
-
     background: url('../img/access/404_bg.jpg') no-repeat;
 }
 
 .error_main .error_right_500
 {
     float: left;
-
     width: 220px;
     height: 140px;
     margin-top: 40px;
-
     background: url('../img/access/505_bg.jpg') no-repeat;
 }
 
 .error_main .error_middle
 {
     float: left;
-
     width: 1px;
     height: 225px;
     margin: 0 50px;
-
     background-color: #a0d350;
 }
 
 .error_main .error_left
 {
+    float: left;
+    max-width: 360px;
     font-size: 16px;
     line-height: 45px;
-
-    float: left;
-
-    max-width: 360px;
-
     color: #333;
 }
 
@@ -1234,7 +1067,6 @@ li.method
 .error_main .error_left h6
 {
     font-size: 24px;
-
     color: #a0d350;
 }
 
@@ -1246,42 +1078,34 @@ li.method
 /*~~~~~~~~~~access_404_container~~~~~~~~~~*/
 .access_404_container
 {
+    padding: 30px 0 0 0;
     overflow: hidden;
-
-    padding: 30px 0 0 0;
-
     background-color: #f5f5f5;
 }
 .access_404_wrapper
 {
     width: 1200px;
-    margin: 0 auto;
     padding: 30px 0;
+    margin: 0 auto;
 }
 .access_404content_wrapper
 {
     margin: 0 0 150px 0;
-
     text-align: center;
 }
 .access_404content_wrapper h6
 {
+    margin: 0 0 20px 0;
     font-family: 'simhei';
     font-size: 85px;
     font-weight: bold;
-
-    margin: 0 0 20px 0;
-
-    letter-spacing: 5px;
-
     color: #475059;
+    letter-spacing: 5px;
 }
 .access_404content_wrapper ul li
 {
     display: inline-block;
-
     margin: 0 30px;
-
     color: #475059;
 }
 .access_404content_wrapper p
@@ -1294,17 +1118,14 @@ li.method
 }
 .access_404content_wrapper .hint
 {
-    font-size: 14px;
-
     margin: 30px 0;
+    font-size: 14px;
 }
 .access_404content_wrapper ul li a
 {
     font-size: 14px;
-
-    text-decoration: underline;
-
     color: #00a388;
+    text-decoration: underline;
 }
 .access_404content_wrapper ul li a:hover
 {

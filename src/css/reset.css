@@ -6,8 +6,8 @@
 }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed, object
 {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 table
 {
@@ -20,8 +20,8 @@ fieldset, img, abbr
 }
 address, caption, cite, code, dfn, em, h1, h2, h3, h4, h5, h6, strong, th, var
 {
-    font-weight: normal;
     font-style: normal;
+    font-weight: normal;
 }
 ul
 {
@@ -46,9 +46,8 @@ a, ins
 }
 a
 {
+    color: #333;
     cursor: pointer;
-
-    color: #333;
     outline: none;
 }
 a:hover

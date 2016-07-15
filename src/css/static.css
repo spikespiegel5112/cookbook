@@ -3,8 +3,8 @@
 .static_main_wrapper
 {
     width: 1200px;
-    margin: 0 auto;
     padding: 15px 0;
+    margin: 0 auto;
 }
 
 .static_paragraph_item
@@ -14,32 +14,25 @@
 }
 .static_paragraph_item p
 {
+    margin: 15px 0;
     font-size: 14px;
-
-    margin: 15px 0;
-
     text-indent: 28px;
 }
 /*~~~~~~~~~~static_customprocess.html~~~~~~~~~~*/
 .static_customprocess_wrapper
 {
     position: relative;
-
-    overflow: hidden;
-
     width: 1200px;
     margin: 3px auto 0;
-
+    overflow: hidden;
     background-color: #f5f5f5;
 }
 .static_customprocess_wrapper .axis
 {
     position: absolute;
     left: 47px;
-
     width: 5px;
     height: 100%;
-
     background-color: #ccc;
 }
 .static_customprocess_wrapper  .swiper-pagination
@@ -48,18 +41,17 @@
 }
 .static_cpstep_wrapper
 {
-    overflow: hidden;
-
     height: auto;
     max-height: 100%;
+    overflow: hidden;
 }
 .static_stepblock_wrapper
 {
     width: 1200px;
     height: 100%;
     min-height: 100px;
-    margin: 0 auto;
     padding: 15px 0;
+    margin: 0 auto;
 }
 .static_stepblock_wrapper .content .motiongraph
 {
@@ -69,33 +61,26 @@
 .static_stepblock_wrapper .title .icon
 {
     display: inline-block;
-
     width: 100px;
     height: 100px;
-
     text-align: center;
     vertical-align: middle;
-
-    border-radius: 50%;
     background-color: rgba(126, 189, 138, .5);
+    border-radius: 50%;
 }
 .static_stepblock_wrapper .title .icon span
 {
     display: inline-block;
-
     width: 80px;
     height: 80px;
     margin: 10px;
-
-    border-radius: 50%;
     background-color: #7ebd8a;
+    border-radius: 50%;
 }
 .static_stepblock_wrapper .title .centent
 {
     display: inline-block;
-
     margin: 0 0 0 30px;
-
     vertical-align: middle;
 }
 .static_stepblock_wrapper .title .centent h6
@@ -104,28 +89,23 @@
 }
 .static_stepblock_wrapper .title .centent p
 {
+    margin: 10px 0;
     font-size: 13px;
-
-    margin: 10px 0;
-
     color: #999;
 }
 .static_stepblock_wrapper .motiongraph
 {
     display: block;
-
     width: 1015px;
     height: 100%;
     min-height: 100px;
     margin: 0 0 0 130px;
-
 	/*background-color: #fff;*/
     text-align: center;
 }
 .static_stepblock_wrapper .motiongraph img
 {
     display: inline-block;
-
     height: 100%;
 }
 .static_stepblock_wrapper .icon span
@@ -159,21 +139,17 @@
 }
 .static_cpstep_wrapper .begintocustomize
 {
-    font-size: 18px;
-    line-height: 55px;
-
     float: right;
-
     width: 200px;
     height: 55px;
-    margin: 30px 40px 0 0;
-
-    transition: background-color .3s;
-    text-align: center;
-
+    margin: 30px 40px 0 0;
+    font-size: 18px;
+    line-height: 55px;
     color: #fff;
-    border-radius: 8px;
+    text-align: center;
     background-color: #24a386;
+    border-radius: 8px;
+    transition: background-color .3s;
 }
 .static_cpstep_wrapper .begintocustomize:hover
 {
