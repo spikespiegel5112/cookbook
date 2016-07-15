@@ -435,7 +435,7 @@
 
     text-align: center;
 
-    color: #000;
+    color: #333;
     border: 1px solid #999;
 }
 
@@ -689,7 +689,7 @@
 
 .opd_editaddress_wrapper .set_default:hover
 {
-    color: #000;
+    color: #333;
 }
 
 .opd_sumprice_wrapper
