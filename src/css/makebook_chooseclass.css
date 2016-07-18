@@ -73,7 +73,8 @@
     position: relative;
     width: 100%;
     padding: 5px 0;
-    margin-bottom: 1px;
+    margin-bottom: 1px;
+
     font-size: 14px;
     color: #999;
     text-align: center;
@@ -123,7 +124,8 @@
     width: 280px;
     height: 38px;
     box-sizing: border-box;
-    padding: 0 12px;
+    padding: 0 12px;
+
     line-height: 36px;
     border: 1px solid #ddd;
     border-radius: 4px 0 0 4px;
@@ -135,7 +137,8 @@
     width: 88px;
     height: 36px;
     padding: 0;
-    margin-top: 1px;
+    margin-top: 1px;
+
     font-size: 14px;
     line-height: 36px;
     color: #fff;
@@ -183,7 +186,8 @@
     width: 100%;
     height: 35px;
     box-sizing: border-box;
-    padding: 0 12px;
+    padding: 0 12px;
+
     font-size: 12px;
     line-height: 34px;
     color: #999;
@@ -193,7 +197,8 @@
 .search_result .sr_list li
 {
     height: 52px;
-    box-sizing: border-box;
+    box-sizing: border-box;
+
     line-height: 50px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
@@ -218,7 +223,8 @@
 
 .search_result .sr_list li p
 {
-    float: left;
+    float: left;
+
     font-size: 14px;
     color: #333;
 }
@@ -238,7 +244,8 @@
 {
     float: left;
     padding: 0 4px;
-    margin: 0 5px 8px;
+    margin: 0 5px 8px;
+
     font-size: 14px;
     color: #666;
     cursor: pointer;
@@ -289,7 +296,8 @@
     position: relative;
     width: 100%;
     height: 30px;
-    box-sizing: border-box;
+    box-sizing: border-box;
+
     font-size: 14px;
     line-height: 26px;
     color: #333;
@@ -322,7 +330,8 @@
     top: 2px;
     left: 2px;
     width: 38px;
-    height: 22px;
+    height: 22px;
+
     font-size: 14px;
     line-height: 22px;
     color: #fff;
@@ -340,7 +349,8 @@
 {
     position: absolute;
     top: 4px;
-    right: 4px;
+    right: 4px;
+
     font-size: 16px;
     color: #fff;
 }
@@ -354,7 +364,8 @@
 {
     position: relative;
     float: left;
-    margin: 10px 0;
+    margin: 10px 0;
+
     font-size: 12px;
     line-height: 20px;
     color: #999;
@@ -391,7 +402,8 @@
 {
     position: relative;
     float: left;
-    padding: 0 20px;
+    padding: 0 20px;
+
     font-size: 20px;
     line-height: 68px;
     color: #333;
@@ -401,7 +413,8 @@
 {
     position: relative;
     float: right;
-    margin-right: 20px;
+    margin-right: 20px;
+
     font-size: 14px;
     line-height: 68px;
     color: #999;
@@ -409,7 +422,8 @@
 
 .caption_wrap .new_class i
 {
-    margin-right: 3px;
+    margin-right: 3px;
+
     font-size: 20px;
     color: #ccc;
     vertical-align: middle;
@@ -529,7 +543,8 @@
 .title_edit_wrapper input {
     width: 200px;
     height: 30px;
-    padding: 0 6px;
+    padding: 0 6px;
+
     font-size: 15px;
     line-height: 30px;
     color: #555;
@@ -543,7 +558,8 @@
     height: 32px;
     box-sizing: border-box;
     padding-left: 32px;
-    overflow: hidden;
+    overflow: hidden;
+
     line-height: 30px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -552,7 +568,8 @@
 .menu_list_wrap .header li
 {
     float: left;
-    width: 18%;
+    width: 18%;
+
     font-size: 16px;
     color: #999;
     text-align: center;
@@ -658,7 +675,8 @@
     display: inline-block;
     width: 67px;
     height: 28px;
-    box-sizing: border-box;
+    box-sizing: border-box;
+
     font-size: 14px;
     line-height: 26px;
     color: #666;
@@ -694,7 +712,8 @@
 
 .menu_list .food_list
 {
-    width: 100%;
+    width: 100%;
+
     overflow: hidden;
     text-align: center;
 }
@@ -764,12 +783,19 @@
     color: #333;
 }
 
+.food_list tr .error{
+    display: block;
+    height: 0;
+    margin: 0;
+}
+
 .food_list tr .price
 {
     display: inline-block;
     width: 100px;
     height: 30px;
-    padding: 0 6px;
+    padding: 0 6px;
+
     font-size: 18px;
     line-height: 28px;
     color: #f40;
@@ -779,7 +805,8 @@
 
 .food_list tr.active .price
 {
-    box-sizing: border-box;
+    box-sizing: border-box;
+
     font-size: 16px;
     pointer-events: auto;
     cursor: auto;
@@ -793,7 +820,8 @@
     height: 26px;
     box-sizing: border-box;
     padding: 0 6px;
-    margin: 0 5px;
+    margin: 0 5px;
+
     font-size: 14px;
     line-height: 26px;
     color: #999;
@@ -875,7 +903,8 @@
 
 .choose_action_bar .action .tips
 {
-    float: left;
+    float: left;
+
     font-size: 16px;
     line-height: 80px;
     color: #333;
@@ -892,7 +921,8 @@
     float: right;
     width: 180px;
     height: 50px;
-    margin: 15px 30px;
+    margin: 15px 30px;
+
     font-size: 20px;
     line-height: 50px;
     color: #fff;
@@ -920,14 +950,16 @@
 .quick_sort_con h5
 {
     float: left;
-    margin-bottom: 10px;
+    margin-bottom: 10px;
+
     font-size: 14px;
     color: #666;
 }
 
 .quick_sort_con h5 i
 {
-    margin-left: 3px;
+    margin-left: 3px;
+
     font-size: 14px;
     vertical-align: middle;
 }
@@ -960,14 +992,16 @@
 .sort_list .item label
 {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 5px;
+
     font-size: 14px;
     color: #333;
 }
 
 .sort_list .item p
 {
-    padding-right: 70px;
+    padding-right: 70px;
+
     font-size: 14px;
     line-height: 2;
     color: #999;
@@ -983,7 +1017,8 @@
 
 .sort_list .item .actions .edit
 {
-    display: block;
+    display: block;
+
     font-size: 12px;
     color: #999;
     text-align: center;
@@ -1000,7 +1035,8 @@
     width: 44px;
     height: 24px;
     box-sizing: border-box;
-    margin: 5px auto;
+    margin: 5px auto;
+
     font-size: 14px;
     line-height: 22px;
     color: #00a388;
@@ -1049,7 +1085,8 @@
     width: 100%;
     height: 118px;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px;
+
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
@@ -1063,7 +1100,8 @@
     width: 90px;
     height: 36px;
     box-sizing: border-box;
-    margin: 0 5px;
+    margin: 0 5px;
+
     line-height: 34px;
     text-align: center;
     background-color: #fff;
@@ -1148,7 +1186,8 @@
     top: 2px;
     left: -10px;
     font-weight: bold;
-    color: #f00;
+    color: #f00;
+
     content: "*";
 }
 
@@ -1161,7 +1200,8 @@
     height: 40px;
     box-sizing: border-box;
     padding: 0 12px;
-    margin: 0;
+    margin: 0;
+
     font-size: 14px;
     line-height: 38px;
     color: #333;
@@ -1231,7 +1271,8 @@
     top: 2px;
     left: 2px;
     width: 38px;
-    height: 22px;
+    height: 22px;
+
     font-size: 14px;
     line-height: 22px;
     color: #fff;
@@ -1248,7 +1289,8 @@
 {
     position: relative;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 10px;
+
     font-size: 14px;
     line-height: 2;
     color: #999;
@@ -1269,7 +1311,8 @@
 
 .edit_form .yc_menu .menu_hd
 {
-    display: block;
+    display: block;
+
     font-size: 14px;
     color: #333;
 }
@@ -1278,7 +1321,8 @@
 {
     position: absolute;
     top: 0;
-    right: 12px;
+    right: 12px;
+
     font-size: 22px;
     line-height: 38px;
     color: #999;
@@ -1315,7 +1359,8 @@
 
 .edit_form .yc_menu .menu_bd li
 {
-    padding: 0 12px;
+    padding: 0 12px;
+
     font-size: 14px;
     line-height: 25px;
     color: #666;
@@ -1343,7 +1388,8 @@
 .more_details .show_more
 {
     position: relative;
-    display: block;
+    display: block;
+
     font-size: 14px;
     color: #999;
 }
@@ -1351,7 +1397,8 @@
 .more_details .show_more i
 {
     position: absolute;
-    right: 20px;
+    right: 20px;
+
     font-size: 18px;
     color: #ccc;
 }
@@ -1396,7 +1443,8 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
+    margin-left: 10px;
+
     line-height: 40px;
     color: #fff;
     text-align: center;
@@ -1468,7 +1516,8 @@
 .edit_single_food .action_bar .delete
 {
     float: left;
-    margin: 20px 0;
+    margin: 20px 0;
+
     font-size: 14px;
     line-height: 36px;
     color: #999;
@@ -1498,7 +1547,8 @@
 .add_new_food .belong
 {
     display: block;
-    padding: 0 20px;
+    padding: 0 20px;
+
     font-size: 14px;
     line-height: 40px;
     color: #999;
@@ -1517,7 +1567,8 @@
     height: 336px;
     padding: 0 10px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto;
+
     font-size: 14px;
     line-height: 30px;
     color: #333;
@@ -1534,7 +1585,8 @@
 {
     position: relative;
     float: left;
-    margin-left: 20px;
+    margin-left: 20px;
+
     font-size: 14px;
     line-height: 30px;
     color: #999;
@@ -1583,7 +1635,8 @@
 {
     position: relative;
     float: left;
-    padding: 0 8px 0 12px;
+    padding: 0 8px 0 12px;
+
     font-size: 14px;
     line-height: 50px;
     color: #999;
@@ -1619,7 +1672,8 @@
 
 .edit_tool_bar .actions li a
 {
-    position: relative;
+    position: relative;
+
     font-size: 12px;
     color: #999;
     background: transparent;
@@ -1629,7 +1683,8 @@
 {
     position: relative;
     display: block;
-    height: 32px;
+    height: 32px;
+
     font-size: 28px;
     text-align: center;
 }
@@ -1685,7 +1740,8 @@
     width: auto;
     min-width: 16px;
     height: 16px;
-    padding: 0 1px;
+    padding: 0 1px;
+
     font-size: 12px;
     line-height: 16px;
     color: #fff;
@@ -1738,7 +1794,8 @@
     float: none;
     height: 30px;
     padding: 0;
-    margin: 0;
+    margin: 0;
+
     line-height: 30px;
     text-align: left;
     white-space: nowrap;
@@ -1746,7 +1803,8 @@
 }
 .edit_tool_bar .actions .page_list li a
 {
-    display: block;
+    display: block;
+
     font-size: 12px;
     color: #666;
 }
@@ -1816,7 +1874,8 @@
     z-index: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 240px 0 662px;
+    padding: 0 240px 0 662px;
+
     line-height: 47px;
     text-align: center;
 }
@@ -1833,7 +1892,8 @@
 
 .edit_tool_bar .view_mode label
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 12px;
     color: #666;
     vertical-align: middle;
@@ -1844,7 +1904,8 @@
     display: inline-block;
     width: 75px;
     height: 30px;
-    margin: 0 -2px;
+    margin: 0 -2px;
+
     font-size: 14px;
     line-height: 30px;
     color: #00a388;
@@ -1884,7 +1945,8 @@
     position: relative;
     display: inline-block;
     width: 110px;
-    margin-right: 10px;
+    margin-right: 10px;
+
     font-size: 14px;
     color: #666;
     vertical-align: middle;
@@ -1950,7 +2012,8 @@
     display: inline-block;
     width: 90px;
     height: 36px;
-    margin: 0 5px;
+    margin: 0 5px;
+
     font-size: 16px;
     line-height: 36px;
     color: #fff;
@@ -2008,7 +2071,8 @@
     left: 6px;
     z-index: 3;
     display: block;
-    width: 28px;
+    width: 28px;
+
     line-height: 30px;
     color: #ccc;
     text-align: center;
@@ -2030,7 +2094,8 @@
 
 .single_mode .resource_shrink i
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 18px;
     vertical-align: middle;
 }
@@ -2079,7 +2144,8 @@
     width: 28px;
     box-sizing: border-box;
     padding: 4px 1px;
-    margin-top: 2px;
+    margin-top: 2px;
+
     font-size: 14px;
     color: #999;
     text-align: center;
@@ -2129,7 +2195,8 @@
     z-index: 1;
     width: 100%;
     box-sizing: border-box;
-    padding: 12px 12px 6px;
+    padding: 12px 12px 6px;
+
     font-size: 16px;
     color: #333;
     background-color: #fff;
@@ -2230,7 +2297,8 @@
     top: 0;
     left: 0;
     width: 38px;
-    height: 22px;
+    height: 22px;
+
     font-size: 14px;
     line-height: 22px;
     color: #fff;
@@ -2248,7 +2316,8 @@
 {
     position: absolute;
     bottom: -95px;
-    left: 43px;
+    left: 43px;
+
     font-size: 32px;
     color: #fff;
     opacity: 0;
@@ -2269,7 +2338,8 @@
 .tpl_list li .tpl_num
 {
     display: block;
-    clear: both;
+    clear: both;
+
     font-size: 12px;
     line-height: 30px;
     color: #333;
@@ -2280,7 +2350,8 @@
 {
     position: absolute;
     bottom: 0;
-    padding-left: 18px;
+    padding-left: 18px;
+
     font-size: 14px;
     line-height: 30px;
     color: #79bd8f;
@@ -2319,7 +2390,8 @@
     height: 30px;
     box-sizing: border-box;
     padding: 0 12px;
-    margin: 0;
+    margin: 0;
+
     font-size: 14px;
     line-height: 28px;
     color: #666;
@@ -2361,7 +2433,8 @@
     position: relative;
     width: 100%;
     height: 30px;
-    box-sizing: border-box;
+    box-sizing: border-box;
+
     line-height: 28px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
@@ -2379,7 +2452,8 @@
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 20px;
+
     font-size: 14px;
     color: #333;
 }
@@ -2405,7 +2479,8 @@
 {
     position: absolute;
     left: 3px;
-    display: none;
+    display: none;
+
     font-size: 14px;
     color: #ccc;
 }
@@ -2418,7 +2493,8 @@
 {
     position: absolute;
     right: 3px;
-    display: none;
+    display: none;
+
     font-size: 14px;
     line-height: 28px;
     color: #ccc;
@@ -2494,7 +2570,8 @@
     z-index: 2;
     width: 78px;
     height: 16px;
-    margin: 0 0 0 -39px;
+    margin: 0 0 0 -39px;
+
     font-size: 14px;
     line-height: 16px;
     color: #999;
@@ -2562,7 +2639,8 @@
 .single_mode .chapter_list .list_con p
 {
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 15px;
+
     font-size: 12px;
     line-height: 30px;
     color: #333;
@@ -2606,7 +2684,8 @@
     top: 33px;
     left: 10px;
     width: 30px;
-    height: 30px;
+    height: 30px;
+
     font-size: 30px;
     color: #fff;
     border-radius: 100%;
@@ -2705,7 +2784,8 @@
     left: 0;
     width: auto;
     height: 16px;
-    padding: 0 5px 0 8px;
+    padding: 0 5px 0 8px;
+
     font-size: 12px;
     line-height: 16px;
     color: #fff;
@@ -2728,7 +2808,8 @@
     width: 100%;
     height: 40px;
     box-sizing: border-box;
-    padding-top: 16px;
+    padding-top: 16px;
+
     font-size: 12px;
     color: #fff;
     text-align: center;
@@ -2793,7 +2874,8 @@
     position: absolute;
     top: 0;
     left: -30px;
-    display: inline-block;
+    display: inline-block;
+
     font-size: 18px;
     color: #ddd;
     cursor: pointer;
@@ -2824,7 +2906,8 @@
 {
     position: absolute;
     top: 0;
-    right: -50px;
+    right: -50px;
+
     font-size: 14px;
     color: #fff;
 }
@@ -2937,7 +3020,8 @@
 
 .edit_space_con .list_mode .tips i
 {
-    margin-right: 3px;
+    margin-right: 3px;
+
     font-size: 14px;
     color: #333;
     vertical-align: middle;
@@ -2957,7 +3041,8 @@
     display: block;
     width: 85px;
     height: 30px;
-    margin: 0 0 10px;
+    margin: 0 0 10px;
+
     font-size: 12px;
     line-height: 30px;
     color: #fff;
@@ -2994,7 +3079,8 @@
     box-sizing: border-box;
     padding: 0 6px;
     margin-right: 1px;
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 14px;
     color: #fff;
     text-align: center;
@@ -3008,7 +3094,8 @@
 {
     float: left;
     width: 35px;
-    height: 100%;
+    height: 100%;
+
     font-size: 16px;
     color: #fff;
     text-align: center;
@@ -3056,7 +3143,8 @@
 {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%;
+
     font-size: 14px;
     color: #596d6b;
 }
@@ -3171,7 +3259,8 @@
     left: 0;
     z-index: 1;
     width: 25px;
-    height: 25px;
+    height: 25px;
+
     line-height: 25px;
     color: #666;
     text-align: center;
@@ -3191,7 +3280,8 @@
 
 .list_mode .page_list h4
 {
-    width: 100%;
+    width: 100%;
+
     font-size: 14px;
     line-height: 35px;
     color: #596d6b;
@@ -3215,7 +3305,8 @@
     top: 86px;
     z-index: 1;
     width: 100%;
-    height: 28px;
+    height: 28px;
+
     font-size: 12px;
     line-height: 26px;
     color: #a0d350;
@@ -3329,7 +3420,8 @@
     display: block;
     width: 100%;
     height: 150px;
-    box-sizing: border-box;
+    box-sizing: border-box;
+
     font-size: 12px;
     color: #ccc;
     text-align: center;
@@ -3388,7 +3480,8 @@
     top: 4px;
     left: 4px;
     width: 38px;
-    height: 22px;
+    height: 22px;
+
     font-size: 14px;
     line-height: 22px;
     color: #fff;
@@ -3400,7 +3493,8 @@
 .figure_list .figure .preview
 {
     position: absolute;
-    right: 6px;
+    right: 6px;
+
     font-size: 24px;
     color: #fff;
     transition: all .35s ease-in-out;
@@ -3413,7 +3507,8 @@
 .figure_list .figure .ybicon-ok{
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 0;
+
     display: none;
     width: 0;
     height: 0;
@@ -3429,7 +3524,8 @@
 }
 .figure_list li p
 {
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 12px;
     line-height: 20px;
     color: #999;
@@ -3456,7 +3552,8 @@
 {
     position: absolute;
     top: 50%;
-    margin-top: -26px;
+    margin-top: -26px;
+
     font-size: 48px;
     color: #ddd;
 }
@@ -3486,7 +3583,8 @@
 }
 .chapter_config_con .chapter_config
 {
-    padding: 10px 0 0;
+    padding: 10px 0 0;
+
     font-size: 14px;
     line-height: 45px;
     color: #333;
@@ -3503,7 +3601,8 @@
     display: inline-block;
     width: 200px;
     height: 30px;
-    padding: 0 6px;
+    padding: 0 6px;
+
     font-size: 14px;
     line-height: 30px;
     color: #333;
@@ -3526,7 +3625,8 @@
 {
     position: relative;
     display: none;
-    width: 840px;
+    width: 840px;
+
     font-size: 14px;
     color: #333;
     background-color: #fff;
@@ -3571,7 +3671,8 @@
     height: 22px;
     box-sizing: border-box;
     padding: 0 0 0 6px;
-    margin: 0 0 0 4px;
+    margin: 0 0 0 4px;
+
     line-height: 20px;
     border: 1px solid #ccc;
     border-radius: 2px;
@@ -3647,7 +3748,8 @@
 .add_page_con .action_bar ,
 .change_tpl_con .action_bar
 {
-    overflow: hidden;
+    overflow: hidden;
+
     line-height: 74px;
     border-top: 1px solid #ddd;
 }
@@ -3783,7 +3885,8 @@
     position: absolute;
     top: 0;
     z-index: 10;
-    height: 338px;
+    height: 338px;
+
     font-size: 40px;
     line-height: 338px;
     color: rgba(153,153,153,.6);
@@ -3809,7 +3912,8 @@
 .tpl_slide_wrap .chaptermake_tpl li{
     position: relative;
     float: left;
-    margin: 5px 10px 10px;
+    margin: 5px 10px 10px;
+
     font-size: 14px;
     text-align: center;
 }
@@ -3847,7 +3951,8 @@
     z-index: 1;
     display: none;
     width: 0;
-    height: 0;
+    height: 0;
+
     line-height: 10px;
     color: #fff;
     border-color: transparent #00a388 #00a388 transparent;
@@ -3860,7 +3965,8 @@
 .chaptermake_tpl ul li .photo .preview_btn {
     position: absolute;
     top: 5px;
-    right: 8px;
+    right: 8px;
+
     display: none;
     padding: 2px 5px;
     font-size: 12px;
@@ -3875,7 +3981,8 @@
     position: absolute;
     right: 8px;
     bottom: 5px;
-    padding: 3px 5px;
+    padding: 3px 5px;
+
     font-size: 12px;
     color: #fff;
     background: #d6413d;
@@ -3893,7 +4000,8 @@
     height: 126px;
 }
 .chaptermake_tpl ul li .tpl_title {
-    width: 104px;
+    width: 104px;
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -3913,7 +4021,8 @@
 .edit_group {
     position: absolute;
     top: 0;
-    height: 100%;
+    height: 100%;
+
     font-size: 12px;
     color: #fff;
 }
@@ -3939,7 +4048,8 @@
 
 .tpl_pagination ul {
     width: 100%;
-    margin: 10px auto;
+    margin: 10px auto;
+
     overflow: hidden;
     text-align: center;
 }
@@ -3949,7 +4059,8 @@
     float: none;
     height: 25px;
     padding: 0 6px;
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 5px 0;
+
     font-size: 12px;
     line-height: 25px;
     vertical-align: middle;
@@ -3969,7 +4080,8 @@
     float: left;
     width: 22px;
     height: 20px;
-    margin-top: 2px;
+    margin-top: 2px;
+
     font-family: Microsoft YaHei;
     font-size: 12px;
     text-align: center;
