@@ -10,14 +10,16 @@
 {
     width: 1200px;
     height: 450px;
-    margin: 0 auto;
+    margin: 0 auto;
+
     line-height: 450px;
     text-align: center;
 }
 .booklist_banner_wrapper .desc,
 .booklist_banner_wrapper .illustration
 {
-    display: inline-block;
+    display: inline-block;
+
     line-height: normal;
     text-align: left;
     vertical-align: middle;
@@ -26,13 +28,15 @@
 .booklist_banner_wrapper .desc
 {
     width: 470px;
-    padding: 0;
+    padding: 0;
+
     font-family: 'simhei';
     color: #fff;
 }
 .booklist_banner_wrapper .desc h6
 {
-    padding: 0;
+    padding: 0;
+
     font-size: 51px;
     font-weight: lighter;
     letter-spacing: 4px;
@@ -41,7 +45,8 @@
 {
     width: 440px;
     padding: 10px 0;
-    margin: 10px 0;
+    margin: 10px 0;
+
     font-size: 24px;
     text-align: center;
     letter-spacing: 3.5px;
@@ -50,13 +55,15 @@
 }
 .booklist_banner_wrapper .price
 {
-    margin: 50px 0;
+    margin: 50px 0;
+
     font-size: 0;
     color: #fa4800;
 }
 .booklist_banner_wrapper .price label
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 42px;
     vertical-align: top;
 }
@@ -71,7 +78,8 @@
     position: relative;
     display: block;
     width: 180px;
-    height: 50px;
+    height: 50px;
+
     font-size: 0;
     line-height: 50px;
     color: #fff;
@@ -89,7 +97,8 @@
 }
 .booklist_banner_wrapper a label
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 26px;
     vertical-align: middle;
     cursor: pointer;
@@ -125,7 +134,8 @@
 }
 .booklist_filter_wrapper .list
 {
-    height: 40px;
+    height: 40px;
+
     font-size: 0;
     border: 1px solid #efefef;
 }
@@ -139,7 +149,8 @@
 .booklist_filter_wrapper label
 {
     width: 70px;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 15px;
+
     font-size: 14px;
     line-height: 40px;
     text-align: center;
@@ -155,7 +166,8 @@
     display: inline-block;
     min-width: 40px;
     height: 20px;
-    padding: 3px 5px;
+    padding: 3px 5px;
+
     font-size: 14px;
     line-height: 20px;
     text-align: center;
@@ -184,7 +196,8 @@
 {
     display: block!important;
     width: 255px;
-    padding: 0 15px;
+    padding: 0 15px;
+
     font-size: 0;
     text-align: center;
     background-color: #eee;
@@ -216,7 +229,8 @@
 {
     position: absolute;
     right: 0;
-    margin: 0 10px;
+    margin: 0 10px;
+
     font-size: 22px;
     color: #ccc;
 }
@@ -232,7 +246,8 @@
 .booklist_cover_wrapper .tags
 {
     display: inline-block;
-    width: 195px;
+    width: 195px;
+
     font-size: 0;
     vertical-align: bottom;
 }
@@ -240,7 +255,8 @@
 {
     display: inline-block;
     min-width: 47px;
-    margin: 2px 3px;
+    margin: 2px 3px;
+
     font-size: 12px;
     line-height: 17px;
     color: #666;
@@ -253,7 +269,8 @@
 {
     display: inline-block;
     width: 90px;
-    height: 35px;
+    height: 35px;
+
     font-size: 16px;
     line-height: 35px;
     color: #fff;
@@ -268,8 +285,9 @@
 }
 .booklist_cover_wrapper .style
 {
+    padding: 0 0 20px 0;
     width: 280px;
-    height: 300px;
+    height: auto;
     margin: 30px auto;
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -279,8 +297,9 @@
 {
     display: block!important;
     width: 260px;
-    height: 170px;
-    margin: 10px auto;
+    height: 260px;
+    margin: 10px auto;
+
     font-size: 0;
     text-align: center;
 }
@@ -292,7 +311,8 @@
 }
 .booklist_cover_wrapper .style .title p
 {
-    width: 100%;
+    width: 100%;
+
     font-size: 13px;
     text-align: center;
 }
@@ -304,7 +324,8 @@
 }
 .booklist_cover_wrapper .price label
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 14px;
     vertical-align: bottom;
 }
@@ -316,20 +337,23 @@
 }
 .booklist_cover_wrapper .price div i
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 15px;
     font-style: normal;
     vertical-align: bottom;
 }
 .booklist_cover_wrapper .price div p
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 18px;
     vertical-align: bottom;
 }
 .booklist_cover_wrapper .price div span
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 12px;
     vertical-align: top;
 }
@@ -339,14 +363,16 @@
 .main_content_container.for_book_detail
 {
     width: 100%;
-    min-width: 1200px;
+    min-width: 1200px;
+
     overflow: hidden;
     background: #f6f6f6;
 }
 .book_details_box
 {
     width: 1200px;
-    min-width: 1200px;
+    min-width: 1200px;
+
     box-sizing: border-box;
     margin: 0 auto;
 /*    padding: 15px;*/
@@ -359,7 +385,8 @@
 }
 .book_details_box .bread_nav li
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 14px;
     color: #666;
 }
@@ -376,7 +403,8 @@
 }*/
 .booklist_bookinfo_wrapper
 {
-    padding: 15px;
+    padding: 15px;
+
     margin: 10px 0 0;
     background-color: #fff;
 }
@@ -389,7 +417,8 @@
 .booklist_bookinfo_wrapper .book_img .bd
 {
     width: 375px;
-    height: 375px;
+    height: 375px;
+
     overflow: hidden;
     border: 1px solid #ccc;
 }
@@ -433,7 +462,8 @@
     width: 60px;
     height: 60px;
     margin: 15px 3px;
-    overflow: hidden;
+    overflow: hidden;
+
     line-height: 55px;
     cursor: pointer;
     border: 1px solid #ccc;
@@ -458,7 +488,7 @@
     width: 686px;
     box-sizing: border-box;
     padding: 0;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 40px;
     vertical-align: top;
 }
 .booklist_bookinfo_wrapper .book_text .name
@@ -540,7 +570,8 @@
 }
 .booklist_bookinfo_wrapper .book_text div dt, .booklist_bookinfo_wrapper .book_text div dd
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 12px;
     line-height: 30px;
     color: #666;
@@ -584,7 +615,8 @@
     position: relative;
     width: 45px;
     height: 20px;
-    margin: 0 5px;
+    margin: 0 5px;
+
     font-size: 12px;
     text-align: center;
     cursor: pointer;
@@ -652,7 +684,8 @@
 {
     position: absolute;
     top: 4px;
-    right: -1px;
+    right: -1px;
+
     font-size: 12px;
     color: #fff;
 }
@@ -664,7 +697,8 @@
     display: inline-block;
     width: 150px;
     height: 40px;
-    margin: 10px 10px 10px 59px;
+    margin: 10px 10px 10px 59px;
+
     line-height: 40px;
     color: #fff;
     text-align: center;
@@ -701,7 +735,8 @@
 }
 .book_details_box .detail_more, .book_details_box .more_tpl
 {
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 14px;
     color: #666;
     border: 1px solid #e7e7e7;
@@ -709,7 +744,8 @@
 .book_details_box .detail_more .hd, .book_details_box .more_tpl .parhd
 {
     height: 35px;
-    overflow: visible;
+    overflow: visible;
+
     clear: both;
     background-color: #fff;
 }
@@ -718,7 +754,8 @@
     position: relative;
     float: left;
     min-width: 90px;
-    height: 35px;
+    height: 35px;
+
     line-height: 35px;
     border-right: 1px solid #e7e7e7;
 }
@@ -809,7 +846,8 @@
     height: 45px;
     box-sizing: border-box;
     padding: 0 0 0 30px;
-    margin: 0 3%;
+    margin: 0 3%;
+
     font-size: 18px;
     line-height: 45px;
     text-align: left;
@@ -977,7 +1015,7 @@
     position: relative;
     display: inline-block;
     /*width: 410px;*/
-    margin: 15px 55px;
+    margin: 15px 40px;
     text-align: center;
 }
 .book_details_box .page_detail .page_list .desc > ul > li label
@@ -1021,9 +1059,10 @@
     font-size: 13px;
     line-height: 35px;
 }
-.booklist_detailcoverdetails_wrapper .sizetag
+.booklist_detailcoverdetails_wrapper img
 {
     position: relative;
+    left: 40px;
 }
 .booklist_detailcoverdetails_wrapper li
 {
@@ -1069,14 +1108,16 @@
     position: relative;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0;
+
     font-size: 12px;
     text-align: center;
 }
 .sold_record .table_head
 {
     height: 45px;
-    padding: 0 30px;
+    padding: 0 30px;
+
     font-size: 12px;
     line-height: 45px;
     color: #666;
@@ -1090,13 +1131,15 @@
 }
 .sold_record .table_main
 {
-    padding: 0 35px;
+    padding: 0 35px;
+
     margin: 0 0 25px;
     color: #333;
 }
 .sold_record table tbody tr
 {
-    height: 45px;
+    height: 45px;
+
     line-height: 45px;
     border-bottom: 1px dotted #c9c9c9;
 }
@@ -1150,7 +1193,8 @@
     min-width: 60px;
     height: 30px;
     box-sizing: border-box;
-    margin: 0 5px;
+    margin: 0 5px;
+
     line-height: 30px;
     border: 1px solid #e0e0e0;
 }
@@ -1203,7 +1247,8 @@
     z-index: 1;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%;
+
     line-height: 30px;
     background: url(../img/booklist/autographbook_bg.png);
     border-radius: 0 20px 20px 0;
@@ -1216,7 +1261,8 @@
 }
 .agbcover_wrapper label
 {
-    margin: 5px 0;
+    margin: 5px 0;
+
     font-size: 20px;
     color: #5b5b5b;
 }
@@ -1224,7 +1270,8 @@
 {
     display: block;
     width: 100%;
-    margin: 10px 0 5px;
+    margin: 10px 0 5px;
+
     font-size: 14px;
     font-weight: lighter;
     color: #333;
@@ -1314,7 +1361,8 @@
 }
 .booklist_detailtexturecolor_wrapper .title
 {
-    margin: 30px 0;
+    margin: 30px 0;
+
     font-size: 19px;
     text-align: center;
 }
@@ -1361,7 +1409,8 @@
 {
     display: inline-block;
     width: 390px;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 15px;
+
     font-size: 14px;
     vertical-align: top;
 }
