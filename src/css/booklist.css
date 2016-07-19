@@ -4,7 +4,13 @@
     width: 100%;
     height: 450px;
     margin: 0 0 10px 0;
-    background-image: url(../img/banner/booklist_banner_bg_00000.jpg);
+    background: url(../img/banner/booklist_banner_bg_00000.jpg) center no-repeat;
+}
+.booklist_banner_wrapper.for_style{
+    background: url(../img/banner/booklist_banner_02.jpg) center no-repeat;
+}
+.booklist_banner_wrapper.for_template{
+    background: url(../img/banner/booklist_banner_01.jpg) center no-repeat;
 }
 .booklist_bannercontent_wrapper
 {
