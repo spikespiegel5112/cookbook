@@ -98,7 +98,8 @@ button
 .disable
 {
     color: #999;
-    pointer-events: none !important;
+    pointer-events: none !important;
+
     cursor: not-allowed !important;
     background-color: #e6e6e6;
     filter: alpha(opacity=65) !important;
@@ -129,7 +130,8 @@ button
 }
 label.error, div.error
 {
-    margin-bottom: 9px;
+    margin-bottom: 9px;
+
     font-size: 12px !important;
     color: red!important;
 }
@@ -152,7 +154,8 @@ label.error, div.error
     width: 100%;
     height: 40px;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0;
+
     font-size: 12px;
     line-height: 40px;
     color: #ccc;
@@ -179,7 +182,8 @@ label.error, div.error
 .yc_cm_header .shortcut a
 {
     position: relative;
-    padding: 0 10px;
+    padding: 0 10px;
+
     font-size: 12px;
     color: #ccc;
 }
@@ -203,7 +207,8 @@ label.error, div.error
 .yc_cm_header .shortcut .quick_menu li a > i
 {
     float: left;
-    margin-right: -4px;
+    margin-right: -4px;
+
     font-size: 16px;
     font-style: normal;
     color: #999;
@@ -320,7 +325,8 @@ label.error, div.error
 {
     display: block;
     height: 32px;
-    box-sizing: border-box;
+    box-sizing: border-box;
+
     line-height: 30px;
     color: #333;
 }
@@ -376,7 +382,8 @@ label.error, div.error
 .header_con .hot_line span
 {
     position: relative;
-    display: block;
+    display: block;
+
     font-size: 12px;
     color: #999;
 }
@@ -423,7 +430,8 @@ label.error, div.error
 .yc_cm_header .main_nav .navigation ul li a
 {
     display: block;
-    padding: 0 5px;
+    padding: 0 5px;
+
     font-size: 20px;
     color: #333;
 }
@@ -444,7 +452,8 @@ label.error, div.error
 {
     box-sizing: border-box;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 12px;
     line-height: 50px;
     color: #666;
@@ -486,7 +495,8 @@ label.error, div.error
 /*~~~~~~~~~~common_block_wrapper~~~~~~~~~~*/
 .common_block_wrapper
 {
-    width: 1200px;
+    width: 1200px;
+
     box-sizing: border-box;
     margin: 0 auto 30px;
     background-color: #fff;
@@ -529,7 +539,8 @@ label.error, div.error
     display: none;
     min-width: 190px;
     max-width: 300px;
-    padding: 5px 10px;
+    padding: 5px 10px;
+
     font-size: 12px;
     line-height: 20px;
     color: #333;
@@ -586,7 +597,8 @@ label.error, div.error
     float: left;
     width: 25px;
     height: 100%;
-    margin: 0;
+    margin: 0;
+
     font-size: 20px;
     font-weight: bold;
     line-height: 23px;
@@ -603,7 +615,8 @@ label.error, div.error
     float: left;
     width: 33px;
     height: 100%;
-    box-sizing: content-box;
+    box-sizing: content-box;
+
     font-size: 15px;
     text-align: center;
     border-top: 1px solid #aaa;
@@ -622,7 +635,8 @@ label.error, div.error
     width: 185px;
     min-height: 50px;
     box-sizing: border-box;
-    padding: 10px 15px;
+    padding: 10px 15px;
+
     font-size: 13px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -674,7 +688,8 @@ label.error, div.error
 }
 .common_sharelist_wrapper ul li a
 {
-    display: block;
+    display: block;
+
     font-size: 25px;
     line-height: 30px;
     color: #abaebe;
@@ -723,7 +738,8 @@ label.error, div.error
 {
     display: inline-block;
     width: 1em;
-    margin: 0 2px;
+    margin: 0 2px;
+
     line-height: 30px;
     text-align: center;
 }
@@ -764,7 +780,8 @@ label.error, div.error
     display: inline-block;
     height: 30px;
     padding: 0 10px;
-    margin: 0 3px;
+    margin: 0 3px;
+
     font-size: 12px;
     font-weight: bold;
     line-height: 30px;
@@ -809,7 +826,8 @@ label.error, div.error
 {
     width: 220px;
     padding: 20px 0;
-    margin: 0 auto;
+    margin: 0 auto;
+
     overflow: hidden;
     text-align: center;
 }
@@ -838,7 +856,8 @@ label.error, div.error
 .pc_empty_item label
 {
     display: block;
-    width: 100%;
+    width: 100%;
+
     font-size: 14px;
     line-height: 2;
     color: #a8a8a8;
@@ -855,7 +874,8 @@ label.error, div.error
     width: 100%;
     max-width: 1200px;
     padding: 15px 0;
-    margin: 0 auto;
+    margin: 0 auto;
+
     font-family: 'microsoft yahei';
     border-bottom: 4px solid #79bd8f;
 }
@@ -878,13 +898,15 @@ label.error, div.error
 .common_paginator_wrapper
 {
     width: 100%;
-    margin: 30px 0;
+    margin: 30px 0;
+
     font-size: 0;
     text-align: center;
 }
 .common_paginator_wrapper ul
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 0;
     text-align: center;
 }
@@ -909,7 +931,8 @@ label.error, div.error
 {
     display: inline-block;
     width: 100%;
-    height: 100%;
+    height: 100%;
+
     font-size: 20px;
     line-height: 20px;
     color: #ccc;
@@ -921,7 +944,8 @@ label.error, div.error
 }
 .common_paginator_wrapper li a, .common_paginator_wrapper > a
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 16px;
     line-height: 30px;
     color: #fff;
@@ -985,6 +1009,54 @@ label.error, div.error
     cursor: pointer;
 }
 
+.loadingimg
+{
+    position: fixed;
+    z-index: 10003;
+    width: 100%;
+    height: 100%;
+    padding-top: 300px;
+    text-align: center;
+}
+
+.loadingimg img
+{
+    display: inline-block;
+    margin: 30% 0 0 0;
+}
+
+.loadinglayer
+{
+    position: fixed;
+    z-index: 10002;
+    width: 100%;
+    height: 100%;
+    background: gray;
+    filter: alpha(opacity=50);
+    opacity: .5;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+}
+
+.loadingimg_roundborder
+{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    box-shadow: 0 0 30px #fff;
+}
+
+.loadingimg_roundborder label
+{
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+
 /*~~~~~~~~~~common_shtagging_wrapper~~~~~~~~~~*/
 
 .common_shtagging_wrapper
@@ -1029,7 +1101,8 @@ label.error, div.error
     right: 0;
     bottom: -15px;
     width: 98%;
-    height: 15px;
+    height: 15px;
+
     line-height: 30px;
     text-align: center;
     border-right: 1px solid #bbb;
@@ -1044,7 +1117,8 @@ label.error, div.error
 }
 .common_shtagging_wrapper p
 {
-    min-width: 35px;
+    min-width: 35px;
+
     font-size: 12px;
     text-align: center;
 }
@@ -1064,7 +1138,8 @@ label.error, div.error
     z-index: 1;
     display: inline-block;
     width: 50px;
-    height: 50px;
+    height: 50px;
+
     font-size: 50px;
     color: #fff;
 }
@@ -1134,7 +1209,8 @@ label.error, div.error
     display: block;
     width: 90%;
     height: 45px;
-    margin: 15px auto;
+    margin: 15px auto;
+
     font-size: 16px;
     line-height: 45px;
     color: #fff;
@@ -1167,7 +1243,8 @@ label.error, div.error
 {
     width: 100%;
     height: 60px;
-    margin: 0 auto;
+    margin: 0 auto;
+
     font-size: 0;
     text-align: center;
 }
@@ -1181,7 +1258,8 @@ label.error, div.error
 {
     display: inline-block;
     width: 75px;
-    height: 65px;
+    height: 65px;
+
     font-size: 60px;
     color: #aab93e;
     vertical-align: middle;
@@ -1192,7 +1270,8 @@ label.error, div.error
 }
 .common_loginheader_wrapper div label
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 18px;
     vertical-align: middle;
 }
@@ -1201,7 +1280,8 @@ label.error, div.error
     position: absolute;
     top: 10px;
     right: 15px;
-    display: block;
+    display: block;
+
     font-size: 22px;
     font-weight: lighter;
     color: #ccc;
@@ -1260,7 +1340,8 @@ label.error, div.error
 }
 .common_logininput_wrapper p
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 14px;
     color: #333;
     vertical-align: middle;
@@ -1270,7 +1351,8 @@ label.error, div.error
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 100%;
+    height: 100%;
+
     font-size: 0;
     vertical-align: top;
 }
@@ -1284,7 +1366,8 @@ label.error, div.error
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 0 0 0 5%;
+    padding: 0 0 0 5%;
+
     font-family: 'microsoft yahei';
     font-size: 15px;
     vertical-align: middle;
@@ -1323,7 +1406,8 @@ label.error, div.error
     left: 0;
     display: inline-block;
     width: 55px;
-    height: 100%;
+    height: 100%;
+
     font-size: 26px;
     line-height: 50px;
     color: #aaa;
@@ -1342,7 +1426,8 @@ label.error, div.error
     right: 1px;
     display: inline-block;
     width: 100px;
-    height: 36px;
+    height: 36px;
+
     font-size: 15px;
     line-height: 38px;
     color: #939393;
@@ -1361,7 +1446,8 @@ label.error, div.error
     display: block;
     width: 90%;
     height: 45px;
-    margin: 15px auto;
+    margin: 15px auto;
+
     font-size: 16px;
     line-height: 45px;
     color: #fff;
@@ -1381,7 +1467,8 @@ label.error, div.error
     position: relative;
     z-index: 1;
     width: 90%;
-    padding: 5px 5%;
+    padding: 5px 5%;
+
     font-size: 12px;
     text-align: right;
     border-radius: 6px;
@@ -1425,14 +1512,16 @@ label.error, div.error
 .common_logincheckbox_wrapper li
 {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 0;
+
     font-size: 13px;
     color: #777;
 }
 
 .common_logincheckbox_wrapper a
 {
-    float: right;
+    float: right;
+
     font-size: 13px;
     color: #00a388;
 }
@@ -1497,19 +1586,22 @@ label.error, div.error
 }
 .common_triplelap_wrapper .first
 {
-    bottom: 0;
+    bottom: 0;
+
     z-index: 3;
     width: 97%;
 }
 .common_triplelap_wrapper .second
 {
-    bottom: 10px;
+    bottom: 10px;
+
     z-index: 2;
     width: 94%;
 }
 .common_triplelap_wrapper .third
 {
-    bottom: 23px;
+    bottom: 23px;
+
     z-index: 1;
     width: 94%;
 }
@@ -1524,7 +1616,8 @@ label.error, div.error
 }
 .common_gradienttitle_wrapper h6
 {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 20px;
+
     font-size: 17px;
     line-height: 40px;
     color: #666;
@@ -1579,7 +1672,8 @@ label.error, div.error
 {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 15px;
+
     font-size: 20px;
     color: #fff;
 }
@@ -1593,7 +1687,8 @@ label.error, div.error
     margin-top: 0;*/
     /*margin: 0 auto;*/
     width: 800px;
-    height: 577px;
+    height: 577px;
+
     visibility: hidden;
     opacity: 1;
     /*transition: all 1s;*/
