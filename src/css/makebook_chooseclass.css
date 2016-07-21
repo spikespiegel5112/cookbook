@@ -1604,6 +1604,7 @@
     height: 100%;
     box-sizing: border-box;
     background: url('../img/makebook/edit_space_bg.jpg') repeat;
+    overflow: hidden;
 }
 
 .edit_space_con .edit_tool_bar
