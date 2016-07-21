@@ -58,7 +58,7 @@
     height: 700px;
     box-sizing: border-box;
     margin: 0 0 30px 18px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .class_filter .class_tab
@@ -261,14 +261,14 @@
 .class_tab_con .thumbnail_list
 {
     position: relative;
-    overflow: visible;
+    height: 568px;
 }
 
 .thumbnail_list ul
 {
     position: relative;
     margin: 0 -5px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .thumbnail_list li
@@ -278,7 +278,6 @@
     width: 120px;
     height: 120px;
     margin: 6px 4px;
-    overflow: hidden;
     text-align: center;
 }
 
@@ -369,12 +368,14 @@
     font-size: 12px;
     line-height: 20px;
     color: #999;
+    clear: both;
 }
 
 .thumbnail_list .pagination_wrap
 {
     position: absolute;
     right: 0;
+    bottom: 0;
     margin: 10px 0;
     text-align: right;
 }
