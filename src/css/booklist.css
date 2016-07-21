@@ -12,6 +12,9 @@
 .booklist_banner_wrapper.for_template{
     background: url(../img/banner/booklist_banner_01.jpg) center no-repeat;
 }
+.booklist_banner_wrapper.aboutus{
+    background: url(../img/banner/aboutus_banner.jpg) center no-repeat;
+}
 .booklist_bannercontent_wrapper
 {
     width: 1200px;
