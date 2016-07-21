@@ -65,7 +65,7 @@
 {
     position: absolute;
     top: 27px;
-    left: 50%;
+    left: 52%;
     z-index: 0;
     width: 128px;
     height: 6px;
@@ -90,8 +90,6 @@
 
 .progress_bar ul li div
 {
-    position: relative;
-    z-index: 1;
     width: 26px;
     height: 26px;
     margin: 16px auto 0;
