@@ -607,6 +607,9 @@
 {
     position: relative;
     display: none;
+    padding-left: 2px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu_list section.active{
@@ -696,6 +699,10 @@
     border: 1px solid #00a388;
 }
 
+.menu_list .btn.edit{
+    margin-right: 5px;
+}
+
 .menu_list .btn i
 {
     margin-right: 5px;
@@ -715,8 +722,13 @@
 {
     width: 100%;
 
-    overflow: hidden;
+    /*overflow: hidden;*/
     text-align: center;
+    box-sizing: border-box;
+}
+
+.orange_border{
+    border: 2px dashed #f40;
 }
 
 .food_list table tr
@@ -740,6 +752,7 @@
 .food_list table tr td
 {
     position: relative;
+    text-align: center;
 }
 
 .food_list table tr td:nth-child(1)
