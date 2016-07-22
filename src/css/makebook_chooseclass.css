@@ -1677,12 +1677,13 @@
 {
     position: relative;
     float: left;
-    margin: 0 8px;
+    margin: 0 5px;
+    text-align: center;
 }
 
 .min_screen .edit_tool_bar .actions li
 {
-    line-height: 47px;
+    margin: 6px 5px;
 }
 
 .edit_tool_bar .actions li a
@@ -1691,7 +1692,10 @@
 
     font-size: 12px;
     color: #999;
-    background: transparent;
+    /*background: transparent;*/
+    display: block;
+    border-radius: 6px;
+    padding: 3px ;
 }
 
 .edit_tool_bar .actions li a i
@@ -1715,6 +1719,11 @@
     color: #79bd8f;
 }
 
+.edit_tool_bar .actions li a.active{
+    background-color: #79bd8f;
+    color: #fff;
+}
+
 .edit_tool_bar .actions li a.disable:hover,
 .edit_tool_bar .actions li a.disable:active
 {
@@ -1728,18 +1737,20 @@
 .edit_tool_bar .actions li .add_page i
 {
     font-size: 31px;
-    vertical-align: middle;
 }
 
 .edit_tool_bar .actions li .add_food i
 {
     font-size: 33px;
-    vertical-align: middle;
 }
 
 .edit_tool_bar .actions li .save i{
     font-size: 26px;
-    vertical-align: middle;
+}
+
+.edit_tool_bar .actions li .preview i{
+    font-size: 34px;
+    line-height: 28px;;
 }
 
 .min_screen .edit_tool_bar .actions .txt
@@ -1889,7 +1900,7 @@
     z-index: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 240px 0 662px;
+    padding: 0 240px 0 746px;
 
     line-height: 47px;
     text-align: center;
@@ -1900,7 +1911,7 @@
     /*position: relative;
     float: left;*/
     top: 0;
-    padding: 0 240px 0 460px;
+    padding: 0 240px 0 554px;
     /*width: auto;
     margin-left: 10px;*/
 }
