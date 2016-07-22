@@ -991,6 +991,8 @@
     position: relative;
     padding: 10px 0;
     clear: both;
+    height: 300px;
+    overflow: scroll;
 }
 
 .quick_sort_con .sort_list .item
