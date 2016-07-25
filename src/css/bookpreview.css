@@ -14,7 +14,8 @@
     position: relative;
     display: inline-block;
     padding: 0 30px;
-    margin: 0 auto;
+    margin: 0 auto;
+
     font-size: 18px;
     color: #d1e648;
     opacity: 0;
@@ -57,7 +58,8 @@
     width: 270px;
     height: auto;
     padding: 10px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 0;
+
     font-size: 14px;
     color: #333;
     text-align: left;
@@ -95,7 +97,8 @@
     right: -100%;
     bottom: 0;
     width: 205px;
-    height: 225px;
+    height: 225px;
+
     font-size: 12px;
     color: #fff;
     background: url('../img/previewpage/book_preview_right_bg.png') 0 0;
@@ -120,7 +123,8 @@
     z-index: 2;
     width: 320px;
     padding: 0 0 30px 0;
-    margin: 0 auto;
+    margin: 0 auto;
+
     font-family: 'microsoft yahei';
     font-size: 16px;
     text-align: center;
@@ -412,7 +416,8 @@
 {
     position: relative;
     min-width: 1200px;
-    overflow: hidden;
+    overflow: hidden;
+
     font-family: 'microsoft yahei';
     background-image: url(../img/previewpage/bookpreview_bg_00000.jpg);
 }
@@ -424,12 +429,21 @@
     border-bottom: 1px solid #ddd;
 }
 
+.bp_toolbarhead_wrapper .common_yblogoshort_item{
+    display: block;
+    width: 80%;
+    margin: 6px auto 0;
+}
 
+.bp_toolbarhead_wrapper .common_yblogoshort_item img{
+    width: 100%;
+}
 
 .bp_toolbarhead_wrapper div
 {
     width: 90%;
-    margin: 0 auto 15px;
+    margin: 0 auto 15px;
+
     font-size: 13px;
     line-height: 1.6em;
     text-align: center;
@@ -494,7 +508,8 @@
 .bp_toolbar_wrapper ul li a
 {
     display: block;
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 30px;
     color: #aaadbc;
 }
@@ -502,7 +517,8 @@
 .bp_toolbar_wrapper ul li a label
 {
     display: block;
-    width: 100%;
+    width: 100%;
+
     font-size: 13px;
     text-align: center;
     cursor: pointer;
@@ -513,7 +529,8 @@
     display: block;
     width: 50%;
     height: 40px;
-    margin: 0 auto;
+    margin: 0 auto;
+
     font-size: 32px;
     line-height: 40px;
     text-align: center;
@@ -521,7 +538,8 @@
 
 .bp_toolbar_wrapper .praise_par a p
 {
-    width: 100%;
+    width: 100%;
+
     font-size: 12px;
     color: #08f;
     text-align: center;
@@ -650,7 +668,8 @@
     bottom: 205px;
     z-index: 1;
     width: 40px;
-    height: 40px;
+    height: 40px;
+
     font-size: 16px;
     line-height: 40px;
     color: #aaadbc;
@@ -709,6 +728,31 @@
         -ms-transition: opacity .5s;
 }
 
+.bp_toolbar_wrapper .common_sharelist_wrapper::before{
+    position: absolute;
+    top: 15px;
+    left: -9px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    content: ' ';
+    border-top: 9px solid transparent;
+    border-right: 9px solid #fff;
+    border-bottom: 9px solid transparent;
+}
+
+.bp_toolbar_wrapper .common_sharelist_wrapper::after{
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    content: ' ';
+    border-top: 9px solid transparent;
+    border-right: 9px solid #ddd;
+    border-bottom: 9px solid transparent;
+}
+
 /*.common_sharelist_wrapper ul {
 	overflow: hidden;
 }
@@ -751,14 +795,16 @@
     position: absolute;
     top: 40%;
     right: 10%;
-    width: 155px;
+    width: 155px;
+
     font-size: 14px;
     color: #fff;
 }
 
 .bp_instrucion_wrapper h5
 {
-    margin: 10px 0;
+    margin: 10px 0;
+
     font-size: 18px;
     color: #cbe13a;
     text-align: center;
@@ -796,7 +842,8 @@
 {
     display: inline-block;
     width: 100%;
-    height: 100%;
+    height: 100%;
+
     font-size: 25px;
     line-height: 35px;
     text-align: center;
@@ -924,7 +971,8 @@
     width: 6em;
     height: 20px;
     padding: 0 8px 0 0;
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 10px 20px;
+
     font-size: 12px;
     line-height: 20px;
     color: #999;
@@ -941,7 +989,8 @@
 {
     float: right;
     width: 5em;
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 14px;
     color: #333;
     text-overflow: ellipsis;
@@ -1021,7 +1070,8 @@
 {
     width: 140px;
     height: 20px;
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 12px;
     line-height: 20px;
     color: #999;
@@ -1052,7 +1102,8 @@
     width: 140px;
     height: 20px;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 12px;
     line-height: 20px;
     color: #999;
@@ -1063,7 +1114,8 @@
 .book_preview_tite
 {
     width: 300px;
-    margin: 0 auto;
+    margin: 0 auto;
+
     overflow: hidden;
     color: #d9a236;
     text-align: center;
@@ -1081,7 +1133,8 @@
     float: left;
     width: 200px;
     margin: 20px 0 0 0;
-    overflow: hidden;
+    overflow: hidden;
+
     font-size: 12px;
     line-height: 24px;
     color: #999;
@@ -1094,7 +1147,8 @@
     right: 0;
     bottom: 0;
     width: 205px;
-    height: 225px;
+    height: 225px;
+
     font-size: 12px;
     color: #fff;
     background: url('../img/previewpage/book_preview_right_bg.png') no-repeat;
@@ -1119,7 +1173,8 @@
     right: 10px;
     width: 8em;
     padding: 5px;
-    margin: 10px 20px;
+    margin: 10px 20px;
+
     font-size: 16px;
     color: #fff;
     text-align: center;
@@ -1183,7 +1238,8 @@
     width: 100%;
     box-sizing: border-box;
     padding: 30px 30px 15px 30px;
-    margin: 0 auto;
+    margin: 0 auto;
+
     font-size: 35px;
     font-weight: normal;
 }
@@ -1210,7 +1266,8 @@
     width: 100%;
     box-sizing: border-box;
     padding: 0 30px 30px;
-    margin: 20px 0 0;
+    margin: 20px 0 0;
+
     overflow: hidden;
     background-color: #eee;
     border-bottom-right-radius: 10px;
@@ -1220,14 +1277,15 @@
 {
     position: relative;
     display: block;
-    height: 40px;
+    height: 40px;
+
     font-size: 12px;
     line-height: 40px;
     color: #666;
     text-align: center;
 }
 
-.bp_donatedperson_wrapper label::before
+.bp_donatedperson_wrapper > label::before
 {
     position: absolute;
     top: 20px;
@@ -1238,7 +1296,7 @@
     background-color: #dfdfdf;
 }
 
-.bp_donatedperson_wrapper label::after
+.bp_donatedperson_wrapper > label::after
 {
     position: absolute;
     top: 20px;
@@ -1297,7 +1355,8 @@
 .user_list .user_item .user_item_bd .user_op .state
 {
     float: right;
-    margin: 0 10px;
+    margin: 0 10px;
+
     font-size: 12px;
     color: #999;
 }
@@ -1307,7 +1366,8 @@
     display: inline-block;
     width: 22px;
     height: 22px;
-    margin: 0 0 0 6px;
+    margin: 0 0 0 6px;
+
     font-size: 14px;
     font-style: normal;
     line-height: 22px;
@@ -1330,7 +1390,8 @@
     display: inline-block;
     width: auto;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 0;
+
     font-size: 12px;
     color: #333;
     background-color: #e1e1e4;
@@ -1398,7 +1459,8 @@
 {
     width: 100%;
     height: 16px;
-    margin: 0;
+    margin: 0;
+
     font-weight: bolder;
     line-height: 16px;
     background-color: #fff;
@@ -1407,7 +1469,8 @@
 {
     position: relative;
     top: 10px;
-    left: 10px;
+    left: 10px;
+
     font-size: .5rem;
     color: #df7262;
 }
@@ -1460,7 +1523,8 @@
     display: block;
     width: 100%;
     padding: 3% 0;
-    margin: 15px 0;
+    margin: 15px 0;
+
     font-size: 25px;
     color: #fff;
     text-align: center;
@@ -1473,7 +1537,8 @@
 }
 .bp_donatestep_wrapper p
 {
-    margin: 3% 0 0 0;
+    margin: 3% 0 0 0;
+
     font-size: 13px;
     color: red;
     text-align: center;
@@ -1484,7 +1549,8 @@
     display: block;
     width: 80%;
     padding: 2%;
-    margin: 3% auto 0;
+    margin: 3% auto 0;
+
     font-size: 1.5rem;
     color: #ff696a;
     text-align: center;
@@ -1531,11 +1597,13 @@
     background-color: #ff696a;
     border-radius: 10px;
 }
-.bp_donatestep_wrapper.step_3 img
+.bp_donatestep_wrapper.step_3 span
 {
     display: block;
     width: 75px;
-    padding: 120px 0 0 0;
+    font-size: 75px;
+    color: #fff;
+    padding: 100px 0 0 0;
     margin: 0 auto;
 }
 .bp_donatestep_wrapper > a
@@ -1545,7 +1613,8 @@
     right: 0;
     display: block;
     height: .5em;
-    margin: 20px;
+    margin: 20px;
+
     font-size: 2rem;
     font-weight: lighter;
     line-height: 1em;
@@ -1555,7 +1624,8 @@
 {
     display: block;
     width: 100%;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
+
     font-size: 1.2rem;
     color: #fff;
     text-align: center;
@@ -1572,7 +1642,8 @@
     width: 100%;
     height: 45px;
     padding: 0;
-    margin: 10px 0;
+    margin: 10px 0;
+
     line-height: 45px;
     border: 2px solid #ddd;
     border-radius: 6px;
@@ -1582,7 +1653,8 @@
 {
     position: absolute;
     left: 10px;
-    z-index: 1;
+    z-index: 1;
+
     font-size: 16px;
     color: #333;
 }
@@ -1595,7 +1667,8 @@
     width: 100%;
     height: 45px;
     box-sizing: border-box;
-    padding-left: 60px;
+    padding-left: 60px;
+
     font-size: 14px;
     color: #333;
     border: 0;
@@ -1654,7 +1727,8 @@
     right: 4px;
     display: block;
     height: 1em;
-    margin: 20px;
+    margin: 20px;
+
     font-size: 2rem;
     font-weight: lighter;
     line-height: 1em;
@@ -1673,7 +1747,8 @@
 .bp_comment_wrapper form label
 {
     display: block;
-    margin: 5px 0 10px;
+    margin: 5px 0 10px;
+
     font-size: 16px;
     color: #333;
 }
@@ -1685,7 +1760,8 @@
     height: 98px;
     box-sizing: border-box;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 0;
+
     font-size: 14px;
     color: #333;
     resize: none;
@@ -1695,7 +1771,8 @@
 {
     position: absolute;
     top: 130px;
-    right: 32px;
+    right: 32px;
+
     font-size: 12px;
     color: #999;
 }
@@ -1713,7 +1790,8 @@
 
 .bp_comment_wrapper .btn_wrap span
 {
-    margin: 0 10px;
+    margin: 0 10px;
+
     font-size: 12px;
     line-height: 36px;
     color: #999;
@@ -1724,7 +1802,8 @@
     width: 75px;
     height: 36px;
     padding: 0;
-    margin: 0;
+    margin: 0;
+
     font-size: 16px;
     line-height: 36px;
     color: #fff;
@@ -1757,7 +1836,8 @@
 .comments_list .empty, .bp_praise_wrapper .user_list .empty
 {
     width: 200px;
-    margin: 40px auto;
+    margin: 40px auto;
+
     font-size: 30px;
     color: #ccc;
 }
@@ -1770,14 +1850,16 @@
 
 .comments_list .empty span, .bp_praise_wrapper .user_list .empty span
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 53px;
     vertical-align: middle;
 }
 
 .comments_list .empty label, .bp_praise_wrapper .user_list .empty label
 {
-    display: inline-block;
+    display: inline-block;
+
     font-size: 28px;
     color: #ccc;
     vertical-align: middle;
@@ -1846,7 +1928,8 @@
 
 .comments_list .comments_content span
 {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 10px;
+
     font-size: 12px;
     color: #999;
 }
@@ -1859,7 +1942,8 @@
 
 .comments_list .comments_content .comments_op a
 {
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 0;
+
     font-size: 12px;
     color: #369;
 }
@@ -1908,7 +1992,8 @@
 .bp_praise_wrapper label
 {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10px;
+
     font-size: 16px;
     color: #333;
 }
@@ -1952,7 +2037,8 @@
     z-index: 5;
     display: none;
     width: 95px;
-    height: 30px;
+    height: 30px;
+
     font-size: 14px;
     line-height: 30px;
     text-align: center;
@@ -2005,7 +2091,8 @@
     display: block;
     width: 180px;
     height: 40px;
-    margin: 10px auto 0;
+    margin: 10px auto 0;
+
     font-size: 16px;
     font-weight: bold;
     line-height: 40px;
@@ -2026,7 +2113,8 @@
 {
     display: inline-block;
     width: 30px;
-    height: 40px;
+    height: 40px;
+
     font-size: 30px;
     line-height: 35px;
     vertical-align: middle;
@@ -2308,7 +2396,8 @@
 
 .flipbook-viewport .shadow
 {
-        box-shadow: 0 0 20px #ccc;
+        box-shadow: 0 0 20px #ccc;
+
     -ms-transition: -ms-box-shadow .5s;
 
      -o-box-shadow: 0 0 20px #ccc;

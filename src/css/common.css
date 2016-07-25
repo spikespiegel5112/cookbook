@@ -820,6 +820,15 @@ label.error, div.error
     background-color: #999;
 }
 
+.mask {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
 /*common empty wrap*/
 
 .pc_empty_item
@@ -1414,6 +1423,17 @@ label.error, div.error
     text-align: center;
     vertical-align: middle;
 }
+.common_logininput_wrapper input {
+    display: block;
+    width: 427px;
+    height: 50px;
+    padding: 0 0 0 13%;
+    font-family: 'microsoft yahei';
+    font-size: 15px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #999;
+    border-radius: 5px;
+}
 .common_logininput_wrapper .error
 {
     display: block;
@@ -1496,6 +1516,87 @@ label.error, div.error
     background-color: rgba(0, 0, 0, .5);
 }
 
+.access_ssologin_wrapper
+{
+    position: relative;
+    z-index: 2;
+    /*    padding: 0 0 10px 0;*/
+    width: 100%;
+    min-height: 20px;
+    /*    border-bottom: 1px solid #ccc;*/
+    border-radius: 6px;
+}
+
+.access_ssologin_wrapper p
+{
+    width: 100%;
+    margin: 15px 0;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.access_ssologin_wrapper div
+{
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    background-color: #e7e7e6;
+    border-radius: 6px;
+}
+.access_ssologin_wrapper ul
+{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.access_ssologin_wrapper ul li
+{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.access_ssologin_wrapper ul li a
+{
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.access_ssologin_wrapper ul li a
+{
+    text-align: center;
+}
+
+
+.access_ssologin_wrapper ul .qq
+{
+    background-color: #00adef;
+}
+.access_ssologin_wrapper ul .wechat
+{
+    background-color: #009834;
+}
+.access_ssologin_wrapper ul .weibo
+{
+    background-color: #db3a37;
+}
+
+/*.access_ssologin_wrapper ul li:first-child {
+    margin: 0;
+}*/
+
+
+.access_ssologin_wrapper ul li a  span
+{
+    display: block;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+}
 
 .common_logincheckbox_wrapper
 {
@@ -1742,4 +1843,115 @@ label.error, div.error
 {
     -ms-transform-origin: top left;
         transform-origin: top left;
+}
+
+/*~~~~~~~~~~globalhint全局顶部提示框~~~~~~~~~~*/
+
+.globalhint_wrapper
+{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    overflow: hidden;
+}
+
+.globalhint_inner_wrapper
+{
+    position: relative;
+    min-width: 30%;
+    max-width: 90%;
+    padding: 10px 120px 15px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+}
+
+/*.mobile_pc_switch
+{
+    position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.6);
+}*/
+
+.mobile_pc_switch .globalhint_inner_wrapper
+{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0;
+    /*position: absolute;
+	top: 50%;
+	left: 10%;*/
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+    /*background: rgba(0,0,0,.8);
+	border-radius: 10px;*/
+}
+
+.mobile_pc_switch .globalhint_close_btn
+{
+    top: -.25px;
+    right: .5em;
+    font-size: 1.75em;
+    color: #fff;
+}
+
+.mobile_pc_switch .globalhint_sidearticle_item
+{
+    font-size: .75em;
+}
+
+.globalhint_mainarticle_item
+{
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.globalhint_mainarticle_item span
+{
+    color: #e67131;
+}
+
+.globalhint_close_btn
+{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 1;
+    padding: 0 0 1em 0;
+    font-size: 25px;
+    color: #ddd;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.globalhint_close_btn:hover
+{
+    color: #fff;
+}
+
+.globalhint_wrapper .chrome
+{
+    color: #3abc35;
+}
+
+.globalhint_wrapper .firefox
+{
+    color: #b96132;
+}
+
+.globalhint_wrapper .chrome:hover,
+.globalhint_wrapper .firefox:hover
+{
+    text-decoration: underline;
+}
+
+.globalhint_sidearticle_item
+{
+    font-size: 13px;
 }
