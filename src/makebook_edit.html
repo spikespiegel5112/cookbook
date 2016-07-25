@@ -3446,6 +3446,7 @@
     }
     function determineWindowSize() {
         var winWidth = $(window).width();
+        $('body').css({'overflow':'hidden','height':'100%'});
         if (winWidth <= 1280) {
             $('.edit_space_con').addClass('min_screen');
             //1280下缩收缩侧栏
