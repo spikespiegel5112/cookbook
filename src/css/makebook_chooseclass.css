@@ -2954,10 +2954,10 @@
 .page_display .tpl.back_cover
 {
     position: relative;
-    width: 724px;
-    height: 1034px;
+    width: 686px;
+    height: 1012px;
     margin: 10px auto 60px;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .page_display .tpl.single
@@ -3015,12 +3015,111 @@
     box-shadow: 0 0 3px #ccc;
 }
 
-.page_display .tpl.cover .inner_page,
-.page_display .tpl.back_cover .inner_page,
 .page_display .tpl.single .inner_page
 {
     top: 12px;
     left: 20px;
+}
+
+.page_display .tpl.back_cover .inner_page{
+    border-radius: 12px 12px 0 12px;
+    overflow: hidden;
+}
+
+.page_display .tpl.cover .inner_page{
+    border-radius: 12px 12px 12px 0;
+    overflow: hidden;
+}
+
+.page_display .tpl.cover::before,
+.page_display .tpl.back_cover::before{
+    content: " ";
+    position: absolute;
+    top: 1px;
+    width: 120px;
+    height: 1006px;
+    z-index: 1;
+}
+
+.page_display .tpl.cover::before{
+    left: 0;
+    background: url("../img/makebook/spine_left.png") no-repeat;
+    background-size: contain;
+    border-radius: 12px 0 0 0;
+}
+
+.page_display .tpl.back_cover::before{
+    right: 0;
+    background: url("../img/makebook/spine_right.png") no-repeat;
+    background-size: contain;
+    border-radius: 0 12px 0 0;
+}
+
+.page_display .tpl.cover::after,
+.page_display .tpl.back_cover::after{
+    content: " ";
+    position: absolute;
+    width: 696px;
+    height: 1014px;
+    background: url("../img/makebook/cameo.png") no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.page_display .tpl.cover::after{
+    left: -2px;
+    top: 7px;
+}
+
+.page_display .tpl.back_cover::after{
+    right: 4px;
+    top: 9px;
+    transform: rotateY(-180deg);
+}
+
+.page_display .tpl .cameo_top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 680px;
+    height: 12px;
+    background: url("../img/makebook/cameo_top.png") no-repeat;
+    background-size: contain;
+    z-index: 1;
+    border-radius: 12px 12px 0 0;
+}
+
+.page_display .tpl .cameo_right{
+    position: absolute;
+    right: 4px;
+    top: 12px;
+    width: 12px;
+    height: 984px;
+    background: url("../img/makebook/cameo_right.png") no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.page_display .tpl.back_cover .cameo_right{
+    left: 0;
+    right: auto;
+}
+
+.page_display .tpl .cameo_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 680px;
+    height: 15px;
+    background: url("../img/makebook/cameo_bottom.png") no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.page_display .tpl.back_cover .cameo_bottom,
+.page_display .tpl.back_cover .cameo_top,
+.page_display .tpl.back_cover .cameo_right{
+    transform: rotateY(180deg);
 }
 
 .edit_space_con .list_mode
