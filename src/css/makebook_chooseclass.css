@@ -1788,16 +1788,16 @@
 {
     position: absolute;
     top: 58px;
-    left: -36px;
+    left: -21px;
     display: none;
-    width: 130px;
+    width: 100px;
     font-size: 12px;
 }
 
 .min_screen .edit_tool_bar .actions li .page_list
 {
     top: 50px;
-    left: -52px;
+    left: -35px;
 }
 
 .edit_tool_bar .actions li:hover .page_list
@@ -1844,7 +1844,7 @@
 {
     position: absolute;
     top: -8px;
-    left: 58px;
+    left: 45px;
     z-index: 1;
     width: 0;
     height: 0;

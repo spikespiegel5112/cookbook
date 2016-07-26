@@ -248,14 +248,17 @@ label.error, div.error
     position: relative;
     float: left;
     width: 80px;
-    height: 38px;
-    margin: -1px 10px 1px 0;
+    /*height: 38px;*/
+    margin: 5px 0 1px 0;
+}
+.yc_cm_header .shortcut .yc_logo a{
+    display: block;
+    padding: 0;
 }
 .yc_cm_header .shortcut .yc_logo img
 {
-    display: inline-block;
+    display: block;
     width: 100%;
-    vertical-align: middle;
 }
 .yc_cm_header .shortcut .nav_bar li
 {
