@@ -379,7 +379,7 @@ label.error, div.error
     position: absolute;
     top: 19px;
     right: 15px;
-    width: 135px;
+    width: 140px;
     text-align: center;
 }
 .header_con .hot_line span
@@ -413,6 +413,7 @@ label.error, div.error
     font-size: 19px;
     line-height: 30px;
     color: #f40;
+    white-space: nowrap;
 }
 .yc_cm_header .main_nav .navigation
 {
