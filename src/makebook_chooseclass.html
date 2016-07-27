@@ -46,9 +46,9 @@
 			<div class="main_nav">
 				<div class="header_con">
 					<div class="logo">
-						<a href="_index.html"><img src="img/main/logo.png"></a>
+						<a href="_index.html"><img src="img/main/logo.png"><span>菜谱制作</span></a>
 					</div>
-					<div class="navigation">
+					<!--<div class="navigation">
 						<ul>
 							<li><a href="_index.html">首页</a></li>
 							<li><a class="active" href="javascript:;">菜谱模板</a></li>
@@ -62,44 +62,44 @@
 							<span>客服热线</span>
 							<p>400-0610-127</p>
 						</a>
+					</div>-->
+					<div class='mk_process_min'>
+						<div class='makebook_process_wrapper'>
+							<ul>
+								<li class="finish">
+
+									<div class='title'>
+										<span class='icon ybiconfont ybicon-ruler'></span>
+										<div><i>1</i><span></span></div>
+										<label>选规格</label>
+									</div>
+								</li>
+								<li class='active'>
+									<div class='title'>
+										<span class='icon ybiconfont ybicon-choice'></span>
+										<div><i>2</i><span></span></div>
+										<label>选菜品</label>
+									</div>
+								</li>
+								<li>
+									<div class='title'>
+										<span class='icon ybiconfont ybicon-template'></span>
+										<div><i>3</i><span></span></div>
+										<label>选模板</label>
+									</div>
+								</li>
+								<li>
+
+									<div class='title'>
+										<span class='icon ybiconfont ybicon-payfor'></span>
+										<div><i>4</i><span></span></div>
+										<label>支付制作</label>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class='makebook_choosespec_wrapper'>
-			<div class='makebook_process_wrapper'>
-				<ul>
-					<li class="finish">
-						<span class='icon ybiconfont ybicon-ruler'></span>
-						<div class='title'>
-							<label>1.选规格</label>
-							<div><i></i><span></span></div>
-							<p>选择菜谱款式&规格</p>
-						</div>
-					</li>
-					<li class='active'>
-						<span class='icon ybiconfont ybicon-choice'></span>
-						<div class='title'>
-							<label>2.选菜品</label>
-							<div><span></span></div>
-							<p>选择菜品并配图</p>
-						</div>
-					</li>
-					<li>
-						<span class='icon ybiconfont ybicon-template'></span>
-						<div class='title'>
-							<label>3.选模板</label>
-							<div><span></span></div>
-						</div>
-					</li>
-					<li>
-						<span class='icon ybiconfont ybicon-payfor'></span>
-						<div class='title'>
-							<label>4.支付制作</label>
-							<div><span></span><i></i></div>
-						</div>
-					</li>
-				</ul>
 			</div>
 		</div>
 		<div class="choose_menu_wrap">
@@ -121,26 +121,28 @@
 							<span class='ybiconfont ybicon-box'></span>
 							<label>对不起，还没有相关菜系！</label>
 						</div>
-						<div class="search_wrap">
-							<input type="text" placeholder="输入您想要找的菜名" value="">
-							<button class="search_btn" type="button">搜索</button>
-							<div class="search_result">
-								<label>您可能想找：</label>
-								<div class="sr_list">
-									<ul>
-										<li>
-											<img class="figure" src="img/sample/food/sbhyzs.jpg">
-											<p><b>烤</b>鱼</p>
-										</li>
-										<li>
-											<img class="figure" src="img/sample/food/sbhyzs.jpg">
-											<p><b>烤</b>鱼</p>
-										</li>
-										<li>
-											<img class="figure" src="img/sample/food/sbhyzs.jpg">
-											<p><b>烤</b>鱼</p>
-										</li>
-									</ul>
+						<div class="search_bg">
+							<div class="search_wrap">
+								<input type="text" placeholder="输入您想要找的菜名" value="">
+								<button class="search_btn" type="button">搜索</button>
+								<div class="search_result">
+									<label>您可能想找：</label>
+									<div class="sr_list">
+										<ul>
+											<li>
+												<img class="figure" src="img/sample/food/sbhyzs.jpg">
+												<p><b>烤</b>鱼</p>
+											</li>
+											<li>
+												<img class="figure" src="img/sample/food/sbhyzs.jpg">
+												<p><b>烤</b>鱼</p>
+											</li>
+											<li>
+												<img class="figure" src="img/sample/food/sbhyzs.jpg">
+												<p><b>烤</b>鱼</p>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -271,7 +273,7 @@
 				<div class="menu_list_wrap">
 					<div class="caption_wrap">
 						<h3 class="caption">菜品列表: </h3>
-						<a class="new_class" href="javascript:;"><i class="ybiconfont ybicon-add2"></i>新增分类</a>
+						<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
 					</div>
 					<!--分类 导航-->
 					<div class="class_nav">
@@ -280,29 +282,31 @@
 						<div class="classes">
 							<div class="swiper-container">
 								<ul class="swiper-wrapper">
-									<li class="active swiper-slide" data-type="specialty">招牌菜</li>
-									<li class="swiper-slide" data-type="cold">凉菜</li>
-									<li class="swiper-slide" data-type="lucai">卤菜</li>
-									<li class="swiper-slide" data-type="xiaochao">小炒</li>
-									<li class="swiper-slide" data-type="iron-plate">铁板</li>
-									<li class="swiper-slide" data-type="pot">锅仔</li>
-									<li class="swiper-slide" data-type="staple">主食</li>
-									<li class="swiper-slide" data-type="drinks">酒水</li>
-									<li class="swiper-slide" data-type="tea">茶水</li>
-									<li class="swiper-slide" data-type="other">……</li>
-									<li class="swiper-slide" data-type="other1">……</li>
+									<li class="active swiper-slide" data-type="specialty"><a href="javascript:;" class="close hidden">×</a>招牌菜</li>
+									<li class="swiper-slide" data-type="cold"><a href="javascript:;" class="close hidden">×</a>凉菜</li>
+									<li class="swiper-slide" data-type="lucai"><a href="javascript:;" class="close hidden">×</a>卤菜</li>
+									<li class="swiper-slide" data-type="xiaochao"><a href="javascript:;" class="close hidden">×</a>小炒</li>
+									<li class="swiper-slide" data-type="iron-plate"><a href="javascript:;" class="close hidden">×</a>铁板</li>
+									<li class="swiper-slide" data-type="pot"><a href="javascript:;" class="close hidden">×</a>锅仔</li>
+									<li class="swiper-slide" data-type="staple"><a href="javascript:;" class="close hidden">×</a>主食</li>
+									<li class="swiper-slide" data-type="drinks"><a href="javascript:;" class="close hidden">×</a>酒水</li>
+									<!--<li class="swiper-slide" data-type="tea"><a href="javascript:;" class="close hidden">×</a>茶水</li>
+									<li class="swiper-slide" data-type="other"><a href="javascript:;" class="close hidden">×</a>……</li>
+									<li class="swiper-slide" data-type="other1"><a href="javascript:;" class="close hidden">×</a>……</li>-->
 								</ul>
 							</div>
 						</div>
 						<a class="ybiconfont ybicon-forward2 next" href="javascript:;"></a>
+						<a class="ybiconfont ybicon-plus add_class" href="javascript:;"></a>
+						<a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
 					</div>
 					<div class="menu_list">
 						<section class="active" data-type="specialty">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">招牌菜</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
-							<a class="new_food btn" href="javascript:;"><i class="ybiconfont ybicon-plus"></i>新增菜品</a>
+
 							<div class="header">
 								<ul>
 									<li>配图</li>
@@ -310,7 +314,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -319,7 +323,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td>
 											<input class="price" type="text" value="￥28.00/份">
 											<!--<label class="error">请输入菜品价格</label>-->
@@ -339,7 +343,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td>
 											<input class="price" type="text" value="￥28.00/份">
 											<!--<label class="error">请输入菜品价格</label>-->
@@ -442,7 +446,7 @@
 							</div>
 						</section>
 						<section class="" data-type="cold">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">凉菜</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -454,7 +458,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -512,7 +516,7 @@
 							</div>
 						</section>
 						<section class="" data-type="lucai">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">卤菜</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -524,7 +528,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -582,7 +586,7 @@
 							</div>
 						</section>
 						<section class="" data-type="xiaochao">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">小炒</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -594,7 +598,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -652,7 +656,7 @@
 							</div>
 						</section>
 						<section class="" data-type="iron-plate">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">铁板</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -664,7 +668,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -722,7 +726,7 @@
 							</div>
 						</section>
 						<section class="" data-type="pot">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">锅仔</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -734,7 +738,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -792,7 +796,7 @@
 							</div>
 						</section>
 						<section class="" data-type="staple">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">主食</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -804,7 +808,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -862,7 +866,7 @@
 							</div>
 						</section>
 						<section class="" data-type="drinks">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">酒水</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -874,7 +878,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -932,7 +936,7 @@
 							</div>
 						</section>
 						<section class="" data-type="tea">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">茶水</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -944,7 +948,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -1002,7 +1006,7 @@
 							</div>
 						</section>
 						<section class="" data-type="other">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">其他</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -1014,7 +1018,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -1194,7 +1198,7 @@
 	</div>
 	<!--弹出部分-->
 	<!--默认弹出&点击“新增分类” 快速分类-->
-	<div class="quick_sort_con">
+	<div class="quick_sort_con hidden">
 		<h5>常见菜品分类 :</h5>
 		<div class="pagination_wrap small">
 			<div class="turn_btn">
@@ -1234,6 +1238,50 @@
 		</div>
 		<div class="custom_wrap">
 			<a class="custom" href="javascript:;"><h5>自定义菜品分类<i class="ybiconfont ybicon-down1"></i></h5></a>
+			<textarea>
+每一行为一个分类，举例：
+冷菜
+招牌菜
+热门菜
+			</textarea>
+			<div class="action_bar">
+				<a class="cm_btn ok" href="javascript:;">确定</a>
+				<a class="cm_btn cancel" href="javascript:;">取消</a>
+			</div>
+		</div>
+	</div>
+	<!--add 2016.7.27 -->
+	<div class="quick_sort_box hidden">
+		<div class="sort_type">
+			<h5>常见菜品分类 :</h5>
+			<div class="sort_list">
+				<div class="item select">
+					<span class="chinese"></span>
+					<p>中餐</p>
+				</div>
+				<div class="item">
+					<span class="western"></span>
+					<p>西餐</p>
+				</div>
+				<div class="item">
+					<span class="custom"></span>
+					<p>自定义</p>
+				</div>
+			</div>
+		</div>
+		<p class="tips"><i class="ybiconfont ybicon-infosign"></i>您已经选择“中餐分类”，<span>招牌菜 | 冷菜 | 热菜 | 酒水 | 主食</span>，后期可在编辑页面继续修改！</p>
+		<div class="custom_wrap open">
+			<!--<a class="custom" href="javascript:;"><h5>自定义菜品分类<i class="ybiconfont ybicon-down1"></i></h5></a>-->
+			<div class="labels">
+				<ul>
+					<li class="select"><a href="javascript:;">宴会</a></li>
+					<li><a href="javascript:;">火锅</a></li>
+					<li><a href="javascript:;">快餐</a></li>
+					<li><a href="javascript:;">茶室</a></li>
+					<li><a href="javascript:;">清真</a></li>
+					<li><a href="javascript:;">素食</a></li>
+				</ul>
+			</div>
 			<textarea>
 每一行为一个分类，举例：
 冷菜
@@ -1647,6 +1695,25 @@
 				input.val(oldVal).attr('placeholder','').closest('tr').removeClass('active');
 			});
 		});
+
+		$('.food_list .name').focusin(function(){
+			var input = $(this);
+			var oldVal = input.val();
+			input.attr('placeholder','请输入菜品名称').val('').closest('tr').addClass('active').siblings().removeClass('active');
+
+			$('.food_list .actions .cancel').click(function(){
+				input.val(oldVal).attr('placeholder','').closest('tr').removeClass('active');
+			});
+
+			$('.food_list .actions .ok').click(function(){
+				var newVal = '￥'+input.val()+'/份';
+				input.val(newVal).attr('placeholder','').closest('tr').removeClass('active');
+			});
+
+			$('.food_list .name').focusout(function(){
+				input.val(oldVal).attr('placeholder','').closest('tr').removeClass('active');
+			});
+		});
 	}
 
 	function dishListSwitchTab(){
@@ -1758,9 +1825,39 @@
 		//默认弹出
 		//quickSort();
 		//新增分类弹出
-		$('.menu_list_wrap .new_class').click(function(){
+		$('.class_nav .add_class').click(function(){
 			quickSort();
 		});
+
+		//显示删除按钮
+
+		$('.class_nav .delete').click(function(){
+			var flag = 1;
+			if (flag == 1) {
+				//执行方法;
+				$('.classes li .close').removeClass('hidden');
+				flag = 0;
+
+				$('.classes li .close').click(function(){
+					art.dialog({
+						title:"删除分类",
+						lock:true,
+						icon:"warning",
+						width:"180px",
+						content:"确认删除此分类？",
+						okVal:"确定",
+						ok:function(){},
+						cancelVa:"取消",
+						cancel:function(){}
+					})
+				})
+			} else {
+				//执行方法;
+				$('.classes li .close').addClass('hidden');
+				flag = 1;
+			}
+		});
+
 
 		//新增菜品
 		$('.menu_list .new_food').click(function(){
@@ -1892,10 +1989,15 @@
 			title: '快速分类',
 			lock: true,
 			padding: 0,
-			content: document.querySelector('.quick_sort_con'),
+			content: document.querySelector('.quick_sort_box'),
 			init: function(){
+				//选择菜品类型
+				$('.sort_list .item,.labels li').click(function(){
+					$(this).addClass('select').siblings().removeClass('select');
+				});
+
 				//自定义分类
-				var custom = $('.custom_wrap');
+				/*var custom = $('.custom_wrap');
 				custom.on('click','.custom',function(){
 					if(custom.hasClass('open')){
 						custom.removeClass('open');
@@ -1906,7 +2008,7 @@
 					$('.custom_wrap .cancel').click(function(){
 						custom.removeClass('open');
 					});
-				});
+				});*/
 			}
 		});
 	}

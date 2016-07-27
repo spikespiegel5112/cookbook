@@ -373,6 +373,26 @@ label.error, div.error
 {
     width: 110px;
     height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.main_nav .header_con .logo span{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #999;
+    margin-left: 20px;
+    line-height: 23px;
+}
+.main_nav .header_con .logo span::before{
+    content: " ";
+    position: absolute;
+    left: -10px;
+    top: 3px;
+    width: 1px;
+    height: 18px;
+    background-color: #ccc;
 }
 .main_nav .header_con .hot_line
 {
@@ -1958,4 +1978,10 @@ label.error, div.error
 .globalhint_sidearticle_item
 {
     font-size: 13px;
+}
+
+.cm_drag_cover
+{
+    opacity: .8;
+    background-color: #7ccf6c;
 }

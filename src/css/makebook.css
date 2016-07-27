@@ -27,7 +27,8 @@
 {
     display: inline-block;
     width: 60px;
-    height: 60px;
+    height: 60px;
+
     font-size: 55px;
     line-height: 60px;
     color: #ccc;
@@ -49,7 +50,8 @@
 .makebook_process_wrapper .title label
 {
     display: block;
-    height: 25px;
+    height: 25px;
+
     line-height: 25px;
     color: #999;
     text-align: center;
@@ -96,10 +98,73 @@
 }
 .makebook_process_wrapper .title p
 {
-    width: 100%;
+    width: 100%;
+
     font-size: 13px;
     color: #999;
     text-align: center;
+}
+.mk_process_min {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 305px;
+    height: 70px;
+}
+
+.mk_process_min .makebook_process_wrapper{
+    background: transparent;
+    height: 100%;
+    border: 0;
+}
+
+.mk_process_min .makebook_process_wrapper li{
+    float: left;
+    margin: 0;
+}
+
+.mk_process_min .makebook_process_wrapper .icon{
+    width: 35px;
+    height: 35px;
+    font-size: 32px;
+    line-height: 35px;
+    padding-left: 14px;
+}
+
+.mk_process_min .makebook_process_wrapper .title div{
+    width: 75px;
+    height: 14px;
+}
+
+.mk_process_min .makebook_process_wrapper .title div::before {
+    content: none;
+}
+
+.mk_process_min .makebook_process_wrapper .title div i{
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    color: #fff;
+    font-style: normal;
+    text-align: center;
+    line-height: 14px;
+}
+
+.mk_process_min .makebook_process_wrapper .title div span{
+    width: 61px;
+    right: 0;
+}
+.mk_process_min .makebook_process_wrapper .finish .title div span{
+    right: 0;
+}
+
+.mk_process_min .makebook_process_wrapper .title label{
+    font-size: 12px;
+    padding-left: 14px;
+}
+
+.mk_process_min .makebook_process_wrapper li.active .title label{
+    font-size: 13px;
 }
 .makebook_stepsummary_container
 {
@@ -133,7 +198,8 @@
     float: right;
     width: 180px;
     height: 50px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
+
     font-size: 20px;
     line-height: 50px;
     color: #fff;
@@ -156,13 +222,15 @@
 }
 .makebook_steptitle_wrapper h6
 {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 15px;
+
     font-size: 20px;
     color: #999;
 }
 .makebook_steptitle_wrapper p
 {
-    padding: 10px 0 10px 15px;
+    padding: 10px 0 10px 15px;
+
     font-size: 13px;
     color: #999;
 }
@@ -233,7 +301,8 @@
 {
     display: block;
     width: 25px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 0;
+
     font-size: 20px;
     color: #aaa;
 }
@@ -328,7 +397,8 @@
 .makebook_steptab_wrapper li a
 {
     display: block;
-    width: 100px;
+    width: 100px;
+
     font-size: 18px;
     font-weight: bold;
     line-height: 55px;
@@ -457,7 +527,8 @@
 }
 .pricecalculator_result
 {
-    background-color: #fff;
+    background-color: #fff;
+
     border: 1px solid #dbdad9;
     box-shadow: 2px 2px 4px #ddd;
 }
@@ -467,7 +538,8 @@
 }
 .pricecalculator_result_wrapper h5, .pricecalculator_result_wrapper h6
 {
-    padding: 10px 0;
+    padding: 10px 0;
+
     font-size: 14px;
     color: #666;
     text-align: center;
@@ -484,14 +556,16 @@
 .makebook_pcresultindicator_wrapper label
 {
     display: block;
-    margin: 10px 0;
+    margin: 10px 0;
+
     font-size: 14px;
     color: #666;
 }
 .makebook_pcresultindicator_wrapper span
 {
     display: block;
-    margin: 10px 0;
+    margin: 10px 0;
+
     font-size: 24px;
     color: #ff3f1f;
 }
@@ -507,7 +581,8 @@
 .makebook_slidecountor_wrapper label, .makebook_slidecountor_wrapper input
 {
     display: inline-block;
-    height: 20px;
+    height: 20px;
+
     font-size: 13px;
     color: #333;
     text-align: center;

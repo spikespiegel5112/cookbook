@@ -45,7 +45,7 @@
     position: relative;
     width: 1200px;
     box-sizing: border-box;
-    padding: 40px 0 0;
+    padding: 20px 0 0;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -66,6 +66,7 @@
     position: relative;
     float: left;
     width: 22px;
+    margin-top: 68px;
 }
 
 .class_tab li
@@ -111,11 +112,20 @@
     border: 1px solid #ddd;
 }
 
+.class_filter .class_tab_con .search_bg{
+    position: relative;
+    margin: -14px -12px 8px;
+    background-color: #ddd;
+    padding: 15px 12px 0;
+    height: 68px;
+    box-sizing: border-box;
+}
+
 .class_tab_con .search_wrap
 {
     position: relative;
     height: 38px;
-    margin: 3px 3px 15px;
+    margin: 0 3px;
 }
 
 .search_wrap input
@@ -395,7 +405,7 @@
 {
     position: relative;
     width: 100%;
-    height: 68px;
+    height: 66px;
     overflow: hidden;
 }
 
@@ -455,7 +465,7 @@
     font-size: 16px;
     color: #666;
     text-align: center;
-    background-color: #eee;
+    background-color: #fff;
     border-top: 1px solid #ddd;
 }
 
@@ -466,7 +476,7 @@
     box-sizing: border-box;
     color: #ccc;
     text-align: center;
-    background-color: #eee;
+    background-color: #fff;
     border-top: 1px solid #ddd;
     border-left: 1px solid #ddd;
 }
@@ -482,6 +492,18 @@
 .menu_list_wrap .class_nav .next{
     position: absolute;
     top: 3px;
+    right: 52px;
+}
+
+.menu_list_wrap .class_nav .add_class{
+    position: absolute;
+    top: 3px;
+    right: 26px;
+}
+
+.menu_list_wrap .class_nav .delete{
+    position: absolute;
+    top: 3px;
     right: 0;
 }
 
@@ -491,25 +513,50 @@
     width: 100%;
     height: 33px;
     box-sizing: border-box;
-    padding: 0 26px 0 88px;
+    padding: 0 78px 0 88px;
     white-space: nowrap;
     /*overflow: hidden;*/
+}
+
+.class_nav .classes ul{
+    height: 31px;
+    border: 1px solid #ddd;
+    margin: 3px 0 0;
 }
 
 .class_nav .classes li{
     float: left;
     width: auto;
     min-width: 65px;
+    height: 33px;
     box-sizing: border-box;
     padding: 0 12px;
-    margin-top: 3px;
     font-size: 14px;
-    color: #666;
+    color: #999;
     text-align: center;
     cursor: pointer;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    background-color: #eee;
+    /*border-top: 1px solid #ddd;*/
+    border-right: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
+}
+
+.class_nav .classes li:hover{
+    color: #79bd8f;
+}
+
+.class_nav .classes li .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    color: #fff;
+    background-color: #333;
+    line-height: 12px;
+    text-align: center;
 }
 
 .edit_space_pop .class_nav .classes li{
@@ -517,9 +564,10 @@
 }
 
 .class_nav .classes li.active{
-    margin-top: 1px;
+    margin-top: -3px;
     font-weight: bold;
     color: #333;
+    background-color: #fff;
     border-top: 3px solid #79bd8f;
 }
 
@@ -595,7 +643,7 @@
 {
     position: relative;
     width: 100%;
-    height: 596px;
+    height: 598px;
     box-sizing: border-box;
     padding-left: 20px;
     margin: 0;
@@ -674,6 +722,7 @@
     vertical-align: middle;
 }
 
+.caption_wrap .btn,
 .menu_list .btn
 {
     display: inline-block;
@@ -690,6 +739,7 @@
     border-radius: 4px;
 }
 
+.caption_wrap .new_food,
 .menu_list .new_food{
     position: absolute;
     top: 18px;
@@ -703,15 +753,18 @@
     margin-right: 5px;
 }
 
+.caption_wrap .btn i,
 .menu_list .btn i
 {
     margin-right: 5px;
     font-size: 14px;
 }
+.caption_wrap .btn:hover,
 .menu_list .btn:hover{
     color: #00a388;
     border: 1px solid #00a388;
 }
+.caption_wrap .new_food:hover,
 .menu_list .new_food:hover
 {
     color: #fff;
@@ -793,8 +846,16 @@
 
 .menu_list .food_list .name
 {
+    display: inline-block;
     font-size: 16px;
     color: #333;
+    background-color: transparent;
+    border: 0;
+    width: 150px;
+    height: 30px;
+    padding: 0 6px;
+    line-height: 28px;
+    text-align: center;
 }
 
 .food_list tr .error{
@@ -817,6 +878,7 @@
     border: 0;
 }
 
+.food_list tr.active .name,
 .food_list tr.active .price
 {
     box-sizing: border-box;
@@ -952,9 +1014,142 @@
 }
 
 /*快速分类*/
+.quick_sort_box{
+    position: relative;
+    display: none;
+    width: 590px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eee;
+    margin-top: -3px;
+}
+
+.quick_sort_box .sort_type{
+    position: relative;
+    width: 100%;
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+.quick_sort_box .sort_type h5{
+    float: left;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #666;
+}
+
+.quick_sort_box .sort_list
+{
+    position: relative;
+    clear: both;
+    margin: 0 -10px;
+}
+
+.quick_sort_box .sort_list .item
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: #ccc;
+    background-color: #fff;
+    border: 2px dashed #ddd;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quick_sort_box .sort_list .item:hover{
+    border: 2px solid #79bd8f;
+}
+
+.quick_sort_box .sort_list .item.select{
+    background-color: #79bd8f;
+    border: 0;
+    color: #fff;
+}
+
+.quick_sort_box .sort_list .item span{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 71px;
+    background: url("../img/icon/tableware.png") no-repeat;
+
+}
+
+.quick_sort_box .sort_list .item .chinese{
+    background-position: -10px -75px;
+}
+
+.quick_sort_box .sort_list .item.select .chinese{
+    background-position: -10px 0;
+}
+
+.quick_sort_box .sort_list .item .western{
+    background-position: -120px -75px;
+}
+
+.quick_sort_box .sort_list .item.select .western{
+    background-position: -120px 0;
+}
+
+.quick_sort_box .sort_list .item .custom{
+    width: 60px;
+    background-position: -240px -75px;
+}
+
+.quick_sort_box .sort_list .item.select .custom{
+    width: 60px;
+    background-position: -240px 0;
+}
+
+.quick_sort_box .sort_list .item p
+{
+    display: block;
+    margin: 5px 0;
+
+    font-size: 20px;
+}
+
+.quick_sort_box .custom_wrap{
+    margin: 0;
+    padding: 10px 25px 0;
+    background-color: #fff;
+}
+
+.quick_sort_box .tips{
+    position: relative;
+    margin: 0 25px 10px;
+    font-size: 12px;
+    color: #666;
+    background-color: #fff7e7;
+    line-height: 35px;
+}
+
+.quick_sort_box .tips i{
+    display: inline-block;
+    margin: 0 5px;
+    color: #ccc;
+    vertical-align: middle;
+}
+
+.quick_sort_box .tips span{
+    color: #999;
+}
+
+.quick_sort_box .custom_wrap.open{
+    padding: 10px 25px 15px;
+}
+
 .quick_sort_con
 {
     position: relative;
+
     display: none;
     width: 590px;
     padding: 20px 25px;
@@ -991,8 +1186,6 @@
     position: relative;
     padding: 10px 0;
     clear: both;
-    height: 300px;
-    overflow: scroll;
 }
 
 .quick_sort_con .sort_list .item
@@ -1005,19 +1198,16 @@
     background-color: #eee;
 }
 
-.sort_list .item label
+.quick_sort_con .sort_list .item label
 {
     display: block;
     margin-bottom: 5px;
-
     font-size: 14px;
     color: #333;
 }
 
-.sort_list .item p
-{
+.quick_sort_con .sort_list .item p {
     padding-right: 70px;
-
     font-size: 14px;
     line-height: 2;
     color: #999;
@@ -1082,6 +1272,40 @@
     height: auto;
     padding-top: 10px;
     box-shadow: 0 -6px 6px -4px rgba(120, 120, 120, .4);
+}
+
+.custom_wrap .labels{
+    position: relative;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.custom_wrap .labels li{
+    position: relative;
+    margin-right: 8px;
+    padding: 4px 6px;
+    float: left;
+    font-size: 12px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom_wrap .labels li a{
+    color: #666;
+}
+
+.custom_wrap .labels li:hover,
+.custom_wrap .labels li.select{
+    background-color: #79bd8f;
+    border: 1px solid #79bd8f;
+}
+
+.custom_wrap .labels li.select a,
+.custom_wrap .labels li:hover a{
+    color: #fff;
 }
 
 .custom_wrap.open .custom i
@@ -4431,3 +4655,4 @@
     float: none;
     display: inline-block;
 }
+
