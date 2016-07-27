@@ -2378,11 +2378,13 @@
 {
     position: absolute;
     bottom: 0;
+    width: 100%;
     padding-left: 18px;
-
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 30px;
     color: #79bd8f;
+    background-color: #fff;
 }
 
 .aside_tab_con .item .new_food i
@@ -2399,8 +2401,15 @@
 
 .aside_tab_con .food_list_wrap
 {
-    position: relative;
+    position: absolute;
     width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    padding: 39px 0 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .food_list_wrap .category
