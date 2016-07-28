@@ -487,6 +487,7 @@
 
 .menu_list_wrap .class_nav .prev{
     float: left;
+    border-right: 1px solid #ddd;
 }
 
 .menu_list_wrap .class_nav .next{
@@ -520,7 +521,7 @@
 
 .class_nav .classes ul{
     height: 31px;
-    border: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     margin: 3px 0 0;
 }
 
@@ -531,18 +532,24 @@
     height: 33px;
     box-sizing: border-box;
     padding: 0 12px;
+    margin-top: -1px;
     font-size: 14px;
     color: #999;
     text-align: center;
     cursor: pointer;
     background-color: #eee;
-    /*border-top: 1px solid #ddd;*/
+    border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
 }
 
 .class_nav .classes li:hover{
     color: #79bd8f;
+}
+
+.class_nav .classes li input{
+    display: inline-block;
+    width: 68px;
 }
 
 .class_nav .classes li .close{

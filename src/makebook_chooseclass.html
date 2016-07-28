@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1469413982_297583.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/swiper.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css" media="all">
 	<!-- build:css css/all.min.css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
@@ -279,20 +280,20 @@
 					<div class="class_nav">
 						<label>分类：</label>
 						<a class="ybiconfont ybicon-backward2 prev" href="javascript:;"></a>
-						<div class="classes">
+						<div id="sortableTab" class="classes">
 							<div class="swiper-container">
 								<ul class="swiper-wrapper">
-									<li class="active swiper-slide" data-type="specialty"><a href="javascript:;" class="close hidden">×</a>招牌菜</li>
-									<li class="swiper-slide" data-type="cold"><a href="javascript:;" class="close hidden">×</a>凉菜</li>
-									<li class="swiper-slide" data-type="lucai"><a href="javascript:;" class="close hidden">×</a>卤菜</li>
-									<li class="swiper-slide" data-type="xiaochao"><a href="javascript:;" class="close hidden">×</a>小炒</li>
-									<li class="swiper-slide" data-type="iron-plate"><a href="javascript:;" class="close hidden">×</a>铁板</li>
-									<li class="swiper-slide" data-type="pot"><a href="javascript:;" class="close hidden">×</a>锅仔</li>
-									<li class="swiper-slide" data-type="staple"><a href="javascript:;" class="close hidden">×</a>主食</li>
-									<li class="swiper-slide" data-type="drinks"><a href="javascript:;" class="close hidden">×</a>酒水</li>
-									<!--<li class="swiper-slide" data-type="tea"><a href="javascript:;" class="close hidden">×</a>茶水</li>
-									<li class="swiper-slide" data-type="other"><a href="javascript:;" class="close hidden">×</a>……</li>
-									<li class="swiper-slide" data-type="other1"><a href="javascript:;" class="close hidden">×</a>……</li>-->
+									<li class="active swiper-slide" data-type="specialty"><a href="javascript:;" class="close hidden">×</a><span contenteditable="true">招牌菜</span></li>
+									<li class="swiper-slide" data-type="cold"><a href="javascript:;" class="close hidden">×</a><span>凉菜</span></li>
+									<li class="swiper-slide" data-type="lucai"><a href="javascript:;" class="close hidden">×</a><span>卤菜</span></li>
+									<li class="swiper-slide" data-type="xiaochao"><a href="javascript:;" class="close hidden">×</a><span>小炒</span></li>
+									<li class="swiper-slide" data-type="iron-plate"><a href="javascript:;" class="close hidden">×</a><span>铁板</span></li>
+									<li class="swiper-slide" data-type="pot"><a href="javascript:;" class="close hidden">×</a><span>锅仔</span></li>
+									<li class="swiper-slide" data-type="staple"><a href="javascript:;" class="close hidden">×</a><span>主食</span></li>
+									<li class="swiper-slide" data-type="drinks"><a href="javascript:;" class="close hidden">×</a><span>酒水</span></li>
+									<li class="swiper-slide" data-type="tea"><a href="javascript:;" class="close hidden">×</a><span>茶水</span></li>
+									<li class="swiper-slide" data-type="other"><a href="javascript:;" class="close hidden">×</a><span>……</span></li>
+									<li class="swiper-slide" data-type="other1"><a href="javascript:;" class="close hidden">×</a><span>……</span></li>
 								</ul>
 							</div>
 						</div>
@@ -363,7 +364,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -380,7 +381,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -397,7 +398,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -414,7 +415,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -431,7 +432,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -467,7 +468,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -484,7 +485,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -501,7 +502,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -537,7 +538,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -554,7 +555,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -571,7 +572,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -607,7 +608,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -624,7 +625,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -641,7 +642,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -677,7 +678,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -694,7 +695,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -711,7 +712,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -747,7 +748,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -764,7 +765,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -781,7 +782,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -817,7 +818,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -834,7 +835,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -851,7 +852,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -887,7 +888,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -904,7 +905,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -921,7 +922,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -957,7 +958,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -974,7 +975,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -991,7 +992,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -1027,7 +1028,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -1044,7 +1045,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -1061,7 +1062,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -1097,7 +1098,7 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
+										<td><input type="text" class="name" value="大东北菜卷"></td>
 										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
@@ -1114,7 +1115,7 @@
 												<img src="img/sample/food/sjccx.jpg">
 											</div>
 										</td>
-										<td><p class="name">什锦串串香</p></td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
 										<td><input class="price" type="text" value="￥28.00/份" placeholder=""></td>
 										<td>
 											<div class="actions">
@@ -1131,10 +1132,8 @@
 												<img src="img/sample/food/ddbcj.jpg">
 											</div>
 										</td>
-										<td><p class="name">大东北菜卷</p></td>
-										<td>
-											<input class="price" type="text" value="￥28.00/份">
-										</td>
+										<td><input type="text" class="name" value="什锦串串香"></td>
+										<td><input class="price" type="text" value="￥28.00/份"></td>
 										<td>
 											<div class="actions">
 												<a class="edit" href="javascript:;">编辑</a>
@@ -1648,11 +1647,20 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.artDialog.js?skin=yb313"></script>
 <script type="text/javascript" src="assets/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		chooseMenuClass();
 		chooseMenuClassPops();
 		dishListSwitchTab();
+	});
+
+	tinymce.init({
+		selector: '.classes li span',
+		inline: true,
+		toolbar: false,
+		menubar: false
 	});
 
 	//选择菜品
@@ -1706,7 +1714,7 @@
 			});
 
 			$('.food_list .actions .ok').click(function(){
-				var newVal = '￥'+input.val()+'/份';
+				var newVal = input.val();
 				input.val(newVal).attr('placeholder','').closest('tr').removeClass('active');
 			});
 
@@ -1717,10 +1725,15 @@
 	}
 
 	function dishListSwitchTab(){
+
+
 		var swiperTab = new Swiper('.classes .swiper-container',{
 			slidesPerView:"auto",
 			prevButton:'.class_nav .prev',
 			nextButton:'.class_nav .next',
+			onlyExternal:true,
+			simulateTouch: false,
+			touchMoveStopPropagation : false,
 			onInit: function(){
 				var classNav = $('.class_nav'),
 						tab = classNav.find('li');
@@ -1731,6 +1744,14 @@
 					$(this).addClass('active');
 					$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
 				});
+
+				tinymce.init({
+					selector: '.classes li span',
+					inline: true,
+					toolbar: false,
+					menubar: false
+				});
+
 			},
 			onSlideNextEnd: function(swiper){
 				var cur = $('.classes li.active').next();
@@ -1760,6 +1781,15 @@
 			}
 
 		});
+
+		$("#sortableTab").sortable({
+			placeholder: "sortable-bg",
+			items: '.swiper-slide',
+			hoverClass: 'is-hovered',
+			handle: 'span',
+			forcePlaceholderSize: true
+		});
+		$("#sortableTab").disableSelection();
 
 		/*var classNav = $('.class_nav'),
 				tab = classNav.find('li'),
@@ -1831,14 +1861,16 @@
 
 		//显示删除按钮
 
+		var flag = 1;
 		$('.class_nav .delete').click(function(){
-			var flag = 1;
+
+			var closeBtns = $('.classes li .close');
 			if (flag == 1) {
 				//执行方法;
-				$('.classes li .close').removeClass('hidden');
+				closeBtns.removeClass('hidden');
 				flag = 0;
 
-				$('.classes li .close').click(function(){
+				closeBtns.click(function(){
 					art.dialog({
 						title:"删除分类",
 						lock:true,
@@ -1850,10 +1882,16 @@
 						cancelVa:"取消",
 						cancel:function(){}
 					})
-				})
+				});
+
+				$(document).on('click',function(e){
+					if($(e.target).closest('.class_nav').length == 0){
+						closeBtns.addClass('hidden');
+					}
+				});
 			} else {
 				//执行方法;
-				$('.classes li .close').addClass('hidden');
+				closeBtns.addClass('hidden');
 				flag = 1;
 			}
 		});
