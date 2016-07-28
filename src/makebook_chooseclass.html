@@ -1790,21 +1790,40 @@
 			simulateTouch: false,
 			touchMoveStopPropagation : false,
 			onInit: function(){
+				tinymce.init({
+					selector: '.classes li span',
+					inline: true,
+					toolbar: false,
+					menubar: false
+				});
+
 				var classNav = $('.class_nav'),
 						tab = classNav.find('li');
 
-				tab.click(function(){
+				classNav.on("click","li",function(){
 					var type = $(this).attr('data-type');
 					$('.classes li').removeClass('active');
 					$(this).addClass('active');
 					$('.menu_list section[data-type="'+type+'"]').addClass('active').siblings().removeClass('active');
 				});
 
-				tinymce.init({
-					selector: '.classes li span',
-					inline: true,
-					toolbar: false,
-					menubar: false
+
+				//加号新增分类
+				$('.class_nav .add_class').click(function(){
+					var tabCon = $('<section class="" data-type="empty"><div class="food_list"> <table> <tr> <td> <div class="figure"> <img src="img/sample/food/ddbcj.jpg"> </div> </td> <td><input type="text" class="name" value="大东北菜卷"></td> <td><input class="price" type="text" value="￥28.00/份"></td> <td> <div class="actions"> <a class="edit" href="javascript:;">编辑</a> <a class="delete" href="javascript:;">删除</a> <a class="cancel" href="javascript:;">取消</a> <a class="ok" href="javascript:;">确认</a> </div> </td> </tr> </table> </div> </section>');
+
+					tabCon.appendTo($('.menu_list'));
+
+					swiperTab.appendSlide('<li class="swiper-slide" data-type="empty"> <div class="ui-sortable-handle"> <a href="javascript:;" class="close">×</a> <span id="mce_11" class="mce-content-body" contenteditable="true" spellcheck="false" style="position: relative;"> </span></div></li>');
+
+					var slidesLength = $('.classes .swiper-slide').length;
+					$('.classes li').last().find('span').trigger("focus");
+//					swiperTab.slideTo(slidesLength, 600, false);
+
+					$('.classes li').last().addClass('active').siblings().removeClass('active');
+
+					$('.menu_list section[data-type="empty"]').addClass('active').siblings().removeClass('active');
+
 				});
 
 			},
@@ -1912,17 +1931,6 @@
 	function chooseMenuClassPops(){
 		//默认弹出
 		//quickSort();
-
-		//加好新增分类
-		$('.class_nav .add_class').click(function(){
-			var tab = $('<li class="swiper-slide" data-type="empty"> <div class="ui-sortable-handle"> <a href="javascript:;" class="close">×</a> <span id="mce_11" class="mce-content-body" contenteditable="true" spellcheck="false" style="position: relative;"> </span></div></li>');
-
-			var tabCon = $('<section class="" data-type="empty"><div class="food_list"> <table> <tr> <td> <div class="figure"> <img src="img/sample/food/ddbcj.jpg"> </div> </td> <td><input type="text" class="name" value="大东北菜卷"></td> <td><input class="price" type="text" value="￥28.00/份"></td> <td> <div class="actions"> <a class="edit" href="javascript:;">编辑</a> <a class="delete" href="javascript:;">删除</a> <a class="cancel" href="javascript:;">取消</a> <a class="ok" href="javascript:;">确认</a> </div> </td> </tr> </table> </div> </section>');
-
-			tab.appendTo($('.classes ul'));
-			tabCon.appendTo($('.menu_list'));
-			dishListSwitchTab();
-		});
 
 		//重置分类
 		$('.class_nav .reset').click(function(){
