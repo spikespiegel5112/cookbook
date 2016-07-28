@@ -502,10 +502,12 @@
     right: 26px;
 }
 
-.menu_list_wrap .class_nav .delete{
+.menu_list_wrap .class_nav .reset{
     position: absolute;
     top: 3px;
     right: 0;
+    height: 100%;
+    line-height: 30px;
 }
 
 .menu_list_wrap .class_nav .classes{
@@ -556,6 +558,7 @@
 }
 
 .class_nav .classes li .close{
+    display: none;
     position: absolute;
     right: 0;
     top: 0;
@@ -567,6 +570,10 @@
     background-color: #333;
     line-height: 12px;
     text-align: center;
+}
+
+.class_nav .classes li:hover .close{
+    display: block;
 }
 
 .edit_space_pop .class_nav .classes li{
@@ -583,6 +590,11 @@
 
 .class_nav .classes li:hover{
     color: #79bd8f;
+}
+
+.class_nav .classes li span{
+    display: inline-block;
+    min-width: 20px;
 }
 
 .title_edit_wrapper li {
@@ -1031,7 +1043,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #eee;
-    margin-top: -3px;
+    margin: -3px 0;
 }
 
 .quick_sort_box .sort_type{

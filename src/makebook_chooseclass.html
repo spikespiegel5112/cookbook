@@ -285,67 +285,67 @@
 								<ul class="swiper-wrapper">
 									<li class="active swiper-slide" data-type="specialty">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span contenteditable="true">招牌菜</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="cold">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>凉菜</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="lucai">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>卤菜</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="xiaochao">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>小炒</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="iron-plate">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>铁板</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="pot">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>锅仔</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="staple">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>主食</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="drinks">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>酒水</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="tea">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>茶水</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="other">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>……</span>
 										</div>
 									</li>
 									<li class="swiper-slide" data-type="other1">
 										<div>
-											<a href="javascript:;" class="close hidden">×</a>
+											<a href="javascript:;" class="close">×</a>
 											<span>……</span>
 										</div>
 									</li>
@@ -354,7 +354,7 @@
 						</div>
 						<a class="ybiconfont ybicon-forward2 next" href="javascript:;"></a>
 						<a class="ybiconfont ybicon-plus add_class" href="javascript:;"></a>
-						<a class="ybiconfont ybicon-trash delete" href="javascript:;"></a>
+						<a class="icon-refresh reset" href="javascript:;"></a>
 					</div>
 					<div class="menu_list">
 						<section class="active" data-type="specialty">
@@ -1132,7 +1132,7 @@
 							</div>
 						</section>
 						<section class="" data-type="other1">
-							<div class="sign"></div>
+							<!--<div class="sign"></div>
 							<h3 class="caption">其他</h3>
 							<a class="edit btn" href="javascript:;"><i class="ybiconfont ybicon-pencil"></i>编辑</a>
 							<a class="delete btn" href="javascript:;"><i class="ybiconfont ybicon-trash"></i>删除</a>
@@ -1144,7 +1144,7 @@
 									<li>价格</li>
 									<li>操作</li>
 								</ul>
-							</div>
+							</div>-->
 							<div class="food_list">
 								<table>
 									<tr>
@@ -1324,7 +1324,7 @@
 			</div>
 		</div>
 		<p class="tips"><i class="ybiconfont ybicon-infosign"></i>您已经选择“中餐分类”，<span>招牌菜 | 冷菜 | 热菜 | 酒水 | 主食</span>，后期可在编辑页面继续修改！</p>
-		<div class="custom_wrap open">
+		<div class="custom_wrap open hidden">
 			<!--<a class="custom" href="javascript:;"><h5>自定义菜品分类<i class="ybiconfont ybicon-down1"></i></h5></a>-->
 			<div class="labels">
 				<ul>
@@ -1842,7 +1842,7 @@
 			items: '.swiper-slide',
 			hoverClass: 'is-hovered',
 			handle: 'div',
-			cancel: "span",
+			cancel: "span,a",
 			forcePlaceholderSize: true,
 			cursor: "move",
 			axis: "x"
@@ -1912,47 +1912,37 @@
 	function chooseMenuClassPops(){
 		//默认弹出
 		//quickSort();
-		//新增分类弹出
+
+		//加好新增分类
 		$('.class_nav .add_class').click(function(){
+			var tab = $('<li class="swiper-slide" data-type="empty"> <div class="ui-sortable-handle"> <a href="javascript:;" class="close">×</a> <span id="mce_11" class="mce-content-body" contenteditable="true" spellcheck="false" style="position: relative;"> </span></div></li>');
+
+			var tabCon = $('<section class="" data-type="empty"><div class="food_list"> <table> <tr> <td> <div class="figure"> <img src="img/sample/food/ddbcj.jpg"> </div> </td> <td><input type="text" class="name" value="大东北菜卷"></td> <td><input class="price" type="text" value="￥28.00/份"></td> <td> <div class="actions"> <a class="edit" href="javascript:;">编辑</a> <a class="delete" href="javascript:;">删除</a> <a class="cancel" href="javascript:;">取消</a> <a class="ok" href="javascript:;">确认</a> </div> </td> </tr> </table> </div> </section>');
+
+			tab.appendTo($('.classes ul'));
+			tabCon.appendTo($('.menu_list'));
+			dishListSwitchTab();
+		});
+
+		//重置分类
+		$('.class_nav .reset').click(function(){
 			quickSort();
 		});
 
 		//显示删除按钮
 
-		var flag = 1;
-		$('.class_nav .delete').click(function(){
-
-			var closeBtns = $('.classes li .close');
-			if (flag == 1) {
-				//执行方法;
-				closeBtns.removeClass('hidden');
-				flag = 0;
-
-				closeBtns.click(function(){
-					art.dialog({
-						title:"删除分类",
-						lock:true,
-						icon:"warning",
-						width:"180px",
-						content:"确认删除此分类？",
-						okVal:"确定",
-						ok:function(){},
-						cancelVa:"取消",
-						cancel:function(){}
-					})
-				});
-
-				$(document).on('click',function(e){
-					if($(e.target).closest('.class_nav').length == 0){
-						closeBtns.addClass('hidden');
-						flag = 1;
-					}
-				});
-			} else {
-				//执行方法;
-				closeBtns.addClass('hidden');
-				flag = 1;
-			}
+		$('.classes').on("click",".close",function(){
+			art.dialog({
+				title:"删除分类",
+				lock:true,
+				icon:"warning",
+				width:"180px",
+				content:"确认删除此分类？",
+				okVal:"确定",
+				ok:function(){},
+				cancelVa:"取消",
+				cancel:function(){}
+			})
 		});
 
 
