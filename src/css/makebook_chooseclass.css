@@ -531,7 +531,6 @@
     min-width: 65px;
     height: 33px;
     box-sizing: border-box;
-    padding: 0 12px;
     margin-top: -1px;
     font-size: 14px;
     color: #999;
@@ -545,6 +544,10 @@
 
 .class_nav .classes li:hover{
     color: #79bd8f;
+}
+
+.class_nav .classes li div{
+    padding: 0 12px;
 }
 
 .class_nav .classes li input{

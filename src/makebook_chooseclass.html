@@ -283,17 +283,72 @@
 						<div id="sortableTab" class="classes">
 							<div class="swiper-container">
 								<ul class="swiper-wrapper">
-									<li class="active swiper-slide" data-type="specialty"><a href="javascript:;" class="close hidden">×</a><span contenteditable="true">招牌菜</span></li>
-									<li class="swiper-slide" data-type="cold"><a href="javascript:;" class="close hidden">×</a><span>凉菜</span></li>
-									<li class="swiper-slide" data-type="lucai"><a href="javascript:;" class="close hidden">×</a><span>卤菜</span></li>
-									<li class="swiper-slide" data-type="xiaochao"><a href="javascript:;" class="close hidden">×</a><span>小炒</span></li>
-									<li class="swiper-slide" data-type="iron-plate"><a href="javascript:;" class="close hidden">×</a><span>铁板</span></li>
-									<li class="swiper-slide" data-type="pot"><a href="javascript:;" class="close hidden">×</a><span>锅仔</span></li>
-									<li class="swiper-slide" data-type="staple"><a href="javascript:;" class="close hidden">×</a><span>主食</span></li>
-									<li class="swiper-slide" data-type="drinks"><a href="javascript:;" class="close hidden">×</a><span>酒水</span></li>
-									<li class="swiper-slide" data-type="tea"><a href="javascript:;" class="close hidden">×</a><span>茶水</span></li>
-									<li class="swiper-slide" data-type="other"><a href="javascript:;" class="close hidden">×</a><span>……</span></li>
-									<li class="swiper-slide" data-type="other1"><a href="javascript:;" class="close hidden">×</a><span>……</span></li>
+									<li class="active swiper-slide" data-type="specialty">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span contenteditable="true">招牌菜</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="cold">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>凉菜</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="lucai">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>卤菜</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="xiaochao">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>小炒</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="iron-plate">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>铁板</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="pot">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>锅仔</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="staple">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>主食</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="drinks">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>酒水</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="tea">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>茶水</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="other">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>……</span>
+										</div>
+									</li>
+									<li class="swiper-slide" data-type="other1">
+										<div>
+											<a href="javascript:;" class="close hidden">×</a>
+											<span>……</span>
+										</div>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -1786,8 +1841,10 @@
 			placeholder: "sortable-bg",
 			items: '.swiper-slide',
 			hoverClass: 'is-hovered',
-			handle: 'span',
-			forcePlaceholderSize: true
+			handle: 'div',
+			cancel: "span",
+			forcePlaceholderSize: true,
+			cursor: "move"
 		});
 		$("#sortableTab").disableSelection();
 
